@@ -3,7 +3,7 @@ import type { Metadata, Viewport } from "next"
 
 const Client = dynamic(() => import("./client"), { ssr: false })
 
-const SITE_URL = "https://www.daeilsys.com/products/active-vibration-systems/dvia-ulf"
+const SITE_URL = "/products/active-vibration-systems/dvia-ulf"
 const PAGE_PATH = "/products/active-vibration-systems/dvia-ulf"
 const OG_IMAGE = "/og/dvia-ulf.png"
 

@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import type { MenuItem, ProductsMenuItems, SupportMenuItems, TranslationKeys } from "@/types"
 
 interface FooterProps {
@@ -36,13 +37,13 @@ export function Footer({ translations: t, companyItems, productsItems, supportIt
           <div className="space-y-6">
             {/* 메인 네비게이션 */}
             <div className="flex flex-wrap gap-4 text-sm">
-              <a href="https://www.daeilsys.com/company/" className="text-gray-300 hover:text-white transition-colors">Company</a>
+              <Link href="/company" className="text-gray-300 hover:text-white transition-colors">Company</Link>
               <span className="text-gray-500">|</span>
-              <a href="https://www.daeilsys.com/products/" className="text-gray-300 hover:text-white transition-colors">Products</a>
+              <Link href="/products" className="text-gray-300 hover:text-white transition-colors">Products</Link>
               <span className="text-gray-500">|</span>
-              <a href="https://www.daeilsys.com/support/" className="text-gray-300 hover:text-white transition-colors">Support</a>
+              <Link href="/support" className="text-gray-300 hover:text-white transition-colors">Support</Link>
               <span className="text-gray-500">|</span>
-              <a href="https://www.daeilsys.com/contact/" className="text-gray-300 hover:text-white transition-colors">Contact</a>
+              <Link href="/contact" className="text-gray-300 hover:text-white transition-colors">Contact</Link>
             </div>
 
             {/* 소셜미디어 아이콘 */}
@@ -128,11 +129,11 @@ export function Footer({ translations: t, companyItems, productsItems, supportIt
 
             {/* 정책 링크 */}
             <div className="flex flex-wrap gap-4 text-sm">
-              <a href="https://www.daeilsys.com/terms-of-use/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Terms of Use</a>
+              <Link href="/terms-of-use" className="text-gray-400 hover:text-white transition-colors">Terms of Use</Link>
               <span className="text-gray-500">|</span>
-              <a href="https://www.daeilsys.com/privacy-policy/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+              <Link href="/privacy-policy" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</Link>
               <span className="text-gray-500">|</span>
-              <a href="https://www.daeilsys.com/warranty-policy/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Warranty Policy</a>
+              <Link href="/support/warranty-policy" className="text-gray-400 hover:text-white transition-colors">Warranty Policy</Link>
             </div>
           </div>
         </div>

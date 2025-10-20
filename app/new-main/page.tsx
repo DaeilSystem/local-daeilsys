@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://www.daeilsys.com"),
+  metadataBase: new URL("/"),
   alternates: {
     canonical: "/new-main",
     languages: {
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "DAEIL SYSTEMS - Creating Innovative Solutions for Precision Measurement",
     description: "Leading manufacturer of vibration isolation systems and optical tables for precision measurement equipment.",
-    url: "https://www.daeilsys.com/new-main",
+    url: "/new-main",
     siteName: "DAEIL SYSTEMS",
     images: [
       {

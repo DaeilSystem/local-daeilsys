@@ -2,6 +2,7 @@
 
 import { AnimatePresence } from "framer-motion"
 import { Globe, Search } from "lucide-react"
+import Link from "next/link"
 import React, { useState } from "react"
 // import { Moon, Sun, ShoppingBag } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -43,24 +44,24 @@ export const Navigation: React.FC = () => {
 
             {/* Desktop nav */}
             <div className="hidden lg:flex items-center justify-center flex-1 space-x-8">
-              <a
-                href="https://www.daeilsys.com/"
+              <Link
+                href="/"
                 className="text-white/80 hover:text-white text-sm font-normal transition-colors duration-200"
               >
                 {t.home}
-              </a>
+              </Link>
 
               <div
                 className="relative"
                 onMouseEnter={() => setHoveredMenu("company")}
                 onMouseLeave={() => setHoveredMenu(null)}
               >
-                <a
-                  href="https://www.daeilsys.com/company/"
+                <Link
+                  href="/company"
                   className="text-white/80 hover:text-white text-sm font-normal transition-colors duration-200"
                 >
                   {t.company}
-                </a>
+                </Link>
               </div>
 
               <div
@@ -68,12 +69,12 @@ export const Navigation: React.FC = () => {
                 onMouseEnter={() => setHoveredMenu("products")}
                 onMouseLeave={() => setHoveredMenu(null)}
               >
-                <a
-                  href="https://www.daeilsys.com/products/"
+                <Link
+                  href="/products"
                   className="text-white/80 hover:text-white text-sm font-normal transition-colors duration-200"
                 >
                   {t.products}
-                </a>
+                </Link>
               </div>
 
               <div
@@ -81,32 +82,32 @@ export const Navigation: React.FC = () => {
                 onMouseEnter={() => setHoveredMenu("support")}
                 onMouseLeave={() => setHoveredMenu(null)}
               >
-                <a
-                  href="https://www.daeilsys.com/support/"
+                <Link
+                  href="/support"
                   className="text-white/80 hover:text-white text-sm font-normal transition-colors duration-200"
                 >
                   {t.support}
-                </a>
+                </Link>
               </div>
 
-              <a
-                href="https://www.daeilsys.com/support/case-studies/"
+              <Link
+                href="/support/case-studies"
                 className="text-white/80 hover:text-white text-sm font-normal transition-colors duration-200"
               >
                 {t.caseStudies}
-              </a>
-              <a
-                href="https://www.daeilsys.com/newsroom/"
+              </Link>
+              <Link
+                href="/newsroom"
                 className="text-white/80 hover:text-white text-sm font-normal transition-colors duration-200"
               >
                 {t.newsroom}
-              </a>
-              <a
-                href="https://www.daeilsys.com/contact/"
+              </Link>
+              <Link
+                href="/contact"
                 className="text-white/80 hover:text-white text-sm font-normal transition-colors duration-200"
               >
                 {t.contact}
-              </a>
+              </Link>
             </div>
 
             {/* Right controls */}

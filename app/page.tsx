@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     alternateLocale: "ko_KR",
-    url: "https://www.daeilsys.com",
+    url: "/",
     siteName: "DAEIL SYSTEMS",
   },
   twitter: {
@@ -47,10 +47,10 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://www.daeilsys.com",
+    canonical: "/",
     languages: {
-      "en-US": "https://www.daeilsys.com",
-      "ko-KR": "https://www.daeilsys.com/ko",
+      "en-US": "/",
+      "ko-KR": "/ko",
     },
   },
 }

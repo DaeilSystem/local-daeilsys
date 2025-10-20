@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import type { MenuItem, ProductsMenuItems, SupportMenuItems } from "@/types"
 import { ChevronDown, Menu, X } from "lucide-react"
+import Link from "next/link"
 import { useState } from "react"
 
 interface MobileMenuProps {
@@ -84,13 +85,13 @@ export function MobileMenu({
           {/* Menu Content */}
           <div className="flex-1 overflow-y-auto py-4 space-y-1">
             {/* Home */}
-            <a
+            <Link
               href="/"
               className="block px-4 py-3 text-lg font-medium text-white hover:text-gray-300 hover:bg-white/5 transition-colors rounded-lg"
               onClick={handleLinkClick}
             >
               {t.home}
-            </a>
+            </Link>
 
             {/* Company Section */}
             <div className="border-b border-gray-800/50">
@@ -99,9 +100,9 @@ export function MobileMenu({
                 className="w-full flex items-center justify-between px-4 py-3 text-lg font-medium text-white hover:text-gray-300 hover:bg-white/5 transition-colors rounded-lg"
                 aria-expanded={expandedSections.company}
               >
-                <a href="https://www.daeilsys.com/company/" className="hover:text-gray-300">
+                <Link href="/company" className="hover:text-gray-300">
                   {t.company}
-                </a>
+                </Link>
                 <ChevronDown
                   className={`h-5 w-5 transition-transform duration-200 ${
                     expandedSections.company ? 'rotate-180' : ''
@@ -131,9 +132,9 @@ export function MobileMenu({
                 className="w-full flex items-center justify-between px-4 py-3 text-lg font-medium text-white hover:text-gray-300 hover:bg-white/5 transition-colors rounded-lg"
                 aria-expanded={expandedSections.products}
               >
-                <a href="https://www.daeilsys.com/products/" className="hover:text-gray-300">
+                <Link href="/products" className="hover:text-gray-300">
                   {t.products}
-                </a>
+                </Link>
                 <ChevronDown
                   className={`h-5 w-5 transition-transform duration-200 ${
                     expandedSections.products ? 'rotate-180' : ''
@@ -178,9 +179,9 @@ export function MobileMenu({
                 className="w-full flex items-center justify-between px-4 py-3 text-lg font-medium text-white hover:text-gray-300 hover:bg-white/5 transition-colors rounded-lg"
                 aria-expanded={expandedSections.support}
               >
-                <a href="https://www.daeilsys.com/support/" className="hover:text-gray-300">
+                <Link href="/support" className="hover:text-gray-300">
                   {t.support}
-                </a>
+                </Link>
                 <ChevronDown
                   className={`h-5 w-5 transition-transform duration-200 ${
                     expandedSections.support ? 'rotate-180' : ''
@@ -219,27 +220,27 @@ export function MobileMenu({
             </div>
 
             {/* Other Links */}
-            <a
-              href="https://www.daeilsys.com/support/case-studies/"
+            <Link
+              href="/support/case-studies"
               className="block px-4 py-3 text-lg font-medium text-white hover:text-gray-300 hover:bg-white/5 transition-colors rounded-lg"
               onClick={handleLinkClick}
             >
               {t.caseStudies}
-            </a>
-            <a
-              href="https://www.daeilsys.com/newsroom/"
+            </Link>
+            <Link
+              href="/newsroom"
               className="block px-4 py-3 text-lg font-medium text-white hover:text-gray-300 hover:bg-white/5 transition-colors rounded-lg"
               onClick={handleLinkClick}
             >
               {t.newsroom}
-            </a>
-            <a
-              href="https://www.daeilsys.com/contact/"
+            </Link>
+            <Link
+              href="/contact"
               className="block px-4 py-3 text-lg font-medium text-white hover:text-gray-300 hover:bg-white/5 transition-colors rounded-lg"
               onClick={handleLinkClick}
             >
               {t.contact}
-            </a>
+            </Link>
           </div>
         </div>
       </SheetContent>
