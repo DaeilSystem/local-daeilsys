@@ -1,0 +1,35 @@
+name: Deploy pluck-landing
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+
+jobs:
+  deployment:
+    name: Deploy to Vercel
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Debug Info
+        run: |
+          echo "Branch: ${{ github.ref }}"
+          echo "Event: ${{ github.event_name }}"
+          echo "Commit: ${{ github.sha }}"
+          echo "Commit Message: ${{ github.event.head_commit.message }}"
+
+      - name: Deploy to Vercel
+        run: |
+          BRANCH="${GITHUB_REF##*/}"
+          echo "Deploying branch: $BRANCH"
+          if [ "$BRANCH" = "main" ]; then
+            echo "Deploying to main branch"
+            curl -X POST "${{ secrets.VERCEL_DEPLOY_MAIN_HOOKS }}"
+          elif [ "$BRANCH" = "develop" ]; then
+            echo "Deploying to develop branch"
+            curl -X POST "${{ secrets.VERCEL_DEPLOY_DEVELOP_HOOKS }}"
+          fi
