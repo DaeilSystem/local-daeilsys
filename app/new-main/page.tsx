@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("/"),
+  metadataBase: new URL("https://localhost:3000"),
   alternates: {
     canonical: "/new-main",
     languages: {
