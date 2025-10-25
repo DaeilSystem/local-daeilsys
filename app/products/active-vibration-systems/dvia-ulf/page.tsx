@@ -1,5 +1,5 @@
-import dynamic from "next/dynamic"
 import type { Metadata, Viewport } from "next"
+import dynamic from "next/dynamic"
 
 const Client = dynamic(() => import("./client"), { ssr: false })
 

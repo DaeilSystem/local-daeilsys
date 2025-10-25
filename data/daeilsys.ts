@@ -61,7 +61,7 @@ export const newsItems: NewsItem[] = [
     excerpt: "인간의 소용은 어디서 오는 것인가? 애초에 '인간의 소용'이란 말이 성립되기나 하는 것인가? 소용이란 어떠한 득이...",
     date: "2025년 8월 20일",
     image: "/daeilsys-images/news-1.jpg",
-    url: "https://www.daeilsys.com/ko/newsroom/beyond-business-driving-positive-change-in-the-community/"
+    url: "/newsroom/beyond-business-driving-positive-change-in-the-community"
   },
   {
     id: "2",
