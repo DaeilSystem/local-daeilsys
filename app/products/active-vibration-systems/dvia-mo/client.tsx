@@ -1,331 +1,518 @@
 "use client"
 
-import { AnimatedImage } from "@/components/animated/animated-image"
-import { AnimatedSection } from "@/components/animated/animated-section"
-import { AnimatedText } from "@/components/animated/animated-text"
-import { StaggeredContainer } from "@/components/animated/staggered-container"
-import { ScrollImageSequence } from "@/components/scroll-image-sequence"
-import { ScrollImageSequenceSection } from "@/components/scroll-image-sequence-section"
-import { ScrollSectionContainer } from "@/components/scroll-video/scroll-section-container"
-import { useLanguage } from "@/hooks/use-language"
-import { useTheme } from "@/hooks/use-theme"
+import { useState } from "react"
+import Link from "next/link"
+import productData from "@/data/products/dvia-mo-full.json"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 
-// 각 섹션별 이미지 시퀀스
-const heroImages = ["/dvia-ulf/dvia-ulf-main.png"]
-const heightImages = ["/dvia-ulf/dvia-ulf-front-view.png"]
-const installationImages = ["/dvia-ulf/dvia-ulf-installation.png"]
-const modularImages = ["/dvia-ulf/dvia-ulf-multiple.png"]
-const powerImages = ["/dvia-ulf/dvia-ulf-system.png"]
+type TabType = "overview" | "features" | "performance" | "specifications" | "applications" | "accessories" | "resources"
 
-// 설치 과정 타임라인
-const installationTimeline = [
-  {
-    time: 0,
-    title: "Preparation",
-    description: "Prepare the installation area and tools",
-    highlight: true,
-  },
-  {
-    time: 0.25,
-    title: "Positioning",
-    description: "Position the DVIA-ULF isolators under the microscope base",
-  },
-  {
-    time: 0.5,
-    title: "Alignment",
-    description: "Align the isolators with the microscope mounting points",
-  },
-  {
-    time: 0.75,
-    title: "Connection",
-    description: "Connect the control system and power supply",
-  },
-  {
-    time: 1,
-    title: "Testing",
-    description: "Test the vibration isolation performance",
-    highlight: true,
-  },
-]
-
-export default function Client() {
-  const { language, isInitialized } = useLanguage()
-  const { theme } = useTheme()
-
-  const currentLanguage = isInitialized ? language : "en"
-
-  if (!isInitialized) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-black">
-        <div className="text-white">Loading...</div>
-      </div>
-    )
-  }
+export default function DviaMOClient() {
+  const [activeTab, setActiveTab] = useState<TabType>("overview")
 
   return (
-    <div className="bg-black text-white overflow-x-hidden scroll-smooth">
-      {/* 스크롤 스냅 스타일 추가 */}
-      <style jsx global>{`
-        html {
-          scroll-snap-type: y mandatory;
+    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900">
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-b from-slate-900 to-slate-800 py-24 overflow-hidden">
+        <div className="absolute inset-0 bg-grid-slate-700 opacity-20"></div>
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Breadcrumb */}
+          <nav className="mb-8">
+            <ol className="flex items-center space-x-2 text-sm text-gray-400">
+              <li>
+                <Link href="/" className="hover:text-blue-400 transition-colors">대일시스템</Link>
+              </li>
+              <li className="text-gray-600">/</li>
+              <li>
+                <Link href="/products" className="hover:text-blue-400 transition-colors">제품소개</Link>
+              </li>
+              <li className="text-gray-600">/</li>
+              <li>
+                <Link href="/products/active-vibration-systems" className="hover:text-blue-400 transition-colors">
+                  액티브 제진대
+                </Link>
+              </li>
+              <li className="text-gray-600">/</li>
+              <li className="text-white font-medium">DVIA-MO</li>
+            </ol>
+          </nav>
+
+          {/* Product Title */}
+          <div className="text-center mb-16">
+            <div className="inline-block mb-4">
+              <span className="inline-block bg-blue-900/50 text-blue-300 px-4 py-1 rounded-full text-sm font-medium border border-blue-700/50">
+                {productData.series}
+              </span>
+            </div>
+            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+              {productData.name}
+            </h1>
+            <p className="text-2xl md:text-3xl text-gray-300 font-light max-w-3xl mx-auto">
+              {productData.tagline}
+            </p>
+          </div>
+
+          {/* Hero Carousel */}
+          <div className="max-w-5xl mx-auto mb-16">
+            <Carousel className="w-full">
+              <CarouselContent>
+                {productData.heroImages.map((image, index) => (
+                  <CarouselItem key={index}>
+                    <div className="aspect-video bg-slate-800/50 rounded-2xl shadow-2xl flex items-center justify-center p-12 border border-slate-700">
+                      <img
+                        src={image}
+                        alt={`${productData.name} ${index + 1}`}
+                        className="w-full h-full object-contain drop-shadow-2xl"
+                      />
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="-left-12 bg-slate-800 border-slate-700 text-white hover:bg-slate-700 shadow-lg" />
+              <CarouselNext className="-right-12 bg-slate-800 border-slate-700 text-white hover:bg-slate-700 shadow-lg" />
+            </Carousel>
+          </div>
+
+          {/* Certifications */}
+          <div className="flex justify-center gap-12 mb-8">
+            {productData.certifications.map((cert, index) => (
+              <div
+                key={index}
+                className="bg-slate-800/50 rounded-lg p-4 shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 border border-slate-700"
+              >
+                <img
+                  src={cert.image}
+                  alt={cert.name}
+                  className="h-16 object-contain"
+                />
+              </div>
+            ))}
+          </div>
+
+          {/* Description */}
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-lg text-gray-300 leading-relaxed">
+              {productData.description}
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Tab Navigation */}
+      <div className="sticky top-0 bg-slate-900/95 backdrop-blur-lg border-b border-slate-700 z-50 shadow-lg">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <nav className="flex gap-2 overflow-x-auto py-4 scrollbar-hide">
+            {["overview", "features", "performance", "specifications", "applications", "accessories", "resources"].map((tab) => (
+              <button
+                key={tab}
+                onClick={() => setActiveTab(tab as TabType)}
+                className={`px-6 py-3 rounded-lg whitespace-nowrap font-semibold transition-all ${
+                  activeTab === tab
+                    ? "bg-blue-600 text-white shadow-lg transform scale-105"
+                    : "bg-slate-800 text-gray-300 hover:bg-slate-700 hover:shadow-md"
+                }`}
+              >
+                {tab === "overview" && "Overview"}
+                {tab === "features" && "Features"}
+                {tab === "performance" && "Performance"}
+                {tab === "specifications" && "Specifications"}
+                {tab === "applications" && "Applications"}
+                {tab === "accessories" && "Accessories"}
+                {tab === "resources" && "Resources"}
+              </button>
+            ))}
+          </nav>
+        </div>
+      </div>
+
+      {/* Tab Content */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        {/* Overview Tab */}
+        {activeTab === "overview" && (
+          <div className="space-y-12 animate-fadeIn">
+            <div className="bg-slate-800/50 border border-slate-700 rounded-2xl p-12">
+              <h3 className="text-3xl font-bold text-white mb-6 text-center">
+                {productData.tabs.overview.description}
+              </h3>
+            </div>
+            {productData.tabs.overview.videoUrl && (
+              <div className="relative aspect-video max-w-5xl mx-auto bg-slate-900 rounded-2xl overflow-hidden shadow-2xl border border-slate-700">
+                <iframe
+                  src={productData.tabs.overview.videoUrl}
+                  className="w-full h-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* Features Tab */}
+        {activeTab === "features" && (
+          <div className="space-y-16 animate-fadeIn">
+            {productData.tabs.features.map((feature, index) => (
+              <div
+                key={index}
+                className="bg-slate-800/50 rounded-2xl p-12 shadow-xl border border-slate-700"
+              >
+                <h3 className="text-3xl font-bold text-white mb-6 text-center">
+                  {feature.title}
+                </h3>
+                <p className="text-lg text-gray-300 leading-relaxed mb-8 text-center max-w-4xl mx-auto">
+                  {feature.description}
+                </p>
+                {feature.image && (
+                  <div className="rounded-xl overflow-hidden bg-slate-900/50 p-6">
+                    <img
+                      src={feature.image}
+                      alt={feature.title}
+                      className="w-full h-auto rounded-lg mx-auto"
+                      style={{ maxWidth: "800px" }}
+                    />
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* Performance Tab */}
+        {activeTab === "performance" && (
+          <div className="max-w-5xl mx-auto animate-fadeIn">
+            <div className="bg-slate-800/50 border border-slate-700 rounded-2xl p-12 mb-12">
+              <h2 className="text-4xl font-bold text-white text-center whitespace-pre-line">
+                {productData.tabs.performance.title}
+              </h2>
+            </div>
+            <div className="bg-slate-800/50 rounded-2xl shadow-2xl p-8 border border-slate-700">
+              <img
+                src={productData.tabs.performance.image}
+                alt="Performance Graph"
+                className="w-full h-auto rounded-xl"
+              />
+            </div>
+          </div>
+        )}
+
+        {/* Specifications Tab */}
+        {activeTab === "specifications" && (
+          <div className="animate-fadeIn">
+            <div className="bg-slate-800/50 rounded-2xl shadow-xl overflow-hidden border border-slate-700">
+              <div className="overflow-x-auto">
+                <table className="min-w-full">
+                  <thead className="bg-blue-600">
+                    <tr>
+                      <th className="px-6 py-4 text-left text-sm font-bold text-white uppercase tracking-wider">
+                        Specification
+                      </th>
+                      {productData.tabs.specifications.models.map((model) => (
+                        <th
+                          key={model.name}
+                          className="px-6 py-4 text-left text-sm font-bold text-white uppercase tracking-wider"
+                        >
+                          {model.name}
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-700">
+                    <tr className="hover:bg-slate-700/50 transition-colors">
+                      <td className="px-6 py-4 text-sm font-semibold text-white bg-slate-800/50">
+                        Platform Dimensions (L x W x H)
+                      </td>
+                      <td
+                        colSpan={productData.tabs.specifications.models.length}
+                        className="px-6 py-4 text-sm text-gray-300"
+                      >
+                        {productData.tabs.specifications.common.platformDimensions}
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-slate-700/50 transition-colors">
+                      <td className="px-6 py-4 text-sm font-semibold text-white bg-slate-800/50">
+                        Load Capacity
+                      </td>
+                      {productData.tabs.specifications.models.map((model) => (
+                        <td
+                          key={model.name}
+                          className="px-6 py-4 text-sm text-gray-300"
+                        >
+                          {model.loadCapacity}
+                        </td>
+                      ))}
+                    </tr>
+                    <tr className="hover:bg-slate-700/50 transition-colors">
+                      <td className="px-6 py-4 text-sm font-semibold text-white bg-slate-800/50">
+                        Actuator
+                      </td>
+                      <td
+                        colSpan={productData.tabs.specifications.models.length}
+                        className="px-6 py-4 text-sm text-gray-300"
+                      >
+                        {productData.tabs.specifications.common.actuator}
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-slate-700/50 transition-colors">
+                      <td className="px-6 py-4 text-sm font-semibold text-white bg-slate-800/50">
+                        Maximum Actuator Force
+                      </td>
+                      <td className="px-6 py-4 text-sm text-gray-300">
+                        {productData.tabs.specifications.common.maxActuatorForce.mo1000}
+                      </td>
+                      <td className="px-6 py-4 text-sm text-gray-300">
+                        {productData.tabs.specifications.common.maxActuatorForce.mo3000}
+                      </td>
+                      <td className="px-6 py-4 text-sm text-gray-300">
+                        {productData.tabs.specifications.common.maxActuatorForce.mo6000}
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-slate-700/50 transition-colors">
+                      <td className="px-6 py-4 text-sm font-semibold text-white bg-slate-800/50">
+                        Degrees of Freedom
+                      </td>
+                      <td
+                        colSpan={productData.tabs.specifications.models.length}
+                        className="px-6 py-4 text-sm text-gray-300"
+                      >
+                        {productData.tabs.specifications.common.degreesOfFreedom}
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-slate-700/50 transition-colors">
+                      <td className="px-6 py-4 text-sm font-semibold text-white bg-slate-800/50">
+                        Active Isolation Range
+                      </td>
+                      <td
+                        colSpan={productData.tabs.specifications.models.length}
+                        className="px-6 py-4 text-sm text-gray-300"
+                      >
+                        {productData.tabs.specifications.common.activeIsolationRange}
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-slate-700/50 transition-colors">
+                      <td className="px-6 py-4 text-sm font-semibold text-white bg-slate-800/50">
+                        Vibration Isolation at 1 Hz
+                      </td>
+                      <td
+                        colSpan={productData.tabs.specifications.models.length}
+                        className="px-6 py-4 text-sm text-gray-300"
+                      >
+                        {productData.tabs.specifications.common.vibrationIsolationAt1Hz}
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-slate-700/50 transition-colors">
+                      <td className="px-6 py-4 text-sm font-semibold text-white bg-slate-800/50">
+                        Vibration Isolation at ≥2 Hz
+                      </td>
+                      <td
+                        colSpan={productData.tabs.specifications.models.length}
+                        className="px-6 py-4 text-sm text-gray-300"
+                      >
+                        {productData.tabs.specifications.common.vibrationIsolationAt2HzPlus}
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-slate-700/50 transition-colors">
+                      <td className="px-6 py-4 text-sm font-semibold text-white bg-slate-800/50">
+                        Input Voltage (V)
+                      </td>
+                      <td
+                        colSpan={productData.tabs.specifications.models.length}
+                        className="px-6 py-4 text-sm text-gray-300"
+                      >
+                        {productData.tabs.specifications.common.inputVoltage}
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-slate-700/50 transition-colors">
+                      <td className="px-6 py-4 text-sm font-semibold text-white bg-slate-800/50">
+                        Power Consumption (W)
+                      </td>
+                      <td
+                        colSpan={productData.tabs.specifications.models.length}
+                        className="px-6 py-4 text-sm text-gray-300"
+                      >
+                        {productData.tabs.specifications.common.powerConsumption}
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-slate-700/50 transition-colors">
+                      <td className="px-6 py-4 text-sm font-semibold text-white bg-slate-800/50">
+                        Operating Temperature
+                      </td>
+                      <td
+                        colSpan={productData.tabs.specifications.models.length}
+                        className="px-6 py-4 text-sm text-gray-300"
+                      >
+                        {productData.tabs.specifications.common.operatingTemperature}
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-slate-700/50 transition-colors">
+                      <td className="px-6 py-4 text-sm font-semibold text-white bg-slate-800/50">
+                        Humidity
+                      </td>
+                      <td
+                        colSpan={productData.tabs.specifications.models.length}
+                        className="px-6 py-4 text-sm text-gray-300"
+                      >
+                        {productData.tabs.specifications.common.operatingHumidity}
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-slate-700/50 transition-colors">
+                      <td className="px-6 py-4 text-sm font-semibold text-white bg-slate-800/50">
+                        Required Air Pressure
+                      </td>
+                      <td
+                        colSpan={productData.tabs.specifications.models.length}
+                        className="px-6 py-4 text-sm text-gray-300"
+                      >
+                        {productData.tabs.specifications.common.requiredAirPressure}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Applications Tab */}
+        {activeTab === "applications" && (
+          <div className="space-y-16 animate-fadeIn">
+            {/* Application Types */}
+            <div>
+              <h3 className="text-3xl font-bold text-white mb-8 text-center">
+                Application Areas
+              </h3>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                {productData.tabs.applications.list.map((app, index) => (
+                  <div
+                    key={index}
+                    className="bg-slate-800/50 rounded-xl p-6 text-center transform hover:scale-105 transition-all shadow-md hover:shadow-xl border border-slate-700 hover:border-blue-600"
+                  >
+                    <h4 className="font-semibold text-white text-lg">{app}</h4>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Installation Photos */}
+            <div>
+              <h3 className="text-3xl font-bold text-white mb-8 text-center">
+                Installation Photos
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {productData.tabs.applications.installationPhotos.map((photo, index) => (
+                  <div
+                    key={index}
+                    className="group bg-slate-800/50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 border border-slate-700"
+                  >
+                    <div className="aspect-video bg-slate-900/50 overflow-hidden">
+                      <img
+                        src={photo.url}
+                        alt={photo.title}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                      />
+                    </div>
+                    <div className="p-4 bg-slate-800/50">
+                      <p className="text-sm text-gray-300 font-medium">
+                        {photo.title}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Accessories Tab */}
+        {activeTab === "accessories" && (
+          <div className="space-y-16 animate-fadeIn">
+            {productData.tabs.accessories.map((accessory, index) => (
+              <div key={index} className="text-center">
+                <h3 className="text-3xl font-bold text-white mb-8">
+                  {accessory.title}
+                </h3>
+                <div className="max-w-4xl mx-auto bg-slate-800/50 rounded-2xl p-8 border border-slate-700">
+                  <img
+                    src={accessory.image}
+                    alt={accessory.title}
+                    className="w-full h-auto rounded-xl"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* Resources Tab */}
+        {activeTab === "resources" && (
+          <div className="max-w-3xl mx-auto space-y-6 animate-fadeIn">
+            <button className="w-full bg-blue-600 text-white py-6 px-8 rounded-xl hover:bg-blue-700 transition-all shadow-lg hover:shadow-2xl transform hover:-translate-y-1 text-xl font-semibold">
+              {productData.tabs.resources.catalog.label}
+            </button>
+          </div>
+        )}
+      </div>
+
+      {/* CTA Section */}
+      <section className="relative bg-gradient-to-b from-slate-800 to-slate-900 py-24 overflow-hidden border-t border-slate-700">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0 bg-grid-slate-700"></div>
+        </div>
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            Do you have any <span className="text-blue-400">Questions?</span>
+          </h2>
+          <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
+            Find all contact information for DAEIL SYSTEMS. If you have any questions, require
+            technical assistance or want to provide feedback, contact us. We'd love to hear from you.
+          </p>
+          <Link
+            href="/contact"
+            className="inline-block bg-blue-600 text-white px-12 py-5 rounded-xl hover:bg-blue-700 transition-all text-xl font-bold shadow-2xl transform hover:scale-105"
+          >
+            Contact us
+          </Link>
+        </div>
+      </section>
+
+      <style jsx>{`
+        .animate-fadeIn {
+          animation: fadeIn 0.5s ease-in-out;
         }
 
-        .scroll-snap-section {
-          scroll-snap-align: start;
-          scroll-snap-stop: always;
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
         }
 
-        /* 부드러운 스크롤 */
-        * {
-          scroll-behavior: smooth;
+        .bg-grid-slate-700 {
+          background-image: linear-gradient(to right, rgb(51 65 85 / 0.3) 1px, transparent 1px),
+            linear-gradient(to bottom, rgb(51 65 85 / 0.3) 1px, transparent 1px);
+          background-size: 40px 40px;
+        }
+
+        .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+
+        .scrollbar-hide::-webkit-scrollbar {
+          display: none;
         }
       `}</style>
-      {/* Hero Section */}
-      <ScrollSectionContainer id="hero" className="min-h-screen">
-        <AnimatedSection className="min-h-screen flex flex-col items-center justify-center relative px-4 py-20">
-          <div className="text-center max-w-6xl mx-auto">
-            <AnimatedText delay={0.2} className="text-orange-500 text-xl font-medium mb-6" direction="fade">
-              DVIA-ULF
-            </AnimatedText>
-
-            <StaggeredContainer stagger={0.2} delay={0.4}>
-              <div className="text-5xl md:text-7xl lg:text-8xl mb-12 leading-tight">
-                <span className="text-red-500 font-bold">Modular</span>{" "}
-                <span className="text-gray-300 font-medium">Active</span>{" "}
-                <span className="text-blue-500 font-semibold">Vibration</span>{" "}
-                <span className="text-blue-400 font-semibold">Isolation</span>{" "}
-                <span className="text-white font-thin">System</span>
-              </div>
-            </StaggeredContainer>
-
-            <AnimatedImage delay={0.8} className="mb-8" direction="scale" scale={0.9}>
-              <ScrollImageSequence
-                images={heroImages}
-                alt="DVIA-ULF Main Product"
-                className="max-w-4xl mx-auto"
-                startProgress={0}
-                endProgress={0.15}
-              />
-            </AnimatedImage>
-
-            <AnimatedText delay={1} className="text-xl text-gray-300" direction="up">
-              Designed for SEM and TEM
-            </AnimatedText>
-          </div>
-        </AnimatedSection>
-      </ScrollSectionContainer>
-
-      {/* Section 1: Modular Architecture */}
-      <ScrollSectionContainer id="modular" className="min-h-screen">
-        <AnimatedSection className="min-h-screen flex items-center justify-center px-4 py-20">
-          <div className="max-w-6xl mx-auto">
-            <StaggeredContainer stagger={0.15} className="text-center mb-16">
-              <AnimatedText className="text-4xl md:text-6xl lg:text-7xl font-thin leading-tight">
-                Modular architect.
-              </AnimatedText>
-              <AnimatedText className="text-4xl md:text-6xl lg:text-7xl font-thin leading-tight">
-                Low-profile design.
-              </AnimatedText>
-              <AnimatedText className="text-4xl md:text-6xl lg:text-7xl font-thin leading-tight">
-                Easy installation.
-              </AnimatedText>
-              <AnimatedText className="text-4xl md:text-6xl lg:text-7xl font-thin leading-tight text-blue-400">
-                No air. Just control.
-              </AnimatedText>
-            </StaggeredContainer>
-
-            <div className="grid lg:grid-cols-2 gap-16 items-center">
-              <StaggeredContainer stagger={0.2} className="space-y-8">
-                <AnimatedText className="text-lg text-gray-300 leading-relaxed">
-                  Introducing the DVIA-ULF: a groundbreaking active vibration isolation platform engineered to meet the
-                  exacting demands of today's most sensitive instruments—such as electron microscopes and other
-                  precision research tools. Its modular architecture allows you to tailor the number of vibration
-                  isolators to your instrument's unique specifications—whether it's a compact tabletop unit or a
-                  large-scale, high-performance microscope. This adaptability ensures exceptional vibration control
-                  across diverse laboratory environments.
-                </AnimatedText>
-
-                <AnimatedText className="text-lg text-gray-300 leading-relaxed">
-                  The DVIA-ULF's slide-in design enables swift, seamless installation into custom tables, bases, or
-                  built-in solutions. Labs can easily reconfigure or expand their setup with minimal disruption,
-                  maintaining focus on critical research objectives. Harnessing this simple, scalable, and
-                  ultra-low-frequency isolation approach elevates precision, safeguards equipment, and ultimately boosts
-                  productivity. Discover how the DVIA-ULF raises the bar in advanced vibration isolation—empowering you
-                  to achieve peak performance in nanotechnology, materials science, and beyond.
-                </AnimatedText>
-              </StaggeredContainer>
-
-              <AnimatedImage delay={0.3} direction="left" distance={100}>
-                <ScrollImageSequence
-                  images={heroImages}
-                  alt="DVIA-ULF Architecture"
-                  startProgress={0.15}
-                  endProgress={0.3}
-                />
-              </AnimatedImage>
-            </div>
-          </div>
-        </AnimatedSection>
-      </ScrollSectionContainer>
-
-      {/* Section 2: Height Design */}
-      <ScrollSectionContainer id="height" className="min-h-screen">
-        <AnimatedSection className="min-h-screen flex items-center justify-center px-4 py-20">
-          <div className="max-w-6xl mx-auto">
-            <StaggeredContainer stagger={0.2} className="text-center mb-16">
-              <AnimatedText className="text-4xl md:text-6xl lg:text-7xl font-thin leading-tight">
-                Lowest height ever designed.
-              </AnimatedText>
-              <AnimatedText className="text-4xl md:text-6xl lg:text-7xl font-thin leading-tight text-gray-400">
-                Microscope height remains the same.
-              </AnimatedText>
-            </StaggeredContainer>
-
-            <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
-              <AnimatedText delay={0.2} className="text-lg text-gray-300 leading-relaxed">
-                The all-new DVIA-ULF isolator height is unbelievably low, slim and light enough to fit under a
-                microscope's base frame. The DVIA-ULF isolator does not raise the microscope height. The DVIA-ULF model
-                that is the lowest active vibration isolator DAEIL SYSTEMS has ever designed.
-              </AnimatedText>
-
-              <AnimatedImage delay={0.4} direction="right" distance={100}>
-                <ScrollImageSequence
-                  images={heightImages}
-                  alt="DVIA-ULF Height Comparison"
-                  startProgress={0.3}
-                  endProgress={0.45}
-                />
-                <AnimatedText delay={0.6} className="text-center mt-6" direction="fade">
-                  <div className="text-blue-400">
-                    <div className="text-3xl font-bold">86 mm</div>
-                    <div className="text-sm">Isolator height</div>
-                  </div>
-                </AnimatedText>
-              </AnimatedImage>
-            </div>
-
-            <StaggeredContainer stagger={0.2} className="text-center mb-16">
-              <AnimatedText className="text-4xl md:text-6xl font-thin leading-tight">
-                Straightforward Installation.
-              </AnimatedText>
-              <AnimatedText className="text-4xl md:text-6xl font-thin leading-tight text-gray-400">
-                No heavy lifting.
-              </AnimatedText>
-            </StaggeredContainer>
-
-            <div className="grid lg:grid-cols-2 gap-16 items-center">
-              <AnimatedText delay={0.2} className="text-lg text-gray-300 leading-relaxed">
-                The DVIA-ULF isolators feature a low-profile design, with an overall height of only 86 mm, allowing
-                direct placement under microscope bases. This side-access design eliminates the need for cranes,
-                forklifts, or other rigging equipment during installation. Each isolator is slim enough to fit directly
-                under the microscope's frame, allowing side insertion with minimal clearance.
-              </AnimatedText>
-
-              <AnimatedImage delay={0.4} direction="left" distance={100}>
-                <ScrollImageSequence
-                  images={installationImages}
-                  alt="DVIA-ULF Installation"
-                  startProgress={0.45}
-                  endProgress={0.6}
-                />
-              </AnimatedImage>
-            </div>
-          </div>
-        </AnimatedSection>
-      </ScrollSectionContainer>
-
-      {/* Section 3: Custom Modular Design */}
-      <ScrollSectionContainer id="custom-design" className="min-h-screen">
-        <AnimatedSection className="min-h-screen flex items-center justify-center px-4 py-20">
-          <div className="max-w-6xl mx-auto text-center">
-            <StaggeredContainer stagger={0.2} className="mb-16">
-              <AnimatedText className="text-4xl md:text-6xl lg:text-7xl font-thin leading-tight">
-                Custom modular design solution
-              </AnimatedText>
-              <AnimatedText className="text-4xl md:text-6xl lg:text-7xl font-thin leading-tight text-gray-400">
-                for every microscope.
-              </AnimatedText>
-            </StaggeredContainer>
-
-            <AnimatedText delay={0.3} className="text-lg text-gray-300 max-w-4xl mx-auto mb-16 leading-relaxed">
-              The modular design of the DVIA-ULF allows seamless scalability. Users can effortlessly add units tailored
-              precisely to their microscope's dimensions and weight, from compact research SEMs to large-scale TEMs.
-              Each setup can be individually optimized according to specific weight and geometric requirements.
-              Installation requires no extensive site preparation, making it ideal for modern cleanrooms and
-              space-constrained laboratories. Its streamlined design integrates effortlessly into existing
-              configurations, delivering exceptional vibration isolation even in challenging low-frequency environments.
-            </AnimatedText>
-
-            <AnimatedImage delay={0.5} direction="scale" scale={0.8}>
-              <ScrollImageSequence
-                images={modularImages}
-                alt="DVIA-ULF Modular Design"
-                className="max-w-5xl mx-auto"
-                startProgress={0.6}
-                endProgress={0.75}
-              />
-            </AnimatedImage>
-          </div>
-        </AnimatedSection>
-      </ScrollSectionContainer>
-
-      {/* === 이미지 시퀀스 ScrollMagic 섹션 추가 === */}
-      <ScrollImageSequenceSection
-        imgPath="https://cxdukqxqwnvvplsuvcki.supabase.co/storage/v1/object/public/ulf/NewLevelSequence."
-        ext="png"
-        frameCount={48}
-        pad={4}
-        height="300vh"
-        alt="DVIA-ULF Sequence"
-      />
-      {/* === 여기까지 === */}
-
-      {/* Section 4: Power Control */}
-      <ScrollSectionContainer id="power-control" className="min-h-screen">
-        <AnimatedSection className="min-h-screen flex items-center justify-center px-4 py-20">
-          <div className="max-w-6xl mx-auto text-center">
-            <StaggeredContainer stagger={0.2} className="mb-16">
-              <AnimatedText className="text-4xl md:text-6xl lg:text-7xl font-thin leading-tight text-blue-400">
-                So much power to control vibration
-              </AnimatedText>
-              <AnimatedText className="text-4xl md:text-6xl lg:text-7xl font-thin leading-tight text-blue-300">
-                at all frequencies.
-              </AnimatedText>
-            </StaggeredContainer>
-
-            <AnimatedText delay={0.3} className="text-lg text-gray-300 max-w-4xl mx-auto mb-16 leading-relaxed">
-              The DVIA-ULF system now features an increased number of actuators, generating a higher combined force of
-              up to 100 N. This enhanced actuator strength directly counters incoming vibrations, significantly
-              improving vibration isolation performance, especially within the critical frequency range of 1–10 Hz. When
-              floor vibrations exceed the VC-C level—common in challenging environments—the increased actuator force
-              ensures consistent stability and optimal protection for sensitive instruments, delivering reliable and
-              precise operation even under demanding conditions.
-            </AnimatedText>
-
-            <AnimatedImage delay={0.5} direction="scale" scale={0.9} className="mb-16">
-              <ScrollImageSequence
-                images={powerImages}
-                alt="DVIA-ULF Power Control System"
-                className="max-w-5xl mx-auto"
-                startProgress={0.75}
-                endProgress={0.9}
-              />
-            </AnimatedImage>
-
-            <StaggeredContainer stagger={0.1} delay={0.7} className="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
-              <div className="text-center p-6 bg-gray-900/50 rounded-lg">
-                <div className="text-orange-400 text-2xl font-bold mb-2">Up to 100 N</div>
-                <div className="text-gray-300">Actuator Force</div>
-              </div>
-              <div className="text-center p-6 bg-gray-900/50 rounded-lg">
-                <div className="text-blue-400 text-2xl font-bold mb-2">1–10 Hz</div>
-                <div className="text-gray-300">Critical Frequency Range</div>
-              </div>
-            </StaggeredContainer>
-          </div>
-        </AnimatedSection>
-      </ScrollSectionContainer>
-
     </div>
   )
 }

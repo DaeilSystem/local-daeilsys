@@ -1,0 +1,289 @@
+{
+  "id": "dvia-mb",
+  "name": "DVIA-MB Series",
+  "fullName": "베이스형 공압식 액티브 제진대",
+  "series": "DVIA-MB Series",
+  "category": "Active Vibration Isolation Systems",
+  "tagline": "초정밀 전자현미경을 위한 액티브 제진대",
+  "description": "DVIA-MB 시리즈는 세계에서 가장 뛰어난 액티브 제진시스템으로, 고성능 전자 현미경 등 나노스케일 측정장비을 위해 특별히 설계되었습니다.",
+  "heroImages": [
+    "https://www.daeilsys.com/wp-content/uploads/elementor/thumbs/DVIA-MB-Base-Active-Vibration-Isolation-Platform02-oshfvzveyvsnv31m48m079t9qcfgx0f71lrw889xs8.png",
+    "https://www.daeilsys.com/wp-content/uploads/elementor/thumbs/DVIA-MB-Base-Active-Vibration-Isolation-Platform01-oshfvxzql7q37v4cf7sr2aacjkoqhm7qdcgx9ocprm.png"
+  ],
+  "certifications": [
+    {
+      "name": "CE",
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/mark-ce.png"
+    },
+    {
+      "name": "NRTL",
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/mark-NRTL_1.png"
+    }
+  ],
+  "tabs": {
+    "overview": {
+      "description": "DVIA-MB 시리즈는 세계에서 가장 뛰어난 액티브 제진시스템으로, 고성능 전자 현미경 등 나노스케일 측정장비을 위해 특별히 설계되었습니다.",
+      "videoUrl": "https://www.youtube.com/watch?v=mQnQTjzGbb4"
+    },
+    "features": [
+      {
+        "title": "월등한 제진 성능",
+        "description": "정교한 제어 알고리즘이 DVIA-MB 시리즈에 적용되었으며, 1 Hz 에서 50% – 80% 제진 성능을 발휘합니다."
+      },
+      {
+        "title": "고성능 전자 현미경을 위한 맞춤 디자인",
+        "description": "DVIA-MB 시리즈는 최첨단 액티브 진동 제어 베이스 플랫폼으로 전자현미경이 최상의 성능을 발휘하여, 생물학, 비생물학 견본들을 고해상도 이미지로 구현할 수 있게 하는데 최적의 환경을 제공합니다. DVIA-MB 시리즈는 모든 종류의 전자 현미경에 적합하도록 커스텀 설계되었습니다."
+      },
+      {
+        "title": "피드백 및 피드 포워드 제어 알고리즘",
+        "description": "DVIA 시리즈는 피드백(Feedback) 제어 알고리즘을 사용하여 진동을 지속적으로 감지하고 즉각적으로 반응하여 진동을 실시간으로 최소합니다. 피드포워드(Feedforward) 제어 알고리즘은 지반 진동이 액티브 제진대위에 탑재되어 있는 장비에 진동이 전달되기전에 미리 지반진동을 감쇠시켜 효율적인 제진성능을 발휘시킵니다.",
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/feedback-and-feedforward-control-algorithm.png"
+      },
+      {
+        "title": "6 자유도(6 DOF) 진동제어",
+        "description": "액티브 제진대 내부에 장착된 센서와 액추에이터를 통해 6축(X, Y, Z, PITCH, ROLL, YAW)의 진동을 측정하여 실시간으로 제어합니다.",
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/DVIA-MO-Absolute-Control-of-Vibrations-in-All-Six-Degrees-of-Freedom01.png"
+      },
+      {
+        "title": "최상의 성능을 위한 현장 맞춤 튜닝",
+        "description": "지반진동 수준은 설치 장소, 주변 환경, 불규칙한 상황 및 다양한 진동원에 따라 다릅니다. 대일시스템은 숙련 된 엔지니어가 직접 액티브 시스템의 현장 맞춤 튜닝을 제공하여 최상의 성능과 고객 만족을 보장합니다. 엔지니어는 진동 현장 조사를 통해 피드백 및 피드 포워드 제어 알고리즘을 조정하는데 사용되는 지반진동 레벨을 측정하여 제진 성능을 극대화하여 진동 요구스펙을 충족시킵니다."
+      }
+    ],
+    "performance": {
+      "title": "1 Hz 에서 50% - 80% 제진 성능\n2 Hz 이상부터 90% 이상의 제진 성능",
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/DVIA-MO-Performance.png"
+    },
+    "specifications": {
+      "models": [
+        {
+          "name": "DVIA-MB1000",
+          "platformDimensions": "Custom-made",
+          "loadCapacity": "500 - 1700 kg",
+          "maxActuatorForce": "Vertical: 40 N, Horizontal: 20 N"
+        },
+        {
+          "name": "DVIA-MB3000",
+          "platformDimensions": "Custom-made",
+          "loadCapacity": "1500 - 3500 kg",
+          "maxActuatorForce": "Vertical: 80 N, Horizontal: 40 N"
+        },
+        {
+          "name": "DVIA-MB6000",
+          "platformDimensions": "Custom-made",
+          "loadCapacity": "3000 - 6000 kg",
+          "maxActuatorForce": "Vertical: 80 N, Horizontal: 40 N"
+        }
+      ],
+      "common": {
+        "actuator": "Electromagnetic Actuator",
+        "degreesOfFreedom": "6 degrees",
+        "activeIsolationRange": "0.5 - 100 Hz",
+        "vibrationIsolationAt1Hz": "50% - 80%",
+        "vibrationIsolationAt2HzPlus": "≥90%",
+        "inputVoltage": "AC100 - 240V / 50 - 60 Hz / 1A",
+        "powerConsumption": "Maximum 110W, <50 W in normal operation",
+        "operatingTemperature": "5 - 50 °C",
+        "operatingHumidity": "20 - 90%",
+        "requiredAirPressure": "≥ 0.5 MPa (≥ 5 bar)"
+      }
+    },
+    "applications": {
+      "list": [
+        "Scanning Electron Microscopy",
+        "Transmission Electron Microscopy",
+        "Scanning Transmission Electron Microscopy",
+        "Scanning Tunneling Electron Microscopy",
+        "Nuclear Magnetic Resonance Spectroscopy",
+        "Single Crystal X-ray Diffraction"
+      ],
+      "installationPhotos": [
+        {
+          "title": "FEI S Helios G4 UC DualBeam System",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/07/DVIA-M1000-800x600-1.jpg"
+        },
+        {
+          "title": "ZEISS GeminiSEM 500",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-ZEISS-GeminiSEM-500.jpg"
+        },
+        {
+          "title": "ZEISS-SEM",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-ZEISS-SEM.jpg"
+        },
+        {
+          "title": "ZEISS GeminiSEM 300",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-ZEISS-GeminiSEM-300-2.jpg"
+        },
+        {
+          "title": "ZEISS GeminiSEM 300",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-ZEISS-GeminiSEM-300.jpg"
+        },
+        {
+          "title": "ZEISS Gemini SEM",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-ZEISS-Gemini-SEM-2.jpg"
+        },
+        {
+          "title": "ZEISS Gemini Crossbeam 340",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-ZEISS-Gemini-Crossbeam-340.jpg"
+        },
+        {
+          "title": "ZEISS Gemini SEM",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-ZEISS-Gemini-SEM.jpg"
+        },
+        {
+          "title": "ZEISS Gemini2 FESEM CROSSBEAM 550",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-ZEISS-Gemini2-FESEM-CROSSBEAM-550.jpg"
+        },
+        {
+          "title": "RAITH PIONEER TWO EBL and SEM",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-RAITH-PIONEER-TWO-EBL-and-SEM.jpg"
+        },
+        {
+          "title": "TESCAN FIB SEM",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-TESCAN-FIB-SEM.jpg"
+        },
+        {
+          "title": "TESCAN SEM",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-TESCAN-SEM.jpg"
+        },
+        {
+          "title": "TESCAN SEM LYRA3",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-TESCAN-SEM-LYRA3.jpg"
+        },
+        {
+          "title": "TESCAN SEM MIRA3",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-TESCAN-SEM-MIRA3.jpg"
+        },
+        {
+          "title": "ZEISS EVO 18",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-ZEISS-EVO-18.jpg"
+        },
+        {
+          "title": "ZEISS FESEM GEIMINI",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-ZEISS-FESEM-GEIMINI.jpg"
+        },
+        {
+          "title": "ZEISS GEMINI",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-ZEISS-GEMINI.jpg"
+        },
+        {
+          "title": "ZEISS Gemini 2 Crossbeam 550",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-ZEISS-Gemini-2-Crossbeam-550.jpg"
+        },
+        {
+          "title": "ZEISS Gemini 2",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-ZEISS-Gemini-2.jpg"
+        },
+        {
+          "title": "JEOL TEM",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-JEOL-TEM.jpg"
+        },
+        {
+          "title": "JEOL FETEM JEM 2100F",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-JEOL-FETEM-JEM-2100F.jpg"
+        },
+        {
+          "title": "HITACHI TEM",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-HITACHI-TEM.jpg"
+        },
+        {
+          "title": "HITACHI TEM HT7700",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-HITACHI-TEM-HT7700.jpg"
+        },
+        {
+          "title": "HITACHI SU1510",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-HITACHI-SU1510.jpg"
+        },
+        {
+          "title": "HITACHI SEM Regulus 8100",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-HITACHI-SEM-Regulus-8100.jpg"
+        },
+        {
+          "title": "HITACHI FE SEM SU8010",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-HITACHI-FE-SEM-SU8010.jpg"
+        },
+        {
+          "title": "HITACHI FESEM REGULUS 8220",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-HITACHI-FESEM-REGULUS-8220.jpg"
+        },
+        {
+          "title": "HITACHI FESEM REGULUS 8100",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-HITACHI-FESEM-REGULUS-8100.jpg"
+        },
+        {
+          "title": "FEI STEM TECNAI G2 F20",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-FEI-STEM-TECNAI-G2-F20.jpg"
+        },
+        {
+          "title": "BRUKER APEX",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-BRUKER-APEX.jpg"
+        },
+        {
+          "title": "BRUKER NMR",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-BRUKER-NMR.jpg"
+        },
+        {
+          "title": "BRUKER D8 VENTURE",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-BRUKER-D8-VENTURE.jpg"
+        },
+        {
+          "title": "FEI Apreo SEM",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-FEI-Apreo-SEM.jpg"
+        },
+        {
+          "title": "FEI Helios G4 UC",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-FEI-Helios-G4-UC.jpg"
+        },
+        {
+          "title": "FEI Helios G4 UX",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-FEI-Helios-G4-UX.jpg"
+        },
+        {
+          "title": "FEI NOVA NANOSEM 450",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-FEI-NOVA-NANOSEM-450.jpg"
+        },
+        {
+          "title": "FEI Scios DualBeam",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-FEI-Scios-DualBeam.jpg"
+        },
+        {
+          "title": "FEI SEM QUANTA FEG 650",
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-mb-FEI-SEM-QUANTA-FEG-650.jpg"
+        }
+      ]
+    },
+    "options": [
+      {
+        "title": "맞춤형 플랫폼",
+        "description": "저희는 유저의 특정 목적과 장비 사양을 충족시키는 다양한 맞춤형 플랫폼을 제공합니다.",
+        "images": [
+          "https://www.daeilsys.com/wp-content/uploads/elementor/thumbs/DVIA-MB-Base-Active-Vibration-Isolation-Platform02-oshfvzveyvsnv31m48m079t9qcfgx0f71lrw889xs8.png",
+          "https://www.daeilsys.com/wp-content/uploads/elementor/thumbs/DVIA-MB-Base-Active-Vibration-Isolation-Platform01-oshfvxzql7q37v4cf7sr2aacjkoqhm7qdcgx9ocprm.png"
+        ]
+      },
+      {
+        "title": "지진 브라켓",
+        "description": "장비를 액티브 제진대에 고정하고 제진대를 건물 구조에 고정하여 지진에 대비할 수 있는 지진 브래킷을 제공합니다."
+      }
+    ],
+    "resources": {
+      "catalog": {
+        "label": "Catalog",
+        "url": "#"
+      },
+      "userManual": {
+        "label": "DVIA-MB User Manual",
+        "url": "#"
+      },
+      "links": [
+        {
+          "label": "Case Studies",
+          "url": "/ko/products/active-vibration-isolation-systems/base-pneumatic-active-vibration-isolation-platform/case-studies/"
+        },
+        {
+          "label": "Installation Reports",
+          "url": "/ko/products/active-vibration-isolation-systems/base-pneumatic-active-vibration-isolation-platform/installation-reports"
+        }
+      ]
+    }
+  }
+}

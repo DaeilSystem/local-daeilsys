@@ -1,0 +1,184 @@
+{
+  "id": "dvia-ml",
+  "name": "DVIA-ML",
+  "fullName": "Active Vibration Isolation System for Electron Microscopes",
+  "series": "DVIA-ML Series",
+  "category": "Active Vibration Isolation Systems",
+  "tagline": "The world's most advanced active vibration isolation system for electron microscopes",
+  "description": "The DVIA-ML is the world's most advanced active vibration isolation system designed specifically for electron microscopes, featuring adaptive control algorithms and real-time data processing for unparalleled vibration isolation performance.",
+  "certifications": [
+    {
+      "name": "CE Mark",
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/mark-ce.png"
+    },
+    {
+      "name": "NRTL",
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/mark-NRTL_1.png"
+    }
+  ],
+  "heroImages": [
+    "https://www.daeilsys.com/ko-KR/products/active-vibration-isolation-systems/dvia-ml-active-vibration-isolation-system/images/dvia-ml1000-main-front-min.png"
+  ],
+  "introductionSlider": [
+    "https://www.daeilsys.com/ko-KR/products/active-vibration-isolation-systems/dvia-ml-active-vibration-isolation-system/images/dvia-ml-active-vibration-isolation-system-front.png",
+    "https://www.daeilsys.com/ko-KR/products/active-vibration-isolation-systems/dvia-ml-active-vibration-isolation-system/images/dvia-ml-active-vibration-isolation-system-side.png"
+  ],
+  "videoUrl": "https://www.youtube.com/watch?v=mQnQTjzGbb4",
+  "keyHighlights": [
+    {
+      "title": "Advanced sensors",
+      "description": "Highly sensitive velocity sensors detect the slightest vibrations"
+    },
+    {
+      "title": "Real-time data processing",
+      "description": "High-performance DSP processes sensor data in real-time"
+    },
+    {
+      "title": "Adaptive control algorithms",
+      "description": "Sophisticated algorithms continuously optimize vibration isolation"
+    }
+  ],
+  "customDesignOptions": [
+    {
+      "name": "Krios G4",
+      "description": "Custom platform design for Thermo Fisher Krios G4"
+    },
+    {
+      "name": "Krios G3i",
+      "description": "Custom platform design for Thermo Fisher Krios G3i"
+    },
+    {
+      "name": "Glacios 2",
+      "description": "Custom platform design for Thermo Fisher Glacios 2"
+    },
+    {
+      "name": "Talos",
+      "description": "Custom platform design for Thermo Fisher Talos"
+    },
+    {
+      "name": "JEM-F200",
+      "description": "Custom platform design for JEOL JEM-F200"
+    },
+    {
+      "name": "JEM-2100Plus",
+      "description": "Custom platform design for JEOL JEM-2100Plus"
+    },
+    {
+      "name": "Custom",
+      "description": "Fully customizable design for any electron microscope"
+    }
+  ],
+  "features": [
+    {
+      "title": "Unparalleled Vibration Isolation Performance",
+      "description": "The DVIA-ML series delivers exceptional vibration isolation performance, with 50%-80% isolation at 1 Hz and over 90% isolation at 2 Hz and above in all six degrees of freedom. This unparalleled performance ensures that electron microscopes can achieve the highest resolution imaging even in challenging vibration environments.",
+      "images": [
+        "https://www.daeilsys.com/ko-KR/products/active-vibration-isolation-systems/dvia-ml-active-vibration-isolation-system/images/dvia-ml1000-performance-01-min.jpg",
+        "https://www.daeilsys.com/ko-KR/products/active-vibration-isolation-systems/dvia-ml-active-vibration-isolation-system/images/dvia-ml1000-performance-02-min.jpg"
+      ]
+    },
+    {
+      "title": "Active Vibration Isolation in All Six Degrees of Freedom",
+      "description": "The DVIA-ML series provides active vibration isolation in all six degrees of freedom - three translational (X, Y, Z) and three rotational (pitch, roll, yaw). This comprehensive approach ensures that all types of vibrations are effectively isolated, providing the most stable platform for electron microscopes.",
+      "image": "https://www.daeilsys.com/ko-KR/products/active-vibration-isolation-systems/dvia-ml-active-vibration-isolation-system/images/dvia-ml-absolute-control-of-vibrations-in-all-six-degrees-of-freedom-min.png"
+    },
+    {
+      "title": "Low-Profile Platform Design",
+      "description": "The DVIA-ML features a low-profile platform design that minimizes the overall height of the system. This design allows for easier installation and maintenance of electron microscopes while maintaining exceptional vibration isolation performance.",
+      "image": "https://www.daeilsys.com/ko-KR/products/active-vibration-isolation-systems/dvia-ml-active-vibration-isolation-system/images/dvia-ml-size-min.jpg"
+    },
+    {
+      "title": "Highly Sensitive Velocity Sensors",
+      "description": "The DVIA-ML series employs highly sensitive velocity sensors that can detect even the slightest vibrations. These sensors provide the feedback necessary for the active control system to respond quickly and effectively to any disturbances.",
+      "image": "https://www.daeilsys.com/ko-KR/products/active-vibration-isolation-systems/dvia-ml-active-vibration-isolation-system/images/highly-sensitive-velocity-sensors-gs-one-min.jpg"
+    },
+    {
+      "title": "Advanced Sensor Amplifier Board",
+      "description": "Each DVIA-ML isolator includes an advanced sensor amplifier board that conditions and amplifies the signals from the velocity sensors. This ensures optimal signal quality for the DSP to process, resulting in superior vibration isolation performance.",
+      "image": "https://www.daeilsys.com/ko-KR/products/active-vibration-isolation-systems/dvia-ml-active-vibration-isolation-system/images/dvia-ml1000-main-front-min.png"
+    },
+    {
+      "title": "High-Performance Digital Signal Processor",
+      "description": "At the heart of the DVIA-ML is a high-performance digital signal processor (DSP) that executes sophisticated control algorithms in real-time. The DSP processes data from multiple sensors simultaneously and generates precise control signals to the actuators.",
+      "image": "https://www.daeilsys.com/ko-KR/products/active-vibration-isolation-systems/dvia-ml-active-vibration-isolation-system/images/dvia-ml1000-main-front-min.png"
+    },
+    {
+      "title": "Ultra-Low Magnetic Field",
+      "description": "The DVIA-ML is designed to generate less than 0.05μT of magnetic field, ensuring that it does not interfere with the sensitive electron optics of electron microscopes. This is achieved through careful selection of materials and optimized actuator designs.",
+      "image": "https://www.daeilsys.com/ko-KR/products/active-vibration-isolation-systems/dvia-ml-active-vibration-isolation-system/images/magnetic-field-graph-min.jpg"
+    },
+    {
+      "title": "Feedback Control Algorithm",
+      "description": "The DVIA-ML employs advanced feedback control algorithms that continuously monitor the vibrations on the platform and generate corrective forces to minimize them. This real-time approach ensures optimal performance across a wide frequency range.",
+      "image": "https://www.daeilsys.com/ko-KR/products/active-vibration-isolation-systems/dvia-ml-active-vibration-isolation-system/images/feedback-control-dvia-ml1000-min.jpg"
+    },
+    {
+      "title": "Feedforward Control Algorithm",
+      "description": "In addition to feedback control, the DVIA-ML also utilizes feedforward control algorithms that predict and compensate for floor vibrations before they can affect the platform. This proactive approach significantly enhances low-frequency vibration isolation performance.",
+      "image": "https://www.daeilsys.com/ko-KR/products/active-vibration-isolation-systems/dvia-ml-active-vibration-isolation-system/images/feedforward-control-dvia-ml1000-min.jpg"
+    },
+    {
+      "title": "PID Tuning Software",
+      "description": "The DVIA-ML includes sophisticated PID tuning software that allows fine-tuning of the control parameters to optimize performance for specific installation conditions. The software provides real-time feedback and visualization of the system's performance.",
+      "image": "https://www.daeilsys.com/ko-KR/products/active-vibration-isolation-systems/dvia-ml-active-vibration-isolation-system/images/new-tuning-software-min.jpg"
+    }
+  ],
+  "productGallery": {
+    "glacios2": [
+      "https://www.daeilsys.com/ko-KR/products/active-vibration-isolation-systems/dvia-ml-active-vibration-isolation-system/images/dvia-ml3000-for-glacios-2-product-image-01-min.png",
+      "https://www.daeilsys.com/ko-KR/products/active-vibration-isolation-systems/dvia-ml-active-vibration-isolation-system/images/dvia-ml3000-for-glacios-2-product-image-02-min.png",
+      "https://www.daeilsys.com/ko-KR/products/active-vibration-isolation-systems/dvia-ml-active-vibration-isolation-system/images/dvia-ml3000-for-glacios-2-product-image-03-min.png",
+      "https://www.daeilsys.com/ko-KR/products/active-vibration-isolation-systems/dvia-ml-active-vibration-isolation-system/images/dvia-ml3000-for-glacios-2-product-image-04-min.png",
+      "https://www.daeilsys.com/ko-KR/products/active-vibration-isolation-systems/dvia-ml-active-vibration-isolation-system/images/dvia-ml3000-for-glacios-2-product-image-05-min.png",
+      "https://www.daeilsys.com/ko-KR/products/active-vibration-isolation-systems/dvia-ml-active-vibration-isolation-system/images/dvia-ml3000-for-glacios-2-product-image-06-min.png"
+    ]
+  },
+  "specifications": {
+    "models": [
+      {
+        "name": "DVIA-ML1000",
+        "platformDimensions": "Custom designed for each electron microscope model",
+        "isolatorDimensions": "190 x 190 x 178 mm",
+        "loadCapacity": "500 - 1700 kg",
+        "maxActuatorForce": "Vertical: 40 N, Horizontal: 20 N"
+      },
+      {
+        "name": "DVIA-ML3000",
+        "platformDimensions": "Custom designed for each electron microscope model",
+        "isolatorDimensions": "232 x 232 x 180 mm",
+        "loadCapacity": "1500 - 3500 kg",
+        "maxActuatorForce": "Vertical: 40 N, Horizontal: 20 N"
+      }
+    ],
+    "common": {
+      "actuator": "Electromagnetic Actuator",
+      "degreesOfFreedom": "6 degrees",
+      "activeIsolationRange": "0.5 - 100 Hz",
+      "vibrationIsolationAt1Hz": "50% - 80%",
+      "vibrationIsolationAt2HzPlus": "≥ 90%",
+      "magneticField": "< 0.05 μT",
+      "inputVoltage": "AC100 - 240V / 50 - 60 Hz / 1A",
+      "powerConsumption": "Maximum 110W, <50 W in normal operation",
+      "operatingTemperature": "5 - 50 °C",
+      "operatingHumidity": "20 - 90%",
+      "requiredAirPressure": "≥ 0.5 MPa (5 bar)"
+    }
+  },
+  "applications": [
+    "Cryo-Electron Microscopy (Cryo-EM)",
+    "Transmission Electron Microscopy (TEM)",
+    "Scanning Transmission Electron Microscopy (STEM)",
+    "High-Resolution TEM (HRTEM)"
+  ],
+  "resources": {
+    "catalog": {
+      "label": "Download Catalog",
+      "url": "#"
+    },
+    "userManual": {
+      "label": "User Manual",
+      "url": "#"
+    },
+    "cad": "2D CAD drawings available upon request"
+  }
+}

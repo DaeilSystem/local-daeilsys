@@ -1,0 +1,185 @@
+{
+  "id": "dvia-t",
+  "name": "DVIA-T",
+  "fullName": "Tabletop Active Vibration Isolation System",
+  "series": "DVIA-T Series",
+  "category": "Active Vibration Isolation Systems",
+  "tagline": "Make microscopy easier than ever before",
+  "description": "The DVIA-T is the most advanced tabletop active vibration isolation platform in the world, designed to isolate nanoscale imaging instruments from low-frequency vibrations and deliver 40 - 80% vibration isolation at 1 Hz.",
+  "certifications": [
+    {
+      "name": "CE Mark",
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/mark-ce.png"
+    },
+    {
+      "name": "NRTL",
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/mark-NRTL_1.png"
+    }
+  ],
+  "heroImages": [
+    "https://www.daeilsys.com/wp-content/uploads/elementor/thumbs/dvia-t-series02-onnmhnecr1gzxdfolmxo6v8w0wv4l9conmswxase3u.png",
+    "https://www.daeilsys.com/wp-content/uploads/elementor/thumbs/dvia-t-series01-onnmhlioddefa5iewm4f1vpyu54e5v57zdhxyqv6ga.png"
+  ],
+  "tabs": {
+    "overview": {
+      "description": "The DVIA-T is the most advanced tabletop active vibration isolation platform in the world, designed to isolate nanoscale imaging instruments from low-frequency vibrations and deliver 40 - 80% vibration isolation at 1 Hz.",
+      "videoUrl": "https://www.youtube.com/watch?v=mQnQTjzGbb4"
+    },
+    "features": [
+      {
+        "title": "Superior Vibration Isolation Performance",
+        "description": "The DVIA-T starts to isolate 0.5 Hz, delivering 40% – 80% vibration isolation at 1 Hz."
+      },
+      {
+        "title": "It's Simple. Plug and Play!",
+        "description": "The DVIA-T only requires electricity to use its the active vibration isolation system.",
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-t-series-plug-and-play-detail.jpg"
+      },
+      {
+        "title": "Compact, Lightweight, Portable Design",
+        "description": "The smallest DVIA-T is 420 × 500 × 93 mm, which weighs only 25 kg, allowing users to hand carry and install on any place at all."
+      },
+      {
+        "title": "Automatic Leveling to Payload Weight",
+        "description": "If there are changes in an environment and location or placing other instruments, users can adjust a level of DVIA-T by simply pressing an Auto Leveling button."
+      },
+      {
+        "title": "No Air",
+        "description": "All the DVIA-T requires eletricity to operate."
+      },
+      {
+        "title": "UI Software for Users",
+        "description": "We take pride in our work to provide a vibration isolation system that actually reduce floor vibrations. The UI software is provided along with the DVIA-T for users to monitor the real-time active vibration isolation performance and floor vibration levels.",
+        "videoUrl": "https://www.youtube.com/watch?v=26o-mcm6Ysg"
+      },
+      {
+        "title": "Feedback & Feedforward Control Algorithm",
+        "description": "The DVIA series uses the Feedback control algorithm to continuously detect vibrations disturbing an isolated surface and instantaneously react to minimize the vibrations in real-time. The Feed-Forward control algorithm is employed in the DVIA Series to filter out floor vibrations in advance before the floor vibrations can be transmitted to equipment installed on the active vibration isolation systems.",
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-t-series-feedback-and-feed-forward-control-systems.jpg"
+      },
+      {
+        "title": "Active Vibration Isolation in All Six Degrees of Freedom",
+        "description": "The DVIA Series controls vibrations in three translational degrees of motions ( X, Y and Z) and three rotational degrees of motions ( pitch, roll and yaw).",
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/DVIA-MO-Absolute-Control-of-Vibrations-in-All-Six-Degrees-of-Freedom01.png"
+      }
+    ],
+    "performance": {
+      "title": "40% - 80% vibration isolation at 1 Hz ≥90% vibration isolation at ≥2 Hz",
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-t-vibration-isolation-performance.jpg"
+    },
+    "specifications": {
+      "models": [
+        {
+          "name": "DVIA-T45",
+          "platformDimensions": "420 x 500 x 93 mm"
+        },
+        {
+          "name": "DVIA-T56",
+          "platformDimensions": "500 x 600 x 93 mm"
+        },
+        {
+          "name": "DVIA-T67",
+          "platformDimensions": "600 x 700 x 95 mm"
+        },
+        {
+          "name": "DVIA-T78",
+          "platformDimensions": "700 x 800 x 95 mm"
+        }
+      ],
+      "common": {
+        "maxLoadCapacity": "90 kg / 150 kg (optional)",
+        "actuator": "Electromagnetic Actuator",
+        "maxActuatorForce": "Vertical: 6 N, Horizontal: 3 N",
+        "degreesOfFreedom": "6 degrees",
+        "activeIsolationRange": "0.5 - 100 Hz",
+        "vibrationIsolationAt1Hz": "40% - 80%",
+        "vibrationIsolationAt2HzPlus": "≥90%",
+        "inputVoltage": "AC100 - 240V / 50 - 60 Hz / 1A",
+        "powerConsumption": "Less than 36 W",
+        "operatingTemperature": "5 - 50 °C",
+        "operatingHumidity": "20 - 90%"
+      }
+    },
+    "applications": {
+      "list": [
+        "Atomic Force Microscopy",
+        "Fluorescence Microscopy",
+        "Scanning Probe Microscopy",
+        "3D Optical Microscopy",
+        "Optical Microscopy with Nanometer Resolution",
+        "Digital Holographic Microscopy",
+        "Stylus Profilometry",
+        "Interferometry",
+        "Surface Roughness Metrology"
+      ],
+      "installationPhotos": [
+        "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIA-T-applications-01-2.jpg",
+        "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIA-T-applications-02-1.jpg",
+        "https://www.daeilsys.com/wp-content/uploads/2020/06/DVIA-T-cypher-min.jpg",
+        "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIA-T-applications-04-1.jpg",
+        "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIA-T-applications-05-1.jpg",
+        "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIA-T-applications-06-1.jpg",
+        "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIA-T-applications-07-1.jpg",
+        "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIA-T-applications-08-2.jpg",
+        "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIA-T-applications-09-2.jpg",
+        "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIA-T-applications-10-2.jpg",
+        "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIA-T-applications-11-2.jpg",
+        "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIA-T-applications-12-2.jpg",
+        "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIA-T-applications-13-1.jpg"
+      ]
+    },
+    "options": [
+      {
+        "title": "Custom Top Plate",
+        "description": "A top plate of the DVIA-T can be customized to suit users' a specific purpose.",
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIA-T-custom-top-plate.png"
+      },
+      {
+        "title": "Custom Desk Platform",
+        "description": "We offer a custom desk with a built-in DVIA-T to suit users' a specific purpose.",
+        "images": [
+          "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIA-TD-desk-platform01.png",
+          "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIA-TD-desk-platform02.png"
+        ]
+      }
+    ],
+    "resources": {
+      "catalog": {
+        "label": "Catalog",
+        "url": "#"
+      },
+      "userManual": {
+        "label": "DVIA-T User Manual",
+        "url": "#"
+      },
+      "cad": [
+        {
+          "model": "DVIA-T45",
+          "url": "/downloads/dvia-t/cad/DVIA-T45_LAYOUT.dwg"
+        },
+        {
+          "model": "DVIA-T56",
+          "url": "/downloads/dvia-t/cad/DVIA-T56_LAYOUT.dwg"
+        },
+        {
+          "model": "DVIA-T67",
+          "url": "/downloads/dvia-t/cad/DVIA-T67_LAYOUT.dwg"
+        },
+        {
+          "model": "DVIA-T78",
+          "url": "/downloads/dvia-t/cad/DVIA-T78_LAYOUT.dwg"
+        }
+      ],
+      "links": [
+        {
+          "label": "Case Studies",
+          "url": "/products/active-vibration-isolation-systems/tabletop-active-vibration-isolation-platform/case-studies/"
+        },
+        {
+          "label": "Installation Reports",
+          "url": "/products/active-vibration-isolation-systems/tabletop-active-vibration-isolation-platform/installation-reports/"
+        }
+      ]
+    }
+  }
+}

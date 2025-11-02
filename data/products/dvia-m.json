@@ -1,0 +1,50 @@
+{
+  "id": "dvia-m",
+  "name": "DVIA-M",
+  "fullName": "Built-In Active Vibration Isolation System",
+  "series": "DVIA-M Series",
+  "category": "Active Vibration Isolation Systems",
+  "tagline": "Nanoscale Imaging Without Noise",
+  "description": "The DVIA-M active vibration isolators are designed as a built-in active vibration isolation system for nanoscale imaging equipment such as electron microscopes, delivering 50% - 80% vibration isolation at 1 Hz and 90% vibration isolation at 2 Hz in six degrees of freedom.",
+  "certifications": [
+    {
+      "name": "CE Mark",
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/mark-ce.png"
+    },
+    {
+      "name": "NRTL",
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/mark-NRTL_1.png"
+    }
+  ],
+  "heroImage": "https://www.daeilsys.com/wp-content/uploads/2020/06/dvia-t-tabletop-active-vibration-isolation-platform.png",
+  "features": [
+    {
+      "title": "Sub-Hertz Vibration Isolation Performance",
+      "description": "The most sophisticated active vibration control algorithms are embedded in the DVIA-M series, delivering 50% - 80% vibration isolation at 1 Hz and 90% vibration isolation at 2 Hz in six degrees of freedom."
+    },
+    {
+      "title": "Built-In Active Vibration Isolation System",
+      "description": "The DVIA-M active vibration isolators are designed as a built-in active vibration isolation system for nanoscale imaging equipment such as electron microscopes."
+    },
+    {
+      "title": "Feedback & Feedforward Control Algorithm",
+      "description": "The DVIA series uses the Feedback control algorithm to continuously detect vibrations disturbing an isolated surface and instantaneously react to minimize the vibrations in real-time. The Feed-Forward control algorithm is employed in the DVIA Series to filter out floor vibrations in advance before the floor vibrations can be transmitted to equipment installed on the active vibration isolation systems.",
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-t-series-feedback-and-feed-forward-control-systems.jpg"
+    },
+    {
+      "title": "Active Vibration Isolation in All Six Degrees of Freedom",
+      "description": "The DVIA Series controls vibrations in three translational degrees of motions (X, Y and Z) and three rotational degrees of motions (pitch, roll and yaw).",
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/DVIA-MO-Absolute-Control-of-Vibrations-in-All-Six-Degrees-of-Freedom01.png"
+    }
+  ],
+  "performance": {
+    "title": "50% - 80% vibration isolation at 1 Hz ≥90% vibration isolation at ≥2 Hz",
+    "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/DVIA-MO-Performance.png"
+  },
+  "applications": [
+    "Scanning Electron Microscopy",
+    "Transmission Electron Microscopy",
+    "Scanning Transmission Electron Microscopy",
+    "Scanning Tunneling Electron Microscopy"
+  ]
+}

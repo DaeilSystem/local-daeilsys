@@ -1,0 +1,101 @@
+{
+  "id": "dvia-m",
+  "name": "DVIA-M",
+  "fullName": "Built-In Active Vibration Isolation System",
+  "series": "DVIA-M Series",
+  "category": "Active Vibration Isolation Systems",
+  "tagline": "Nanoscale Imaging Without Noise",
+  "description": "The DVIA-M is the most advanced built-in active vibration isolation system in the world, incorporated in various platforms and used as a built-in active vibration isolation system inside electron microscopes.",
+  "certifications": [
+    {
+      "name": "CE Mark",
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/mark-ce.png"
+    },
+    {
+      "name": "NRTL",
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/mark-NRTL_1.png"
+    }
+  ],
+  "heroImages": [
+    "https://www.daeilsys.com/wp-content/uploads/2020/06/dvia-t-tabletop-active-vibration-isolation-platform.png"
+  ],
+  "tabs": {
+    "overview": {
+      "description": "The DVIA-M is the most advanced built-in active vibration isolation system in the world, incorporated in various platforms and used as a built-in active vibration isolation system inside electron microscopes.",
+      "videoUrl": "https://www.youtube.com/watch?v=mQnQTjzGbb4"
+    },
+    "features": [
+      {
+        "title": "Sub-Hertz Vibration Isolation Performance",
+        "description": "The most sophisticated active vibration control algorithms are embedded in the DVIA-M series, delivering 50% - 80% vibration isolation at 1 Hz and 90% vibration isolation at 2 Hz in six degrees of freedom."
+      },
+      {
+        "title": "Built-In Active Vibration Isolation System",
+        "description": "The DVIA-M active vibration isolators are designed as a built-in active vibration isolation system for nanoscale imaging equipment such as electron microscopes."
+      },
+      {
+        "title": "Feedback & Feedforward Control Algorithm",
+        "description": "The DVIA series uses the Feedback control algorithm to continuously detect vibrations disturbing an isolated surface and instantaneously react to minimize the vibrations in real-time. The Feed-Forward control algorithm is employed in the DVIA Series to filter out floor vibrations in advance before the floor vibrations can be transmitted to equipment installed on the active vibration isolation systems.",
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-t-series-feedback-and-feed-forward-control-systems.jpg"
+      },
+      {
+        "title": "Active Vibration Isolation in All Six Degrees of Freedom",
+        "description": "The DVIA Series controls vibrations in three translational degrees of motions (X, Y and Z) and three rotational degrees of motions (pitch, roll and yaw).",
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/DVIA-MO-Absolute-Control-of-Vibrations-in-All-Six-Degrees-of-Freedom01.png"
+      }
+    ],
+    "performance": {
+      "title": "50% - 80% vibration isolation at 1 Hz ≥90% vibration isolation at ≥2 Hz",
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/DVIA-MO-Performance.png"
+    },
+    "specifications": {
+      "models": [
+        {
+          "name": "DVIA-M1000",
+          "isolatorDimensions": "190 x 190 x 178 mm",
+          "loadCapacity": "500 - 1700 kg",
+          "maxActuatorForce": "Vertical: 40 N, Horizontal: 20 N"
+        },
+        {
+          "name": "DVIA-M3000",
+          "isolatorDimensions": "232 x 232 x 180 mm",
+          "loadCapacity": "1500 - 3500 kg",
+          "maxActuatorForce": "Vertical: 40 N, Horizontal: 20 N"
+        },
+        {
+          "name": "DVIA-M6000",
+          "isolatorDimensions": "308 x 308 x 180 mm",
+          "loadCapacity": "3000 - 6000 kg",
+          "maxActuatorForce": "Vertical: 80 N, Horizontal: 40 N"
+        }
+      ],
+      "common": {
+        "actuator": "Electromagnetic Actuator",
+        "degreesOfFreedom": "6 degrees",
+        "activeIsolationRange": "0.5 - 100 Hz",
+        "vibrationIsolationAt1Hz": "50% - 80%",
+        "vibrationIsolationAt2HzPlus": "≥ 90%",
+        "inputVoltage": "AC100 - 240V / 50 - 60 Hz / 1A",
+        "powerConsumption": "Maximum 110W, <50 W in normal operation",
+        "operatingTemperature": "5 - 50 °C",
+        "operatingHumidity": "20 - 90%",
+        "requiredAirPressure": "≥ 0.5 MPa (5 bar)"
+      }
+    },
+    "applications": {
+      "list": [
+        "Scanning Electron Microscopy",
+        "Transmission Electron Microscopy",
+        "Scanning Transmission Electron Microscopy",
+        "Scanning Tunneling Electron Microscopy"
+      ]
+    },
+    "resources": {
+      "catalog": {
+        "label": "Catalog",
+        "url": "#"
+      },
+      "cad": "2D CAD"
+    }
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "id": "dvia-mo",
+  "name": "DVIA-MO Series",
+  "fullName": "액티브 광학 테이블",
+  "series": "DVIA-MO Series",
+  "tagline": "DVIA-M 액티브 제진 시스템과 고성능 광학 테이블의 조합",
+  "description": "DVIA-MO 시리즈는 DVIA-M 액티브 제진 시스템과 고성능 광학 테이블의 조합으로 광자(Photonics), 레이저, 분광기 등 0.5 Hz 부터 지반진동을 제어합니다.",
+  "heroImages": [
+    "https://www.daeilsys.com/wp-content/uploads/elementor/thumbs/DVIA-MO-Active-Vibration-Isolation-Optical-Table01-ooc2n0igkkchxsocbt5x56cybvqjdy1vnmj14ikzm0.png",
+    "https://www.daeilsys.com/wp-content/uploads/elementor/thumbs/DVIA-MO-Active-Vibration-Isolation-Optical-Table02-ooc2n1gareds9emz6bkjpo4ex9lwln5lzr6ilsjlfs.png"
+  ],
+  "certifications": [
+    {
+      "name": "CE",
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/mark-ce.png"
+    },
+    {
+      "name": "NRTL",
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/mark-NRTL_1.png"
+    }
+  ],
+  "tabs": {
+    "overview": {
+      "description": "DVIA-MO 시리즈는 DVIA-M 액티브 제진 시스템과 고성능 광학 테이블의 조합으로 광자(Photonics), 레이저, 분광기 등 0.5 Hz 부터 지반진동을 제어합니다.",
+      "videoUrl": "https://www.youtube.com/embed/mQnQTjzGbb4"
+    },
+    "features": [
+      {
+        "title": "월등한 제진 성능",
+        "description": "정교한 제어 알고리즘이 적용된 DVIA-M 액티브 아이솔레이터는 1 Hz 에서 50% – 80% 제진 성능을 발휘합니다.",
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/DVIA-MO-Superior-Vibration-Isolation-Performance01.png"
+      },
+      {
+        "title": "프리미엄 광학테이블",
+        "description": "대일시스템의 광학 테이블은 영구적으로 사용할 수 있도록 제작되었으며, 광학테이블에 장착된 광학 요소 사이의 상대 운동(relative motion)을 최소화하기 위해 최대한 견고하게 설계되었습니다.",
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIA-MO-Super-Rigid-Optical-Table.png"
+      },
+      {
+        "title": "피드백 및 피드 포워드 제어 알고리즘",
+        "description": "DVIA 시리즈는 피드백(Feedback) 제어 알고리즘을 사용하여 진동을 지속적으로 감지하고 즉각적으로 반응하여 진동을 실시간으로 최소합니다. 피드포워드(Feedforward) 제어 알고리즘은 지반 진동이 액티브 제진대위에 탑재되어 있는 장비에 진동이 전달되기전에 미리 지반진동을 감쇠시켜 효율적인 제진성능을 발휘시킵니다.",
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/feedback-and-feedforward-control-algorithm.png"
+      },
+      {
+        "title": "6 자유도(6 DOF) 진동제어",
+        "description": "액티브 제진대 내부에 장착된 센서와 액추에이터를 통해 6축(X, Y, Z, PITCH, ROLL, YAW)의 진동을 측정하여 실시간으로 제어합니다.",
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/DVIA-MO-Absolute-Control-of-Vibrations-in-All-Six-Degrees-of-Freedom01.png"
+      },
+      {
+        "title": "최상의 성능을 위한 현장 맞춤 튜닝",
+        "description": "지반진동 수준은 설치 장소, 주변 환경, 불규칙한 상황 및 다양한 진동원에 따라 다릅니다. 대일시스템은 숙련 된 엔지니어가 직접 액티브 시스템의 현장 맞춤 튜닝을 제공하여 최상의 성능과 고객 만족을 보장합니다. 엔지니어는 진동 현장 조사를 통해 피드백 및 피드 포워드 제어 알고리즘을 조정하는데 사용되는 지반진동 레벨을 측정하여 제진 성능을 극대화하여 진동 요구스펙을 충족시킵니다.",
+        "image": null
+      }
+    ],
+    "performance": {
+      "title": "1 Hz 에서 50% - 80% 제진 성능\n2 Hz 이상부터 90% 이상의 제진 성능",
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/DVIA-MO-Performance.png"
+    },
+    "specifications": {
+      "models": [
+        {
+          "name": "DVIA-MO1000",
+          "loadCapacity": "500 - 1700 kg"
+        },
+        {
+          "name": "DVIA-MO3000",
+          "loadCapacity": "1500 - 3500 kg"
+        },
+        {
+          "name": "DVIA-MO6000",
+          "loadCapacity": "3000 - 6000 kg"
+        }
+      ],
+      "common": {
+        "platformDimensions": "Custom-made",
+        "actuator": "Electromagnetic Actuator",
+        "maxActuatorForce": {
+          "mo1000": "Vertical: 40 N, Horizontal: 20 N",
+          "mo3000": "Vertical: 40 N, Horizontal: 20 N",
+          "mo6000": "Vertical: 80 N, Horizontal: 40 N"
+        },
+        "degreesOfFreedom": "6 degrees",
+        "activeIsolationRange": "0.5 - 100 Hz",
+        "vibrationIsolationAt1Hz": "50 – 80%",
+        "vibrationIsolationAt2HzPlus": "≥ 90%",
+        "inputVoltage": "AC100 - 240V / 50 - 60 Hz / 1A",
+        "powerConsumption": "Maximum 110W, <50 W in normal operation",
+        "operatingTemperature": "5 - 50 °C",
+        "operatingHumidity": "20 - 90%",
+        "requiredAirPressure": "≥ 0.5 MPa (5 bar)"
+      }
+    },
+    "applications": {
+      "list": [
+        "Photonics & Laser",
+        "Holography",
+        "Spectroscopy",
+        "Nanoscale Resolution Microcopy",
+        "Any applications that requires 90% vibration isolation at 1 Hz"
+      ],
+      "installationPhotos": [
+        {
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIA-MO-Applications01-600x387.png",
+          "title": "DVIA-MO-Applications01"
+        },
+        {
+          "url": "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIA-MO-Applications02-600x469.png",
+          "title": "DVIA-MO-Applications02"
+        }
+      ]
+    },
+    "accessories": [
+      {
+        "title": "Overhead Shelf",
+        "description": "",
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIA-MO-Accessories-Overhead-Shelf.png"
+      },
+      {
+        "title": "Enclosure",
+        "description": "",
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIA-MO-Accessories-Enclosure.png"
+      },
+      {
+        "title": "Clean Booth",
+        "description": "",
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIA-MO-Accessories-Clean-Booth.jpg"
+      },
+      {
+        "title": "Dark Booth",
+        "description": "",
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIA-MO-Accessories-Dark-Booth.jpg"
+      }
+    ],
+    "resources": {
+      "catalog": {
+        "label": "Catalog",
+        "url": "#"
+      }
+    }
+  }
+}

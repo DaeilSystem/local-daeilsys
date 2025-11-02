@@ -1,0 +1,281 @@
+{
+  "name": "DVIA-U",
+  "fullName": "Modular Active Vibration Isolation Platform",
+  "description": "DVIA-U Series is a modular low-profile active vibration isolation platform designed for direct installation on equipment of various sizes and shapes.",
+  "hero": {
+    "title": {
+      "en": "DVIA-U Series",
+      "ko": "DVIA-U 시리즈"
+    },
+    "subtitle": {
+      "en": "Modular Active Vibration Isolation Platform",
+      "ko": "모듈러형 액티브 제진대"
+    },
+    "images": [
+      "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIA-U-Modular-Active-Vibration-Isolation-Platform-768x512.png"
+    ]
+  },
+  "certifications": ["CE", "NRTL"],
+  "overview": {
+    "en": "DVIA-U Series is a modular low-profile active vibration isolation platform designed for direct installation on equipment of various sizes and shapes.",
+    "ko": "DVIA-U 시리즈는 다양한 크기와 모양의 장비에 설치가 가능하도록 설계된 모듈러 방식 저상형 액티브 제진대입니다."
+  },
+  "features": [
+    {
+      "title": {
+        "en": "Low Frequency Vibration Isolation Performance",
+        "ko": "저주파 제진 성능"
+      },
+      "description": {
+        "en": "DVIA-U Series starts vibration isolation from 0.5 Hz and delivers over 90% isolation performance above 4 Hz.",
+        "ko": "DVIA-U 시리즈는 0.5 Hz 부터 제진이 시작되어, 4 Hz 이상부터 90% 이상의 제진성능을 발휘합니다."
+      }
+    },
+    {
+      "title": {
+        "en": "Modular Design Active Platform",
+        "ko": "모듈러 설계 방식 액티브 플랫폼"
+      },
+      "description": {
+        "en": "DVIA-U Series is a modular low-profile active vibration isolation platform that can be directly installed on equipment of various sizes and shapes.",
+        "ko": "DVIA-U 시리즈는 다양한 크기와 모양의 장비에 직접 설치가 가능한 모듈러 방식의 저상형 액티브 제진 플랫폼입니다."
+      }
+    },
+    {
+      "title": {
+        "en": "No Air Supply Required",
+        "ko": "에어 공급장치 불필요"
+      },
+      "description": {
+        "en": "DVIA-U can operate whenever electricity is available.",
+        "ko": "DVIA-U는 전기만 공급 가능하면 언제든지 실행이 가능합니다."
+      }
+    },
+    {
+      "title": {
+        "en": "User-Friendly UI Software",
+        "ko": "사용자를 위한 UI 소프트웨어"
+      },
+      "description": {
+        "en": "We pride ourselves on providing truly effective vibration isolation systems. UI software is provided with DVIA-U to allow users to monitor real-time vibration isolation performance and floor vibration levels.",
+        "ko": "우리는 실제로 효율적인 제진 시스템을 제공하는 것에 자부심을 가지고 있습니다. UI 소프트웨어는 사용자가 실시간 진동 차단 성능 및 바닥 진동 수준을 모니터링 할 수 있도록 DVIA-U와 함께 제공됩니다."
+      },
+      "videoUrl": "https://www.youtube.com/embed/26o-mcm6Ysg?feature=oembed"
+    },
+    {
+      "title": {
+        "en": "Feedback and Feedforward Control Algorithm",
+        "ko": "피드백 및 피드 포워드 제어 알고리즘"
+      },
+      "description": {
+        "en": "DVIA Series uses a feedback control algorithm to continuously detect vibrations and respond immediately to minimize vibrations in real-time. The feedforward control algorithm efficiently dampens ground vibrations before they are transmitted to the equipment mounted on the active vibration isolation platform.",
+        "ko": "DVIA 시리즈는 피드백(Feedback) 제어 알고리즘을 사용하여 진동을 지속적으로 감지하고 즉각적으로 반응하여 진동을 실시간으로 최소합니다. 피드포워드(Feedforward) 제어 알고리즘은 지반 진동이 액티브 제진대위에 탑재되어 있는 장비에 진동이 전달되기전에 미리 지반진동을 감쇠시켜 효율적인 제진성능을 발휘시킵니다."
+      },
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIA-U-Feedback-and-Feedfoward-Control-Algorithm.png"
+    },
+    {
+      "title": {
+        "en": "6 Degrees of Freedom (6 DOF) Vibration Control",
+        "ko": "6 자유도(6 DOF) 진동제어"
+      },
+      "description": {
+        "en": "Sensors and actuators installed inside the active vibration isolation platform measure and control vibrations in 6 axes (X, Y, Z, PITCH, ROLL, YAW) in real-time.",
+        "ko": "액티브 제진대 내부에 장착된 센서와 액추에이터를 통해 6축(X, Y, Z, PITCH, ROLL, YAW)의 진동을 측정하여 실시간으로 제어합니다."
+      },
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/DVIA-MO-Absolute-Control-of-Vibrations-in-All-Six-Degrees-of-Freedom01.png"
+    }
+  ],
+  "performance": {
+    "title": {
+      "en": "Over 90% isolation performance above 4 Hz",
+      "ko": "4 Hz 이상부터 90% 이상의 제진성능"
+    },
+    "chart": "https://www.daeilsys.com/wp-content/uploads/2020/06/DVIA-UD-Performance.png"
+  },
+  "specifications": {
+    "models": ["DVIA-U350", "DVIA-U700", "DVIA-U1000"],
+    "table": [
+      {
+        "category": "Basic Specifications",
+        "items": [
+          {
+            "label": {
+              "en": "Isolator Quantity",
+              "ko": "아이솔레이터 수량"
+            },
+            "values": {
+              "DVIA-U350": "2 ea",
+              "DVIA-U700": "2 ea",
+              "DVIA-U1000": "2 ea"
+            }
+          },
+          {
+            "label": {
+              "en": "Dimensions",
+              "ko": "치수"
+            },
+            "values": {
+              "DVIA-U350": "783 x 205 x 96 mm",
+              "DVIA-U700": "818 x 220 x 96 mm",
+              "DVIA-U1000": "818 x 220 x 96 mm"
+            }
+          },
+          {
+            "label": {
+              "en": "Maximum Load Capacity",
+              "ko": "최대 하중"
+            },
+            "values": {
+              "DVIA-U350": "350 kg",
+              "DVIA-U700": "700 kg",
+              "DVIA-U1000": "1200 kg"
+            }
+          }
+        ]
+      },
+      {
+        "category": "Performance Specifications",
+        "items": [
+          {
+            "label": {
+              "en": "Vibration Isolation Technology",
+              "ko": "제진 기술"
+            },
+            "values": {
+              "all": "Feedback and Feedforward Control"
+            }
+          },
+          {
+            "label": {
+              "en": "Degrees of Freedom",
+              "ko": "자유도"
+            },
+            "values": {
+              "all": "6 degrees"
+            }
+          },
+          {
+            "label": {
+              "en": "Active Isolation Bandwidth",
+              "ko": "액티브 제진 대역폭"
+            },
+            "values": {
+              "all": "0.5 - 100 Hz"
+            }
+          },
+          {
+            "label": {
+              "en": "Vibration Isolation",
+              "ko": "제진 성능"
+            },
+            "values": {
+              "all": "90% at 4 Hz"
+            }
+          }
+        ]
+      },
+      {
+        "category": "Technical Specifications",
+        "items": [
+          {
+            "label": {
+              "en": "Actuator",
+              "ko": "액추에이터"
+            },
+            "values": {
+              "all": "Electromagnetic Actuator"
+            }
+          },
+          {
+            "label": {
+              "en": "Maximum Actuator Force",
+              "ko": "최대 액추에이터 힘"
+            },
+            "values": {
+              "DVIA-U350": "Vertical 6 N, Horizontal 3 N",
+              "DVIA-U700": "Vertical 12 N, Horizontal 6 N",
+              "DVIA-U1000": "Vertical 12 N, Horizontal 6 N"
+            }
+          },
+          {
+            "label": {
+              "en": "Vibration Sensor",
+              "ko": "진동 센서"
+            },
+            "values": {
+              "all": "Geophone, Sensitivity: 2.55 V/in/s (100.4 V/m/s) ± 10%"
+            }
+          },
+          {
+            "label": {
+              "en": "Controller",
+              "ko": "컨트롤러"
+            },
+            "values": {
+              "all": "External"
+            }
+          },
+          {
+            "label": {
+              "en": "User Interface",
+              "ko": "사용자 인터페이스"
+            },
+            "values": {
+              "all": "GUI for Windows OS"
+            }
+          }
+        ]
+      },
+      {
+        "category": "Requirements",
+        "items": [
+          {
+            "label": {
+              "en": "Environmental Protection Requirements",
+              "ko": "환경 보호 요구사항"
+            },
+            "values": {
+              "all": "CE and TUV"
+            }
+          },
+          {
+            "label": {
+              "en": "Power Requirements",
+              "ko": "전원 요구사항"
+            },
+            "values": {
+              "all": "Line Voltage: 100 – 260V AC, Line Frequency: 50 – 60 Hz"
+            }
+          },
+          {
+            "label": {
+              "en": "Environmental Requirements",
+              "ko": "환경 요구사항"
+            },
+            "values": {
+              "all": "Temperature: 5 – 50 °C, Humidity: 20 – 90 %"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "catalog": "/resources/catalogs/dvia-u.pdf",
+    "userManual": "/resources/manuals/dvia-u-user-manual.pdf",
+    "cad2d": [
+      {
+        "model": "DVIA-U350",
+        "file": "/resources/cad/dvia-u350-2d.dwg"
+      },
+      {
+        "model": "DVIA-U700",
+        "file": "/resources/cad/dvia-u700-2d.dwg"
+      },
+      {
+        "model": "DVIA-U1000",
+        "file": "/resources/cad/dvia-u1000-2d.dwg"
+      }
+    ]
+  }
+}

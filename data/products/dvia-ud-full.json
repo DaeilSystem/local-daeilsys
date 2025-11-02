@@ -1,0 +1,210 @@
+{
+  "id": "dvia-ud",
+  "name": "DVIA-UD",
+  "fullName": "데스크형 액티브 제진대",
+  "series": "DVIA-UD Series",
+  "category": "Active Vibration Isolation Systems",
+  "tagline": "DVIA-UD 시리즈는 DVIA-U 액티브 제진 아이솔레이터가 통합된 인체 공학적 데스크형 액티브 제진대로, 사용자가 부담 없이 편안하게 앉아 다양한 실험을 할 수 있도록 설계되었습니다.",
+  "taglineKo": "DVIA-UD 시리즈는 DVIA-U 액티브 제진 아이솔레이터가 통합된 인체 공학적 데스크형 액티브 제진대로, 사용자가 부담 없이 편안하게 앉아 다양한 실험을 할 수 있도록 설계되었습니다.",
+  "description": "DVIA-UD 시리즈는 DVIA-U 액티브 제진 아이솔레이터가 통합된 인체 공학적 데스크형 액티브 제진대로, 사용자가 부담 없이 편안하게 앉아 다양한 실험을 할 수 있도록 설계되었습니다. DVIA-UD는 장비사양 및 고객의 요구에 따라 맞춤형 제작이 가능합니다.",
+  "certifications": [
+    {
+      "name": "CE Mark",
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/mark-ce.png"
+    },
+    {
+      "name": "NRTL",
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/mark-NRTL_1.png"
+    }
+  ],
+  "heroImages": [
+    "https://www.daeilsys.com/wp-content/uploads/elementor/thumbs/DVIA-UD-DESK-ACTIVE-VIBRATION-ISOLATION-PLATFORM-2x-ordtb85ocj0v08fpntxgzy3elp68rouc3i3j8rf7wm.png",
+    "https://www.daeilsys.com/wp-content/uploads/elementor/thumbs/DVIA-UD-DESK-ACTIVE-VIBRATION-ISOLATION-PLATFORM-1x-ordtb77u5ozkomh2tbiufgby0bavjzqlrdg1rhgm2u.png"
+  ],
+  "heroIcons": [
+    {
+      "icon": "design_services",
+      "label": "CUSTOM-DESIGNED"
+    },
+    {
+      "icon": "engineering",
+      "label": "ERGONOMIC"
+    },
+    {
+      "icon": "precision_manufacturing",
+      "label": "HIGH-PERFORMANCE"
+    }
+  ],
+  "aboutSection": {
+    "title": "About DVIA-UD",
+    "titleKo": "개요",
+    "paragraphs": [
+      "DVIA-UD 시리즈는 0.5 Hz 부터 제진이 시작되어, 4 Hz 이상부터 90% 이상의 제진성능을 발휘합니다.",
+      "DVIA-UD 시리즈는 DVIA-U 액티브 제진 아이솔레이터가 통합된 인체 공학적 데스크형 액티브 제진대로, 사용자가 부담없이 편안하게 앉아 다양한 실험을 할 수 있도록 설계 되었습니다. DVIA-UD는 장비사양 및 고객의 요구에 따라 맞춤형 제작이 가능합니다.",
+      "DVIA-UD의 패시브 메커니즘은 엔지니어가 현장을 방문하여 설치하지 않아도 될 정도로 조작이 간단합니다. 간단하게 사용 설명서에 따라 셋업을 진행 할 수 있습니다.",
+      "DVIA-U는 전기만 공급 가능하면 언제든지 실행이 가능합니다.",
+      "우리는 실제로 효율적인 제진 시스템을 제공하는 것에 자부심을 가지고 있습니다. UI 소프트웨어는 사용자가 실시간 진동 차단 성능 및 바닥 진동 수준을 모니터링 할 수 있도록 DVIA-U와 함께 제공됩니다."
+    ]
+  },
+  "videoUrl": "https://www.youtube.com/watch?v=26o-mcm6Ysg",
+  "tabs": {
+    "overview": {
+      "description": "DVIA-UD 시리즈는 DVIA-U 액티브 제진 아이솔레이터가 통합된 인체 공학적 데스크형 액티브 제진대로, 사용자가 부담 없이 편안하게 앉아 다양한 실험을 할 수 있도록 설계되었습니다. DVIA-UD는 장비사양 및 고객의 요구에 따라 맞춤형 제작이 가능합니다.",
+      "videoUrl": "https://www.youtube.com/watch?v=26o-mcm6Ysg"
+    },
+    "features": [
+      {
+        "title": "저주파 제진 성능",
+        "description": "DVIA-UD 시리즈는 0.5 Hz 부터 제진이 시작되어, 4 Hz 이상부터 90% 이상의 제진성능을 발휘합니다."
+      },
+      {
+        "title": "인체 공학적 데스크형 액티브 제진대 설계",
+        "description": "DVIA-UD 시리즈는 DVIA-U 액티브 제진 아이솔레이터가 통합된 인체 공학적 데스크형 액티브 제진대로, 사용자가 부담없이 편안하게 앉아 다양한 실험을 할 수 있도록 설계 되었습니다. DVIA-UD는 장비사양 및 고객의 요구에 따라 맞춤형 제작이 가능합니다."
+      },
+      {
+        "title": "설치의 간편함",
+        "description": "DVIA-UD의 패시브 메커니즘은 엔지니어가 현장을 방문하여 설치하지 않아도 될 정도로 조작이 간단합니다. 간단하게 사용 설명서에 따라 셋업을 진행 할 수 있습니다."
+      },
+      {
+        "title": "에어 공급장치 불필요",
+        "description": "DVIA-U는 전기만 공급 가능하면 언제든지 실행이 가능합니다."
+      },
+      {
+        "title": "사용자를 위한 UI 소프트웨어",
+        "description": "우리는 실제로 효율적인 제진 시스템을 제공하는 것에 자부심을 가지고 있습니다. UI 소프트웨어는 사용자가 실시간 진동 차단 성능 및 바닥 진동 수준을 모니터링 할 수 있도록 DVIA-U와 함께 제공됩니다.",
+        "videoUrl": "https://www.youtube.com/watch?v=26o-mcm6Ysg"
+      },
+      {
+        "title": "피드백 및 피드 포워드 제어 알고리즘",
+        "description": "DVIA 시리즈는 피드백(Feedback) 제어 알고리즘을 사용하여 진동을 지속적으로 감지하고 즉각적으로 반응하여 진동을 실시간으로 최소합니다. 피드포워드(Feedforward) 제어 알고리즘은 지반 진동이 액티브 제진대위에 탑재되어 있는 장비에 진동이 전달되기전에 미리 지반진동을 감쇠시켜 효율적인 제진성능을 발휘시킵니다.",
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIA-UD-Feedback-and-Feedfoward-Control-Algorithm.jpg"
+      },
+      {
+        "title": "6 자유도(6 DOF) 진동제어",
+        "description": "액티브 제진대 내부에 장착된 센서와 액추에이터를 통해 6축(X, Y, Z, PITCH, ROLL, YAW)의 진동을 측정하여 실시간으로 제어합니다.",
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/DVIA-MO-Absolute-Control-of-Vibrations-in-All-Six-Degrees-of-Freedom01.png"
+      }
+    ],
+    "performance": {
+      "title": "4 Hz 이상부터 90% 이상의 제진성능",
+      "description": "DVIA-UD 시리즈는 0.5 Hz 부터 제진이 시작되어, 4 Hz 이상부터 90% 이상의 제진성능을 발휘합니다.",
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/DVIA-UD-Performance.png"
+    },
+    "specifications": {
+      "models": [
+        {
+          "name": "DVIA-UD350",
+          "platformDimensions": "Custom-made",
+          "maxLoadCapacity": "350 kg",
+          "maxActuatorForce": "Vertical: 6 N, Horizontal: 3 N"
+        },
+        {
+          "name": "DVIA-UD700",
+          "platformDimensions": "Custom-made",
+          "maxLoadCapacity": "700 kg",
+          "maxActuatorForce": "Vertical: 12 N, Horizontal: 6 N"
+        },
+        {
+          "name": "DVIA-UD1000",
+          "platformDimensions": "Custom-made",
+          "maxLoadCapacity": "1200 kg",
+          "maxActuatorForce": "Vertical: 12 N, Horizontal: 6 N"
+        }
+      ],
+      "common": {
+        "actuator": "Electromagnetic Actuator",
+        "degreesOfFreedom": "6 degrees",
+        "activeIsolationRange": "0.5 - 100 Hz",
+        "vibrationIsolation": "≥90%",
+        "inputVoltage": "AC100 - 240V / 50 - 60 Hz / 1A",
+        "powerConsumption": "Maximum 110W, <50 W in normal operation",
+        "operatingTemperature": "5 - 50 °C",
+        "operatingHumidity": "20 - 90%"
+      }
+    },
+    "resources": {
+      "catalog": {
+        "label": "카탈로그 다운로드",
+        "labelEn": "Download Catalog",
+        "url": "#"
+      },
+      "userManual": {
+        "label": "DVIA-UD User Manual",
+        "labelEn": "DVIA-UD User Manual",
+        "url": "#"
+      },
+      "installationReports": {
+        "label": "Installation Reports",
+        "labelEn": "Installation Reports",
+        "url": "#"
+      },
+      "caseStudies": {
+        "label": "Case Studies",
+        "labelEn": "Case Studies",
+        "url": "/ko/products/active-vibration-isolation-systems/desk-active-vibration-isolation-platform/case-studies/"
+      }
+    }
+  },
+  "featuresSection": {
+    "title": "주요 특징",
+    "features": [
+      {
+        "icon": "trending_down",
+        "title": "저주파 제진 성능",
+        "description": "DVIA-UD 시리즈는 0.5 Hz 부터 제진이 시작되어, 4 Hz 이상부터 90% 이상의 제진성능을 발휘합니다."
+      },
+      {
+        "icon": "chair",
+        "title": "인체 공학적 데스크형 액티브 제진대 설계",
+        "description": "DVIA-UD 시리즈는 DVIA-U 액티브 제진 아이솔레이터가 통합된 인체 공학적 데스크형 액티브 제진대로, 사용자가 부담없이 편안하게 앉아 다양한 실험을 할 수 있도록 설계 되었습니다. DVIA-UD는 장비사양 및 고객의 요구에 따라 맞춤형 제작이 가능합니다."
+      },
+      {
+        "icon": "build",
+        "title": "설치의 간편함",
+        "description": "DVIA-UD의 패시브 메커니즘은 엔지니어가 현장을 방문하여 설치하지 않아도 될 정도로 조작이 간단합니다. 간단하게 사용 설명서에 따라 셋업을 진행 할 수 있습니다."
+      },
+      {
+        "icon": "bolt",
+        "title": "에어 공급장치 불필요",
+        "description": "DVIA-U는 전기만 공급 가능하면 언제든지 실행이 가능합니다."
+      },
+      {
+        "icon": "computer",
+        "title": "사용자를 위한 UI 소프트웨어",
+        "description": "우리는 실제로 효율적인 제진 시스템을 제공하는 것에 자부심을 가지고 있습니다. UI 소프트웨어는 사용자가 실시간 진동 차단 성능 및 바닥 진동 수준을 모니터링 할 수 있도록 DVIA-U와 함께 제공됩니다."
+      }
+    ]
+  },
+  "controlAlgorithm": {
+    "title": "피드백 및 피드 포워드 제어 알고리즘",
+    "description": "DVIA 시리즈는 피드백(Feedback) 제어 알고리즘을 사용하여 진동을 지속적으로 감지하고 즉각적으로 반응하여 진동을 실시간으로 최소합니다. 피드포워드(Feedforward) 제어 알고리즘은 지반 진동이 액티브 제진대위에 탑재되어 있는 장비에 진동이 전달되기전에 미리 지반진동을 감쇠시켜 효율적인 제진성능을 발휘시킵니다.",
+    "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIA-UD-Feedback-and-Feedfoward-Control-Algorithm.jpg"
+  },
+  "sixDOF": {
+    "title": "6 자유도(6 DOF) 진동제어",
+    "description": "액티브 제진대 내부에 장착된 센서와 액추에이터를 통해 6축(X, Y, Z, PITCH, ROLL, YAW)의 진동을 측정하여 실시간으로 제어합니다.",
+    "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/DVIA-MO-Absolute-Control-of-Vibrations-in-All-Six-Degrees-of-Freedom01.png"
+  },
+  "performance": {
+    "title": "4 Hz 이상부터 90% 이상의 제진성능",
+    "description": "DVIA-UD 시리즈는 0.5 Hz 부터 제진이 시작되어, 4 Hz 이상부터 90% 이상의 제진성능을 발휘합니다.",
+    "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/DVIA-UD-Performance.png"
+  },
+  "resources": {
+    "catalog": {
+      "label": "카탈로그 다운로드",
+      "labelEn": "Download Catalog",
+      "url": "#"
+    },
+    "userManual": {
+      "label": "DVIA-UD User Manual",
+      "labelEn": "DVIA-UD User Manual",
+      "url": "#"
+    },
+    "quote": {
+      "label": "견적 요청",
+      "labelEn": "Request Quote",
+      "url": "/contact"
+    }
+  }
+}

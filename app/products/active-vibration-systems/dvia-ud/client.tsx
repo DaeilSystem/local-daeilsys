@@ -9,11 +9,11 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
-import productData from "@/data/products/dvia-m-full.json"
+import productData from "@/data/products/dvia-ud-full.json"
 
-type TabType = "overview" | "features" | "performance" | "specifications" | "applications" | "resources"
+type TabType = "overview" | "features" | "performance" | "specifications" | "resources"
 
-export default function DviaMClient() {
+export default function DviaUDClient() {
   const [activeTab, setActiveTab] = useState<TabType>("overview")
 
   const tabs: { id: TabType; label: string }[] = [
@@ -21,7 +21,6 @@ export default function DviaMClient() {
     { id: "features", label: "Features" },
     { id: "performance", label: "Performance" },
     { id: "specifications", label: "Specifications" },
-    { id: "applications", label: "Applications" },
     { id: "resources", label: "Resources" },
   ]
 
@@ -127,7 +126,7 @@ export default function DviaMClient() {
 
         {/* Features Tab */}
         {activeTab === "features" && (
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="space-y-12">
             {productData.tabs.features.map((feature, index) => (
               <div key={index} className="space-y-4">
                 <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">
@@ -145,6 +144,19 @@ export default function DviaMClient() {
                     />
                   </div>
                 )}
+                {feature.videoUrl && (
+                  <div className="aspect-video max-w-4xl">
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      src={feature.videoUrl.replace("watch?v=", "embed/")}
+                      title={feature.title}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="rounded-lg"
+                    ></iframe>
+                  </div>
+                )}
               </div>
             ))}
           </div>
@@ -156,10 +168,13 @@ export default function DviaMClient() {
             <h2 className="text-3xl font-semibold text-gray-900 dark:text-white text-center">
               {productData.tabs.performance.title}
             </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300 text-center">
+              {productData.tabs.performance.description}
+            </p>
             <div className="rounded-lg overflow-hidden">
               <img
                 src={productData.tabs.performance.image}
-                alt="DVIA-M Performance"
+                alt="DVIA-UD Performance"
                 className="w-full h-auto object-contain"
               />
             </div>
@@ -188,29 +203,40 @@ export default function DviaMClient() {
               <tbody>
                 <tr>
                   <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700">
-                    Isolator Dimensions (L x W x H)
+                    Platform Dimensions (L x W x H)
                   </td>
                   {productData.tabs.specifications.models.map((model) => (
                     <td
                       key={model.name}
                       className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700"
                     >
-                      {model.isolatorDimensions}
+                      {model.platformDimensions}
                     </td>
                   ))}
                 </tr>
                 <tr>
                   <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700">
-                    Load Capacity
+                    Maximum Load Capacity
                   </td>
                   {productData.tabs.specifications.models.map((model) => (
                     <td
                       key={model.name}
                       className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700"
                     >
-                      {model.loadCapacity}
+                      {model.maxLoadCapacity}
                     </td>
                   ))}
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700">
+                    Actuator
+                  </td>
+                  <td
+                    colSpan={productData.tabs.specifications.models.length}
+                    className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700"
+                  >
+                    {productData.tabs.specifications.common.actuator}
+                  </td>
                 </tr>
                 <tr>
                   <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700">
@@ -221,62 +247,123 @@ export default function DviaMClient() {
                       key={model.name}
                       className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700"
                     >
-                      {model.maxActuatorForce}
+                      {model.maxActuatorForce || '-'}
                     </td>
                   ))}
                 </tr>
-                {Object.entries(productData.tabs.specifications.common).map(([key, value]) => (
-                  <tr key={key}>
-                    <td className="px-6 py-4 text-sm font-medium text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700">
-                      {key.replace(/([A-Z])/g, " $1").trim()}
-                    </td>
-                    <td
-                      colSpan={productData.tabs.specifications.models.length}
-                      className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700"
-                    >
-                      {value}
-                    </td>
-                  </tr>
-                ))}
+                <tr>
+                  <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700">
+                    Degrees of Freedom
+                  </td>
+                  <td
+                    colSpan={productData.tabs.specifications.models.length}
+                    className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700"
+                  >
+                    {productData.tabs.specifications.common.degreesOfFreedom}
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700">
+                    Active Isolation Range
+                  </td>
+                  <td
+                    colSpan={productData.tabs.specifications.models.length}
+                    className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700"
+                  >
+                    {productData.tabs.specifications.common.activeIsolationRange}
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700">
+                    Vibration Isolation at ≥4 Hz
+                  </td>
+                  <td
+                    colSpan={productData.tabs.specifications.models.length}
+                    className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700"
+                  >
+                    {productData.tabs.specifications.common.vibrationIsolation}
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700">
+                    Input Voltage (V)
+                  </td>
+                  <td
+                    colSpan={productData.tabs.specifications.models.length}
+                    className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700"
+                  >
+                    {productData.tabs.specifications.common.inputVoltage}
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700">
+                    Power Consumption (W)
+                  </td>
+                  <td
+                    colSpan={productData.tabs.specifications.models.length}
+                    className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700"
+                  >
+                    {productData.tabs.specifications.common.powerConsumption}
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700">
+                    Operating Range - Temperature (°C)
+                  </td>
+                  <td
+                    colSpan={productData.tabs.specifications.models.length}
+                    className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700"
+                  >
+                    {productData.tabs.specifications.common.operatingTemperature}
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700">
+                    Operating Range - Humidity (%)
+                  </td>
+                  <td
+                    colSpan={productData.tabs.specifications.models.length}
+                    className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700"
+                  >
+                    {productData.tabs.specifications.common.operatingHumidity}
+                  </td>
+                </tr>
               </tbody>
             </table>
-          </div>
-        )}
-
-        {/* Applications Tab */}
-        {activeTab === "applications" && (
-          <div className="space-y-12">
-            <div>
-              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
-                Applications
-              </h3>
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-                {productData.tabs.applications.list.map((app, index) => (
-                  <div
-                    key={index}
-                    className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg text-center"
-                  >
-                    <p className="text-gray-700 dark:text-gray-300">{app}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
         )}
 
         {/* Resources Tab */}
         {activeTab === "resources" && (
           <div className="max-w-4xl mx-auto space-y-8">
-            <div className="grid md:grid-cols-1 gap-6">
+            <div className="grid md:grid-cols-2 gap-6">
               <button className="px-6 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-lg font-medium">
                 {productData.tabs.resources.catalog.label}
+              </button>
+              <button className="px-6 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-lg font-medium">
+                {productData.tabs.resources.userManual.label}
               </button>
             </div>
 
             <div className="space-y-4">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                {productData.tabs.resources.cad}
+                {productData.tabs.resources.installationReports.label}
               </h3>
+              <button className="px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                {productData.tabs.resources.installationReports.label}
+              </button>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                {productData.tabs.resources.caseStudies.label}
+              </h3>
+              <Link
+                href={productData.tabs.resources.caseStudies.url}
+                className="block px-4 py-3 bg-gray-50 dark:bg-gray-800 text-blue-600 dark:text-blue-400 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+              >
+                {productData.tabs.resources.caseStudies.label} →
+              </Link>
             </div>
           </div>
         )}

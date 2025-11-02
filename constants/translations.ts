@@ -46,6 +46,7 @@ export const translations: Translations = {
     // Active Vibration Systems
     dviaT: "DVIA-T",
     dviaM: "DVIA-M",
+    dviaMB: "DVIA-MB",
     dviaML: "DVIA-ML",
     dviaMLP: "DVIA-MLP",
     dviaMO: "DVIA-MO",
@@ -132,6 +133,7 @@ export const translations: Translations = {
     // Active Vibration Systems
     dviaT: "DVIA-T",
     dviaM: "DVIA-M",
+    dviaMB: "DVIA-MB",
     dviaML: "DVIA-ML",
     dviaMLP: "DVIA-MLP",
     dviaMO: "DVIA-MO",

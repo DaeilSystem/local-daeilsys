@@ -2,13 +2,13 @@ import type { Metadata } from "next"
 import Client from "./client"
 
 export const metadata: Metadata = {
-  title: "DVIA-MO - Modular Active Vibration Isolation System | DVIA",
+  title: "DVIA-MO Series - Active Optical Table | DVIA",
   description:
-    "Modular Active Vibration Isolation System designed for SEM and TEM applications with ultra-low frequency isolation performance.",
+    "DVIA-MO Series combines DVIA-M active vibration isolation system with high-performance optical tables, controlling ground vibrations from 0.5 Hz for photonics, laser, and spectroscopy applications.",
   openGraph: {
-    title: "DVIA-MO - Modular Active Vibration Isolation System | DVIA",
+    title: "DVIA-MO Series - Active Optical Table | DVIA",
     description:
-      "Modular Active Vibration Isolation System designed for SEM and TEM applications with ultra-low frequency isolation performance.",
+      "DVIA-MO Series combines DVIA-M active vibration isolation system with high-performance optical tables, controlling ground vibrations from 0.5 Hz for photonics, laser, and spectroscopy applications.",
     type: "website",
   },
 }

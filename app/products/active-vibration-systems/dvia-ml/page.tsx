@@ -1,15 +1,14 @@
 import type { Metadata } from "next"
 import Client from "./client"
+import productData from "@/data/products/dvia-ml-full.json"
 
 export const metadata: Metadata = {
-  title: "DVIA-ML Series | Advanced Active Vibration Isolation System | DAEIL SYSTEMS",
-  description:
-    "DVIA-ML Series represents the world's most advanced active vibration isolation systems for electron microscopes. Unmatched performance that outperforms any existing system.",
-  keywords: ["DVIA-ML", "electron microscope", "active vibration isolation", "advanced vibration control", "precision measurement"],
+  title: `${productData.name} | ${productData.fullName} | DAEIL SYSTEMS`,
+  description: productData.description,
+  keywords: [productData.name, "electron microscope", "active vibration isolation", "cryo-EM", "TEM", "adaptive control algorithms"],
   openGraph: {
-    title: "DVIA-ML Series | Advanced Active Vibration Isolation System | DAEIL SYSTEMS",
-    description:
-      "DVIA-ML Series represents the world's most advanced active vibration isolation systems for electron microscopes.",
+    title: `${productData.name} | ${productData.fullName} | DAEIL SYSTEMS`,
+    description: productData.description,
     type: "website",
   },
 }

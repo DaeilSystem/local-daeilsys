@@ -23,6 +23,7 @@ export const getProductsMenuItems = (language: "en" | "ko"): ProductsMenuItems =
       items: [
         { key: "dvia-t", label: t.dviaT, href: "/products/active-vibration-systems/dvia-t" },
         { key: "dvia-m", label: t.dviaM, href: "/products/active-vibration-systems/dvia-m" },
+        { key: "dvia-mb", label: t.dviaMB, href: "/products/active-vibration-systems/dvia-mb" },
         { key: "dvia-ml", label: t.dviaML, href: "/products/active-vibration-systems/dvia-ml" },
         { key: "dvia-mlp", label: t.dviaMLP, href: "/products/active-vibration-systems/dvia-mlp1000" },
         { key: "dvia-mo", label: t.dviaMO, href: "/products/active-vibration-systems/dvia-mo" },

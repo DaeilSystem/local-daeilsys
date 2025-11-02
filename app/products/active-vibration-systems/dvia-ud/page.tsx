@@ -1,20 +1,11 @@
 import type { Metadata } from "next"
 import Client from "./client"
-import productData from "@/data/products/dvia-mb-full.json"
+import productData from "@/data/products/dvia-ud-full.json"
 
 export const metadata: Metadata = {
   title: `${productData.name} | ${productData.fullName} | DAEIL SYSTEMS`,
   description: productData.description,
-  keywords: [
-    productData.name,
-    "베이스형 액티브 제진대",
-    "electron microscopy",
-    "active vibration isolation",
-    "SEM",
-    "TEM",
-    "feedforward control",
-    "feedback control"
-  ],
+  keywords: [productData.name, "desk active vibration isolation", "ergonomic vibration isolation", "custom active vibration isolation", "feedforward control"],
   openGraph: {
     title: `${productData.name} | ${productData.fullName} | DAEIL SYSTEMS`,
     description: productData.description,
@@ -24,8 +15,8 @@ export const metadata: Metadata = {
 
 export const revalidate = 86400
 
-const DviaMBPage = () => {
+const DviaUDPage = () => {
   return <Client />
 }
 
-export default DviaMBPage
+export default DviaUDPage
