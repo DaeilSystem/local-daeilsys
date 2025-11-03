@@ -1,0 +1,157 @@
+{
+  "id": "overhead-shelf",
+  "name": "Overhead Shelf System",
+  "fullName": {
+    "en": "DOTS Overhead Shelf System",
+    "ko": "오버헤드쉘프"
+  },
+  "series": {
+    "en": "DOTS Series",
+    "ko": "DOTS 시리즈"
+  },
+  "category": "Optical Tables Accessories",
+  "tagline": {
+    "en": "Convenient storage solution for power supplies, controllers, oscilloscopes, computers, and various instruments",
+    "ko": "전력 공급 장치, 컬트롤러, 오실로스코프, 컴퓨터 및 각종 기구를 위한 편리한 수납 솔루션"
+  },
+  "description": {
+    "en": "Overhead Shelf System is a shelf that allows users to easily and conveniently store power supplies, controllers, oscilloscopes, computers, and various instruments. The shelf height is easily adjustable, and hanging shelves can be installed below the shelf in desired positions to secure more storage space.",
+    "ko": "Overhead Shelf System은 사용자가 전력 공급 장치, 컬트롤러, 오실로스코프, 컴퓨터나 각종 기구를 쉽고 편리하게 수납할 수 있는 선반입니다. 선반의 높이는 쉽게 조절 가능하며 선반 아래 행잉셸프를 원하는 위치에 설치하여 더 많은 수납 공간을 확보할 수 있습니다."
+  },
+  "certifications": [
+    {
+      "name": "CE Mark",
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/mark-ce.png"
+    },
+    {
+      "name": "NRTL",
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/mark-NRTL_1.png"
+    }
+  ],
+  "heroImages": [
+    "https://www.daeilsys.com/wp-content/uploads/2020/05/DOTS-Overhead-Shelf-System-3.png",
+    "https://www.daeilsys.com/wp-content/uploads/2020/05/DOTS-Overhead-Shelf-System-2-1024x696.png",
+    "https://www.daeilsys.com/wp-content/uploads/2020/05/DOTS-Overhead-Shelf-System-1-1024x698.png"
+  ],
+  "tabs": {
+    "overview": {
+      "description": {
+        "en": "Overhead Shelf System is a shelf that allows users to easily and conveniently store power supplies, controllers, oscilloscopes, computers, and various instruments. The shelf height is easily adjustable, and hanging shelves can be installed below the shelf in desired positions to secure more storage space.",
+        "ko": "Overhead Shelf System은 사용자가 전력 공급 장치, 컬트롤러, 오실로스코프, 컴퓨터나 각종 기구를 쉽고 편리하게 수납할 수 있는 선반입니다. 선반의 높이는 쉽게 조절 가능하며 선반 아래 행잉셸프를 원하는 위치에 설치하여 더 많은 수납 공간을 확보할 수 있습니다."
+      }
+    },
+    "features": [
+      {
+        "title": {
+          "en": "Convenient instrument storage",
+          "ko": "편리한 기구 수납"
+        },
+        "description": {
+          "en": "",
+          "ko": ""
+        }
+      },
+      {
+        "title": {
+          "en": "Expanded table space",
+          "ko": "테이블 공간 확장"
+        },
+        "description": {
+          "en": "",
+          "ko": ""
+        }
+      },
+      {
+        "title": {
+          "en": "Independent support type",
+          "ko": "독립 지지형"
+        },
+        "description": {
+          "en": "",
+          "ko": ""
+        }
+      },
+      {
+        "title": {
+          "en": "Level foot adjustment for installation on uneven floors",
+          "ko": "레벨풋 조절로 고르지 않은 바닥에 설치 가능"
+        },
+        "description": {
+          "en": "",
+          "ko": ""
+        }
+      },
+      {
+        "title": {
+          "en": "Welded steel structure with black powder coating finish",
+          "ko": "용접된 철 구조, 블랙 파우더 코팅 마감"
+        },
+        "description": {
+          "en": "",
+          "ko": ""
+        }
+      },
+      {
+        "title": {
+          "en": "Hanging shelves for more storage space",
+          "ko": "더 많은 수납공간을 위한 행잉셸프"
+        },
+        "description": {
+          "en": "",
+          "ko": ""
+        }
+      },
+      {
+        "title": {
+          "en": "Electrical outlets on both sides of shelf (110V/220V, 60Hz)",
+          "ko": "선반 양쪽 콘센트(110v/220v.60Hz)"
+        },
+        "description": {
+          "en": "",
+          "ko": ""
+        }
+      },
+      {
+        "title": {
+          "en": "N.F.B (30A) for overcurrent protection",
+          "ko": "과전류 방지를 위한 N.F.B(30A)"
+        },
+        "description": {
+          "en": "",
+          "ko": ""
+        }
+      },
+      {
+        "title": {
+          "en": "Height: 1828 mm / 2028 mm",
+          "ko": "높이 1828 mm / 2028 mm"
+        },
+        "description": {
+          "en": "",
+          "ko": ""
+        }
+      }
+    ],
+    "order": {
+      "rows": [
+        ["Model No.", "Length", "Number of Hanging Shelves", "Electrical Outlets"],
+        ["DOTS-4", "4ft(120cm)", "1ea", "110V 4 ea & 220V 4 ea"],
+        ["DOTS-5", "5ft(150cm)", "2ea", "110V 5 ea & 220V 5 ea"],
+        ["DOTS-6", "6ft(180cm)", "2ea", "110V 6 ea & 220V 6 ea"],
+        ["DOTS-7", "7ft(210cm)", "3ea", "110V 7 ea & 220V 7 ea"],
+        ["DOTS-8", "8ft(240cm)", "3ea", "110V 8 ea & 220V 8 ea"],
+        ["DOTS-10", "10ft(300cm)", "4ea", "110V 10 ea & 220V 10 ea"],
+        ["DOTS-12", "12ft(360cm)", "6ea", "110V 12 ea & 220V 12 ea"]
+      ]
+    },
+    "resources": [
+      {
+        "label": {
+          "en": "Catalog",
+          "ko": "카탈로그"
+        },
+        "url": "#"
+      }
+    ]
+  }
+}

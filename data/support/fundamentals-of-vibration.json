@@ -1,0 +1,225 @@
+{
+  "id": "fundamentals",
+  "title": {
+    "en": "Fundamentals of Vibration",
+    "ko": "제진의 원리"
+  },
+  "description": {
+    "en": "Basic principles and theory of vibration isolation systems and their applications.",
+    "ko": "제진 시스템의 기본 원리와 이론 및 응용 분야."
+  },
+  "sections": [
+    {
+      "id": "displacement-velocity-acceleration",
+      "title": {
+        "en": "Relationship between Displacement, Velocity, and Acceleration",
+        "ko": "변위·속도·가속도 관계"
+      },
+      "images": [
+        "https://www.daeilsys.com/wp-content/uploads/2020/04/Relationship-between-Displacement-Acceleration.jpg",
+        "https://www.daeilsys.com/wp-content/uploads/2020/04/Relationship-Between-Displacement-Velocity.jpg",
+        "https://www.daeilsys.com/wp-content/uploads/2020/04/Relationship-Between-Displacement-Displacement.jpg"
+      ]
+    },
+    {
+      "id": "vibration-sources",
+      "title": {
+        "en": "Vibration Sources",
+        "ko": "진동원"
+      },
+      "items": [
+        {
+          "title": {
+            "en": "Floor Vibration",
+            "ko": "지반진동"
+          },
+          "description": {
+            "en": "Floor vibration refers to all factors that cause the floor on which the table is installed to shake. These include walking, vehicle movement, wind pressure acting on building exteriors, and air conditioning equipment.",
+            "ko": "지반진동은 테이블이 설치된 바닥을 흔들리게 하는 모든 요인을 뜻합니다. 보행, 차량 이동, 건물 외벽에 작용하고 있는 풍압, 공조 장치 등이 있습니다."
+          }
+        },
+        {
+          "title": {
+            "en": "Direct Disturbance",
+            "ko": "제진대상에 직접적으로 가해지는 외란"
+          },
+          "description": {
+            "en": "Disturbance refers to a force directly applied to the platform on which the control target is mounted, in other words, a mechanically connected vibration source other than floor vibration transmitted to the platform through supports. This includes vibrations from stages on the platform, cables and tubes connected to equipment, etc.",
+            "ko": "외란은 제어대상이 장착된 플랫폼(Platform)위에 직접 힘이 가해지는 것, 다시 말해 기계적으로 연결된 진동원이면서 바닥진동이 서포트를 통해 플랫폼에 전달되는 것 외의 힘을 말합니다. 플랫폼 위의 스테이지, 장비와 연결되는 케이블 및 튜브 등에 의한 진동 등이 이에 해당합니다."
+          }
+        },
+        {
+          "title": {
+            "en": "Acoustic Noise",
+            "ko": "음향가진"
+          },
+          "description": {
+            "en": "Acoustic excitation refers to factors that directly affect the product through air pressure, such as wind pressure from air conditioning equipment and external noise.",
+            "ko": "음향가진은 공조 장치의 풍압, 외부의 소음 등 공기의 압력을 통해 제품에 직접적으로 영향을 주는 요인을 뜻합니다."
+          }
+        }
+      ],
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/Vibration-Sources.jpg"
+    },
+    {
+      "id": "frequency",
+      "title": {
+        "en": "Frequency",
+        "ko": "진동수"
+      },
+      "description": {
+        "en": "Frequency is the number of times a periodic phenomenon repeats per unit time. [Unit: Hz]",
+        "ko": "단위시간 동안 주기적인 현상이 반복되는 횟수를 진동수라고 합니다. [단위 : Hz]"
+      },
+      "images": [
+        "https://www.daeilsys.com/wp-content/uploads/2020/04/Frequency-1Hz-graph.jpg",
+        "https://www.daeilsys.com/wp-content/uploads/2020/04/Frequency-3Hz-graph.jpg",
+        "https://www.daeilsys.com/wp-content/uploads/2020/04/Frequency-1000Hz-graph.jpg"
+      ]
+    },
+    {
+      "id": "amplitude",
+      "title": {
+        "en": "Amplitude",
+        "ko": "진폭"
+      },
+      "description": {
+        "en": "Vibration is generally expressed as a function of displacement and time. The magnitude of displacement is called amplitude. [Unit: m, cm, mm]",
+        "ko": "진동은 일반적으로 변위와 시간의 함수로 표현합니다. 이 때, 변위의 크기를 진폭이라고 합니다. [단위 : m, cm, mm]"
+      },
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/Amplitude-graph.jpg"
+    },
+    {
+      "id": "natural-frequency",
+      "title": {
+        "en": "Natural Frequency",
+        "ko": "고유진동수"
+      },
+      "description": {
+        "en": "Natural frequency refers to the inherent frequency of an object. Generally, the lower the natural frequency, the softer (soft), and the higher, the harder (hard).",
+        "ko": "고유진동수는 어떤 물체가 가지고 있는 고유의 진동수를 의미합니다. 일반적으로 고유진동스가 낮으면 소프트(soft)하고, 높으면 하드(Hard)하다고 말할 수 있습니다."
+      }
+    },
+    {
+      "id": "forced-frequency",
+      "title": {
+        "en": "Forced Frequency",
+        "ko": "강제진동수"
+      },
+      "description": {
+        "en": "When an external force is applied to a rigid body, vibration occurs. The frequency of the external force that causes this vibration is called the forced frequency.",
+        "ko": "어떤한 강체에 외력을 가하면 진동이 발생하는데, 이때 발생한 외력의 진동수를 강제진동수라 합니다."
+      }
+    },
+    {
+      "id": "vibration-acceleration-level",
+      "title": {
+        "en": "Vibration Acceleration Level",
+        "ko": "진동가속도레밸"
+      },
+      "description": {
+        "en": "This is the magnitude of vibration acceleration expressed in decibels.",
+        "ko": "진동가속도의 크기를 decibel로 나타낸 것입니다."
+      },
+      "formula": "VAL = 20 × log₁₀(a/a₀)\nwhere a₀ = 10⁻⁶ m/s²"
+    },
+    {
+      "id": "resonance",
+      "title": {
+        "en": "Resonance",
+        "ko": "공진"
+      },
+      "description": {
+        "en": "Resonance occurs when the frequency of the external force acting on a vibration system matches the natural frequency of that system. The frequency at which the peak value appears on the frequency response curve according to the external force is called the resonant frequency.",
+        "ko": "진동계에 작용하는 외력의 진동수와 그 계의 고유진동수가 일치할 때 발생하는 것을 공진이라고 합니다. 이때, 외력에 따른 주파수 응답 곡 선상에서 피크(Peak)값을 보이는 주파수를 공진주파수(Resonant Frequency)라고 표현합니다."
+      },
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/Resonant-Frequency-graph.jpg"
+    },
+    {
+      "id": "damping",
+      "title": {
+        "en": "Damping",
+        "ko": "감쇠"
+      },
+      "description": {
+        "en": "A vibration isolation table without damping capability cannot quickly stop vibration. Damping dissipates mechanical energy in the vibration isolation table and allows vibration to decrease more rapidly. It is an element that reduces the resonance rate at the resonance point. In air spring-type vibration isolation tables, damping characteristics are obtained through the flow resistance of air when passing through the orifice between the air auxiliary tank and the air chamber. However, if the orifice is made too small, the damping characteristics improve, but the resonance point increases, reducing the vibration isolation effect.",
+        "ko": "감쇠 기능이 없는 제진대는 진동을 신속히 멈추지 못합니다. 감쇠는 기계적 에너지를 제진대에서 소멸시키고, 진동이 보다 빠르게 줄어들도록 만들어줍니다. 공진점에서의 공진율을 낮추어 주는 요소로, 공기스프링식(Air Spring)제진대에서는 공기 보조탱크와 공기 챔버 사이의 오리피스(Orifice)를 통과할 때 공기의 유동저항으로 감쇠 특성을 얻게 됩니다. 하지만 오리피스를 너무 작게하면 감쇠 특성은 좋아지는 반면 공진점이 높아져서 제진효과가 감소합니다."
+      },
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/Damping-graph.jpg"
+    },
+    {
+      "id": "amplitude-expression",
+      "title": {
+        "en": "Methods of Expressing Amplitude",
+        "ko": "진폭의 표현 방법"
+      },
+      "description": {
+        "en": "The magnitude of displacement, velocity, or acceleration from its zero value (rest value) is known as amplitude. The amplitude of vibration can be expressed as peak-to-peak, peak, Root Mean Square.",
+        "ko": "변위, 속도, 또는 가속도의 크기를 진폭이라고 합니다. 진동의 진폭은 피크투피크(peak-to-peak), 피크(peak), 평균제곱근(RMS)으로 표현할 수 있습니다."
+      },
+      "methods": [
+        {
+          "name": {
+            "en": "Peak",
+            "ko": "Peak"
+          },
+          "description": {
+            "en": "Suitable for displaying vibration levels such as instantaneous shocks. It shows how large the vibration level is without considering time.",
+            "ko": "순간쇼크 등과 같은 진동레벨을 표시하는데 적합하며, 얼마나 큰 진동레벨인가를 나타내고, 시간을 고려하지 않습니다."
+          }
+        },
+        {
+          "name": {
+            "en": "Peak-to-Peak",
+            "ko": "Peak-to-Peak"
+          },
+          "description": {
+            "en": "Convenient for showing the maximum value of amplitude. For example, it is often used when vibration displacement is important in terms of maximum stress of machine parts or tolerances.",
+            "ko": "진폭의 최대값을 나타내기에 편리합니다. 예를 들어, 기계 부속의 최대 응력 또는 공차 측면에서 진동 변위가 중요시될 때 많이 사용합니다."
+          }
+        },
+        {
+          "name": {
+            "en": "Root Mean Square (RMS)",
+            "ko": "Root Mean Square (RMS)"
+          },
+          "description": {
+            "en": "A value that considers both time and vibration magnitude, which measures the energy content of the vibration signal. For sinusoidal waves, it is used as a value multiplied by 0.707 times the peak, and has a concept of area representing energy. ISO evaluation criteria in the vibration and noise fields are all adopted in RMS.",
+            "ko": "시간과 진동크기를 함께 고려한 값으로써 이는 진동 신호의 에너지량을 측정하는 것입니다. 정현파(Sine Wave)의 경우 Peak에 0.707배를 곱한 값으로 사용되며, 에너지를 나타내는 면적개념이 있습니다. 진동 분야 및 소음 분야의 ISO 평가 기준은 모두 RMS로 채택되어 있습니다."
+          }
+        },
+        {
+          "name": {
+            "en": "Average",
+            "ko": "Average"
+          },
+          "description": {
+            "en": "Shows the average change in vibration over time. However, it is not used in a physically useful way, so its scope of use is limited.",
+            "ko": "시간에 대한 진동의 평균 변화량을 표시합니다. 하지만, 물리적으로 유용하게 사용되지 않기 때문에 사용범위가 국한되어 있습니다."
+          }
+        }
+      ],
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/Measurement-of-Vibration-Amplitude.jpg"
+    },
+    {
+      "id": "vibration-isolation",
+      "title": {
+        "en": "Vibration Isolation",
+        "ko": "제진"
+      },
+      "description": {
+        "en": "Vibration isolation refers to applying control force to reduce vibration about vibrations that affect structures from inside or outside the structure. As industry develops rapidly, vibration isolation tables have been developed to eliminate vibrations that affect measuring equipment. The two factors that affect vibration isolation effectiveness in these vibration isolation tables are the natural frequency of the vibration isolation material and damping. Natural frequency refers to the frequency at which an object resonates, and damping refers to the characteristic of dissipating energy in a vibration system to reduce vibration. The ratio of natural frequency to ground vibration frequency (f/fn) is expressed as vibration transmissibility and is used as a measure to determine vibration isolation effectiveness. Vibration isolation tables have better vibration isolation efficiency when the natural frequency is lower and the ground vibration frequency is higher. That is, the lower the vibration transmissibility, the better the vibration isolation effect. When the frequency ratio (f/fn) is less than 1.414, amplification occurs. When it is 1, that is, when the natural frequency and ground vibration frequency are the same, maximum amplification occurs. When it is greater than 1.414, vibration isolation occurs. General vibration isolation systems are divided into coil springs and air springs. Coil springs are divided into undamped and damped depending on their configuration. Undamped coil springs are amplified at the resonance point (f/fn), but have good vibration isolation efficiency. On the other hand, damped coil springs have reduced amplification at the resonance point but lower vibration isolation efficiency. Unlike coil springs, air springs can simultaneously achieve both minimum amplification and high efficiency at the resonance point.",
+        "ko": "제진은 구조물의 내부나 외부에서 구조물에 영향을 주는 진동에 대해 제어력을 가하여 진동을 줄이는 것을 의미합니다. 산업이 빠르게 발달함에 따라, 측정장비 등에 영향을 주는 진동을 제거하기 위해 제진대가 개발되었습니다. 이러한 제진대에서 제진효과에 영향을 주는 두가지 요소는 진동절연재의 고유진동수(Natural Frequency)와 감쇠(Damping)입니다. 고유진동수는 어떤 물체가 공진하는 주파수를 말하며, 감쇠는 진동동계에서 에너지를 소멸시켜 진동을 줄이는 특성을 말합니다. 이때, 고유진동수와 지반 진동의 진동수 비(f/fn)를 진동전달율이라고표현하며 제진효과를 결정하는 척도로 사용됩니다. 제진대는 고유진동수가 낮을수록, 지반 진동의 진동수가 클수록 제진 효율이 좋습니다. 즉, 진동전달율이 낮을수록 제진효과가 탁월합니다. 진동수 비(f/fn)는 1.414 보다 작을 때는 증폭이 되고, 1 일 때 즉 고유진동수와 지반진동수가 같을 때는 최대 증폭이 일어나며, 1.414 보다 클 때는 제진이 됩니다. 일반적인 제진시스템은 코일스프링(Coil Spring)과 공기스프링(Air Spring)으로 구분되며, 코일스프링은 구성에 따라 비감쇠와 감쇠로 구분됩니다. 비감쇠코일스프링은 공진점(f/fn)에서 증폭되지만 제진효율은 좋습니다. 반면에 감쇠코일스프링은 공진점에서 증폭이 감쇠하나 제진 효율은 낮아집니다. 공기스프링은 코일스프링과 달리 공진점에서 최소 증폭과 고효율, 두 가지를 동시에 구현할 수 있습니다."
+      },
+      "images": [
+        "https://www.daeilsys.com/wp-content/uploads/2020/04/Vibration-isolation-Transimissibility.jpg",
+        "https://www.daeilsys.com/wp-content/uploads/2020/04/Fundamentals-of-Vibration-Isolation.jpg",
+        "https://www.daeilsys.com/wp-content/uploads/2020/04/Natural-Frequency-formula.jpg",
+        "https://www.daeilsys.com/wp-content/uploads/2020/04/Vibration-Transmissibility-formula.jpg",
+        "https://www.daeilsys.com/wp-content/uploads/2020/04/Vibration-Transmissibility-graph.jpg",
+        "https://www.daeilsys.com/wp-content/uploads/2020/04/Natural-Frequency-of-Vibration-Isolation-Table.jpg"
+      ]
+    }
+  ]
+}
+

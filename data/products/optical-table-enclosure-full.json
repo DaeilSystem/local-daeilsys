@@ -1,0 +1,127 @@
+{
+  "id": "optical-table-enclosure",
+  "name": "Optical Table Enclosure",
+  "fullName": {
+    "en": "DOTE Table Enclosure",
+    "ko": "광학 테이블 인클로저"
+  },
+  "series": {
+    "en": "DOTE Series",
+    "ko": "DOTE 시리즈"
+  },
+  "category": "Optical Tables Accessories",
+  "tagline": {
+    "en": "Custom-designed enclosure to protect equipment from heat, light, airflow, and dust",
+    "ko": "열, 빛, 기류, 먼지로부터 장비를 보호하는 맞춤형 인클로저"
+  },
+  "description": {
+    "en": "Optical table enclosure consists of durable aluminum profiles and mainly acrylic sheets to protect equipment installed on the optical table from heat, light, airflow, and dust. The enclosure is custom-designed to meet the user's purpose and requirements.",
+    "ko": "광학 테이블용 인클로저는 내구성이 강한 알루미늄 프로파일과 주로 아크릴 시트로 구성되어, 열, 빛, 기류, 먼지 등이 광학 테이블 위에 설치된 장비에 영향을 주지 않도록 보호합니다. 인클로저는 사용자의 목적과 요구 사항을 충족하도록 맞춤 설계를 합니다."
+  },
+  "certifications": [
+    {
+      "name": "CE Mark",
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/mark-ce.png"
+    },
+    {
+      "name": "NRTL",
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/mark-NRTL_1.png"
+    }
+  ],
+  "heroImages": [
+    "https://www.daeilsys.com/wp-content/uploads/2020/05/DOTE-Table-Enclosure-9-1024x763.png",
+    "https://www.daeilsys.com/wp-content/uploads/2020/05/DOTE-Table-Enclosure-1-1024x763.png",
+    "https://www.daeilsys.com/wp-content/uploads/2020/05/DOTE-Table-Enclosure-2-1024x763.png",
+    "https://www.daeilsys.com/wp-content/uploads/2020/05/DOTE-Table-Enclosure-3-1024x763.png",
+    "https://www.daeilsys.com/wp-content/uploads/2020/05/DOTE-Table-Enclosure-4-1024x763.png",
+    "https://www.daeilsys.com/wp-content/uploads/2020/05/DOTE-Table-Enclosure-5-1024x763.png",
+    "https://www.daeilsys.com/wp-content/uploads/2020/05/DOTE-Table-Enclosure-6-1024x763.png",
+    "https://www.daeilsys.com/wp-content/uploads/2020/05/DOTE-Table-Enclosure-7-1024x763.png",
+    "https://www.daeilsys.com/wp-content/uploads/2020/05/DOTE-Table-Enclosure-8-1024x763.png"
+  ],
+  "tabs": {
+    "overview": {
+      "description": {
+        "en": "Optical table enclosure consists of durable aluminum profiles and mainly acrylic sheets to protect equipment installed on the optical table from heat, light, airflow, and dust. The enclosure is custom-designed to meet the user's purpose and requirements.",
+        "ko": "광학 테이블용 인클로저는 내구성이 강한 알루미늄 프로파일과 주로 아크릴 시트로 구성되어, 열, 빛, 기류, 먼지 등이 광학 테이블 위에 설치된 장비에 영향을 주지 않도록 보호합니다. 인클로저는 사용자의 목적과 요구 사항을 충족하도록 맞춤 설계를 합니다."
+      }
+    },
+    "howToOrder": [
+      {
+        "step": 1,
+        "title": {
+          "en": "Provide enclosure dimensions (length, width, height)",
+          "ko": "인클로저의 치수 (길이, 너비, 높이) 제공"
+        },
+        "description": {
+          "en": "",
+          "ko": ""
+        }
+      },
+      {
+        "step": 2,
+        "title": {
+          "en": "Select sheet type (acrylic, aluminum composite, polycarbonate)",
+          "ko": "시트(sheet) 타입을 선택 (아크릴, 알루미늄 복합재, 폴리 카보네이트)"
+        },
+        "description": {
+          "en": "",
+          "ko": ""
+        }
+      },
+      {
+        "step": 3,
+        "title": {
+          "en": "Select sheet color (opaque black, transparent)",
+          "ko": "시트(sheet) 색상 선택 (불투명 검은색, 투명)"
+        },
+        "description": {
+          "en": "",
+          "ko": ""
+        }
+      },
+      {
+        "step": 4,
+        "title": {
+          "en": "Select door type (hinged, sliding)",
+          "ko": "문(door) 타입을 선택 (여닫이(hinged), 미닫이(sliding))"
+        },
+        "description": {
+          "en": "",
+          "ko": ""
+        }
+      },
+      {
+        "step": 5,
+        "title": {
+          "en": "Select number of LED lights",
+          "ko": "LED등 갯수 선택"
+        },
+        "description": {
+          "en": "",
+          "ko": ""
+        }
+      },
+      {
+        "step": 6,
+        "title": {
+          "en": "Indicate power cable holes on enclosure (if needed)",
+          "ko": "인클로저에 전원 케이블 홀 표시(필요시)"
+        },
+        "description": {
+          "en": "",
+          "ko": ""
+        }
+      }
+    ],
+    "resources": [
+      {
+        "label": {
+          "en": "Catalog",
+          "ko": "카탈로그"
+        },
+        "url": "#"
+      }
+    ]
+  }
+}

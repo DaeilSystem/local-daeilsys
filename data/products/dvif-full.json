@@ -1,0 +1,43 @@
+{
+  "id": "dvif",
+  "name": "DVIF Series Vibration Isolated Foundation",
+  "fullName": {
+    "en": "DVIF Series Vibration Isolated Foundation",
+    "ko": "DVIF Series 독립기초 제진대"
+  },
+  "series": {
+    "en": "DVIF Series",
+    "ko": "DVIF 시리즈"
+  },
+  "category": "Foundation Vibration Isolation System",
+  "tagline": {
+    "en": "Separate isolated foundation for vibration-sensitive equipment in cleanrooms",
+    "ko": "클린룸에 설치되는 진동 민감 장비를 위한 별도의 분리된 기초"
+  },
+  "description": {
+    "en": "Semiconductor process and measurement equipment, flat panel display inspection equipment, optical laser equipment, and precision measurement equipment for R&D installed in cleanrooms are sensitive to vibration, so they must be installed on a separate isolated foundation to perform at their full performance without being affected by surrounding vibrations. We provide engineering solutions that meet customer requirements by analyzing and evaluating vibration sources and dynamic characteristics of support structures, and designing, manufacturing, and constructing independent foundation-type vibration isolation systems.",
+    "ko": "클린룸에 설치되는 반도체 공정 및 측정장비, 평판디스플레이 검사장비, 광학레이저 장비, 연구개발용 정밀 측정장비 등은 진동에 민감하므로 별도의 분리된 기초를 마련하여 장비를 설치하여야만 주변의 진동으로부터 영향을 받지 않고 제 성능을 발휘할 수 있습니다. 장비에 영향을 주는 진동원 및 지지 구조물의 동특성에 대해 분석하고 평가하여 독립기초형 제진대를 설계, 제작, 시공함으로써 고객의 요구에 맞는 엔지니어링 솔루션을 제공합니다."
+  },
+  "certifications": [],
+  "heroImages": [
+    "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIF-Series-Vibration-Isolated-Foundation.jpg"
+  ],
+  "tabs": {
+    "overview": {
+      "description": {
+        "en": "Semiconductor process and measurement equipment, flat panel display inspection equipment, optical laser equipment, and precision measurement equipment for R&D installed in cleanrooms are sensitive to vibration, so they must be installed on a separate isolated foundation to perform at their full performance without being affected by surrounding vibrations. We provide engineering solutions that meet customer requirements by analyzing and evaluating vibration sources and dynamic characteristics of support structures, and designing, manufacturing, and constructing independent foundation-type vibration isolation systems.",
+        "ko": "클린룸에 설치되는 반도체 공정 및 측정장비, 평판디스플레이 검사장비, 광학레이저 장비, 연구개발용 정밀 측정장비 등은 진동에 민감하므로 별도의 분리된 기초를 마련하여 장비를 설치하여야만 주변의 진동으로부터 영향을 받지 않고 제 성능을 발휘할 수 있습니다. 장비에 영향을 주는 진동원 및 지지 구조물의 동특성에 대해 분석하고 평가하여 독립기초형 제진대를 설계, 제작, 시공함으로써 고객의 요구에 맞는 엔지니어링 솔루션을 제공합니다."
+      },
+      "structureImage": "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIF-Configuration-of-Vibration-Isolated-Foundation.jpg"
+    },
+    "resources": [
+      {
+        "label": {
+          "en": "Catalog",
+          "ko": "카탈로그"
+        },
+        "url": "#"
+      }
+    ]
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "id": "optical-breadboards",
+  "name": "Optical Breadboards",
+  "fullName": {
+    "en": "Optical Breadboards",
+    "ko": "광학 브레드보드"
+  },
+  "series": {
+    "en": "DVIO Series",
+    "ko": "DVIO 시리즈"
+  },
+  "category": "Optical Tables",
+  "tagline": {
+    "en": "Honeycomb breadboards in 25, 50, and 100 mm thickness for superior static/dynamic sensitivity",
+    "ko": "25, 50, 100mm 두께의 허니콤 브레드보드로 뛰어난 정적/동적 감성 제공"
+  },
+  "description": {
+    "en": "Honeycomb breadboards with 25, 50, and 100 mm thickness provide superior static/dynamic sensitivity, efficiently reducing relative displacement over a wide frequency range, delivering guaranteed performance and quality for various applications.",
+    "ko": "25, 50 그리고 100 mm 두께의 허니콤 브레드보드는 뛰어난 정적/동적 감성을 제공하여 광범위한 주파수 대역에서 상대 이동을 효율적으로 줄여주어 다양한 용도에 약속된 성능과 품질을 제공합니다."
+  },
+  "certifications": [],
+  "heroImages": [
+    "https://www.daeilsys.com/wp-content/uploads/2020/05/Optical-Breadboard-1024x546.png"
+  ],
+  "tabs": {
+    "overview": {
+      "description": {
+        "en": "Honeycomb breadboards with 25, 50, and 100 mm thickness provide superior static/dynamic sensitivity, efficiently reducing relative displacement over a wide frequency range, delivering guaranteed performance and quality for various applications.",
+        "ko": "25, 50 그리고 100 mm 두께의 허니콤 브레드보드는 뛰어난 정적/동적 감성을 제공하여 광범위한 주파수 대역에서 상대 이동을 효율적으로 줄여주어 다양한 용도에 약속된 성능과 품질을 제공합니다."
+      },
+      "video": {
+        "en": "https://www.youtube.com/watch?v=Ez9RECVxVqY",
+        "ko": "https://www.youtube.com/watch?v=Ez9RECVxVqY"
+      }
+    },
+    "features": [
+      {
+        "title": {
+          "en": "Steel Honeycomb Core Structure",
+          "ko": "고강성 스틸 허니콤 코어구조\n(Steel Honeycomb Core)"
+        },
+        "description": {
+          "en": "The corrugated honeycomb steel layers are vertically epoxy bonded with a stainless steel top skin, a carbon steel bottom skin and sidewalls, increasing its core density and minimizing its cell size. The steel honeycomb core structure provides the highest core density and the smallest honeycomb core cell size, offering the maximum static and dynamic rigidity.",
+          "ko": "벌집모양의 허니콤 스틸 코어는 적층 구조로 되어 있어, 코어밀도를 높여 주었습니다. 허니콤 비자성스테인래스스틸상판과 탄소강판의 하판사이에 특수한 접착수지로 본딩된 샌드위치 구조로 되어 있어서, 타사 제품과 비교할 수 없는 뛰어난 정적/동적 강성을 제공합니다."
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/Steel-Honeycomb-Core-Structure-2.jpg"
+      },
+      {
+        "title": {
+          "en": "Smallest Honeycomb Core Cells",
+          "ko": "미세한 허니콤 코어 셀\n(Honeycomb Core Cell)"
+        },
+        "description": {
+          "en": "Our steel honeycomb core yields in the highest core density and the smallest honeycomb cell size 2.9㎠, offering the superb rigid table top. As the smallest honeycomb cells contributing to increase the elastic selection modulus, the natural frequency of the optical table tops increases, which the table top is less likely to respond to external forces and unfiltered vibration. Moreover, the higher natural frequency minimizes vibration intensities and deflection under loads. Our optical table top is all steel constructed, ensuring the long term thermal stability.",
+          "ko": "대일시스템이 제작하는 광학정반의 코어는 밀도가3.2㎠ 높은 미세한 셀(cell) 사이즈로 이루어져 있어, 뛰어난 강성을 자랑합니다. 미세한 허니콤 적층구조로 탄성 계수(Elastic Selection Modulus)가 높고 광학정반의 고유진동수가 높아서 실험실 주변 환경진동에 영향을 받지 않고 외란에 의한 변위량이 적습니다."
+        },
+        "image": ""
+      },
+      {
+        "title": {
+          "en": "Individually Sealed Mounting Holes",
+          "ko": "이물질 방지컵"
+        },
+        "description": {
+          "en": "Spill-proof and non-corrosive nylon cups are individually epoxy-bonded under each mounting hole to prevent spilling of liquids from contaminating the honeycomb core.",
+          "ko": "모든 마운팅홀(mounting holes) 내부에 나일론컵을 부착시켜, 실험중 화학물질이나 이물질등이 정반내부로 유입되는 것을 막아주며, 클린룸에서 사용할 수 있는 구조로 되어있습니다."
+        },
+        "image": ""
+      },
+      {
+        "title": {
+          "en": "Tapped and Clean Surface",
+          "ko": "각종 실험기구 고정을 위한 마운팅 홀\n(Mounting Holes)"
+        },
+        "description": {
+          "en": "The table top surface is precision tapped and delicately sanded to provide a non-reflecting surface. Moreover, the surface is completely cleaned to remove residual metal particles and cutting fluids.",
+          "ko": "광학테이블 상판의 표면을 섬세하게 샌딩 처리하여 청결하며, 빛의 반향을 방지하였습니다. 또한 25mm 격자 간격으로 M6 탭홀이 뚫려 있어, 실험 시 고객의 실험기구를 고정하여 사용할 수 있습니다."
+        },
+        "image": ""
+      }
+    ],
+    "performance": {
+      "data": {
+        "en": {
+          "model": "Optical Breadboard 600 x 600 x 50 mm",
+          "resonantFrequency": "310 Hz",
+          "compliance": "217n m/N"
+        },
+        "ko": {
+          "model": "Optical Breadboard 600 x 600 x 50 mm",
+          "resonantFrequency": "310 Hz",
+          "compliance": "217n m/N"
+        }
+      }
+    },
+    "specifications": {
+      "rows": [
+        ["Construction"],
+        ["Core", "steel honeycomb core structure, 0.25 mm thick foil"],
+        ["Core Cell Size", "2.9 cm²"],
+        ["Core Shear Modulus", "19339 kgf/cm² (275,000 psi)"],
+        ["Surface Flatness", "±0.1 mm over 600 x 600 mm area"],
+        ["Top Skin", "430 series ferromagnetic stainless steel, 4.0 mm thick"],
+        ["Bottom Skin", "4.5 mm thick steel"],
+        ["Side Walls", "2.0 mm thick steel plate with highly damped composite wood"],
+        ["Mounting Holes", "M6-1.0"],
+        ["Mounting Hole Grid", "25 mm grid"],
+        ["Mounting Hole Borders", "37.5 mm"],
+        ["Mounting Holes Sealing", "21 mm deep clean cylindrical cap"],
+        ["Damping:", "broadband damping"],
+        ["Performance"],
+        ["", "Optical Breadboard 600 x 600 x 50 mm"],
+        ["Resonant Frequency", "310 Hz"],
+        ["Compliance", "217n m/N"]
+      ]
+    },
+    "options": [],
+    "order": {
+      "tables": [
+        {
+          "title": {
+            "en": "Optical Breadboard 25t",
+            "ko": "광학 브레드보드 25t"
+          },
+          "rows": [
+            ["Model No.", "SIZE (L x W x H)mm", "Weights (kg)"],
+            ["DVIO-B-0504M/E-25t", "500 x 400 x 25", "14"],
+            ["DVIO-B-0603M/E-25t", "600 x 300 x 25", "13"],
+            ["DVIO-B-0605M/E-25t", "600 x 500 x 25", "22"],
+            ["DVIO-B-0606M/E-25t", "600 x 600 x 25", "25"],
+            ["DVIO-B-0707M/E-25t", "700 x 700 x 25", "39"],
+            ["DVIO-B-0806M/E-25t", "800 x 600 x 25", "34"],
+            ["DVIO-B-0906M/E-25t", "900 x 600 x 25", "38"],
+            ["DVIO-B-0907M/E-25t", "900 x 700 x 25", "47"],
+            ["DVIO-B-0909M/E-25t", "900 x 900 x 25", "57"],
+            ["DVIO-B-1006M/E-25t", "1000 x 600 x 25", "42"],
+            ["DVIO-B-1007M/E-25t", "1000 x 700 x 25", "53"],
+            ["DVIO-B-1206M/E-25t", "1200 x 600 x 25", "50"],
+            ["DVIO-B-1207M/E-25t", "1200 x 700 x 25", "63"],
+            ["DVIO-B-1209M/E-25t", "1200 x 900 x 25", "76"],
+            ["DVIO-B-1509M/E-25t", "1500 x 900 x 25", "95"]
+          ]
+        },
+        {
+          "title": {
+            "en": "Optical Breadboard 50t",
+            "ko": "광학 브레드보드 50t"
+          },
+          "rows": [
+            ["Model No.", "SIZE (L x W x H)mm", "Weights (kg)"],
+            ["DVIO-B-0504M/E-50t", "500 x 400 x 50", "17"],
+            ["DVIO-B-0605M/E-50t", "600 x 500 x 50", "26"],
+            ["DVIO-B-0606M/E-50t", "600 x 600 x 50", "31"],
+            ["DVIO-B-0707M/E-50t", "700 x 700 x 50", "49"],
+            ["DVIO-B-0806M/E-50t", "800 x 600 x 50", "42"],
+            ["DVIO-B-0906M/E-50t", "900 x 600 x 50", "47"],
+            ["DVIO-B-0907M/E-50t", "900 x 700 x 50", "59"],
+            ["DVIO-B-0909M/E-50t", "900 x 900 x 50", "70"],
+            ["DVIO-B-1006M/E-50t", "1000 x 600 x 50", "52"],
+            ["DVIO-B-1007M/E-50t", "1000 x 700 x 50", "65"],
+            ["DVIO-B-1009M/E-50t", "1000 x 900 x 50", "78"],
+            ["DVIO-B-1010M/E-50t", "1000 x 1000 x 50", "87"],
+            ["DVIO-B-1206M/E-50t", "1200 x 600 x 50", "63"],
+            ["DVIO-B-1207M/E-50t", "1200 x 700 x 50", "78"],
+            ["DVIO-B-1209M/E-50t", "1200 x 900 x 50", "94"],
+            ["DVIO-B-1210M/E-50t", "1200 x 1000 x 50", "104"],
+            ["DVIO-B-1212M/E-50t", "1200 x 1200 x 50", "125"],
+            ["DVIO-B-1506M/E-50t", "1500 x 600 x 50", "78"],
+            ["DVIO-B-1507M/E-50t", "1500 x 700 x 50", "98"],
+            ["DVIO-B-1509M/E-50t", "1500 x 900 x 50", "117"],
+            ["DVIO-B-1510M/E-50t", "1500 x 1000 x 50", "131"],
+            ["DVIO-B-1512M/E-50t", "1500 x 1200 x 50", "157"],
+            ["DVIO-B-1806M/E-50t", "1800 x 600 x 50", "94"],
+            ["DVIO-B-1807M/E-50t", "1800 x 700 x 50", "117"],
+            ["DVIO-B-1809M/E-50t", "1800 x 900 x 50", "141"],
+            ["DVIO-B-1812M/E-50t", "1800 x 1200 x 50", "188"],
+            ["DVIO-B-2010M/E-50t", "2000 x 1000 x 50", "174"],
+            ["DVIO-B-2012M/E-50t", "2000 x 1200 x 50", "209"]
+          ]
+        },
+        {
+          "title": {
+            "en": "Optical Breadboard 100t",
+            "ko": "광학 브레드보드 100t"
+          },
+          "rows": [
+            ["Model No.", "SIZE (L x W x H)mm", "Weights (kg)"],
+            ["DVIO-B-0707M/E-100t", "700 x 700 x 100", "69"],
+            ["DVIO-B-0906M/E-100t", "900 x 600 x 100", "66"],
+            ["DVIO-B-0907M/E-100t", "900 x 700 x 100", "82"],
+            ["DVIO-B-0909M/E-100t", "900 x 900 x 100", "99"],
+            ["DVIO-B-1006M/E-100t", "1000 x 600 x 100", "73"],
+            ["DVIO-B-1007M/E-100t", "1000 x 700 x 100", "92"],
+            ["DVIO-B-1009M/E-100t", "1000 x 900 x 100", "110"],
+            ["DVIO-B-1010M/E-100t", "1000 x 1000 x 100", "122"],
+            ["DVIO-B-1206M/E-100t", "1200 x 600 x 100", "88"],
+            ["DVIO-B-1207M/E-100t", "1200 x 700 x 100", "110"],
+            ["DVIO-B-1209M/E-100t", "1200 x 900 x 100", "132"],
+            ["DVIO-B-1210M/E-100t", "1200 x 1000 x 100", "146"],
+            ["DVIO-B-1212M/E-100t", "1200 x 1200 x 100", "176"],
+            ["DVIO-B-1507M/E-100t", "1500 x 700 x 100", "137"],
+            ["DVIO-B-1509M/E-100t", "1500 x 900 x 100", "165"],
+            ["DVIO-B-1510M/E-100t", "1500 x 1000 x 100", "183"],
+            ["DVIO-B-1512M/E-100t", "1500 x 1200 x 100", "220"],
+            ["DVIO-B-1807M/E-100t", "1800 x 700 x 100", "165"],
+            ["DVIO-B-1809M/E-100t", "1800 x 900 x 100", "198"],
+            ["DVIO-B-1812M/E-100t", "1800 x 1200 x 100", "264"],
+            ["DVIO-B-2010M/E-100t", "2000 x 1000 x 100", "244"],
+            ["DVIO-B-2012M/E-100t", "2000 x 1200 x 100", "293"],
+            ["DVIO-B-2409M/E-100t", "2400 x 900 x 100", "264"],
+            ["DVIO-B-2410M/E-100t", "2400 x 1000 x 100", "293"],
+            ["DVIO-B-2412M/E-100t", "2400 x 1200 x 100", "351"]
+          ]
+        }
+      ]
+    },
+    "resources": [
+      {
+        "label": {
+          "en": "Catalog",
+          "ko": "카탈로그"
+        },
+        "url": "#"
+      }
+    ]
+  }
+}

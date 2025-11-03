@@ -1,0 +1,239 @@
+{
+  "id": "scientific-grade",
+  "name": "Scientific Grade",
+  "fullName": {
+    "en": "Scientific Grade Optical Table Top",
+    "ko": "Scientific Grade 광학정반"
+  },
+  "series": {
+    "en": "DVIO Series",
+    "ko": "DVIO 시리즈"
+  },
+  "category": "Optical Tables",
+  "tagline": {
+    "en": "General purpose optical table top with excellent stiffness and flatness",
+    "ko": "강성과 평면도가 우수한 범용 광학정반"
+  },
+  "description": {
+    "en": "As a general purpose optical table, it has excellent stiffness and flatness, and is widely used for general optical experiments.",
+    "ko": "범용 광학정반으로써 강성과 평면도가 우수하여 일반적인 광학실험에 널리 사용됩니다."
+  },
+  "certifications": [],
+  "heroImages": [
+    "https://www.daeilsys.com/wp-content/uploads/elementor/thumbs/Optical-Tabletop-SG-NEW-LEATHER-COVER2-oohdgo38v4dxee4ad9843n5jpk2yum3th9dyy0vjio.png"
+  ],
+  "tabs": {
+    "overview": {
+      "description": {
+        "en": "As a general purpose optical table, it has excellent stiffness and flatness, and is widely used for general optical experiments.",
+        "ko": "범용 광학정반으로써 강성과 평면도가 우수하여 일반적인 광학실험에 널리 사용됩니다."
+      },
+      "video": {
+        "en": "https://www.youtube.com/watch?v=Ez9RECVxVqY",
+        "ko": "https://www.youtube.com/watch?v=Ez9RECVxVqY"
+      }
+    },
+    "features": [
+      {
+        "title": {
+          "en": "Steel Honeycomb Core Structure",
+          "ko": "고강성 스틸 허니콤 코어구조\n(Steel Honeycomb Core)"
+        },
+        "description": {
+          "en": "The corrugated honeycomb steel layers are vertically expoxy bonded with a stainless steel top skin, a carbon steel bottom skin and sidewalls, increasing its core density and minimizing its cell size. The steel honeycomb core structure provides the highest core density and the smallest honeycomb core cell size, offering the maximum static and dynamic rigidity.",
+          "ko": "벌집모양의 허니콤 스틸 코어는 적층 구조로 되어 있어, 코어밀도를 높여 주었습니다. 허니콤 비자성스테인래스스틸상판과 탄소강판의 하판사이에 특수한 접착수지로 본딩된 샌드위치 구조로 되어 있어서, 타사 제품과 비교할 수 없는 뛰어난 정적/동적 강성을 제공합니다."
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/05/Steel-Honeycomb-Core-Structure.png"
+      },
+      {
+        "title": {
+          "en": "Smallest Honeycomb Core Cells",
+          "ko": "미세한 허니콤 코어 셀\n(Honeycomb Core Cell)"
+        },
+        "description": {
+          "en": "Our steel honeycomb core yields in the highest core density and the smallest honeycomb cell size 2.9㎠, offering the superb rigid table top. As the smallest honeycomb cells contributing to increase the elastic selection modulus, the natural frequency of the optical table tops increases, which the table top is less likely to respond to external forces and unfiltered vibration. Moreover, the higher natural frequency minimizes vibration intensities and deflection under loads. Our optical table top is all steel constructed, ensuring the long term thermal stability.",
+          "ko": "대일시스템이 제작하는 광학정반의 코어는 밀도가3.2㎠ 높은 미세한 셀(cell) 사이즈로 이루어져 있어, 뛰어난 강성을 자랑합니다. 미세한 허니콤 적층구조로 탄성 계수(Elastic Selection Modulus)가 높고 광학정반의 고유진동수가 높아서 실험실 주변 환경진동에 영향을 받지 않고 외란에 의한 변위량이 적습니다."
+        },
+        "image": ""
+      },
+      {
+        "title": {
+          "en": "Individually Sealed Mounting Holes",
+          "ko": "이물질 방지컵"
+        },
+        "description": {
+          "en": "Spill-proof and non-corrosive nylon cups are individually epoxy-bonded under each mounting hole to prevent spilling of liquids from contaminating the honeycomb core.",
+          "ko": "모든 마운팅홀(mounting holes) 내부에 나일론컵을 부착시켜, 실험중 화학물질이나 이물질등이 정반내부로 유입되는 것을 막아주며, 클린룸에서 사용할 수 있는 구조로 되어있습니다."
+        },
+        "image": ""
+      },
+      {
+        "title": {
+          "en": "Tapped and Clean Surface",
+          "ko": "각종 실험기구 고정을 위한 마운팅 홀\n(Mounting Holes)"
+        },
+        "description": {
+          "en": "The table top surface is precision tapped and delicately sanded to provide a non-reflecting surface. Moreover, the surface is completely cleaned to remove residual metal particles and cutting fluids.",
+          "ko": "광학테이블 상판의 표면을 섬세하게 샌딩 처리하여 청결하며, 빛의 반향을 방지하였습니다. 또한 25mm 격자 간격으로 M6 탭홀이 뚫려 있어, 실험 시 고객의 실험기구를 고정하여 사용할 수 있습니다."
+        },
+        "image": ""
+      }
+    ],
+    "performance": {
+      "data": {
+        "en": {
+          "researchGrade": {
+            "resonantFrequency": "288 Hz",
+            "compliance": "25n m/N"
+          },
+          "scientificGrade": {
+            "resonantFrequency": "200 Hz",
+            "compliance": "85 n m/N"
+          }
+        },
+        "ko": {
+          "researchGrade": {
+            "resonantFrequency": "288 Hz",
+            "compliance": "25n m/N"
+          },
+          "scientificGrade": {
+            "resonantFrequency": "200 Hz",
+            "compliance": "85 n m/N"
+          }
+        }
+      }
+    },
+    "specifications": {
+      "rows": [
+        ["Construction"],
+        ["Core", "steel honeycomb core structure, 0.25 mm thick foil"],
+        ["Core Cell Size", "2.9 cm²"],
+        ["Core Shear Modulus", "19339 kgf/cm² (275,000 psi)"],
+        ["Surface Flatness", "±0.1 mm over 600 x 600 mm area"],
+        ["Top Skin", "430 series ferromagnetic stainless steel, 4.0 mm thick"],
+        ["Bottom Skin", "4.5 mm thick steel"],
+        ["Side Walls", "2.0 mm thick steel plate with highly damped composite wood"],
+        ["Mounting Holes", "M6-1.0"],
+        ["Mounting Hole Grid", "25 mm grid"],
+        ["Mounting Hole Borders", "37.5 mm"],
+        ["Mounting Holes Sealing", "21 mm deep clean cylindrical cap"],
+        ["Damping:", "broadband damping"],
+        ["Performance"],
+        ["", "Research Grade (2000 x 1200 x 300 mm)", "Scientific Grade (2000 x 1200 x 300 mm)"],
+        ["Resonant Frequency", "288 Hz", "200 Hz"],
+        ["Compliance", "25n m/N", "85 n m/N"]
+      ]
+    },
+    "options": [],
+    "order": {
+      "tables": [
+        {
+          "title": {
+            "en": "Optical Table Top 200t",
+            "ko": "광학정반 200t"
+          },
+          "rows": [
+            ["Model No.", "Dimensions W x D x t (mm)", "Dimensions W x D x t (in.)", "Weight (kg)"],
+            ["DVIO-B-1010M/E-200t-R.G/S.G", "1000 x 1000 x 200", "40 x 40 x 8", "139"],
+            ["DVIO-B-1212M/E-200t-R.G/S.G", "1200 x 1200 x 200", "48 x 48 x 8", "201"],
+            ["DVIO-B-1575M/E-200t-R.G/S.G", "1500 x 750 x 200", "60 x 30 x 8", "157"],
+            ["DVIO-B-1509M/E-200t-R.G/S.G", "1500 x 900 x 200", "60 x 36 x 8", "188"],
+            ["DVIO-B-1510M/E-200t-R.G/S.G", "1500 x 1000 x 200", "60 x 40 x 8", "209"],
+            ["DVIO-B-1512M/E-200t-R.G/S.G", "1500 x 1200 x 200", "60 x 48 x 8", "251"],
+            ["DVIO-B-1515M/E-200t-R.G/S.G", "1500 x 1500 x 200", "60 x 60 x 8", "313"],
+            ["DVIO-B-1807M/E-200t-R.G/S.G", "1800 x 700 x 200", "72 x 28 x 8", "175"],
+            ["DVIO-B-1875M/E-200t-R.G/S.G", "1800 x 750 x 200", "72 x 30 x 8", "188"],
+            ["DVIO-B-1809M/E-200t-R.G/S.G", "1800 x 900 x 200", "72 x 36 x 8", "226"],
+            ["DVIO-B-1810M/E-200t-R.G/S.G", "1800 x 1000 x 200", "72 x 40 x 8", "251"],
+            ["DVIO-B-1812M/E-200t-R.G/S.G", "1800 x 1200 x 200", "72 x 48 x 8", "301"],
+            ["DVIO-B-1815M/E-200t-R.G/S.G", "1800 x 1500 x 200", "72 x 60 x 8", "376"],
+            ["DVIO-B-2009M/E-200t-R.G/S.G", "2000 x 900 x 200", "80 x 36 x 8", "251"],
+            ["DVIO-B-2010M/E-200t-R.G/S.G", "2000 x 1000 x 200", "80 x 40 x 8", "278"],
+            ["DVIO-B-2012M/E-200t-R.G/S.G", "2000 x 1200 x 200", "80 x 48 x 8", "334"],
+            ["DVIO-B-2015M/E-200t-R.G/S.G", "2000 x 1500 x 200", "80 x 60 x 8", "417"],
+            ["DVIO-B-2409M/E-200t-R.G/S.G", "2400 x 900 x 200", "96 x 36 x 8", "301"],
+            ["DVIO-B-2410M/E-200t-R.G/S.G", "2400 x 1000 x 200", "96 x 40 x 8", "334"],
+            ["DVIO-B-2412M/E-200t-R.G/S.G", "2400 x 1200 x 200", "96 x 48 x 8", "401"],
+            ["DVIO-B-2415M/E-200t-R.G/S.G", "2400 x 1500 x 200", "96 x 60 x 8", "501"],
+            ["DVIO-B-2508M/E-200t-R.G/S.G", "2500 x 800 x 200", "100 x 32 x 8", "278"],
+            ["DVIO-B-3009M/E-200t-R.G/S.G", "3000 x 900 x 200", "120 x 36 x 8", "376"],
+            ["DVIO-B-3010M/E-200t-R.G/S.G", "3000 x 1000 x 200", "120 x 40 x 8", "417"],
+            ["DVIO-B-3012M/E-200t-R.G/S.G", "3000 x 1200 x 200", "120 x 48 x 8", "501"],
+            ["DVIO-B-3015M/E-200t-R.G/S.G", "3000 x 1500 x 200", "120 x 60 x 8", "626"],
+            ["DVIO-B-3612M/E-200t-R.G/S.G", "3600 x 1200 x 200", "144 x 48 x 8", "601"],
+            ["DVIO-B-3615M/E-200t-R.G/S.G", "3600 x 1500 x 200", "144 x 60 x 8", "751"]
+          ]
+        },
+        {
+          "title": {
+            "en": "Optical Table Top 300t",
+            "ko": "광학정반 300t"
+          },
+          "rows": [
+            ["Model No.", "Dimensions W x D x t (mm)", "Dimensions W x D x t (in.)", "Weight (kg)"],
+            ["DVIO-B-1010M/E-300t-R.G/S.G", "1000 x 1000 x 300", "40 x 40 x 12", "165"],
+            ["DVIO-B-1212M/E-300t-R.G/S.G", "1200 x 1200 x 300", "48 x 48 x 12", "238"],
+            ["DVIO-B-1575M/E-300t-R.G/S.G", "1500 x 750 x 300", "60 x 30 x 12", "186"],
+            ["DVIO-B-1509M/E-300t-R.G/S.G", "1500 x 900 x 300", "60 x 36 x 12", "223"],
+            ["DVIO-B-1510M/E-300t-R.G/S.G", "1500 x 1000 x 300", "60 x 40 x 12", "248"],
+            ["DVIO-B-1512M/E-300t-R.G/S.G", "1500 x 1200 x 300", "60 x 48 x 12", "297"],
+            ["DVIO-B-1515M/E-300t-R.G/S.G", "1500 x 1500 x 300", "60 x 60 x 12", "372"],
+            ["DVIO-B-1875M/E-300t-R.G/S.G", "1800 x 750 x 300", "72 x 30 x 12", "223"],
+            ["DVIO-B-1809M/E-300t-R.G/S.G", "1800 x 900 x 300", "72 x 36 x 12", "268"],
+            ["DVIO-B-1810M/E-300t-R.G/S.G", "1800 x 1000 x 300", "72 x 40 x 12", "297"],
+            ["DVIO-B-1812M/E-300t-R.G/S.G", "1800 x 1200 x 300", "72 x 48 x 12", "357"],
+            ["DVIO-B-1815M/E-300t-R.G/S.G", "1800 x 1500 x 300", "72 x 60 x 12", "446"],
+            ["DVIO-B-2009M/E-300t-R.G/S.G", "2000 x 900 x 300", "80 x 36 x 12", "297"],
+            ["DVIO-B-2010M/E-300t-R.G/S.G", "2000 x 1000 x 300", "80 x 40 x 12", "330"],
+            ["DVIO-B-2012M/E-300t-R.G/S.G", "2000 x 1200 x 300", "80 x 48 x 12", "396"],
+            ["DVIO-B-2015M/E-300t-R.G/S.G", "2000 x 1500 x 300", "80 x 60 x 12", "495"],
+            ["DVIO-B-2409M/E-300t-R.G/S.G", "2400 x 900 x 300", "96 x 36 x 12", "357"],
+            ["DVIO-B-2410M/E-300t-R.G/S.G", "2400 x 1000 x 300", "96 x 40 x 12", "396"],
+            ["DVIO-B-2412M/E-300t-R.G/S.G", "2400 x 1200 x 300", "96 x 48 x 12", "476"],
+            ["DVIO-B-2415M/E-300t-R.G/S.G", "2400 x 1500 x 300", "96 x 60 x 12", "594"],
+            ["DVIO-B-2515M/E-300t-R.G/S.G", "2500 x 1500 x 300", "100 x 60 x 12", "620"],
+            ["DVIO-B-3009M/E-300t-R.G/S.G", "3000 x 900 x 300", "120 x 36 x 12", "446"],
+            ["DVIO-B-3010M/E-300t-R.G/S.G", "3000 x 1000 x 300", "120 x 40 x 12", "495"],
+            ["DVIO-B-3012M/E-300t-R.G/S.G", "3000 x 1200 x 300", "120 x 48 x 12", "594"],
+            ["DVIO-B-3015M/E-300t-R.G/S.G", "3000 x 1500 x 300", "120 x 60 x 12", "743"],
+            ["DVIO-B-3612M/E-300t-R.G/S.G", "3600 x 1200 x 300", "144 x 48 x 12", "713"],
+            ["DVIO-B-3615M/E-300t-R.G/S.G", "3600 x 1500 x 300", "144 x 60 x 12", "891"]
+          ]
+        },
+        {
+          "title": {
+            "en": "Optical Table Top 400t",
+            "ko": "광학정반 400t"
+          },
+          "rows": [
+            ["Model No.", "Dimensions W x D x t (mm)", "Dimensions W x D x t (in.)", "Weight (kg)"],
+            ["DVIO-B-1812M/E-400t-R.G/S.G", "1800 x 1200 x 400", "72 x 48 x 16", "471"],
+            ["DVIO-B-1815M/E-400t-R.G/S.G", "1800 x 1500 x 400", "72 x 60 x 16", "589"],
+            ["DVIO-B-2010M/E-400t-R.G/S.G", "2000 x 1000 x 400", "80 x 40 x 16", "436"],
+            ["DVIO-B-2012M/E-400t-R.G/S.G", "2000 x 1200 x 400", "80 x 48 x 16", "524"],
+            ["DVIO-B-2015M/E-400t-R.G/S.G", "2000 x 1500 x 400", "80 x 60 x 16", "654"],
+            ["DVIO-B-2409M/E-400t-R.G/S.G", "2400 x 900 x 400", "96 x 36 x 16", "471"],
+            ["DVIO-B-2410M/E-400t-R.G/S.G", "2400 x 1000 x 400", "96 x 40 x 16", "524"],
+            ["DVIO-B-2412M/E-400t-R.G/S.G", "2400 x 1200 x 400", "96 x 48 x 16", "628"],
+            ["DVIO-B-2415M/E-400t-R.G/S.G", "2400 x 1500 x 400", "96 x 60 x 16", "785"],
+            ["DVIO-B-3009M/E-400t-R.G/S.G", "3000 x 900 x 400", "120 x 36 x 16", "589"],
+            ["DVIO-B-3010M/E-400t-R.G/S.G", "3000 x 1000 x 400", "120 x 40 x 16", "654"],
+            ["DVIO-B-3012M/E-400t-R.G/S.G", "3000 x 1200 x 400", "120 x 48 x 16", "785"],
+            ["DVIO-B-3015M/E-400t-R.G/S.G", "3000 x 1500 x 400", "120 x 60 x 16", "981"],
+            ["DVIO-B-3612M/E-400t-R.G/S.G", "3600 x 1200 x 400", "144 x 48 x 16", "942"],
+            ["DVIO-B-3615M/E-400t-R.G/S.G", "3600 x 1500 x 400", "144 x 60 x 16", "1178"]
+          ]
+        }
+      ]
+    },
+    "resources": [
+      {
+        "label": {
+          "en": "Catalog",
+          "ko": "카탈로그"
+        },
+        "url": "#"
+      }
+    ]
+  }
+}

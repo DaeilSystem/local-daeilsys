@@ -1,0 +1,250 @@
+{
+  "id": "dvim-g",
+  "name": "DVIM-G",
+  "fullName": {
+    "en": "Advanced Pneumatic Vibration Isolator",
+    "ko": "고성능 공압식 아이솔레이터"
+  },
+  "series": {
+    "en": "DVIM-G Series",
+    "ko": "DVIM-G 시리즈"
+  },
+  "category": "Pneumatic Vibration Isolators",
+  "tagline": {
+    "en": "Advanced Pneumatic Vibration Isolator with Superior Performance",
+    "ko": "최고 성능의 공압식 아이솔레이터"
+  },
+  "description": {
+    "en": "DVIM-G series isolator is the highest performance pneumatic vibration isolator in the DVIM series, providing fast equipment settling time and excellent vibration isolation performance.",
+    "ko": "DVIM-G 시리즈 아이솔레이터는 DVIM 시리즈 중 가장 뛰어난 성능의 공압식 아이솔레이터로 신속한 장비 장착 시간(settling time)과 우수한 제진성능을 보여줍니다."
+  },
+  "certifications": [],
+  "heroImages": [
+    "https://www.daeilsys.com/wp-content/uploads/elementor/thumbs/DVIM-G-Advanced-Pneumatic-Vibration-Isolator-opchtiqrowp4jzy4lu5o9vcxdrazl50pjf0bk33oh2.png"
+  ],
+  "tabs": {
+    "overview": {
+      "description": {
+        "en": "DVIM-G series isolator is the highest performance pneumatic vibration isolator in the DVIM series, providing fast equipment settling time and excellent vibration isolation performance.",
+        "ko": "DVIM-G 시리즈 아이솔레이터는 DVIM 시리즈 중 가장 뛰어난 성능의 공압식 아이솔레이터로 신속한 장비 장착 시간(settling time)과 우수한 제진성능을 보여줍니다."
+      }
+    },
+    "features": [
+      {
+        "title": {
+          "en": "Superior Vibration Control Performance",
+          "ko": "월등한 진동 제어 성능"
+        },
+        "description": {
+          "en": "Unlike other companies' pneumatic isolators, DVIM-G isolators adopt a special mechanical filter system to provide excellent horizontal vibration control performance. The vertical vibration control performance is also excellent, optimized to effectively dampen vibrations from heavy and fast-moving linear X-Y stages.",
+          "ko": "타사의 공기압식 아이솔레이터와 다르게, DVIM-G 아이솔레이터는 특별한 메카니컬 필터 시스템을 채용하여 탁월한 수평 방향의 진동 제어 성능을 자랑합니다. 수직 방향의 진동 제어 성능 또한 우수하여 무겁고 빠르게 움직이는 리니어 X-Y 스테이지의 진동을 매우 효과적으로 감쇠하는데 최적화되어 있습니다."
+        }
+      },
+      {
+        "title": {
+          "en": "Dual Chamber Design",
+          "ko": "듀얼 챔버 디자인"
+        },
+        "description": {
+          "en": "DVIM-G is a two-chamber system where the air chamber and damping chamber are connected by two orifices. The variable orifice is mounted outside the chambers, and there is an internal orifice inside the chambers. These orifices control the air flow between the chambers to improve damping efficiency while reducing settling time. When the stage moves, the air chamber generates a restoring force, and air flows into the damping chamber through the orifices. These orifices dissipate energy and disturbances in the air, causing the system's vibrations to be damped and reducing the equipment's settling time.",
+          "ko": "DVIM-G는 두 개의 챔버 시스템으로, 에어 챔버와 댐핑 챔버가 두 개의 오리피스로 연결되어 있는 구조입니다. 챔버 외부에는 가변 오리피스가 장착되어 있으며 챔버의 안쪽에는 내부 오리피스가 있습니다. 이 오리피스들은 챔버들 사이의 공기 흐름을 조절하여 댐핑 효율을 향상시키는 한편 안정화 시간을 줄이는 역할을 합니다. 스테이지가 움직이면, 에어 챔버는 복원력(Restoring force)을 발생시키고, 오리피스를 통하여 에어가 댐핑 챔버로 흘러들어가게 됩니다. 이 오리피스들은 공기중의 에너지와 외란을 소멸시키는데 이로 인해 시스템의 진동이 감쇠되며 장비의 안정화 시간이 줄어들게 됩니다."
+        }
+      },
+      {
+        "title": {
+          "en": "High-Precision Leveling Valve",
+          "ko": "고정밀 레밸링 밸브"
+        },
+        "description": {
+          "en": "For cases requiring high leveling repeatability, precision leveling valves (±0.05mm) can be mounted on the isolators to reduce the equipment's settling time.",
+          "ko": "높은 반복정밀도(leveling repeatability)가 요구되는 경우, 정밀형(±0.05mm) 레밸링 밸브를 아이솔레이터에 장착하여 장비의 안정화 시간(settling time)을 단축시킬 수 있습니다."
+        }
+      },
+      {
+        "title": {
+          "en": "External Oil Damper Option",
+          "ko": "외장형 오일 댐퍼 옵션"
+        },
+        "description": {
+          "en": "The external oil damper has stoppers installed in three horizontal directions to prevent the stage from moving beyond a certain stroke. It has damping functions through oil and resistance. The viscosity of the oil used can be adjusted according to the application, and as the oil viscosity increases, the settling time decreases, but the vibration isolation performance may decrease slightly.",
+          "ko": "외장형 오일 댐퍼는 수평 3방향에 스테이가 일정 스토르크 이상 벗어나지 않도록 스토퍼가 설치되어 있으며, 오일과 저항체에 의한 감쇠기능이 있습니다. 용도에 따라 사용하는 오일의 점성을 조절할 수 있으며, 오일의 점성 정도가 높아질수록 정착 시간은 줄어들지만, 제진성능은 다소 감소할 수 있습니다."
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/DVIM-G-Features_1.png"
+      },
+      {
+        "title": {
+          "en": "Air Operated Regulator Valve - Faster Settling Time",
+          "ko": "Air Operated Regulator Valve - 빠른 정착 시간"
+        },
+        "description": {
+          "en": "Using an air operated regulator valve on the isolators can increase air flow and response speed, reducing the equipment's settling time.",
+          "ko": "아이솔레이터에 air operated regulator valve를 사용하면 공기 흐름 및 응답 속도를 높여 장비의 안정화 시간(settling time)을 단축시킬 수 있습니다."
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/DVIM-G-Air-Operated-Regulator-Valve-for-Faster-Settling-Time01.png"
+      }
+    ],
+    "performance": {
+      "title": {
+        "en": "80 – 90% vibration isolation at 5 Hz (Without Damper)",
+        "ko": "5 Hz 에서 80 – 90% 제진성능 (댐퍼 사용안할시)"
+      },
+      "description": {
+        "en": "The DVIM-G series provides 80-90% vibration isolation performance at 5 Hz without oil damper, and 90-99% at 10 Hz.",
+        "ko": "DVIM-G 시리즈는 오일 댐퍼 없이 5 Hz에서 80-90%의 제진 성능을 제공하며, 10 Hz에서 90-99%의 제진 성능을 제공합니다."
+      },
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/05/DVIM-G-Performance.png"
+    },
+    "specifications": {
+      "vibrationIsolationSystem": {
+        "en": "Pneumatic Isolation System",
+        "ko": "공압식 제진 시스템"
+      },
+      "loadCapacity": {
+        "en": "500–60000 kg",
+        "ko": "500–60000 kg"
+      },
+      "resonantFrequency": {
+        "en": "1.2–2.0 Hz",
+        "ko": "1.2–2.0 Hz"
+      },
+      "vibrationIsolationAt10Hz": {
+        "en": "90–99% (Without Oil Damper)",
+        "ko": "90–99% (오일 댐퍼 없이)"
+      },
+      "automaticLeveling": {
+        "en": "Yes",
+        "ko": "예"
+      },
+      "levelingRepeatability": {
+        "en": "±1.0 mm for Standard Leveling Valve, ±0.05 mm for Precision Leveling Valve",
+        "ko": "표준 레벨링 밸브 = ±1.0 mm, 정밀 레벨링 밸브 = ±0.05 mm"
+      }
+    },
+    "options": [
+      {
+        "title": {
+          "en": "External Oil Damper",
+          "ko": "외장형 오일 댐퍼"
+        },
+        "description": {
+          "en": "External oil damper option for better stability and faster settling time",
+          "ko": "더 나은 안정성과 빠른 정착 시간을 위한 외장형 오일 댐퍼 옵션"
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/DVIM-G-Features_1.png"
+      },
+      {
+        "title": {
+          "en": "Air Operated Regulator Valve",
+          "ko": "Air Operated Regulator Valve"
+        },
+        "description": {
+          "en": "Air operated regulator valve for faster settling time by increasing air flow and response speed",
+          "ko": "공기 흐름 및 응답 속도를 높여 빠른 정착 시간을 제공하는 Air Operated Regulator Valve"
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/DVIM-G-Air-Operated-Regulator-Valve-for-Faster-Settling-Time01.png"
+      }
+    ],
+    "order": {
+      "images": [
+        "https://www.daeilsys.com/wp-content/uploads/2020/05/DVIM-G-Order-1.png",
+        "https://www.daeilsys.com/wp-content/uploads/2020/05/DVIM-G-Order-2.png"
+      ],
+      "models": [
+        {
+          "modelNo": "DVIM-G-500",
+          "dimensionsFloating": "220 x 220 x 180",
+          "dimensionsDeflated": "220 x 220 x 173.5",
+          "boltHoleLocation": "195 x 195",
+          "weight": "15",
+          "maxLoadCapacity": "500",
+          "boltHoleDiameter": "14"
+        },
+        {
+          "modelNo": "DVIM-G-1000",
+          "dimensionsFloating": "280 x 280 x 180",
+          "dimensionsDeflated": "280 x 280 x 173.5",
+          "boltHoleLocation": "250 x 250",
+          "weight": "30",
+          "maxLoadCapacity": "1000",
+          "boltHoleDiameter": "14"
+        },
+        {
+          "modelNo": "DVIM-G-1500",
+          "dimensionsFloating": "320 x 320 x 180",
+          "dimensionsDeflated": "320 x 320 x 173.5",
+          "boltHoleLocation": "290 x 290",
+          "weight": "45",
+          "maxLoadCapacity": "1500",
+          "boltHoleDiameter": "18"
+        },
+        {
+          "modelNo": "DVIM-G-2000",
+          "dimensionsFloating": "350 x 350 x 180",
+          "dimensionsDeflated": "350 x 350 x 173.5",
+          "boltHoleLocation": "320 x 320",
+          "weight": "55",
+          "maxLoadCapacity": "2000",
+          "boltHoleDiameter": "18"
+        },
+        {
+          "modelNo": "DVIM-G-3000",
+          "dimensionsFloating": "430 x 430 x 185",
+          "dimensionsDeflated": "430 x 430 x 178.5",
+          "boltHoleLocation": "400 x 400",
+          "weight": "90",
+          "maxLoadCapacity": "3000",
+          "boltHoleDiameter": "18"
+        },
+        {
+          "modelNo": "DVIM-G-4500",
+          "dimensionsFloating": "488 x 488 x 185",
+          "dimensionsDeflated": "488 x 488 x 178.5",
+          "boltHoleLocation": "458 x 458",
+          "weight": "135",
+          "maxLoadCapacity": "4500",
+          "boltHoleDiameter": "19"
+        },
+        {
+          "modelNo": "DVIM-G-6000",
+          "dimensionsFloating": "549 x 548 x 185",
+          "dimensionsDeflated": "549 x 548 x 178.5",
+          "boltHoleLocation": "518 x 518",
+          "weight": "180",
+          "maxLoadCapacity": "6000",
+          "boltHoleDiameter": "19"
+        }
+      ],
+      "oilDamper": {
+        "modelNo": "G-OIL DAMPER",
+        "dimensionsFloating": "216 x 290 x 185 mm",
+        "dimensionsDeflated": "216 x 290 x 180 mm",
+        "boltHoleTopPlate": "185 x 125",
+        "boltHoleBottomPlate": "125 x 125",
+        "boltHoleDiameter": "15"
+      }
+    },
+    "resources": {
+      "catalog": {
+        "label": {
+          "en": "Catalog",
+          "ko": "카탈로그"
+        },
+        "url": "#"
+      },
+      "cad2d": {
+        "label": {
+          "en": "2D CAD",
+          "ko": "2D CAD"
+        },
+        "url": "#"
+      },
+      "installationReports": {
+        "label": {
+          "en": "Installation Reports",
+          "ko": "설치 보고서"
+        },
+        "url": "#"
+      }
+    }
+  }
+}

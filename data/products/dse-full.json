@@ -1,0 +1,82 @@
+{
+  "id": "dse",
+  "name": "DSE",
+  "fullName": {
+    "en": "EM Acoustic Enclosure",
+    "ko": "EM 음향차폐장치"
+  },
+  "series": {
+    "en": "DSE Series",
+    "ko": "DSE 시리즈"
+  },
+  "category": "Acoustic Enclosures",
+  "tagline": {
+    "en": "EM Acoustic Enclosure for SEM Applications",
+    "ko": "SEM용 EM 음향차폐장치"
+  },
+  "description": {
+    "en": "As electron microscope technology advances, quieter and more stable environments are essential. SEM enclosures are specially designed acoustic chambers for Scanning Electron Microscopes (SEM) to solve these problems. They can block noise from surrounding pumps, coolers, and various sources to the maximum extent and are equipped with a cooling control system to prevent temperature rise.",
+    "ko": "전자현미경의 기술이 발전함에 따라, 보다 조용하고 안정된 환경이 필수적으로 요구되고 있습니다. SEM 인클로저는 이러한 문제해결을 위해 전자 현미경(SEM)용으로 특수 설계된 음향 챔버입니다. 주변의 펌프, 냉각기 및 여러 가지 원인으로 발생하는 소음을 최대한으로 차단할 수 있으며 온도 상승을 방지하기 위한 냉각 제어 시스템을 갖추고 있습니다."
+  },
+  "certifications": [],
+  "heroImages": [
+    "https://www.daeilsys.com/wp-content/uploads/2020/06/DAE-EM-Acoustic-Enclosure-1-min-768x768.png",
+    "https://www.daeilsys.com/wp-content/uploads/2020/06/DAE-EM-Acoustic-Enclosure-2-min-768x768.png",
+    "https://www.daeilsys.com/wp-content/uploads/2020/06/DAE-EM-Acoustic-Enclosure-3-min-768x768.png",
+    "https://www.daeilsys.com/wp-content/uploads/2020/06/DAE-EM-Acoustic-Enclosure-4-min-768x768.png"
+  ],
+  "tabs": {
+    "overview": {
+      "description": {
+        "en": "As electron microscope technology advances, quieter and more stable environments are essential. SEM enclosures are specially designed acoustic chambers for Scanning Electron Microscopes (SEM) to solve these problems. They can block noise from surrounding pumps, coolers, and various sources to the maximum extent and are equipped with a cooling control system to prevent temperature rise. In addition, various system configurations and accessories can be added to meet customer needs. When SEM enclosures are used together with DVIA-MB, DVIA-UB series and EMI Magnetic Cancellation System devices, an optimal environment can be configured to protect sensitive SEMs from external interference, allowing customers to obtain the images they want.",
+        "ko": "전자현미경의 기술이 발전함에 따라, 보다 조용하고 안정된 환경이 필수적으로 요구되고 있습니다. SEM 인클로저는 이러한 문제해결을 위해 전자 현미경(SEM)용으로 특수 설계된 음향 챔버입니다. 주변의 펌프, 냉각기 및 여러 가지 원인으로 발생하는 소음을 최대한으로 차단할 수 있으며 온도 상승을 방지하기 위한 냉각 제어 시스템을 갖추고 있습니다. 이 외에도 고객 맞춤형으로 다양한 시스템 구성 및 액세서리를 추가할 수 있습니다. SEM 인클로저와 DVIA-MB, DVIA-UB 시리즈 그리고 EMI Magnetic Cancellation System 장치를 함께 사용할 경우 외부 간섭으로 민감한 SEM을 보호하여 고객이 원하는 이미지를 얻을 수 있는 최적의 환경을 구성할 수 있습니다."
+      }
+    },
+    "performance": {
+      "noiseReduction": [
+        {
+          "frequency": "80 Hz",
+          "reduction": {
+            "en": "18 dB of noise reduction",
+            "ko": "18 dB 소음 감소"
+          }
+        },
+        {
+          "frequency": "100 Hz",
+          "reduction": {
+            "en": "20 dB of noise reduction",
+            "ko": "20 dB 소음 감소"
+          }
+        },
+        {
+          "frequency": "200 Hz",
+          "reduction": {
+            "en": "40 dB of noise reduction",
+            "ko": "40 dB 소음 감소"
+          }
+        },
+        {
+          "frequency": "1000 Hz",
+          "reduction": {
+            "en": "50 dB of noise reduction",
+            "ko": "50 dB 소음 감소"
+          }
+        }
+      ],
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/05/DAE-EM-Acoustic-Enclosure-Performance.png"
+    },
+    "accessories": [
+      {
+        "title": {
+          "en": "DVIA-MB Series - Base Active Vibration Isolation Platform",
+          "ko": "DVIA-MB 시리즈 - 베이스형 액티브 제진대"
+        },
+        "description": {
+          "en": "The DSE EM acoustic enclosure can be combined with DVIA-MB base active vibration isolation platform, DVIA-UB series, and EMI Magnetic Cancellation System for comprehensive vibration, noise, and magnetic interference control for sensitive SEM applications.",
+          "ko": "DSE EM 음향차폐장치는 DVIA-MB 베이스형 액티브 제진대, DVIA-UB 시리즈 및 EMI Magnetic Cancellation System과 함께 사용하여 민감한 SEM 애플리케이션을 위한 종합적인 진동, 소음 및 자기 간섭 제어를 할 수 있습니다."
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/05/DAE-EM-Acoustic-Enclosure-Option.png"
+      }
+    ]
+  }
+}

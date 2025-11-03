@@ -1,0 +1,51 @@
+{
+  "id": "table-yoke",
+  "name": "Table Yoke",
+  "fullName": {
+    "en": "Table Yoke",
+    "ko": "테이블 요크"
+  },
+  "series": {
+    "en": "DOTY Series",
+    "ko": "DOTY 시리즈"
+  },
+  "category": "Optical Tables Accessories",
+  "tagline": {
+    "en": "Connect multiple optical table tops to maintain flatness and expand table size",
+    "ko": "두 개 이상의 광학정반을 연결하여 평면도 유지 및 테이블 크기 확장"
+  },
+  "description": {
+    "en": "Table Yoke connects two or more optical table tops to maintain flatness and expand the size of optical tables. Table Yoke is installed when you need to connect existing optical table tops in use, when cost reduction is needed, or when separation and connection are required.",
+    "ko": "Table Yoke는 두 개 이상의 광학정반을 서로 연결해주어 평면도를 유지하며 큰 광학정반 사이즈를 확장할 수 있도록 하는 역할을 합니다. 기존에 사용중인 광학정반을 연결이 필요한 경우, 비용절감이 필요한 경우, 분리 및 연결이 필요한 경우에 Table Yoke를 장착합니다."
+  },
+  "certifications": [],
+  "heroImages": [
+    "https://www.daeilsys.com/wp-content/uploads/2020/05/Table-Yoke-1024x703.jpg"
+  ],
+  "tabs": {
+    "overview": {
+      "description": {
+        "en": "Table Yoke connects two or more optical table tops to maintain flatness and expand the size of optical tables. Table Yoke is installed when you need to connect existing optical table tops in use, when cost reduction is needed, or when separation and connection are required.",
+        "ko": "Table Yoke는 두 개 이상의 광학정반을 서로 연결해주어 평면도를 유지하며 큰 광학정반 사이즈를 확장할 수 있도록 하는 역할을 합니다. 기존에 사용중인 광학정반을 연결이 필요한 경우, 비용절감이 필요한 경우, 분리 및 연결이 필요한 경우에 Table Yoke를 장착합니다."
+      }
+    },
+    "order": {
+      "rows": [
+        ["Model No.", "Thickness"],
+        ["DOTY-100", "100 mm thick Optical Breadboard"],
+        ["DOTY-200", "200 mm thick Optical Table Top"],
+        ["DOTY-300", "300 mm thick Optical Table Top"],
+        ["DOTY-400", "400 mm thick Optical Table Top"]
+      ]
+    },
+    "resources": [
+      {
+        "label": {
+          "en": "Catalog",
+          "ko": "카탈로그"
+        },
+        "url": "#"
+      }
+    ]
+  }
+}

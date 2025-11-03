@@ -1,0 +1,104 @@
+{
+  "id": "aluminum-plates",
+  "name": "DSAP",
+  "fullName": {
+    "en": "Optical Aluminum Plates",
+    "ko": "알루미늄 플레이트"
+  },
+  "series": {
+    "en": "DSAP Series",
+    "ko": "DSAP 시리즈"
+  },
+  "category": "Optical Tables",
+  "tagline": {
+    "en": "High-rigidity aluminum plates with black anodized finish for easy equipment mounting",
+    "ko": "블랙-아노다이징 표면처리로 장비 장착이 편리한 고강성 알루미늄 플레이트"
+  },
+  "description": {
+    "en": "High-rigidity aluminum plates are surface-treated with black anodizing, and M6 (1/4-20) tap holes are drilled in a grid pattern for convenient equipment mounting. Black anodizing surface treatment reduces light reflection and protects the plate from corrosion. Aluminum plates are available in two thicknesses of 12 mm and 15 mm, making them suitable for mounting light optics and lenses or for experiments that are not sensitive to vibration.",
+    "ko": "고강성 알루미늄 플레이트는 블랙-아노다이징으로 표면 처리되어 있으며, M6(1/4-20)의 탭홀이 격자로 뚫려 있어 고객의 장비 장착이 편리합니다. 블랙-아노다이징 표면처리는 빛의 반향을 줄이고 부식으로부터 플레이트를 보호합니다. 12 mm와 15 mm의 두 가지 두께로 제공되는 알루미늄 플레이트는 가벼운 optics, lens 장착하거나 진동에 민감하지 않은 실험용으로 사용하기에 적합한 제품입니다."
+  },
+  "certifications": [],
+  "heroImages": [
+    "https://www.daeilsys.com/wp-content/uploads/2020/06/DSAP-1024x548.png"
+  ],
+  "tabs": {
+    "overview": {
+      "description": {
+        "en": "High-rigidity aluminum plates are surface-treated with black anodizing, and M6 (1/4-20) tap holes are drilled in a grid pattern for convenient equipment mounting. Black anodizing surface treatment reduces light reflection and protects the plate from corrosion. Aluminum plates are available in two thicknesses of 12 mm and 15 mm, making them suitable for mounting light optics and lenses or for experiments that are not sensitive to vibration.",
+        "ko": "고강성 알루미늄 플레이트는 블랙-아노다이징으로 표면 처리되어 있으며, M6(1/4-20)의 탭홀이 격자로 뚫려 있어 고객의 장비 장착이 편리합니다. 블랙-아노다이징 표면처리는 빛의 반향을 줄이고 부식으로부터 플레이트를 보호합니다. 12 mm와 15 mm의 두 가지 두께로 제공되는 알루미늄 플레이트는 가벼운 optics, lens 장착하거나 진동에 민감하지 않은 실험용으로 사용하기에 적합한 제품입니다."
+      }
+    },
+    "specifications": {
+      "rows": [
+        ["Material", "6061 Aluminum"],
+        ["Finish", "15 um Black Anodized"],
+        ["Thickness", "12 mm / 15 mm/ Custom"],
+        ["Mounting Hole", "M6-1.0"],
+        ["Mounting Hole Grid", "25 mm grid"],
+        ["Mounting Hole Borders", "12.5 mm"]
+      ]
+    },
+    "order": {
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/DSAP-1024x548.png",
+      "note": {
+        "en": "* Customization options are available. t* = Thickness of aluminium plates",
+        "ko": "* 맞춤 제작 옵션을 사용할 수 있습니다. t* = 알루미늄 플레이트 두께"
+      },
+      "rows": [
+        ["Model No.", "Dimensions W x D x t(mm)", "Dimensions W x D x t(in.)", "Weight (kg) 12t / 15t"],
+        ["DSAP-0302M/E-12t/15t", "300 x 200 x 12/15", "12 x 8 x 0.5/0.6", "2/2"],
+        ["DSAP-0303M/E-12t/15t", "300 x 300 x 12/15", "12 x 12 x 0.5/0.6", "3/4"],
+        ["DSAP-0304M/E-12t/15t", "300 x 400 x 12/15", "12 x 16 x 0.5/0.6", "4/5"],
+        ["DSAP-0345M/E-12t/15t", "300 x 450 x 12/15", "12 x 18 x 0.5/0.6", "4/6"],
+        ["DSAP-0305M/E-12t/15t", "300 x 500 x 12/15", "12 x 20 x 0.5/0.6", "5/6"],
+        ["DSAP-0306M/E-12t/15t", "300 x 600 x 12/15", "12 x 24 x 0.5/0.6", "6/7"],
+        ["DSAP-0307M/E-12t/15t", "300 x 700 x 12/15", "12 x 28 x 0.5/0.6", "7/9"],
+        ["DSAP-0404M/E-12t/15t", "400 x 400 x 12/15", "16 x 16 x 0.5/0.6", "5/7"],
+        ["DSAP-0405M/E-12t/15t", "400 x 500 x 12/15", "16 x 20 x 0.5/0.6", "7/8"],
+        ["DSAP-4545M/E-12t/15t", "450 x 450 x 12/15", "18 x 18 x 0.5/0.6", "7/8"],
+        ["DSAP-0406M/E-12t/15t", "400 x 600 x 12/15", "16 x 24 x 0.5/0.6", "8/10"],
+        ["DSAP-0407M/E-12t/15t", "400 x 700 x 12/15", "16 x 28 x 0.5/0.6", "9/11"],
+        ["DSAP-4575M/E-12t/15t", "450 x 750 x 12/15", "18 x 30 x 0.5/0.6", "11/14"],
+        ["DSAP-0502M/E-12t/15t", "500 x 200 x 12/15", "20 x 8 x 0.5/0.6", "3/4"],
+        ["DSAP-0505M/E-12t/15t", "500 x 500 x 12/15", "20 x 20 x 0.5/0.6", "8/10"],
+        ["DSAP-0506M/E-12t/15t", "500 x 600 x 12/15", "20 x 24 x 0.5/0.6", "10/12"],
+        ["DSAP-0507M/E-12t/15t", "500 x 700 x 12/15", "20 x 28 x 0.5/0.6", "11/14"],
+        ["DSAP-0575M/E-12t/15t", "500 x 750 x 12/15", "20 x 30 x 0.5/0.6", "12/15"],
+        ["DSAP-0508M/E-12t/15t", "500 x 800 x 12/15", "20 x 32 x 0.5/0.6", "13/16"],
+        ["DSAP-0509M/E-12t/15t", "500 x 900 x 12/15", "20 x 36 x 0.5/0.6", "15/18"],
+        ["DSAP-0606M/E-12t/15t", "600 x 600 x 12/15", "24 x 24 x 0.5/0.6", "12/15"],
+        ["DSAP-0607M/E-12t/15t", "600 x 700 x 12/15", "24 x 28 x 0.5/0.6", "14/17"],
+        ["DSAP-0609M/E-12t/15t", "600 x 900 x 12/15", "24 x 36 x 0.5/0.6", "18/22"],
+        ["DSAP-0707M/E-12t/15t", "700 x 700 x 12/15", "28 x 28 x 0.5/0.6", "16/20"],
+        ["DSAP-7575M/E-12t/15t", "750 x 750 x 12/15", "30 x 30 x 0.5/0.6", "18/23"],
+        ["DSAP-0909M/E-12t/15t", "900 x 900 x 12/15", "36 x 36 x 0.5/0.6", "26/33"],
+        ["DSAP-1003M/E-12t/15t", "1000 x 300 x 12/15", "40 x 12 x 0.5/0.6", "10/12"],
+        ["DSAP-1004M/E-12t/15t", "1000 x 400 x 12/15", "40 x 16 x 0.5/0.6", "13/16"],
+        ["DSAP-1005M/E-12t/15t", "1000 x 500 x 12/15", "40 x 20 x 0.5/0.6", "16/20"],
+        ["DSAP-1006M/E-12t/15t", "1000 x 600 x 12/15", "40 x 24 x 0.5/0.6", "19/24"],
+        ["DSAP-1007M/E-12t/15t", "1000 x 700 x 12/15", "40 x 28 x 0.5/0.6", "23/28"],
+        ["DSAP-1008M/E-12t/15t", "1000 x 800 x 12/15", "40 x 32 x 0.5/0.6", "26/32"],
+        ["DSAP-1009M/E-12t/15t", "1000 x 900 x 12/15", "40 x 36 x 0.5/0.6", "29/37"],
+        ["DSAP-1010M/E-12t/15t", "1000 x 1000 x 12/15", "40 x 40 x 0.5/0.6", "32/41"],
+        ["DSAP-1011M/E-12t/15t", "1000 x 1100 x 12/15", "40 x 44 x 0.5/0.6", "36/45"],
+        ["DSAP-1012M/E-12t/15t", "1000 x 1200 x 12/15", "40 x 48 x 0.5/0.6", "39/49"],
+        ["DSAP-1203M/E-12t/15t", "1200 x 300 x 12/15", "48 x 12 x 0.5/0.6", "12/15"],
+        ["DSAP-1206M/E-12t/15t", "1200 x 600 x 12/15", "48 x 24 x 0.5/0.6", "23/29"],
+        ["DSAP-1209M/E-12t/15t", "1200 x 900 x 12/15", "48 x 36 x 0.5/0.6", "35/44"],
+        ["DSAP-1505M/E-12t/15t", "1500 x 500 x 12/15", "60 x 20 x 0.5/0.6", "24/30"],
+        ["DSAP-1506M/E-12t/15t", "1500 x 600 x 12/15", "60 x 24 x 0.5/0.6", "29/37"],
+        ["DSAP-1845M/E-12t/15t", "1800 x 450 x 12/15", "72 x 20 x 0.5/0.6", "26/33"]
+      ]
+    },
+    "resources": [
+      {
+        "label": {
+          "en": "Catalog",
+          "ko": "카탈로그"
+        },
+        "url": "#"
+      }
+    ]
+  }
+}

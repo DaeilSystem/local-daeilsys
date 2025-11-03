@@ -1,0 +1,175 @@
+{
+  "id": "dvid-t",
+  "name": "DVID-T",
+  "fullName": {
+    "en": "Tabletop Workstation",
+    "ko": "탁상형 제진대"
+  },
+  "series": {
+    "en": "DVID-T Series",
+    "ko": "DVID-T 시리즈"
+  },
+  "category": "Vibration Isolation Workstations",
+  "tagline": {
+    "en": "Compact Desktop Vibration Isolation Platform",
+    "ko": "작고 가벼운 탁상용 공압식 제진대"
+  },
+  "description": {
+    "en": "DVID-T series is a compact desktop pneumatic vibration isolation platform suitable for small and lightweight measurement equipment. It consists of a pneumatic vibration isolation system and can be easily installed on a table for convenient use. Users can choose between stainless steel top plate or optical breadboard top plate depending on their application.",
+    "ko": "DVID-T 시리즈는 작고 가벼운 측정 장비들을 사용하기에 적합한 탁상용 공압식 제진대입니다. 공압 제진 시스템으로 이루어져 있으며, 테이블 위에 설치하여 간편하게 사용할 수 있습니다. 사용자의 용도에 따라 stainless steel 상판 또는 optical breadboard 상판을 선택할 수 있습니다."
+  },
+  "certifications": [],
+  "heroImages": [
+    "https://www.daeilsys.com/wp-content/uploads/elementor/thumbs/DVID-T-Series_Optical-Breadboard-Top-Plate-orv6kaoymm8ssqr7i016qd0kk6tw31aih22i2qzzp6.png",
+    "https://www.daeilsys.com/wp-content/uploads/elementor/thumbs/DVID-T-Series_Stainless-Steel-Plate-orv6kwb8zt2e7rvszrdltpk681vc02oc812o443xq2.png"
+  ],
+  "tabs": {
+    "overview": {
+      "description": {
+        "en": "DVID-T series is a compact desktop pneumatic vibration isolation platform suitable for small and lightweight measurement equipment. It consists of a pneumatic vibration isolation system and can be easily installed on a table for convenient use. Users can choose between stainless steel top plate or optical breadboard top plate depending on their application.",
+        "ko": "DVID-T 시리즈는 작고 가벼운 측정 장비들을 사용하기에 적합한 탁상용 공압식 제진대입니다. 공압 제진 시스템으로 이루어져 있으며, 테이블 위에 설치하여 간편하게 사용할 수 있습니다. 사용자의 용도에 따라 stainless steel 상판 또는 optical breadboard 상판을 선택할 수 있습니다."
+      }
+    },
+    "features": [
+      {
+        "title": {
+          "en": "Portable Design",
+          "ko": "휴대성이 편리한 디자인"
+        },
+        "description": {
+          "en": "Uses specially designed and manufactured small pneumatic isolators with compact and lightweight structure. Easy to install on existing tables, making it simple to move and install the vibration isolation platform.",
+          "ko": "특수하게 설계 제작된 소형 공압식 아이솔레이터를 사용하였으며, 소형, 경량구조로 되어 있습니다. 기존 테이블위에 설치가 용이하여 제진대를 쉽게 이동시키고 설치할 수 있습니다."
+        }
+      },
+      {
+        "title": {
+          "en": "High Damping Top Plate",
+          "ko": "고감쇠 상판"
+        },
+        "description": {
+          "en": "Standard top plate surface has a stainless steel laminating structure, while the breadboard type top plate has M6 tap holes, making it convenient for small laser research and optical experiments.",
+          "ko": "일반형 상판의 표면은 스테인리스 스틸 라미네이팅 구조로 되어 있으며, 브레드보드형의 상판은 M6 탭홀이 있어서 소형 레이저 연구나 광학실험용으로 사용하기 편리합니다."
+        }
+      },
+      {
+        "title": {
+          "en": "Automatic Leveling",
+          "ko": "자동 수평 조절"
+        },
+        "description": {
+          "en": "Three leveling valves automatically maintain horizontal level.",
+          "ko": "세 개의 레밸링 밸브를 사용하여 자동으로 수평을 유지해 줍니다."
+        }
+      }
+    ],
+    "performance": {
+      "title": {
+        "en": "80% - 90% vibration isolation at 20 Hz",
+        "ko": "20 Hz 에서 80 – 90% 제진성능"
+      },
+      "description": {
+        "en": "The DVID-T series provides 80-90% vertical vibration isolation performance at 20 Hz.",
+        "ko": "DVID-T 시리즈는 20 Hz에서 수직 방향에서 80-90%의 제진 성능을 제공합니다."
+      },
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/DVID-T-Series_Performance.png"
+    },
+    "specifications": {
+      "construction": {
+        "topPlate": {
+          "en": "Optical Breadboard / Stainless Steel",
+          "ko": "광학 브레드보드 / 스테인리스 스틸"
+        }
+      },
+      "performance": {
+        "isolationSystem": {
+          "en": "Pneumatic Isolation",
+          "ko": "공압식 제진"
+        },
+        "isolatorType": {
+          "en": "ISO-B2",
+          "ko": "ISO-B2"
+        },
+        "verticalResonantFrequency": {
+          "en": "7.0 - 8.0 Hz",
+          "ko": "7.0 - 8.0 Hz"
+        },
+        "verticalVibrationIsolationAt20Hz": {
+          "en": "80 – 90%",
+          "ko": "80 – 90%"
+        },
+        "maxLoadCapacity": {
+          "en": "150kg",
+          "ko": "150kg"
+        },
+        "automaticLeveling": {
+          "en": "Yes",
+          "ko": "예"
+        },
+        "levelingRepeatability": {
+          "en": "Standard Leveling Valve = ±1.0 mm",
+          "ko": "표준 레벨링 밸브 = ±1.0 mm"
+        },
+        "requiredAirSupply": {
+          "en": "3 - 5kg/cm² nitrogen or compressed air",
+          "ko": "3 - 5kg/cm² 질소 또는 압축 공기"
+        }
+      }
+    },
+    "order": {
+      "images": [
+        "https://www.daeilsys.com/wp-content/uploads/2020/08/DVID-T-Ordering-Information-ko-min.png",
+        "https://www.daeilsys.com/wp-content/uploads/2020/05/DVID-T-Ordering.jpg"
+      ],
+      "stainlessSteelType": {
+        "models": [
+          { "modelNo": "DVID-T-45A", "isolatedArea": "400 x 500", "dimensions": "432 x 532 x 84", "weight": "50" },
+          { "modelNo": "DVID-T-56A", "isolatedArea": "500 x 600", "dimensions": "532 x 632 x 84", "weight": "65" },
+          { "modelNo": "DVID-T-66A", "isolatedArea": "600 x 600", "dimensions": "632 x 632 x 84", "weight": "70" },
+          { "modelNo": "DVID-T-86A", "isolatedArea": "800 x 600", "dimensions": "832 x 632 x 84", "weight": "80" }
+        ]
+      },
+      "opticalBreadboardType": {
+        "models": [
+          { "modelNo": "DVID-T-45A-25t", "isolatedArea": "400 x 500", "dimensions": "432 x 532 x 97", "weight": "45" },
+          { "modelNo": "DVID-T-56A-25t", "isolatedArea": "500 x 600", "dimensions": "532 x 632 x 97", "weight": "60" },
+          { "modelNo": "DVID-T-66A-25t", "isolatedArea": "600 x 600", "dimensions": "632 x 632 x 97", "weight": "65" },
+          { "modelNo": "DVID-T-77A-25t", "isolatedArea": "700 x 700", "dimensions": "732 x 732 x 97", "weight": "70" },
+          { "modelNo": "DVID-T-86A-25t", "isolatedArea": "800 x 600", "dimensions": "832 x 632 x 97", "weight": "75" },
+          { "modelNo": "DVID-T-88A-25t", "isolatedArea": "800 x 800", "dimensions": "832 x 832 x 97", "weight": "78" },
+          { "modelNo": "DVID-T-45A-50t", "isolatedArea": "400 x 500", "dimensions": "432 x 532 x 122", "weight": "50" },
+          { "modelNo": "DVID-T-56A-50t", "isolatedArea": "500 x 600", "dimensions": "532 x 632 x 122", "weight": "65" },
+          { "modelNo": "DVID-T-66A-50t", "isolatedArea": "600 x 600", "dimensions": "632 x 632 x 122", "weight": "70" },
+          { "modelNo": "DVID-T-77A-50t", "isolatedArea": "700 x 700", "dimensions": "732 x 732 x 122", "weight": "75" },
+          { "modelNo": "DVID-T-86A-50t", "isolatedArea": "800 x 600", "dimensions": "832 x 632 x 122", "weight": "80" },
+          { "modelNo": "DVID-T-88A-50t", "isolatedArea": "800 x 800", "dimensions": "832 x 832 x 122", "weight": "83" }
+        ]
+      }
+    }
+  },
+  "types": [
+    {
+      "id": "stainless-steel",
+      "name": {
+        "en": "Stainless Steel Type",
+        "ko": "스테인리스 스틸 타입"
+      },
+      "description": {
+        "en": "Standard stainless steel top plate",
+        "ko": "표준 스테인리스 스틸 상판"
+      },
+      "image": "https://www.daeilsys.com/wp-content/uploads/elementor/thumbs/DVID-T-Series_Stainless-Steel-Plate-orv6kwb8zt2e7rvszrdltpk681vc02oc812o443xq2.png"
+    },
+    {
+      "id": "optical-breadboard",
+      "name": {
+        "en": "Optical Breadboard Type",
+        "ko": "광학 브레드보드 타입"
+      },
+      "description": {
+        "en": "Optical breadboard top plate with M6 tap holes",
+        "ko": "M6 탭홀이 있는 광학 브레드보드 상판"
+      },
+      "image": "https://www.daeilsys.com/wp-content/uploads/elementor/thumbs/DVID-T-Series_Optical-Breadboard-Top-Plate-orv6kaoymm8ssqr7i016qd0kk6tw31aih22i2qzzp6.png"
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "id": "rigid-supports-self-standing",
+  "name": "Rigid Supports (Self-Standing Type)",
+  "fullName": {
+    "en": "Self-Standing Rigid Support",
+    "ko": "리지드 서포트 (Self-Standing)"
+  },
+  "series": {
+    "en": "DVIO-S Series",
+    "ko": "DVIO-S 시리즈"
+  },
+  "category": "Optical Tables",
+  "tagline": {
+    "en": "High load capacity at an affordable price with thick rubber pads for vibration damping",
+    "ko": "두꺼운 고무 패드로 진동 감쇠를 제공하는 높은 적재 용량의 경제적인 서포트"
+  },
+  "description": {
+    "en": "DAEIL SYSTEMS' rigid supports feature high load capacity at an affordable price. Thick rubber pads are installed to provide adequate damping for equipment that is not highly sensitive to vibration.",
+    "ko": "대일시스템의 리지드 서포트는 높은 적재 용량을 지니며 저렴한 가격에 이용됩니다. 두꺼운 고무 패드가 장착되어 진동에 매우 민감하지 않은 장비에 무난한 수준의 감쇠를 제공합니다."
+  },
+  "certifications": [],
+  "heroImages": [
+    "https://www.daeilsys.com/wp-content/uploads/2020/06/Self-Standing-Rigid-Support-2-1024x596.png",
+    "https://www.daeilsys.com/wp-content/uploads/2020/06/Self-Standing-Rigid-Support_1.png"
+  ],
+  "tabs": {
+    "overview": {
+      "description": {
+        "en": "DAEIL SYSTEMS' rigid supports feature high load capacity at an affordable price. Thick rubber pads are installed to provide adequate damping for equipment that is not highly sensitive to vibration.",
+        "ko": "대일시스템의 리지드 서포트는 높은 적재 용량을 지니며 저렴한 가격에 이용됩니다. 두꺼운 고무 패드가 장착되어 진동에 매우 민감하지 않은 장비에 무난한 수준의 감쇠를 제공합니다."
+      }
+    },
+    "options": [
+      {
+        "title": {
+          "en": "Self-Standing Pneumatic Support",
+          "ko": "공압식 서포트 - Self-Standing Type"
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/Pneumatic-Support-Self-Standing-Type.jpg",
+        "description": {
+          "en": "Self-standing type pneumatic support without tie-bars.",
+          "ko": "타이바 없이 독립형으로 설계된 공압식 서포트입니다."
+        }
+      },
+      {
+        "title": {
+          "en": "Pneumatic Support with Tie-Bars & Casters",
+          "ko": "공압식 서포트 (Tie-Bars & Casters)"
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/05/Self-Standing-Pneumatic-Support-3.png",
+        "description": {
+          "en": "Pneumatic support system with tie-bars and casters for mobility.",
+          "ko": "이동성이 있는 타이바와 캐스터가 있는 공압식 서포트 시스템입니다."
+        }
+      },
+      {
+        "title": {
+          "en": "Rigid Support with Tie-Bars & Casters",
+          "ko": "리지드 서포트 (Tie-Bars & Casters)"
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/Rigid-Support-with-tie-bars-and-casters-02.png",
+        "description": {
+          "en": "Rigid support system with tie-bars and casters for mobility.",
+          "ko": "이동성이 있는 타이바와 캐스터가 있는 리지드 서포트 시스템입니다."
+        }
+      }
+    ],
+    "accessories": [
+      {
+        "title": {
+          "en": "DOTS - Overhead Optical Table Shelf System",
+          "ko": "DOTS - 오버헤드쉘프"
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/DOTS-Overhead-Shelf.jpg",
+        "description": {
+          "en": "Overhead shelf system accessory for optical tables.",
+          "ko": "광학테이블용 오버헤드쉘프 시스템 액세서리입니다."
+        }
+      },
+      {
+        "title": {
+          "en": "DOTE - Optical Table Enclosure",
+          "ko": "DOTE - 테이블 인클로져"
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/DOTE-Table-Enclosure.jpg",
+        "description": {
+          "en": "Table enclosure accessory for optical tables.",
+          "ko": "광학테이블용 테이블 인클로져 액세서리입니다."
+        }
+      },
+      {
+        "title": {
+          "en": "Joined Table",
+          "ko": "조인드 테이블"
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/Joined-Optical-Tables1.jpg",
+        "description": {
+          "en": "Joined optical table system.",
+          "ko": "조인드 광학테이블 시스템입니다."
+        }
+      },
+      {
+        "title": {
+          "en": "DCB - Clean Booth",
+          "ko": "DCB - 클린부스"
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/05/DCB-Clean-Booth.png",
+        "description": {
+          "en": "Clean booth accessory for optical tables.",
+          "ko": "광학테이블용 클린부스 액세서리입니다."
+        }
+      },
+      {
+        "title": {
+          "en": "DB - Dark Booth",
+          "ko": "DB - 암막부스"
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/DB-Dark-Booth.jpg",
+        "description": {
+          "en": "Dark booth accessory for optical tables.",
+          "ko": "광학테이블용 암막부스 액세서리입니다."
+        }
+      },
+      {
+        "title": {
+          "en": "DAC-30 - Air Compressor",
+          "ko": "DAC-30 - 에어컴프레서"
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/DAC-Air-Compressor.png",
+        "description": {
+          "en": "Air compressor accessory for pneumatic supports.",
+          "ko": "공압식 서포트용 에어컴프레서 액세서리입니다."
+        }
+      }
+    ],
+    "relatedProducts": [
+      {
+        "title": {
+          "en": "Scientific Grade Optical Table Top",
+          "ko": "Scientific Grade 광학정반"
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/Optical-Tabletop-SG-NEW-LEATHER-COVER2.jpg",
+        "url": "/products/optical-tables/scientific-grade"
+      },
+      {
+        "title": {
+          "en": "Research Grade Optical Table Top",
+          "ko": "Research Grade 광학정반"
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/Research-Grade-Optical-Table-Top.jpg",
+        "url": "/products/optical-tables/research-grade"
+      },
+      {
+        "title": {
+          "en": "Non-Magnetic & All Stainless Steel Optical Table Top",
+          "ko": "비자성 광학정반"
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/Non-magnetic-Stainless-Steel-Optical-Table-Top.jpg",
+        "url": "/products/optical-tables/non-magnetic"
+      }
+    ],
+    "order": {
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/08/Self-Standing-Rigid-Support-Ordering-Information-ko.jpg",
+      "note": {
+        "en": "* Additional dimensions and configurations can be customized upon request.",
+        "ko": "* 추가 크기 및 구성은 요청 시 맞춤 제작 가능합니다."
+      },
+      "rows": [
+        ["Model No.", "Dimensions ⌀D x h (mm)", "Maximum Payload Capacity (kg/1set)"],
+        ["DVIO-S-R4(h)", "267xh", "1700"],
+        ["DVIO-S-R6(h)", "", ""]
+      ]
+    },
+    "resources": [
+      {
+        "label": {
+          "en": "Catalog",
+          "ko": "카탈로그"
+        },
+        "url": "#"
+      }
+    ]
+  }
+}

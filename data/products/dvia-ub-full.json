@@ -1,0 +1,135 @@
+{
+  "id": "dvia-ub",
+  "name": "DVIA-UB",
+  "fullName": "베이스형 스프링식 액티브 제진대",
+  "series": "DVIA-UB Series",
+  "category": "Active Vibration Isolation Systems",
+  "tagline": "DVIA-UB 시리즈는 나노 스케일 측정 장비를 위해 설계된 DVIA-U 액티브 아이솔레이터가 통합된 저상형 액티브 제진대입니다.",
+  "taglineKo": "DVIA-UB 시리즈는 나노 스케일 측정 장비를 위해 설계된 DVIA-U 액티브 아이솔레이터가 통합된 저상형 액티브 제진대입니다.",
+  "description": "DVIA-UB 시리즈는 나노 스케일 측정 장비를 위해 설계된 DVIA-U 액티브 아이솔레이터가 통합된 저상형 액티브 제진대입니다.",
+  "certifications": [
+    {
+      "name": "CE Mark",
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/mark-ce.png"
+    },
+    {
+      "name": "NRTL",
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/mark-NRTL_1.png"
+    }
+  ],
+  "heroImages": [
+    "https://www.daeilsys.com/wp-content/uploads/elementor/thumbs/DVIA-UB-Base-Active-Vibration-Isolation-Platform01-oshfyricb6cx75uc19v64johcojsysna1m0p804gg8.png",
+    "https://www.daeilsys.com/wp-content/uploads/elementor/thumbs/DVIA-UB-Base-Active-Vibration-Isolation-Platform02-oshfyte0oufhudrlqaof9j7ejgaje6uqpvbo6k1o3s.png"
+  ],
+  "videoUrl": "https://www.youtube.com/watch?v=26o-mcm6Ysg",
+  "tabs": {
+    "overview": {
+      "description": "DVIA-UB 시리즈는 나노 스케일 측정 장비를 위해 설계된 DVIA-U 액티브 아이솔레이터가 통합된 저상형 액티브 제진대입니다.",
+      "videoUrl": "https://www.youtube.com/watch?v=26o-mcm6Ysg"
+    },
+    "features": [
+      {
+        "title": "저주파 제진 성능",
+        "description": "DVIA-UB 시리즈는 0.5 Hz 부터 제진이 시작되어, 4 Hz 이상부터 90% 이상의 제진성능을 발휘합니다."
+      },
+      {
+        "title": "저상형 액티브 제진 시스템",
+        "description": "DVIA-UB 시리즈는 공간이 제한된 장비를 위한 설계된 저상형 (Low-Profile) 액티브 제진 플랫폼입니다."
+      },
+      {
+        "title": "설치의 간편함",
+        "description": "DVIA-UB의 패시브 메커니즘은 엔지니어가 현장을 방문하여 설치하지 않아도 될 정도로 조작이 간단합니다. 간단하게 사용 설명서에 따라 셋업을 진행 할 수 있습니다."
+      },
+      {
+        "title": "에어 공급장치 불필요",
+        "description": "DVIA-UB는 전기만 공급 가능하면 언제든지 실행이 가능합니다."
+      },
+      {
+        "title": "사용자를 위한 UI 소프트웨어",
+        "description": "우리는 실제로 효율적인 제진 시스템을 제공하는 것에 자부심을 가지고 있습니다. UI 소프트웨어는 사용자가 실시간 진동 차단 성능 및 바닥 진동 수준을 모니터링 할 수 있도록 DVIA-UB 제품과 함께 제공됩니다.",
+        "videoUrl": "https://www.youtube.com/watch?v=26o-mcm6Ysg"
+      },
+      {
+        "title": "피드백 및 피드 포워드 제어 알고리즘",
+        "description": "DVIA 시리즈는 피드백(Feedback) 제어 알고리즘을 사용하여 진동을 지속적으로 감지하고 즉각적으로 반응하여 진동을 실시간으로 최소합니다. 피드포워드(Feedforward) 제어 알고리즘은 지반 진동이 액티브 제진대위에 탑재되어 있는 장비에 진동이 전달되기전에 미리 지반진동을 감쇠시켜 효율적인 제진성능을 발휘시킵니다.",
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/05/DVIA-UB-Feedback-and-Feedfoward-Control-Algorithm.png"
+      },
+      {
+        "title": "6 자유도(6 DOF) 진동제어",
+        "description": "액티브 제진대 내부에 장착된 센서와 액추에이터를 통해 6축(X, Y, Z, PITCH, ROLL, YAW)의 진동을 측정하여 실시간으로 제어합니다.",
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/DVIA-MO-Absolute-Control-of-Vibrations-in-All-Six-Degrees-of-Freedom01.png"
+      }
+    ],
+    "performance": {
+      "title": "4 Hz 이상부터 90% 이상의 제진성능",
+      "description": "DVIA-UB 시리즈는 0.5 Hz 부터 제진이 시작되어, 4 Hz 이상부터 90% 이상의 제진성능을 발휘합니다.",
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/DVIA-UD-Performance.png"
+    },
+    "specifications": {
+      "models": [
+        {
+          "name": "DVIA-UB350",
+          "platformDimensions": "Customizable (fixed height: 129 mm)",
+          "maxLoadCapacity": "350 kg",
+          "maxActuatorForce": "Vertical: 6 N, Horizontal: 3 N"
+        },
+        {
+          "name": "DVIA-UB700",
+          "platformDimensions": "Customizable (fixed height: 129 mm)",
+          "maxLoadCapacity": "700 kg",
+          "maxActuatorForce": "Vertical: 12 N, Horizontal: 6 N"
+        },
+        {
+          "name": "DVIA-UB1000",
+          "platformDimensions": "Customizable (fixed height: 129 mm)",
+          "maxLoadCapacity": "1200 kg",
+          "maxActuatorForce": "Vertical: 12 N, Horizontal: 6 N"
+        }
+      ],
+      "common": {
+        "actuator": "Electromagnetic Actuator",
+        "degreesOfFreedom": "6 degrees",
+        "activeIsolationRange": "0.5 - 100 Hz",
+        "vibrationIsolation": "≥90%",
+        "inputVoltage": "AC100 - 240V / 50 - 60 Hz / 1A",
+        "powerConsumption": "Maximum 110W, <50 W in normal operation",
+        "operatingTemperature": "5 - 50 °C",
+        "operatingHumidity": "20 - 90%"
+      }
+    },
+    "applications": {
+      "title": "Scanning Electron Microscopy",
+      "items": [
+        {
+          "title": "ZEISS SEM Sigma 500",
+          "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/DVIA-UB_ZEISS-SEM-Sigma-500.jpg"
+        },
+        {
+          "title": "ZEISS SEM EVO 18",
+          "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/DVIA-UB_ZEISS-SEM-EVO-18.jpg"
+        },
+        {
+          "title": "ZEISS SEM EVO 15",
+          "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/DVIA-UB_ZEISS-SEM-EVO-15.jpg"
+        }
+      ]
+    },
+    "resources": {
+      "catalog": {
+        "label": "카탈로그 다운로드",
+        "labelEn": "Download Catalog",
+        "url": "#"
+      },
+      "userManual": {
+        "label": "DVIA-UB User Manual",
+        "labelEn": "DVIA-UB User Manual",
+        "url": "#"
+      },
+      "installationReports": {
+        "label": "Installation Reports",
+        "labelEn": "Installation Reports",
+        "url": "#"
+      }
+    }
+  }
+}

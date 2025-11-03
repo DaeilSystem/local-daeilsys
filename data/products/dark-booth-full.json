@@ -1,0 +1,124 @@
+{
+  "id": "dark-booth",
+  "name": "Dark Booth",
+  "fullName": {
+    "en": "DB Dark Booth",
+    "ko": "암막부스"
+  },
+  "series": {
+    "en": "DB Series",
+    "ko": "DB 시리즈"
+  },
+  "category": "Optical Tables Accessories",
+  "tagline": {
+    "en": "Custom-designed dark booth for light-sensitive experiments",
+    "ko": "빛에 민감한 실험을 위한 맞춤형 암막부스"
+  },
+  "description": {
+    "en": "Dark Booth is custom-designed according to experimental environments requiring light blocking, equipment used, and purpose. Easy disassembly and assembly on-site allows convenient installation at the customer's desired location.",
+    "ko": "암막부스는 빛 차단이 요구되는 실험환경과 사용하는 장비, 목적에 따라 맞춤형으로 설계됩니다. 현장에서 분해 및 조립이 용이해, 고객이 원하는 위치에 편리하게 설치가 가능합니다."
+  },
+  "certifications": [
+    {
+      "name": "CE Mark",
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/mark-ce.png"
+    },
+    {
+      "name": "NRTL",
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/mark-NRTL_1.png"
+    }
+  ],
+  "heroImages": [
+    "https://www.daeilsys.com/wp-content/uploads/2020/04/DB-Dark-Booth.jpg"
+  ],
+  "tabs": {
+    "overview": {
+      "description": {
+        "en": "Dark Booth is custom-designed according to experimental environments requiring light blocking, equipment used, and purpose. Easy disassembly and assembly on-site allows convenient installation at the customer's desired location.",
+        "ko": "암막부스는 빛 차단이 요구되는 실험환경과 사용하는 장비, 목적에 따라 맞춤형으로 설계됩니다. 현장에서 분해 및 조립이 용이해, 고객이 원하는 위치에 편리하게 설치가 가능합니다."
+      }
+    },
+    "features": [
+      {
+        "title": {
+          "en": "Can be manufactured and installed according to experimental purpose using aluminum profiles, blackout materials, etc.",
+          "ko": "알루미늄 프로파일, 암막재료 등 실험목적에 따라 제작 및 설치가 가능"
+        },
+        "description": {
+          "en": "",
+          "ko": ""
+        }
+      },
+      {
+        "title": {
+          "en": "Lighting fixtures and power supply units are available as options",
+          "ko": "조명장치, 전원공급장치 등이 옵션으로 제공"
+        },
+        "description": {
+          "en": "",
+          "ko": ""
+        }
+      },
+      {
+        "title": {
+          "en": "Excellent light blocking capability",
+          "ko": "뛰어난 빛 차단 성능"
+        },
+        "description": {
+          "en": "",
+          "ko": ""
+        }
+      },
+      {
+        "title": {
+          "en": "Modular design for easy detachment and expansion",
+          "ko": "모듈형 설계로 탈착 및 확장이 용이"
+        },
+        "description": {
+          "en": "",
+          "ko": ""
+        }
+      },
+      {
+        "title": {
+          "en": "Easy mobility with casters attached",
+          "ko": "캐스터 부착으로 이동이 편리"
+        },
+        "description": {
+          "en": "",
+          "ko": ""
+        }
+      },
+      {
+        "title": {
+          "en": "Custom-designed and manufactured according to equipment used and purpose",
+          "ko": "사용하는 장비와 목적에 따라 맞춤형으로 설계 및 제작"
+        },
+        "description": {
+          "en": "",
+          "ko": ""
+        }
+      }
+    ],
+    "specifications": {
+      "rows": [
+        ["Construction"],
+        ["Dimensions", "Custom-Made"],
+        ["Frame", "Aluminum Profile"],
+        ["Walls", "Blackout Material"],
+        ["Doors", "Folding / Sliding / Strip / Zip"],
+        ["Lighting", "LED (Optional)"],
+        ["Input Voltage", "220 V / 60 Hz"]
+      ]
+    },
+    "resources": [
+      {
+        "label": {
+          "en": "Catalog",
+          "ko": "카탈로그"
+        },
+        "url": "#"
+      }
+    ]
+  }
+}

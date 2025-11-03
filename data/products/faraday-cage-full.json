@@ -1,0 +1,42 @@
+{
+  "id": "faraday-cage",
+  "name": "Faraday Cage",
+  "fullName": {
+    "en": "Faraday Cage",
+    "ko": "Faraday Cage"
+  },
+  "series": {
+    "en": "Faraday Cage",
+    "ko": "Faraday Cage"
+  },
+  "category": "Optical Tables Accessories",
+  "tagline": {
+    "en": "Shielding structure with copper mesh in aluminum profile framework to prevent external electric fields from affecting internal experimental equipment",
+    "ko": "알루미늄 프로파일 구조물에 구리망을 설치하여 외부 전기장이 내부 실험장비에 영향을 주는 것을 방지"
+  },
+  "description": {
+    "en": "Faraday Cage is a shielding structure with copper mesh installed in an aluminum profile framework. It prevents external electric fields from affecting internal experimental equipment. Power supply wiring holes for equipment and shelves for reagents and work supplies can be arranged inside. It is designed and manufactured according to the equipment used and purpose.",
+    "ko": "Faraday Cage는 알루미늄 프로파일 구조물에 구리망을 설치하여 차폐하는 구조로, 외부의 전기장이 내부의 실험장비에 영향을 주는 것을 방지합니다. 내부에 장비의 전원 공급배선을 위한 전선홀과 시약등의 작업용품을 비치할 수 있도록 선반을 배치할 수 있습니다. 사용하는 장비와 목적에 따라 설계 및 제작됩니다."
+  },
+  "certifications": [],
+  "heroImages": [
+    "https://www.daeilsys.com/wp-content/uploads/2020/04/Faraday-Cage.jpg"
+  ],
+  "tabs": {
+    "overview": {
+      "description": {
+        "en": "Faraday Cage is a shielding structure with copper mesh installed in an aluminum profile framework. It prevents external electric fields from affecting internal experimental equipment. Power supply wiring holes for equipment and shelves for reagents and work supplies can be arranged inside. It is designed and manufactured according to the equipment used and purpose.",
+        "ko": "Faraday Cage는 알루미늄 프로파일 구조물에 구리망을 설치하여 차폐하는 구조로, 외부의 전기장이 내부의 실험장비에 영향을 주는 것을 방지합니다. 내부에 장비의 전원 공급배선을 위한 전선홀과 시약등의 작업용품을 비치할 수 있도록 선반을 배치할 수 있습니다. 사용하는 장비와 목적에 따라 설계 및 제작됩니다."
+      }
+    },
+    "resources": [
+      {
+        "label": {
+          "en": "Catalog",
+          "ko": "카탈로그"
+        },
+        "url": "#"
+      }
+    ]
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "id": "dvip-c",
+  "name": "DVIP-C Series Cradle Pneumatic Vibration Isolation Platform",
+  "fullName": {
+    "en": "DVIP-C Cradle Pneumatic Vibration Isolation Platform",
+    "ko": "DVIP-C 크래들형 공압식 제진대"
+  },
+  "series": {
+    "en": "DVIP-C Series",
+    "ko": "DVIP-C 시리즈"
+  },
+  "category": "Vibration Isolation Floor Platforms",
+  "tagline": {
+    "en": "Custom-designed high-performance pneumatic vibration isolation platform for large equipment and heavy-duty applications",
+    "ko": "대형기기나 고중량 장비의 제진에 적합한 맞춤형 고성능 공압식 제진대"
+  },
+  "description": {
+    "en": "DVIP series is a custom-designed high-performance pneumatic vibration isolation platform suitable for vibration isolation of large equipment and heavy-duty applications. It provides custom engineering solutions that match equipment specifications such as shape, weight, and center of gravity. Cradle Platform is used when the center of gravity is in the upper part of the equipment.",
+    "ko": "DVIP 시리즈는 대형기기나 고중량 장비의 제진에 적합한 맞춤형 고성능 공압식 제진대입니다. 탑재기기의 형상, 중량, 무게중심 등 장비사양에 맞는 맞춤형 엔지니어링 솔루션을 제공합니다. 무게중심이 장비의 윗부분이 있을 경우 Cradle Platform을 사용합니다."
+  },
+  "certifications": [],
+  "heroImages": [
+    "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIP-C-Cradle-Pneumatic-Vibration-Isolation-Platform.jpg"
+  ],
+  "tabs": {
+    "overview": {
+      "description": {
+        "en": "DVIP series is a custom-designed high-performance pneumatic vibration isolation platform suitable for vibration isolation of large equipment and heavy-duty applications. It provides custom engineering solutions that match equipment specifications such as shape, weight, and center of gravity. Cradle Platform is used when the center of gravity is in the upper part of the equipment.",
+        "ko": "DVIP 시리즈는 대형기기나 고중량 장비의 제진에 적합한 맞춤형 고성능 공압식 제진대입니다. 탑재기기의 형상, 중량, 무게중심 등 장비사양에 맞는 맞춤형 엔지니어링 솔루션을 제공합니다. 무게중심이 장비의 윗부분이 있을 경우 Cradle Platform을 사용합니다."
+      }
+    },
+    "performance": {
+      "description": {
+        "en": "80-99% vibration isolation at 10 Hz",
+        "ko": "10 Hz에서 80-99% 제진성능"
+      },
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIP-B-Performance.jpg",
+      "data": []
+    },
+    "specifications": {
+      "rows": [
+        ["Platform Dimensions", "Custom-made"],
+        ["Vibration Isolation System", "Pneumatic Isolation System"],
+        ["Resonant Frequency", "1.2-3.0 Hz"],
+        ["Vibration Isolation at 10 Hz", "80-99%"],
+        ["Load Capacity", "500-2000 kg"],
+        ["Automatic Leveling", "Yes"],
+        ["Accuracy of Leveling Repeatability", "±1.0 mm for Standard Leveling Valve / ±0.05 mm for Precision Leveling Valve"],
+        ["Required CDA", "4-6 bar"]
+      ]
+    },
+    "applications": [
+      {
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIP-C-Applications-3.jpg",
+        "title": {
+          "en": "Installation Photo 1",
+          "ko": "설치 사진 1"
+        },
+        "description": {
+          "en": "",
+          "ko": ""
+        }
+      },
+      {
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIP-C-Applications-1.jpg",
+        "title": {
+          "en": "Installation Photo 2",
+          "ko": "설치 사진 2"
+        },
+        "description": {
+          "en": "",
+          "ko": ""
+        }
+      },
+      {
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIP-C-Applications-2.jpg",
+        "title": {
+          "en": "Installation Photo 3",
+          "ko": "설치 사진 3"
+        },
+        "description": {
+          "en": "",
+          "ko": ""
+        }
+      }
+    ],
+    "resources": [
+      {
+        "label": {
+          "en": "Catalog",
+          "ko": "카탈로그"
+        },
+        "url": "#"
+      }
+    ]
+  }
+}

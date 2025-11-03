@@ -9,8 +9,14 @@ interface Props {
 const supportItems = {
   "technical-notes": {
     fundamentals: {
-      title: "Fundamentals of Vibration",
-      description: "Basic principles and theory of vibration isolation systems and their applications.",
+      title: {
+        en: "Fundamentals of Vibration",
+        ko: "제진의 원리"
+      },
+      description: {
+        en: "Basic principles and theory of vibration isolation systems and their applications.",
+        ko: "제진 시스템의 기본 원리와 이론 및 응용 분야."
+      },
     },
     "generic-criteria": {
       title: "Generic Vibration Criteria",
@@ -51,12 +57,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
   }
 
+  const title = typeof item.title === "string" ? item.title : item.title.en
+  const description = typeof item.description === "string" ? item.description : item.description.en
+
   return {
-    title: `${item.title} | DVIA Support`,
-    description: item.description,
+    title: `${title} | DAEIL SYSTEMS Support`,
+    description: description,
     openGraph: {
-      title: `${item.title} | DVIA Support`,
-      description: item.description,
+      title: `${title} | DAEIL SYSTEMS Support`,
+      description: description,
       type: "website",
     },
   }

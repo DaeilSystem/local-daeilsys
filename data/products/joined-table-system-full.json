@@ -1,0 +1,161 @@
+{
+  "id": "joined-table-system",
+  "name": "Joined Table System",
+  "fullName": {
+    "en": "Joined Table System",
+    "ko": "조인드 테이블 시스템"
+  },
+  "series": {
+    "en": "Joined Table System",
+    "ko": "조인드 테이블 시스템"
+  },
+  "category": "Optical Tables Accessories",
+  "tagline": {
+    "en": "Connect multiple table tops in various configurations to create large L, T, or cross-shaped tables",
+    "ko": "여러 대의 테이블을 다양한 형태로 연결하여 큰 L, T 또는 십자 모양의 테이블 제작"
+  },
+  "description": {
+    "en": "Multiple table tops can be connected end-to-end, side-to-side, side-to-end, and in various other forms to create long and wide \"L\", \"T\", or cross-shaped tables. In most cases, Joined Table System is custom-made as a complete system. It compensates for the disadvantages of large tables that are difficult to move and install. All Joined Tables are assembled and tested at our factory before shipment for flatness inspection, and are shipped disassembled for on-site installation.",
+    "ko": "여러 대의 테이블 상판을 end-to-end, side-to-side, side-to-end 외 여러 형태로 연결해 길고 넓은 \"L\", \"T\" 또는 \"십자\" 모양의 테이블 제작이 가능합니다. 대부분의 경우, Joined Table System은 맞춤 셋트로 제작되며 하나의 완벽한 시스템으로 제공됩니다. 이동 및 설치가 어려운 큰 테이블의 단점을 보완하였습니다. 모든 Joined Tables은 평탄도 등 검사를 위해 출고 전 저희 공장에서 먼저 조립하여 테스트하게 되며, 분리 상태로 배송되어 현장에서 설치합니다."
+  },
+  "certifications": [
+    {
+      "name": "CE Mark",
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/mark-ce.png"
+    },
+    {
+      "name": "NRTL",
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/mark-NRTL_1.png"
+    }
+  ],
+  "heroImages": [
+    "https://www.daeilsys.com/wp-content/uploads/2020/06/Joined-Table-System-05-1024x768.png",
+    "https://www.daeilsys.com/wp-content/uploads/2020/06/Joined-Table-System-01-1024x768.png",
+    "https://www.daeilsys.com/wp-content/uploads/2020/06/Joined-Table-System-02-1024x768.png",
+    "https://www.daeilsys.com/wp-content/uploads/2020/06/Joined-Table-System-03-1024x768.png",
+    "https://www.daeilsys.com/wp-content/uploads/2020/06/Joined-Table-System-04-1024x768.png"
+  ],
+  "tabs": {
+    "overview": {
+      "features": [
+        {
+          "title": {
+            "en": "Multiple table tops can be connected in various forms (end-to-end, side-to-side, side-to-end) to create long and wide L, T, or cross-shaped tables",
+            "ko": "여러 대의 테이블 상판을 end-to-end, side-to-side, side-to-end 외 여러 형태로 연결해 길고 넓은 \"L\", \"T\" 또는 \"십자\" 모양의 테이블 제작이 가능합니다"
+          },
+          "description": {
+            "en": "",
+            "ko": ""
+          }
+        },
+        {
+          "title": {
+            "en": "In most cases, Joined Table System is custom-made as a complete set and provided as one perfect system",
+            "ko": "대부분의 경우, Joined Table System은 맞춤 셋트로 제작되며 하나의 완벽한 시스템으로 제공됩니다"
+          },
+          "description": {
+            "en": "",
+            "ko": ""
+          }
+        },
+        {
+          "title": {
+            "en": "Compensates for the disadvantages of large tables that are difficult to move and install",
+            "ko": "이동 및 설치가 어려운 큰 테이블의 단점을 보완하였습니다"
+          },
+          "description": {
+            "en": "",
+            "ko": ""
+          }
+        },
+        {
+          "title": {
+            "en": "All Joined Tables are assembled and tested at our factory before shipment for flatness inspection, and are shipped disassembled for on-site installation",
+            "ko": "모든 Joined Tables은 평탄도 등 검사를 위해 출고 전 저희 공장에서 먼저 조립하여 테스트하게 되며, 분리 상태로 배송되어 현장에서 설치합니다"
+          },
+          "description": {
+            "en": "",
+            "ko": ""
+          }
+        }
+      ]
+    },
+    "layoutExamples": [
+      {
+        "title": {
+          "en": "End to End Joining",
+          "ko": "End to End Joining"
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/Joined-Optical-Table-Layout-Examples-End-to-End-Joining.jpg",
+        "description": {
+          "en": "",
+          "ko": ""
+        }
+      },
+      {
+        "title": {
+          "en": "End to Middle of side Joining",
+          "ko": "End to Middle of side Joining"
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/Joined-Optical-Table-Layout-Examples-End-to-Middle-of-side-Joining.jpg",
+        "description": {
+          "en": "",
+          "ko": ""
+        }
+      },
+      {
+        "title": {
+          "en": "End to side Joining",
+          "ko": "End to side Joining"
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/Joined-Optical-Table-Layout-Examples-End-to-side-Joining.jpg",
+        "description": {
+          "en": "",
+          "ko": ""
+        }
+      },
+      {
+        "title": {
+          "en": "Mixed Configurations",
+          "ko": "Mixed Configurations"
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/Joined-Optical-Table-Layout-Examples-Mixed-Configurations.jpg",
+        "description": {
+          "en": "",
+          "ko": ""
+        }
+      },
+      {
+        "title": {
+          "en": "Mixed Joining with Various Size Table",
+          "ko": "Mixed Joining with Various Size Table"
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/Joined-Optical-Table-Layout-Examples-Mixed-Joining-with-Various-Size-Table.jpg",
+        "description": {
+          "en": "",
+          "ko": ""
+        }
+      },
+      {
+        "title": {
+          "en": "Mixed Table Sizes",
+          "ko": "Mixed Table Sizes"
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/Joined-Optical-Table-Layout-Examples-Mixed-Table-Sizes.jpg",
+        "description": {
+          "en": "",
+          "ko": ""
+        }
+      }
+    ],
+    "resources": [
+      {
+        "label": {
+          "en": "Catalog",
+          "ko": "카탈로그"
+        },
+        "url": "#"
+      }
+    ]
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "id": "dvim-f",
+  "name": "DVIM-F",
+  "fullName": {
+    "en": "Basic Pneumatic Vibration Isolator",
+    "ko": "에어스프링 공압식 아이솔레이터"
+  },
+  "series": {
+    "en": "DVIM-F Series",
+    "ko": "DVIM-F 시리즈"
+  },
+  "category": "Pneumatic Vibration Isolators",
+  "tagline": {
+    "en": "Basic Pneumatic Vibration Isolator at Reasonable Price",
+    "ko": "합리적인 가격의 기본 공압식 아이솔레이터"
+  },
+  "description": {
+    "en": "DVIM-F isolator uses air springs to provide basic vibration isolation performance in vertical and horizontal directions and can be configured as a vibration control system at a reasonable price.",
+    "ko": "DVIM-F 아이솔레이터는 에어스프링을 사용하여 수직 및 수평 방향에서 기본적인 제진성능을 보여주며 합리적인 가격으로 진동 제어시스템을 구성할 수 있습니다."
+  },
+  "certifications": [],
+  "heroImages": [
+    "https://www.daeilsys.com/wp-content/uploads/2020/05/DVIM-F-Basic-Pneumatic-Vibration-Isolator-768x603.png"
+  ],
+  "tabs": {
+    "overview": {
+      "description": {
+        "en": "DVIM-F isolator uses air springs to provide basic vibration isolation performance in vertical and horizontal directions and can be configured as a vibration control system at a reasonable price.",
+        "ko": "DVIM-F 아이솔레이터는 에어스프링을 사용하여 수직 및 수평 방향에서 기본적인 제진성능을 보여주며 합리적인 가격으로 진동 제어시스템을 구성할 수 있습니다."
+      }
+    },
+    "features": [
+      {
+        "title": {
+          "en": "Exceptional Durability - Pneumatic Vibration Isolation Mount",
+          "ko": "내구성이 뛰어난 공압식 제진 마운트"
+        },
+        "description": {
+          "en": "DVIM-F isolators equipped with air springs provide basic vibration isolation performance in vertical and horizontal axes and are available at affordable prices. In addition, DVIM-F isolators use air springs to control vibrations, and the air springs with exceptional durability extend the life of DVIM-F isolators, eliminating concerns about replacement even during long-term use. DVIM-F isolators are suitable for equipment that requires relatively less vibration control, damping, and settling time.",
+          "ko": "에어 스프링을 탑재하는 DVIM-F 아이솔레이터는 수직, 수평 축 기본적인 진동 제진성능 보여주며, 저렴한 가격으로 이용 가능합니다. 또한 DVIM-F 아이솔레이터는 에어스프링을 사용하여 진동을 제어하는데, 매우 뛰어난 내구성을 지닌 에어스프링은 DVIM-F 아이솔레이터의 수명을 연장시켜 장기간 사용 중에도 교체의 우려가 없습니다. DVIM-F 아이솔레이터는 진동 제어나 감쇠 및 안정화 시간이 비교적 덜 요구되는 장비에 적합합니다."
+        }
+      },
+      {
+        "title": {
+          "en": "High-Precision Leveling Valve",
+          "ko": "고정밀 레밸링 밸브"
+        },
+        "description": {
+          "en": "For cases requiring high leveling repeatability, precision leveling valves (±0.05mm) can be mounted on the isolators to reduce the equipment's settling time.",
+          "ko": "높은 반복정밀도(leveling repeatability)가 요구되는 경우, 정밀형(±0.05mm) 레밸링 밸브를 아이솔레이터에 장착하여 장비의 안정화 시간(settling time)을 단축시킬 수 있습니다."
+        }
+      }
+    ],
+    "performance": {
+      "title": {
+        "en": "40 – 50% vibration isolation at 10 Hz (Without Damper)",
+        "ko": "10 Hz 에서 40 – 50% 제진성능 (댐퍼 사용안할시)"
+      },
+      "description": {
+        "en": "The DVIM-F series provides 40-50% vibration isolation performance at 10 Hz without oil damper.",
+        "ko": "DVIM-F 시리즈는 오일 댐퍼 없이 10 Hz에서 40-50%의 제진 성능을 제공합니다."
+      },
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/05/DVIM-F-Basic-Pneumatic-Vibration-Isolator-Performance.png"
+    },
+    "specifications": {
+      "vibrationIsolationSystem": {
+        "en": "Pneumatic Isolation System",
+        "ko": "공압식 제진 시스템"
+      },
+      "loadCapacity": {
+        "en": "100–60000 kg",
+        "ko": "100–60000 kg"
+      },
+      "resonantFrequency": {
+        "en": "5.0–6.0 Hz",
+        "ko": "5.0–6.0 Hz"
+      },
+      "vibrationIsolationAt10Hz": {
+        "en": "40-50% (Without Oil Damper)",
+        "ko": "40-50% (오일 댐퍼 없이)"
+      },
+      "automaticLeveling": {
+        "en": "Yes",
+        "ko": "예"
+      },
+      "levelingRepeatability": {
+        "en": "±1.0 mm for Standard Leveling Valve, ±0.05 mm for Precision Leveling Valve",
+        "ko": "표준 레벨링 밸브 = ±1.0 mm, 정밀 레벨링 밸브 = ±0.05 mm"
+      }
+    },
+    "options": [
+      {
+        "title": {
+          "en": "Fast Settling Time - Oil Damper Option",
+          "ko": "빠른 정착시간 - 오일 댐퍼 옵션"
+        },
+        "description": {
+          "en": "When a built-in oil damper (Built-in Oil Damper) is installed on the DVIM-F isolator, the movement of the XY stage is reduced and slowed, reducing the settling time of the mounted equipment and increasing the stiffness of the vibration isolation table.",
+          "ko": "DVIM-F 아이솔레이터에 내장형 오일 댐퍼 (Built-in Oil Damper)를 장착하면, XY 스테이지의 움직임이 감소 및 둔화 되어 탑재장비의 정착시간(settling time)이 줄어들고, 제진대의 강성이 높아집니다."
+        }
+      }
+    ],
+    "order": {
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/05/DVIM-F-Basic-Pneumatic-Vibration-Isolator-Order.png",
+      "standardModels": [
+        {
+          "modelNo": "DVIM-F-500",
+          "dimensionsFloating": "220 x 220 x 152",
+          "dimensionsDeflated": "180 x 180 x 142",
+          "boltHoleLocation": "160 x 160",
+          "weight": "11",
+          "maxLoadCapacity": "500",
+          "boltHoleDiameter": "10"
+        },
+        {
+          "modelNo": "DVIM-F-1000",
+          "dimensionsFloating": "240 x 240 x 152",
+          "dimensionsDeflated": "200 x 200 x 142",
+          "boltHoleLocation": "180 x 180",
+          "weight": "16",
+          "maxLoadCapacity": "1000",
+          "boltHoleDiameter": "10"
+        },
+        {
+          "modelNo": "DVIM-F-1500",
+          "dimensionsFloating": "300 x 300 x 152",
+          "dimensionsDeflated": "240 x 240 x 142",
+          "boltHoleLocation": "210 x 210",
+          "weight": "20",
+          "maxLoadCapacity": "1500",
+          "boltHoleDiameter": "10"
+        },
+        {
+          "modelNo": "DVIM-F-2000",
+          "dimensionsFloating": "320 x 320 x 152",
+          "dimensionsDeflated": "270 x 270 x 142",
+          "boltHoleLocation": "240 x 240",
+          "weight": "35",
+          "maxLoadCapacity": "2000",
+          "boltHoleDiameter": "14"
+        },
+        {
+          "modelNo": "DVIM-F-2500",
+          "dimensionsFloating": "360 x 360 x 172",
+          "dimensionsDeflated": "290 x 290 x 162",
+          "boltHoleLocation": "260 x 260",
+          "weight": "43",
+          "maxLoadCapacity": "2500",
+          "boltHoleDiameter": "14"
+        },
+        {
+          "modelNo": "DVIM-F-3000",
+          "dimensionsFloating": "380 x 380 x 172",
+          "dimensionsDeflated": "320 x 320 x 162",
+          "boltHoleLocation": "290 x 290",
+          "weight": "50",
+          "maxLoadCapacity": "3000",
+          "boltHoleDiameter": "14"
+        }
+      ],
+      "damperModels": [
+        {
+          "modelNo": "DVIM-F-500D",
+          "dimensionsFloating": "220 x 220 x 152",
+          "dimensionsDeflated": "180 x 180 x 142",
+          "boltHoleLocation": "160 x 160",
+          "weight": "11",
+          "maxLoadCapacity": "500",
+          "boltHoleDiameter": "10"
+        },
+        {
+          "modelNo": "DVIM-F-1000D",
+          "dimensionsFloating": "240 x 240 x 152",
+          "dimensionsDeflated": "200 x 200 x 142",
+          "boltHoleLocation": "180 x 180",
+          "weight": "16",
+          "maxLoadCapacity": "1000",
+          "boltHoleDiameter": "10"
+        },
+        {
+          "modelNo": "DVIM-F-1500D",
+          "dimensionsFloating": "300 x 300 x 152",
+          "dimensionsDeflated": "240 x 240 x 142",
+          "boltHoleLocation": "210 x 210",
+          "weight": "20",
+          "maxLoadCapacity": "1500",
+          "boltHoleDiameter": "10"
+        },
+        {
+          "modelNo": "DVIM-F-2000D",
+          "dimensionsFloating": "320 x 320 x 152",
+          "dimensionsDeflated": "270 x 270 x 142",
+          "boltHoleLocation": "240 x 240",
+          "weight": "35",
+          "maxLoadCapacity": "2000",
+          "boltHoleDiameter": "14"
+        },
+        {
+          "modelNo": "DVIM-F-2500D",
+          "dimensionsFloating": "360 x 360 x 172",
+          "dimensionsDeflated": "290 x 290 x 162",
+          "boltHoleLocation": "260 x 260",
+          "weight": "43",
+          "maxLoadCapacity": "2500",
+          "boltHoleDiameter": "14"
+        },
+        {
+          "modelNo": "DVIM-F-3000D",
+          "dimensionsFloating": "380 x 380 x 172",
+          "dimensionsDeflated": "320 x 320 x 162",
+          "boltHoleLocation": "290 x 290",
+          "weight": "50",
+          "maxLoadCapacity": "3000",
+          "boltHoleDiameter": "14"
+        }
+      ],
+      "note": {
+        "en": "\"D\" indicates DVIM-F isolators with built-in oil dampers.",
+        "ko": "\"D\"는 내장형 오일 댐퍼가 장착된 DVIM-F 아이솔레이터를 나타냅니다."
+      }
+    },
+    "resources": {
+      "catalog": {
+        "label": {
+          "en": "Catalog",
+          "ko": "카탈로그"
+        },
+        "url": "#"
+      },
+      "cad2d": {
+        "label": {
+          "en": "2D CAD",
+          "ko": "2D CAD"
+        },
+        "url": "#"
+      },
+      "installationReports": {
+        "label": {
+          "en": "Installation Reports",
+          "ko": "설치 보고서"
+        },
+        "url": "#"
+      }
+    }
+  }
+}

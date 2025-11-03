@@ -1,0 +1,58 @@
+{
+  "id": "air-compressor",
+  "name": "Air Compressor",
+  "fullName": {
+    "en": "DAC Air Compressor",
+    "ko": "에어컴프레서"
+  },
+  "series": {
+    "en": "DAC Series",
+    "ko": "DAC 시리즈"
+  },
+  "category": "Optical Tables Accessories",
+  "tagline": {
+    "en": "Specially designed low-noise, compact air compressor for easy installation and use in laboratories without air utility",
+    "ko": "에어 유틸리티가 없는 실험실에서 간편하게 설치하여 사용할 수 있는 특수 제작 저소음, 소형 에어컴프레서"
+  },
+  "description": {
+    "en": "Specially designed low-noise, compact air compressor for easy installation and use in laboratories without air utility.",
+    "ko": "에어 유틸리티를 보유하고 있지 않은 실험실 내에서 간편하게 설치하여 사용할 수 있도록 특수 제작된 저소음, 소형 에어컴프레서입니다."
+  },
+  "certifications": [],
+  "heroImages": [
+    "https://www.daeilsys.com/wp-content/uploads/2020/06/DAC-Air-Compressor.png"
+  ],
+  "tabs": {
+    "overview": {
+      "description": {
+        "en": "Specially designed low-noise, compact air compressor for easy installation and use in laboratories without air utility.",
+        "ko": "에어 유틸리티를 보유하고 있지 않은 실험실 내에서 간편하게 설치하여 사용할 수 있도록 특수 제작된 저소음, 소형 에어컴프레서입니다."
+      }
+    },
+    "specifications": {
+      "rows": [
+        ["Operating Pressure", "40 - 80 psi"],
+        ["Pressure Control", "Preset Minimum Pressure by Automatic Switch"],
+        ["Air Delivery", "30 L/Min at 80 psi"],
+        ["Tank Capacity", "13 Liters"],
+        ["Electrical Power", "220 V / 60 Hz"],
+        ["Size (WxDxH)", "435 x 280 x 490 mm"],
+        ["Net Weight", "23 kg"],
+        ["Noise Level", "40 dB"],
+        ["Air Discharge outlet diameter", "Ø6 with one-touch fitting"],
+        ["Body color", "Light Gray"],
+        ["Pressure Indicator", "1 ea"],
+        ["Drain Valve", "1 ea"]
+      ]
+    },
+    "resources": [
+      {
+        "label": {
+          "en": "Catalog",
+          "ko": "카탈로그"
+        },
+        "url": "#"
+      }
+    ]
+  }
+}

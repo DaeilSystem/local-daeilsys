@@ -1,0 +1,311 @@
+{
+  "id": "dvid-c",
+  "name": "DVID-C",
+  "fullName": {
+    "en": "Cleanroom Workstation - Workspace Type",
+    "ko": "클린룸 제진대"
+  },
+  "series": {
+    "en": "DVID-C Series",
+    "ko": "DVID-C 시리즈"
+  },
+  "category": "Vibration Isolation Workstations",
+  "tagline": {
+    "en": "Cleanroom Vibration Isolation Workstation with Workspace",
+    "ko": "Cleanroom Workstation - Workspace Type"
+  },
+  "description": {
+    "en": "High-performance vibration isolation workstation designed with all stainless steel for use in cleanroom class 10 environments",
+    "ko": "Workspace Type의 Cleanroom Workstation은 All Stainless Steel 재질로 청정도 클래스 10까지 사용할 수 있도록 설계된 고성능 제진대입니다."
+  },
+  "certifications": [],
+  "heroImages": [
+    "https://www.daeilsys.com/wp-content/uploads/2020/05/Cleanroom-Vibration-Isolation-Workstation-with-Workspace-1024x853.jpg"
+  ],
+  "tabs": {
+    "overview": {
+      "workspaceType": {
+        "en": "The Workspace Type Cleanroom Workstation is a high-performance vibration isolation workstation designed with all stainless steel material for use in cleanroom class 10. It features a separate workspace on the right (or left) side, separate from the vibration isolation area. It is configured to allow users to place computer monitors, experimental equipment, and various items needed for experiments, providing convenience to users.",
+        "ko": "Workspace Type의 Cleanroom Workstation은 All Stainless Steel 재질로 청정도 클래스 10까지 사용할 수 있도록 설계된 고성능 제진대입니다. 제진영역과 별도로 우측(또는 좌측)에 분리된 작업 공간이 있습니다. 컴퓨터 모니터, 실험기구 및 여러가지 실험에 필요한 물품을 올려놓을 수 있게 구성되어 사용자에게 편리함을 제공합니다."
+      },
+      "armrestType": {
+        "en": "The Armrest Type Cleanroom Workstation is a high-performance vibration isolation workstation designed with all stainless steel material for use in cleanroom class 10. Armrests are installed on the edges of the workstation to provide a convenient experimental environment for customers.",
+        "ko": "Armrest 타입의 Cleanroom Workstation은 all stainless steel 재질로 청정도 클린룸 클래스 10까지 사용할 수 있도록 설계된 고성능 제진대입니다. 제진대 가장자리에 Armrest를 장착하여 고객이 편리하게 실험할 수 있는 환경을 제공합니다."
+      }
+    },
+    "features": {
+      "workspaceType": [
+        {
+          "title": {
+            "en": "Use in High Cleanliness Cleanroom",
+            "ko": "고청정도 클린룸 내에서 사용이 가능"
+          },
+          "description": {
+            "en": "Designed for use in cleanroom class 10 environments with all stainless steel construction.",
+            "ko": "All Stainless Steel 재질로 청정도 클래스 10까지 사용 가능"
+          }
+        },
+        {
+          "title": {
+            "en": "Punching Hole Option for Air Resistance Reduction",
+            "ko": "클린룸내의 공기저항을 줄이기 위한 펀칭홀 옵션"
+          },
+          "description": {
+            "en": "Optional punching holes to reduce air resistance within the cleanroom.",
+            "ko": "클린룸 내 공기 저항 감소를 위한 펀칭홀 옵션 제공"
+          }
+        },
+        {
+          "title": {
+            "en": "Excellent Vibration Isolation Performance",
+            "ko": "수직 및 수평 방향의 탁월한 제진성능"
+          },
+          "description": {
+            "en": "Superior vibration isolation performance in both vertical and horizontal directions.",
+            "ko": "수직 및 수평 양방향의 우수한 제진 성능"
+          }
+        },
+        {
+          "title": {
+            "en": "Automatic Leveling System",
+            "ko": "자동 수평 조절 시스템"
+          },
+          "description": {
+            "en": "Automatic leveling system ensures consistent horizontal positioning.",
+            "ko": "자동 수평 조절 시스템 제공"
+          }
+        },
+        {
+          "title": {
+            "en": "Ergonomic Design",
+            "ko": "인체공학적 구조"
+          },
+          "description": {
+            "en": "Ergonomically designed structure provides comfortable experimental environment for users.",
+            "ko": "인체공학적 구조로 설계되어 사용자에게 편안한 실험 환경 제공"
+          }
+        },
+        {
+          "title": {
+            "en": "Various Accessories Available",
+            "ko": "다양한 액세서리 제공"
+          },
+          "description": {
+            "en": "Various accessories such as drawers, shelves, and LED lights are available.",
+            "ko": "서랍, 선반, LED등 다양한 액세서리 제공"
+          }
+        },
+        {
+          "title": {
+            "en": "Custom Manufacturing Available",
+            "ko": "주문제작 가능"
+          },
+          "description": {
+            "en": "Custom manufacturing available according to customer requirements.",
+            "ko": "고객의 요구사항에 따른 주문제작 가능"
+          }
+        }
+      ],
+      "armrestType": [
+        {
+          "title": {
+            "en": "Use in High Cleanliness Cleanroom",
+            "ko": "고청정도 클린룸내에서 사용이 가능"
+          },
+          "description": {
+            "en": "Designed for use in cleanroom class 10 environments with all stainless steel construction.",
+            "ko": "All Stainless Steel 재질로 청정도 클래스 10까지 사용 가능"
+          }
+        },
+        {
+          "title": {
+            "en": "Excellent Vibration Isolation Performance",
+            "ko": "수직 및 수평 방향의 탁월한 제진성능"
+          },
+          "description": {
+            "en": "Superior vibration isolation performance in both vertical and horizontal directions.",
+            "ko": "수직 및 수평 양방향의 우수한 제진 성능"
+          }
+        },
+        {
+          "title": {
+            "en": "Automatic Leveling System",
+            "ko": "자동 수평 조절 시스템"
+          },
+          "description": {
+            "en": "Automatic leveling system ensures consistent horizontal positioning.",
+            "ko": "자동 수평 조절 시스템 제공"
+          }
+        },
+        {
+          "title": {
+            "en": "Ergonomic Design",
+            "ko": "인체공학적 구조"
+          },
+          "description": {
+            "en": "Ergonomically designed structure provides comfortable experimental environment for users.",
+            "ko": "인체공학적 구조로 설계되어 사용자에게 편안한 실험 환경 제공"
+          }
+        },
+        {
+          "title": {
+            "en": "Various Accessories Available",
+            "ko": "다양한 액세서리 제공"
+          },
+          "description": {
+            "en": "Various accessories such as drawers, shelves, and LED lights are available.",
+            "ko": "서랍, 선반, LED등 다양한 액세서리 제공"
+          }
+        },
+        {
+          "title": {
+            "en": "Custom Manufacturing Available",
+            "ko": "주문제작 가능"
+          },
+          "description": {
+            "en": "Custom manufacturing available according to customer requirements.",
+            "ko": "고객의 요구사항에 따른 주문제작 가능"
+          }
+        }
+      ]
+    },
+    "performance": {
+      "title": {
+        "en": "80% - 90% vibration isolation at 10 Hz",
+        "ko": "10 Hz 에서 80 – 90% 제진성능"
+      },
+      "description": {
+        "en": "The DVID-C series provides 80-90% vibration isolation performance at 10 Hz in both vertical and horizontal directions.",
+        "ko": "DVID-C 시리즈는 10 Hz에서 수직 및 수평 양방향에서 80-90%의 제진 성능을 제공합니다."
+      },
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/08/DVID-C-Series-Performance-min.png"
+    },
+    "specifications": {
+      "workspaceType": {
+        "construction": {
+          "material": "304 series Stainless Steel",
+          "workspace": ""
+        },
+        "performance": {
+          "isolationSystem": "Pneumatic Isolation",
+          "isolatorType": {
+            "isoS": "ISO-S",
+            "isoS1": "ISO-S1"
+          },
+          "resonantFrequency": "Vertical/Horizontal 1.5 - 3.0 Hz",
+          "vibrationIsolationAt10Hz": "80 - 90%",
+          "maxLoadCapacity": {
+            "isoS": "300kg",
+            "isoS1": "600kg"
+          },
+          "automaticLeveling": "Yes",
+          "levelingRepeatability": "Standard Leveling Valve = ±1.0 mm, Precision Leveling Valve = ±0.05 mm",
+          "requiredAirSupply": "3-5kg/cm² nitrogen or compressed air",
+          "heightAdjustment": "±20mm"
+        }
+      },
+      "armrestType": {
+        "construction": {
+          "material": "304 series Stainless Steel",
+          "armrest": "Front Side / Front+Left+Right Sides / All Sides"
+        },
+        "performance": {
+          "isolationSystem": "Pneumatic Isolation",
+          "isolatorType": {
+            "isoS": "ISO-S",
+            "isoS1": "ISO-S1"
+          },
+          "resonantFrequency": "Vertical/Horizontal 1.5 - 3.0 Hz",
+          "vibrationIsolationAt10Hz": {
+            "isoS": "80 - 90%",
+            "isoS1": "70 - 80%"
+          },
+          "maxLoadCapacity": {
+            "isoS": "300kg",
+            "isoS1": "600kg"
+          },
+          "automaticLeveling": "Yes",
+          "levelingRepeatability": "Standard Leveling Valve = ±1.0 mm, Precision Leveling Valve = ±0.05 mm",
+          "requiredAirSupply": "3-5kg/cm² nitrogen or compressed air",
+          "heightAdjustment": "±20mm"
+        }
+      }
+    },
+    "order": {
+      "workspaceType": {
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/05/DVID-C-Workspace-Type.png",
+        "models": [
+          { "modelNo": "DVID-C-0405-L/R600-(H)", "isolatedArea": "400 x 500", "dimensions": "1100 x 700 x H", "weight": "93" },
+          { "modelNo": "DVID-C-0406-L/R600-(H)", "isolatedArea": "400 x 600", "dimensions": "1100 x 800 x H", "weight": "97" },
+          { "modelNo": "DVID-C-0465-L/R600-(H)", "isolatedArea": "400 x 650", "dimensions": "1100 x 850 x H", "weight": "101" },
+          { "modelNo": "DVID-C-0407-L/R600-(H)", "isolatedArea": "400 x 700", "dimensions": "1100 x 900 x H", "weight": "104" },
+          { "modelNo": "DVID-C-0506-L/R600-(H)", "isolatedArea": "500 x 600", "dimensions": "1200 x 800 x H", "weight": "105" },
+          { "modelNo": "DVID-C-0507-L/R600-(H)", "isolatedArea": "500 x 700", "dimensions": "1200 x 900 x H", "weight": "110" },
+          { "modelNo": "DVID-C-0606-L/R600-(H)", "isolatedArea": "600 x 600", "dimensions": "1300 x 800 x H", "weight": "120" },
+          { "modelNo": "DVID-C-0607-L/R600-(H)", "isolatedArea": "600 x 700", "dimensions": "1300 x 900 x H", "weight": "136" },
+          { "modelNo": "DVID-C-0608-L/R600-(H)", "isolatedArea": "600 x 800", "dimensions": "1300 x 1000 x H", "weight": "146" },
+          { "modelNo": "DVID-C-0609-L/R600-(H)", "isolatedArea": "600 x 900", "dimensions": "1300 x 1100 x H", "weight": "161" },
+          { "modelNo": "DVID-C-0707-L/R600-(H)", "isolatedArea": "700 x 700", "dimensions": "1400 x 900 x H", "weight": "153" },
+          { "modelNo": "DVID-C-0806-L/R600-(H)", "isolatedArea": "800 x 600", "dimensions": "1500 x 800 x H", "weight": "151" },
+          { "modelNo": "DVID-C-0808-L/R600-(H)", "isolatedArea": "800 x 800", "dimensions": "1500 x 1000 x H", "weight": "182" },
+          { "modelNo": "DVID-C-0906-L/R600-(H)", "isolatedArea": "900 x 600", "dimensions": "1600 x 800 x H", "weight": "165" },
+          { "modelNo": "DVID-C-0907-L/R600-(H)", "isolatedArea": "900 x 700", "dimensions": "1600 x 900 x H", "weight": "180" },
+          { "modelNo": "DVID-C-0908-L/R600-(H)", "isolatedArea": "900 x 800", "dimensions": "1600 x 1000 x H", "weight": "195" },
+          { "modelNo": "DVID-C-0909-L/R600-(H)", "isolatedArea": "900 x 900", "dimensions": "1600 x 1100 x H", "weight": "213" },
+          { "modelNo": "DVID-C-1006-L/R600-(H)", "isolatedArea": "1000 x 600", "dimensions": "1700 x 800 x H", "weight": "175" },
+          { "modelNo": "DVID-C-1007-L/R600-(H)", "isolatedArea": "1000 x 700", "dimensions": "1700 x 900 x H", "weight": "194" },
+          { "modelNo": "DVID-C-1075-L/R600-(H)", "isolatedArea": "1000 x 750", "dimensions": "1700 x 950 x H", "weight": "204" },
+          { "modelNo": "DVID-C-1207-L/R600-(H)", "isolatedArea": "1200 x 700", "dimensions": "1900 x 900 x H", "weight": "213" },
+          { "modelNo": "DVID-C-1208-L/R600-(H)", "isolatedArea": "1200 x 800", "dimensions": "1900 x 1000 x H", "weight": "239" },
+          { "modelNo": "DVID-C-1209-L/R600-(H)", "isolatedArea": "1200 x 900", "dimensions": "1900 x 1100 x H", "weight": "265" },
+          { "modelNo": "DVID-C-1508-L/R600-(H)", "isolatedArea": "1500 x 800", "dimensions": "2200 x 1000 x H", "weight": "276" }
+        ]
+      },
+      "armrestType": {
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/08/DVID-C-Order-2-ko.png",
+        "models": [
+          { "modelNo": "DVID-C-0506-(H)", "isolatedArea": "500 x 600", "dimensions": "555 x 685 x H", "weight": "110" },
+          { "modelNo": "DVID-C-0607-(H)", "isolatedArea": "600 x 700", "dimensions": "655 x 785 x H", "weight": "136" },
+          { "modelNo": "DVID-C-0707-(H)", "isolatedArea": "700 x 700", "dimensions": "755 x 785 x H", "weight": "158" },
+          { "modelNo": "DVID-C-0709-(H)", "isolatedArea": "700 x 900", "dimensions": "755 x 985 x H", "weight": "180" },
+          { "modelNo": "DVID-C-0808-(H)", "isolatedArea": "800 x 800", "dimensions": "855 x 885 x H", "weight": "182" },
+          { "modelNo": "DVID-C-0907-(H)", "isolatedArea": "900 x 700", "dimensions": "955 x 785 x H", "weight": "180" },
+          { "modelNo": "DVID-C-0908-(H)", "isolatedArea": "900 x 800", "dimensions": "955 x 885 x H", "weight": "195" },
+          { "modelNo": "DVID-C-0909-(H)", "isolatedArea": "900 x 900", "dimensions": "955 x 985 x H", "weight": "213" },
+          { "modelNo": "DVID-C-1008-(H)", "isolatedArea": "1000 x 800", "dimensions": "1055 x 885 x H", "weight": "210" },
+          { "modelNo": "DVID-C-1009-(H)", "isolatedArea": "1000 x 900", "dimensions": "1055 x 985 x H", "weight": "232" },
+          { "modelNo": "DVID-C-1010-(H)", "isolatedArea": "1000 x 1000", "dimensions": "1055 x 1085 x H", "weight": "250" },
+          { "modelNo": "DVID-C-1208-(H)", "isolatedArea": "1200 x 800", "dimensions": "1255 x 885 x H", "weight": "243" },
+          { "modelNo": "DVID-C-1209-(H)", "isolatedArea": "1200 x 900", "dimensions": "1255 x 985 x H", "weight": "265" },
+          { "modelNo": "DVID-C-1210-(H)", "isolatedArea": "1200 x 1000", "dimensions": "1255 x 1085 x H", "weight": "288" }
+        ]
+      }
+    }
+  },
+  "types": [
+    {
+      "id": "workspace",
+      "name": {
+        "en": "Workspace Type",
+        "ko": "Workspace Type"
+      },
+      "description": {
+        "en": "Cleanroom workstation with integrated workspace on the side",
+        "ko": "작업 공간이 통합된 클린룸 제진대"
+      },
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/05/DVID-C-Workspace-Type.png"
+    },
+    {
+      "id": "armrest",
+      "name": {
+        "en": "Armrest Type",
+        "ko": "Armrest Type"
+      },
+      "description": {
+        "en": "Cleanroom workstation with armrests for comfortable operation",
+        "ko": "팔걸이가 장착된 클린룸 제진대"
+      },
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/05/DVID-C-Armrest-Type.png"
+    }
+  ]
+}

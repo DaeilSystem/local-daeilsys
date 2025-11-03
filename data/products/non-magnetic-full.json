@@ -1,0 +1,234 @@
+{
+  "id": "non-magnetic",
+  "name": "Non-Magnetic",
+  "fullName": {
+    "en": "Non-Magnetic Optical Table Top",
+    "ko": "비자성 광학정반"
+  },
+  "series": {
+    "en": "DVIO Series",
+    "ko": "DVIO 시리즈"
+  },
+  "category": "Optical Tables",
+  "tagline": {
+    "en": "All Stainless Steel Optical Table Top for Cleanroom and Non-Magnetic Applications",
+    "ko": "클린룸 및 비자성 용도를 위한 전 스테인리스 스틸 광학정반"
+  },
+  "description": {
+    "en": "The non-magnetic optical table is made of SUS304 series non-magnetic stainless steel, designed for cleanroom and non-magnetic applications. The non-magnetic stainless steel optical table top has the same features and advantages as the Research Grade table top. It features superior broadband damping that reduces relative displacement over a wide frequency range, with excellent structural damping and superior stiffness.",
+    "ko": "비자성 광학테이블은 SUS304 시리즈 비자성 스테인리스 스틸로 만들어져 클린룸과 비자성 용도에 적합하도록 고안되었습니다. 비자성 스테인리스 스틸 광학테이블의 상판은 Research Grade 테이블 상판과 동일한 특징과 장점을 지니고 있습니다. 최고 성능의 광대역 댐핑(Broadband damping)으로 광범위한 주파수 대역에서 상대 변위(Relative Displacement)을 줄이며 뛰어난 구조적 댐핑(Structural damping)과 우수한 강성을 자랑합니다."
+  },
+  "certifications": [],
+  "heroImages": [
+    "https://www.daeilsys.com/wp-content/uploads/elementor/thumbs/All-Stainless-Steel-Optical-Table-top-op0b8zo1y8xspvayou37lzvlkehees4he2cz18tdpk.png"
+  ],
+  "tabs": {
+    "overview": {
+      "description": {
+        "en": "The non-magnetic optical table is made of SUS304 series non-magnetic stainless steel, designed for cleanroom and non-magnetic applications. The non-magnetic stainless steel optical table top has the same features and advantages as the Research Grade table top. It features superior broadband damping that reduces relative displacement over a wide frequency range, with excellent structural damping and superior stiffness.",
+        "ko": "비자성 광학테이블은 SUS304 시리즈 비자성 스테인리스 스틸로 만들어져 클린룸과 비자성 용도에 적합하도록 고안되었습니다. 비자성 스테인리스 스틸 광학테이블의 상판은 Research Grade 테이블 상판과 동일한 특징과 장점을 지니고 있습니다. 최고 성능의 광대역 댐핑(Broadband damping)으로 광범위한 주파수 대역에서 상대 변위(Relative Displacement)을 줄이며 뛰어난 구조적 댐핑(Structural damping)과 우수한 강성을 자랑합니다."
+      },
+      "video": {
+        "en": "https://www.youtube.com/watch?v=Ez9RECVxVqY",
+        "ko": "https://www.youtube.com/watch?v=Ez9RECVxVqY"
+      }
+    },
+    "features": [
+      {
+        "title": {
+          "en": "Steel Honeycomb Core Structure",
+          "ko": "고강성 스틸 허니콤 코어구조\n(Steel Honeycomb Core)"
+        },
+        "description": {
+          "en": "The corrugated honeycomb steel layers are vertically epoxy bonded with a stainless steel top skin, a carbon steel bottom skin and sidewalls, increasing its core density and minimizing its cell size. The steel honeycomb core structure provides the highest core density and the smallest honeycomb core cell size, offering the maximum static and dynamic rigidity.",
+          "ko": "벌집모양의 허니콤 스틸 코어는 적층 구조로 되어 있어, 코어밀도를 높여 주었습니다. 허니콤 비자성스테인래스스틸상판과 탄소강판의 하판사이에 특수한 접착수지로 본딩된 샌드위치 구조로 되어 있어서, 타사 제품과 비교할 수 없는 뛰어난 정적/동적 강성을 제공합니다."
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/Steel-Honeycomb-Core-Structure-2.jpg"
+      },
+      {
+        "title": {
+          "en": "Smallest Honeycomb Core Cells",
+          "ko": "미세한 허니콤 코어 셀\n(Honeycomb Core Cell)"
+        },
+        "description": {
+          "en": "Our steel honeycomb core yields in the highest core density and the smallest honeycomb cell size 2.9㎠, offering the superb rigid table top. As the smallest honeycomb cells contributing to increase the elastic selection modulus, the natural frequency of the optical table tops increases, which the table top is less likely to respond to external forces and unfiltered vibration. Moreover, the higher natural frequency minimizes vibration intensities and deflection under loads. Our optical table top is all steel constructed, ensuring the long term thermal stability.",
+          "ko": "대일시스템의 하니콤 브레드보드(honeycomb breadboard)의 코어는 밀도가3.2㎠ 높은 미세한 셀(cell) 사이즈로 이루어져 있어, 뛰어난 강성을 자랑합니다. 미세한 허니콤 적층구조로 탄성 계수(Elastic Selection Modulus)가 높고 광학정반의 고유진동수가 높아서 실험실 주변 환경진동에 영향을 받지 않고 외란에 의한 변위량이 적습니다."
+        },
+        "image": ""
+      },
+      {
+        "title": {
+          "en": "Individually Sealed Mounting Holes",
+          "ko": "이물질 방지컵"
+        },
+        "description": {
+          "en": "Spill-proof and non-corrosive nylon cups are individually epoxy-bonded under each mounting hole to prevent spilling of liquids from contaminating the honeycomb core.",
+          "ko": "모든 마운팅홀(mounting holes) 내부에 나일론컵을 부착시켜, 실험중 화학물질이나 이물질등이 정반내부로 유입되는 것을 막아주며, 클린룸에서 사용할 수 있는 구조로 되어있습니다."
+        },
+        "image": ""
+      },
+      {
+        "title": {
+          "en": "Tapped and Clean Surface",
+          "ko": "각종 실험기구 고정을 위한 마운팅 홀\n(Mounting Holes)"
+        },
+        "description": {
+          "en": "The table top surface is precision tapped and delicately sanded to provide a non-reflecting surface. Moreover, the surface is completely cleaned to remove residual metal particles and cutting fluids.",
+          "ko": "광학테이블 상판의 표면을 섬세하게 샌딩 처리하여 청결하며, 빛의 반향을 방지하였습니다. 또한 25mm 격자 간격으로 M6 탭홀이 뚫려 있어, 실험 시 고객의 실험기구를 고정하여 사용할 수 있습니다."
+        },
+        "image": ""
+      }
+    ],
+    "performance": {
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/07/Non-Magnetic-Performance_1.png",
+      "note": {
+        "en": "Compliance curve was measured on 2400 x 1200 x 300mm Research Grade optical top",
+        "ko": "Compliance curve was measured on 2400 x 1200 x 300mm Research Grade optical top"
+      }
+    },
+    "specifications": {
+      "rows": [
+        ["Construction"],
+        ["Core", "steel honeycomb core structure, 0.25 mm thick foil"],
+        ["Core Cell Size", "2.9 cm²"],
+        ["Core Shear Modulus", "19339 kgf/cm² (275,000 psi)"],
+        ["Surface Flatness", "±0.1 mm over 600 x 600 mm area"],
+        ["Top Skin", "430 series ferromagnetic stainless steel, 4.0 mm thick"],
+        ["Bottom Skin", "4.5 mm thick steel"],
+        ["Side Walls", "2.0 mm thick steel plate with highly damped composite wood"],
+        ["Mounting Holes", "M6-1.0"],
+        ["Mounting Hole Grid", "25 mm grid"],
+        ["Mounting Hole Borders", "37.5 mm"],
+        ["Mounting Holes Sealing", "21 mm deep clean cylindrical cap"],
+        ["Damping:", "broadband damping"],
+        ["Performance"],
+        ["", "Research Grade (2000 x 1200 x 300 mm)", "Scientific Grade (2000 x 1200 x 300 mm)"],
+        ["Resonant Frequency", "288 Hz", "200 Hz"],
+        ["Compliance", "25n m/N", "85 n m/N"]
+      ]
+    },
+    "options": [
+      {
+        "title": {
+          "en": "Research Grade Optical Table Top",
+          "ko": "Research Grade 광학정반"
+        },
+        "description": {
+          "en": "",
+          "ko": ""
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/03/Research-Grade-Optical-Table-Top.png"
+      },
+      {
+        "title": {
+          "en": "Scientific Grade Optical Tabletop",
+          "ko": "Scientific Grade 광학정반"
+        },
+        "description": {
+          "en": "",
+          "ko": ""
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/elementor/thumbs/Optical-Tabletop-SG-NEW-LEATHER-COVER2-oohdgo38v4dxee4ad9843n5jpk2yum3th9dyy0vjio.png"
+      },
+      {
+        "title": {
+          "en": "Custom Optical Table Tops",
+          "ko": "커스텀 광학정반"
+        },
+        "description": {
+          "en": "We offer customization of optical table tops to meet a variety of customers' needs.",
+          "ko": "다양한 고객의 요구를 충족시키기 위해 광학정반의 맞춤 제작을 제공합니다."
+        },
+        "image": ""
+      },
+      {
+        "title": {
+          "en": "Joined Optical Tables",
+          "ko": "조인드 광학테이블"
+        },
+        "description": {
+          "en": "",
+          "ko": ""
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/03/Joined-Optical-Tables1.png"
+      }
+    ],
+    "accessories": [
+      {
+        "title": {
+          "en": "DOTS - Overhead Shelf",
+          "ko": "DOTS - 오버헤드쉘프"
+        },
+        "description": {
+          "en": "",
+          "ko": ""
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/03/DOTS-Overhead-Shelf.png"
+      },
+      {
+        "title": {
+          "en": "DOTE - Table Enclosure",
+          "ko": "DOTE - 테이블 인클로저"
+        },
+        "description": {
+          "en": "",
+          "ko": ""
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/03/DOTE-Table-Enclosure.png"
+      },
+      {
+        "title": {
+          "en": "DCB - Clean Booth",
+          "ko": "DCB - 클린부스"
+        },
+        "description": {
+          "en": "",
+          "ko": ""
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/03/DCB-Clean-Booth.png"
+      },
+      {
+        "title": {
+          "en": "DB - Dark Booth",
+          "ko": "DB - 암막부스"
+        },
+        "description": {
+          "en": "",
+          "ko": ""
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/03/DB-Dark-Booth.png"
+      },
+      {
+        "title": {
+          "en": "Faraday Cage",
+          "ko": "Faraday Cage"
+        },
+        "description": {
+          "en": "",
+          "ko": ""
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/03/Faraday-Cage.png"
+      },
+      {
+        "title": {
+          "en": "DAC-30 - Air Compressor",
+          "ko": "DAC-30 - 에어컴프레서"
+        },
+        "description": {
+          "en": "",
+          "ko": ""
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/03/DAC-30-Air-Compressor.png"
+      }
+    ],
+    "resources": [
+      {
+        "label": {
+          "en": "Catalog",
+          "ko": "카탈로그"
+        },
+        "url": "#"
+      }
+    ]
+  }
+}

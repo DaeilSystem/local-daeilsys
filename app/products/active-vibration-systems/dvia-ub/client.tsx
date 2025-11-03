@@ -1,5 +1,7 @@
 "use client"
 
+import { useState } from "react"
+import Link from "next/link"
 import {
   Carousel,
   CarouselContent,
@@ -7,24 +9,20 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
-import productData from "@/data/products/dvia-p-full.json"
-import { useLanguage } from "@/hooks/use-language"
-import Link from "next/link"
-import { useState } from "react"
+import productData from "@/data/products/dvia-ub-full.json"
 
 type TabType = "overview" | "features" | "performance" | "specifications" | "applications" | "resources"
 
-export default function DviaPClient() {
-  const { language } = useLanguage()
+export default function DviaUBClient() {
   const [activeTab, setActiveTab] = useState<TabType>("overview")
 
-  const tabs: { id: TabType; label: { en: string; ko: string } }[] = [
-    { id: "overview", label: { en: "Overview", ko: "개요" } },
-    { id: "features", label: { en: "Features", ko: "특징" } },
-    { id: "performance", label: { en: "Performance", ko: "성능" } },
-    { id: "specifications", label: { en: "Specifications", ko: "사양" } },
-    { id: "applications", label: { en: "Applications", ko: "적용 분야" } },
-    { id: "resources", label: { en: "Resources", ko: "자료" } },
+  const tabs: { id: TabType; label: string }[] = [
+    { id: "overview", label: "Overview" },
+    { id: "features", label: "Features" },
+    { id: "performance", label: "Performance" },
+    { id: "specifications", label: "Specifications" },
+    { id: "applications", label: "Applications" },
+    { id: "resources", label: "Resources" },
   ]
 
   return (
@@ -34,13 +32,13 @@ export default function DviaPClient() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <h1 className="text-5xl font-light text-gray-900 dark:text-white mb-4">
-              {typeof productData.fullName === "string" ? productData.fullName : productData.fullName[language]}
+              {productData.fullName}
             </h1>
             <h2 className="text-3xl text-blue-600 dark:text-blue-400 mb-4">
-              {typeof productData.series === "string" ? productData.series : productData.series[language]}
+              {productData.series}
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300">
-              {typeof productData.tagline === "string" ? productData.tagline : productData.tagline[language]}
+              {productData.tagline}
             </p>
           </div>
 
@@ -94,7 +92,7 @@ export default function DviaPClient() {
                     : "border-transparent text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
                 }`}
               >
-                {tab.label[language]}
+                {tab.label}
               </button>
             ))}
           </nav>
@@ -108,9 +106,7 @@ export default function DviaPClient() {
           <div className="space-y-8">
             <div className="prose dark:prose-invert max-w-none">
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                {typeof productData.tabs.overview.description === "string"
-                  ? productData.tabs.overview.description
-                  : productData.tabs.overview.description[language]}
+                {productData.tabs.overview.description}
               </p>
             </div>
             {productData.tabs.overview.videoUrl && (
@@ -135,27 +131,27 @@ export default function DviaPClient() {
             {productData.tabs.features.map((feature, index) => (
               <div key={index} className="space-y-4">
                 <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">
-                  {typeof feature.title === "string" ? feature.title : feature.title[language]}
+                  {feature.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 leading-relaxed whitespace-pre-line">
-                  {typeof feature.description === "string" ? feature.description : feature.description[language]}
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                  {feature.description}
                 </p>
                 {feature.image && (
                   <div className="rounded-lg overflow-hidden">
                     <img
                       src={feature.image}
-                      alt={typeof feature.title === "string" ? feature.title : feature.title[language]}
+                      alt={feature.title}
                       className="w-full h-auto object-cover"
                     />
                   </div>
                 )}
-                {(feature as any).videoUrl && (
+                {feature.videoUrl && (
                   <div className="aspect-video max-w-4xl">
                     <iframe
                       width="100%"
                       height="100%"
-                      src={(feature as any).videoUrl.replace("watch?v=", "embed/")}
-                      title={typeof feature.title === "string" ? feature.title : feature.title[language]}
+                      src={feature.videoUrl.replace("watch?v=", "embed/")}
+                      title={feature.title}
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
                       className="rounded-lg"
@@ -171,19 +167,15 @@ export default function DviaPClient() {
         {activeTab === "performance" && (
           <div className="max-w-4xl mx-auto space-y-8">
             <h2 className="text-3xl font-semibold text-gray-900 dark:text-white text-center">
-              {typeof productData.tabs.performance.title === "string"
-                ? productData.tabs.performance.title
-                : productData.tabs.performance.title[language]}
+              {productData.tabs.performance.title}
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 text-center">
-              {typeof productData.tabs.performance.description === "string"
-                ? productData.tabs.performance.description
-                : productData.tabs.performance.description[language]}
+              {productData.tabs.performance.description}
             </p>
             <div className="rounded-lg overflow-hidden">
               <img
                 src={productData.tabs.performance.image}
-                alt="DVIA-P Performance"
+                alt="DVIA-UB Performance"
                 className="w-full h-auto object-contain"
               />
             </div>
@@ -212,27 +204,27 @@ export default function DviaPClient() {
               <tbody>
                 <tr>
                   <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700">
-                    Isolator Dimensions (mm)
+                    Platform Dimensions (L x W x H)
                   </td>
                   {productData.tabs.specifications.models.map((model) => (
                     <td
                       key={model.name}
                       className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700"
                     >
-                      {model.isolatorDimensions}
+                      {model.platformDimensions}
                     </td>
                   ))}
                 </tr>
                 <tr>
                   <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700">
-                    Load Capacity (kg)
+                    Maximum Load Capacity
                   </td>
                   {productData.tabs.specifications.models.map((model) => (
                     <td
                       key={model.name}
                       className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700"
                     >
-                      {model.loadCapacity}
+                      {model.maxLoadCapacity}
                     </td>
                   ))}
                 </tr>
@@ -249,27 +241,14 @@ export default function DviaPClient() {
                 </tr>
                 <tr>
                   <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700">
-                    Maximum Actuator Force - Vertical
+                    Maximum Actuator Force
                   </td>
                   {productData.tabs.specifications.models.map((model) => (
                     <td
                       key={model.name}
                       className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700"
                     >
-                      {model.maxActuatorForceVertical}
-                    </td>
-                  ))}
-                </tr>
-                <tr>
-                  <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700">
-                    Maximum Actuator Force - Horizontal
-                  </td>
-                  {productData.tabs.specifications.models.map((model) => (
-                    <td
-                      key={model.name}
-                      className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700"
-                    >
-                      {model.maxActuatorForceHorizontal}
+                      {model.maxActuatorForce}
                     </td>
                   ))}
                 </tr>
@@ -297,24 +276,13 @@ export default function DviaPClient() {
                 </tr>
                 <tr>
                   <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700">
-                    Vibration Isolation at 2 Hz
+                    Vibration Isolation ≥4 Hz
                   </td>
                   <td
                     colSpan={productData.tabs.specifications.models.length}
                     className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700"
                   >
-                    {productData.tabs.specifications.common.vibrationIsolationAt2Hz}
-                  </td>
-                </tr>
-                <tr>
-                  <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700">
-                    Vibration Isolation at ≥4 Hz
-                  </td>
-                  <td
-                    colSpan={productData.tabs.specifications.models.length}
-                    className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700"
-                  >
-                    {productData.tabs.specifications.common.vibrationIsolationAt4Hz}
+                    {productData.tabs.specifications.common.vibrationIsolation}
                   </td>
                 </tr>
                 <tr>
@@ -361,28 +329,6 @@ export default function DviaPClient() {
                     {productData.tabs.specifications.common.operatingHumidity}
                   </td>
                 </tr>
-                <tr>
-                  <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700">
-                    Required Air Pressure
-                  </td>
-                  <td
-                    colSpan={productData.tabs.specifications.models.length}
-                    className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700"
-                  >
-                    {productData.tabs.specifications.common.requiredAirPressure}
-                  </td>
-                </tr>
-                <tr>
-                  <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700">
-                    Required CDA
-                  </td>
-                  <td
-                    colSpan={productData.tabs.specifications.models.length}
-                    className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700"
-                  >
-                    {productData.tabs.specifications.common.requiredCDA}
-                  </td>
-                </tr>
               </tbody>
             </table>
           </div>
@@ -392,19 +338,23 @@ export default function DviaPClient() {
         {activeTab === "applications" && (
           <div className="space-y-12">
             <h2 className="text-3xl font-semibold text-gray-900 dark:text-white text-center">
-              {typeof productData.tabs.applications.title === "string"
-                ? productData.tabs.applications.title
-                : productData.tabs.applications.title[language]}
+              {productData.tabs.applications.title}
             </h2>
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-3 gap-8">
               {productData.tabs.applications.items.map((app, index) => (
-                <div
-                  key={index}
-                  className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg text-center hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
-                >
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                    {typeof app.title === "string" ? app.title : app.title[language]}
+                <div key={index} className="space-y-4">
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white text-center">
+                    {app.title}
                   </h3>
+                  {app.image && (
+                    <div className="rounded-lg overflow-hidden">
+                      <img
+                        src={app.image}
+                        alt={app.title}
+                        className="w-full h-auto object-cover"
+                      />
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
@@ -416,9 +366,19 @@ export default function DviaPClient() {
           <div className="max-w-4xl mx-auto space-y-8">
             <div className="grid md:grid-cols-2 gap-6">
               <button className="px-6 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-lg font-medium">
-                {typeof productData.tabs.resources.catalog.label === "string"
-                  ? productData.tabs.resources.catalog.label
-                  : productData.tabs.resources.catalog.label[language]}
+                {productData.tabs.resources.catalog.label}
+              </button>
+              <button className="px-6 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-lg font-medium">
+                {productData.tabs.resources.userManual.label}
+              </button>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                {productData.tabs.resources.installationReports.label}
+              </h3>
+              <button className="px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                {productData.tabs.resources.installationReports.label}
               </button>
             </div>
           </div>

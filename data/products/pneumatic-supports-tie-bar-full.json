@@ -1,0 +1,236 @@
+{
+  "id": "pneumatic-supports-tie-bar",
+  "name": "Pneumatic Supports (Tie-Bars & Casters)",
+  "fullName": {
+    "en": "Pneumatic Support with Tie-Bars and Casters",
+    "ko": "공압식 서포트 (Tie-Bars and Casters)"
+  },
+  "series": {
+    "en": "DVIO-S Series",
+    "ko": "DVIO-S 시리즈"
+  },
+  "category": "Optical Tables",
+  "tagline": {
+    "en": "Dual chamber design for superior damping and vibration isolation performance",
+    "ko": "월등한 댐핑 및 제진성능을 위한 듀얼 챔버 디자인"
+  },
+  "description": {
+    "en": "The most important part in designing optical table supports that control vibration is to lower the natural frequency as much as possible so that surrounding vibrations are not transmitted to the table top and interfere with experimental equipment. DAEIL SYSTEMS' optical table supports efficiently control low-frequency vibrations with a dual chamber structure and implement excellent damping.",
+    "ko": "진동을 제어 시켜주는 광학테이블 서포트 설계에 있어 가장 중요한 부분은 고유진동수를 최대한 낮추며 주변 진동이 상판으로 전달되어 실험 장비를 방해하지 못하도록 하는 것입니다. 대일시스템의 광학테이블 서포트는 두 개의 챔버 구조로 낮은 주파수 대역의 진동을 효율적으로 제어하고 뛰어난 댐핑(damping)을 구현합니다."
+  },
+  "certifications": [],
+  "heroImages": [
+    "https://www.daeilsys.com/wp-content/uploads/2020/04/product-dvip-c-300x233.jpg",
+    "https://www.daeilsys.com/wp-content/uploads/2020/03/product-dvim-g-300x233.jpg",
+    "https://www.daeilsys.com/wp-content/uploads/2024/11/optical-table-02-min-1024x578.png",
+    "https://www.daeilsys.com/wp-content/uploads/2024/11/optical-table-01-min-1024x578.png",
+    "https://www.daeilsys.com/wp-content/uploads/2024/11/optical-table-03-min-1024x578.png"
+  ],
+  "tabs": {
+    "overview": {
+      "description": {
+        "en": "The most important part in designing optical table supports that control vibration is to lower the natural frequency as much as possible so that surrounding vibrations are not transmitted to the table top and interfere with experimental equipment. DAEIL SYSTEMS' optical table supports efficiently control low-frequency vibrations with a dual chamber structure and implement excellent damping.",
+        "ko": "진동을 제어 시켜주는 광학테이블 서포트 설계에 있어 가장 중요한 부분은 고유진동수를 최대한 낮추며 주변 진동이 상판으로 전달되어 실험 장비를 방해하지 못하도록 하는 것입니다. 대일시스템의 광학테이블 서포트는 두 개의 챔버 구조로 낮은 주파수 대역의 진동을 효율적으로 제어하고 뛰어난 댐핑(damping)을 구현합니다."
+      },
+      "video": {
+        "en": "https://www.youtube.com/watch?v=Ez9RECVxVqY",
+        "ko": "https://www.youtube.com/watch?v=Ez9RECVxVqY"
+      }
+    },
+    "features": [
+      {
+        "title": {
+          "en": "Dual Chamber Design - Superior Damping & Vibration Isolation Performance",
+          "ko": "듀얼 챔버 디자인 - 월등한 댐핑 & 제진성능"
+        },
+        "description": {
+          "en": "DAEIL SYSTEMS' pneumatic isolators efficiently attenuate vibrations transmitted to optical tables with a dual chamber structure. The first chamber is an air chamber sealed by a rolling diaphragm, with an internal piston that supports the table top with air pressure. This air chamber is designed as small as possible to lower the isolator's natural frequency as much as possible to control low-frequency vibrations. The second chamber is a damping chamber connected to the air chamber through an orifice. Since the air chamber creates a restoring force, compressed air flowing into the damping chamber and the orifice dissipate vibrations in the air, fundamentally attenuating the overall system's vibrations and promoting system stability.",
+          "ko": "대일시스템의 공압식 아이솔레이터는 두 개의 챔버 구조로 광학테이블에 전해지는 진동을 효율적으로 감쇠시킵니다. 첫 번째 챔버는 에어 챔버로 다이아후램에 의해 실링되어 있으며, 내부의 피스톤이 공기압에 의해 상판을 지지하도록 합니다. 이 에어챔버는 가능한 작게 설계되는데 이는 아이솔레이터의 고유진동수를 최대한 낮추어서 저주파의 진동을 제어 하기 위함 입니다. 두 번째 챔버는 댐핑챔버로 오리피스를 통해 에어챔버와 연결됩니다. 에어챔버가 복원력(restoring force)을 생성하기 때문에, 댐핑챔버로 들어가는 압축공기와 오리피스는 공기중의 진동을 소멸시켜 전체적인 시스템의 진동을 근본적으로 감쇠시키며 시스템의 안정을 도모합니다."
+        },
+        "image": ""
+      },
+      {
+        "title": {
+          "en": "Automatic Leveling - Leveling Valves",
+          "ko": "자동 수평 유지 - 레밸링 밸브"
+        },
+        "description": {
+          "en": "A three-way bidirectional leveling valve system maintains the level of the optical table and stabilizes the system while adjusting the amount of compressed air inside the pneumatic isolator. DAEIL SYSTEMS' leveling valves automatically maintain the system's level state, and leveling valves with various specifications from leveling repeatability of ±0.05 mm to ±1.0 mm are available.",
+          "ko": "세 개의 양방향 수평밸브 시스템은 광학 테이블의 수평을 유지시키고 공기압식 아이솔레이터 내부의 압축공기량을 조절하면서 시스템을 안정시킵니다. 대일시스템의 수평 밸브는 시스템의 수평 상태를 자동으로 유지시키며, 레벨링 반복정밀도(leveling repeatability) +/- 0.05 mm부터 +/- 1.0 mm까지 다양한 사양의 레벨링밸브를 이용 가능합니다."
+        },
+        "image": ""
+      },
+      {
+        "title": {
+          "en": "Various Isolator Sizes According to Load Capacity",
+          "ko": "적재용량에 따른 다양한 아이솔레이터 사이즈"
+        },
+        "description": {
+          "en": "DAEIL SYSTEMS offers various specifications of pneumatic isolators with load capacities from 200 kg to 3000 kg. First, accurately identify the weight of equipment to be installed on the optical table, then select the most suitable isolator specification for it.",
+          "ko": "대일시스템은 적재용량 200kg부터 3000kg까지의 다양한 사양의 공기압식 아이솔레이터를 제공합니다. 먼저 광학테이블 위에 설치될 장비의 무게를 정확히 파악한 후 그에 가장 적합한 사양의 아이솔레이터를 선정합니다."
+        },
+        "image": ""
+      },
+      {
+        "title": {
+          "en": "80-99% Vibration Isolation at 10 Hz",
+          "ko": "10 Hz 에서 80% – 99% 제진성능"
+        },
+        "description": {
+          "en": "The pneumatic isolation system provides excellent vibration isolation performance of 80-99% at 10 Hz frequency.",
+          "ko": "공압식 아이솔레이션 시스템은 10Hz에서 80-99%의 뛰어난 제진성능을 제공합니다."
+        },
+        "image": ""
+      }
+    ],
+    "performance": {
+      "image": "https://www.daeilsys.com/wp-content/uploads/2020/12/pneumatic-supports-tie-bar-and-casters-graph.png",
+      "table": [
+        ["Vibration Isolation System", "Pneumatic Isolation System"],
+        ["Resonant Frequency", "1.2–1.7 Hz"],
+        ["Vibration Isolation at 10 Hz", "80–99%"],
+        ["Maximum Load Capacity", "100–3000 kg"],
+        ["Automatic Leveling", "Yes"],
+        ["Accuracy of Leveling Repeatability", "±1.0 mm for Standard Leveling Valve\n±0.05 mm for Precision Leveling Valve"],
+        ["Height Adjustement", "±20 mm"],
+        ["Required CDA", "4–6 bar"]
+      ]
+    },
+    "specifications": {
+      "rows": [
+        ["Vibration Isolation System", "Pneumatic Isolation System"],
+        ["Resonant Frequency", "1.2–1.7 Hz"],
+        ["Vibration Isolation at 10 Hz", "80–99%"],
+        ["Maximum Load Capacity", "100–3000 kg"],
+        ["Automatic Leveling", "Yes"],
+        ["Accuracy of Leveling Repeatability", "±1.0 mm for Standard Leveling Valve\n±0.05 mm for Precision Leveling Valve"],
+        ["Height Adjustement", "±20 mm"],
+        ["Required CDA", "4–6 bar"]
+      ]
+    },
+    "options": [
+      {
+        "title": {
+          "en": "Pneumatic Support - Self-Standing Type",
+          "ko": "공압식 서포트 - Self-Standing Type"
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/Pneumatic-Support-Self-Standing-Type.jpg",
+        "description": {
+          "en": "Self-standing type pneumatic support without tie-bars.",
+          "ko": "타이바 없이 독립형으로 설계된 공압식 서포트입니다."
+        }
+      },
+      {
+        "title": {
+          "en": "Rigid Support with Tie-Bars & Casters",
+          "ko": "리지드 서포트 (Tie-Bars & Casters)"
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/Rigid-Support-with-Tie-Bars-and-Casters.jpg",
+        "description": {
+          "en": "Rigid support system with tie-bars and casters for mobility.",
+          "ko": "이동성이 있는 타이바와 캐스터가 있는 리지드 서포트 시스템입니다."
+        }
+      },
+      {
+        "title": {
+          "en": "Rigid Support - Self-Standing Type",
+          "ko": "리지드 서포트 - Self-Standing Type"
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/Rigid-Support-Self-Standing-Type.jpg",
+        "description": {
+          "en": "Self-standing type rigid support without tie-bars.",
+          "ko": "타이바 없이 독립형으로 설계된 리지드 서포트입니다."
+        }
+      }
+    ],
+    "accessories": [
+      {
+        "title": {
+          "en": "DOTS - Overhead Shelf",
+          "ko": "DOTS - 오버헤드쉘프"
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/DOTS-Overhead-Shelf.jpg",
+        "description": {
+          "en": "Overhead shelf accessory for optical tables.",
+          "ko": "광학테이블용 오버헤드쉘프 액세서리입니다."
+        }
+      },
+      {
+        "title": {
+          "en": "DOTE - Table Enclosure",
+          "ko": "DOTE - 테이블 인클로져"
+        },
+        "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/DOTE-Table-Enclosure.jpg",
+        "description": {
+          "en": "Table enclosure accessory for optical tables.",
+          "ko": "광학테이블용 테이블 인클로져 액세서리입니다."
+        }
+      }
+    ],
+    "order": {
+      "rows": [
+        ["Model No.", "Dimensions (A x B x h)(mm)", "Cross Section (K)(mm)", "Isolator Size", "Maximum Payload capacity (kg)", "Number of Isolators"],
+        ["DVIO-S-0906I-h", "750 x 450 x h", "100", "ISO-S", "300", "4"],
+        ["DVIO-S-1006I-h", "", "", "", "", ""],
+        ["DVIO-S-0975I-h", "750 x 650 x h", "100", "ISO-S", "300", "4"],
+        ["DVIO-S-1075I-h", "", "", "", "", ""],
+        ["DVIO-S-0909I-h", "750 x 750 x h", "100", "ISO-S", "300", "4"],
+        ["DVIO-S-0910I-h", "", "", "", "", ""],
+        ["DVIO-S-1009I-h", "", "", "", "", ""],
+        ["DVIO-S-1010I-h", "", "", "", "", ""],
+        ["DVIO-S-1206I-h", "900 x 450 x h", "100", "ISO-S", "300", "4"],
+        ["DVIO-S-1209I-h", "900 x 750 x h", "100", "ISO-S", "300", "4"],
+        ["DVIO-S-1210I-h", "", "", "", "", ""],
+        ["DVIO-S-1212I-h", "900 x 900 x h", "100", "ISO-S", "300", "4"],
+        ["DVIO-S-1212I-h", "900 x 900 x h", "125", "ISO-M", "500", "4"],
+        ["DVIO-S-1275I-h", "900 x 600 x h", "100", "ISO-S", "300", "4"],
+        ["DVIO-S-1506I-h", "1150 x 450 x h", "100", "ISO-S", "300", "4"],
+        ["DVIO-S-1806I-h", "", "", "", "", ""],
+        ["DVIO-S-1509I-h", "1150 x 750 x h", "125", "ISO-M", "500", "4"],
+        ["DVIO-S-1510I-h", "", "", "", "", ""],
+        ["DVIO-S-1809I-h", "", "", "", "", ""],
+        ["DVIO-S-2009I-h", "", "", "", "", ""],
+        ["DVIO-S-2010I-h", "", "", "", "", ""],
+        ["DVIO-S-1512I-h", "1150 x 900 x h", "125", "ISO-M", "500", "4"],
+        ["DVIO-S-1812I-h", "", "", "", "", ""],
+        ["DVIO-S-2012I-h", "", "", "", "", ""],
+        ["DVIO-S-1512I-h", "1150 x 900 x h", "150", "ISO-L", "1000", "4"],
+        ["DVIO-S-1812I-h", "", "", "", "", ""],
+        ["DVIO-S-2012I-h", "", "", "", "", ""],
+        ["DVIO-S-1515I-h", "1150 x 1150 x h", "150", "ISO-L", "1000", "4"],
+        ["DVIO-S-1815I-h", "", "", "", "", ""],
+        ["DVIO-S-2015I-h", "", "", "", "", ""],
+        ["DVIO-S-1575I-h", "1150 x 600 x h", "100", "ISO-S", "300", "4"],
+        ["DVIO-S-2409I-h", "1400 x 700 x h", "150", "ISO-L", "1000", "4"],
+        ["DVIO-S-2410I-h", "", "", "", "", ""],
+        ["DVIO-S-2412I-h", "1400 x 900 x h", "150", "ISO-L", "1000", "4"],
+        ["DVIO-S-2415I-h", "1400 x 1150 x h", "150", "ISO-L", "1000", "4"],
+        ["DVIO-S-3009I-h", "1600 x 700 x h", "150", "ISO-L", "1000", "4"],
+        ["DVIO-S-3010I-h", "", "", "", "", ""],
+        ["DVIO-S-3012I-h", "1800 x 900 x h", "150", "ISO-L", "1500", "6"],
+        ["DVIO-S-3012I-h", "175", "ISO-P", "2000", "4", ""],
+        ["DVIO-S-3015I-h", "1800 x 1150 x h", "150", "ISO-L", "1500", "6"],
+        ["DVIO-S-3015I-h", "1600 x 1150 x h", "175", "ISO-P", "2000", "4"],
+        ["DVIO-S-3612I-h", "2100 x 900 x h", "150", "ISO-L", "1500", "6"],
+        ["DVIO-S-3615I-h", "2100 x 1150 x h", "150", "ISO-L", "1500", "6"],
+        ["DVIO-S-3615I-h", "1900 x 1150 x h", "175", "ISO-P", "2000", "4"]
+      ]
+    },
+    "resources": [
+      {
+        "label": {
+          "en": "Catalog",
+          "ko": "카탈로그"
+        },
+        "url": "#"
+      },
+      {
+        "label": {
+          "en": "User Manual",
+          "ko": "사용 설명서"
+        },
+        "url": "#"
+      }
+    ]
+  }
+}
