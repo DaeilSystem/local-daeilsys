@@ -185,93 +185,58 @@ export function LockScrollSequence({
     }
   }, [draw])
 
-  // Scroll lock and sequence control
+  // Scroll sequence control (without scroll locking - lighter approach)
   useEffect(() => {
-    if (!active || done || reduceMotion) return
-
-    const preventScroll = (e: Event) => { e.preventDefault(); e.stopPropagation() }
+    if (!active || reduceMotion) return
 
     const updateProgress = (delta: number) => {
-      const next = Math.min(1, Math.max(0, progressRef.current + delta))
+      // 역방향으로 움직일 수 있도록 done 상태 해제
+      if (done && delta !== 0) {
+        setDone(false)
+      }
+
+      // progress 업데이트 (양방향 재생 가능)
+      const currentProgress = progressRef.current
+      const next = Math.min(1, Math.max(0, currentProgress + delta))
       progressRef.current = next
+
+      // 진행 상태를 그리기
       if (rAF.current) cancelAnimationFrame(rAF.current)
       rAF.current = requestAnimationFrame(() => draw(next))
 
-      if (next <= startSlack && !done) {
-        progressRef.current = 0
-        setDone(true)
-        setTimeout(() => setActive(false), 60)
-        unlockScrollY.current = window.scrollY || document.documentElement.scrollTop
-        unlockDir.current = "up"
-        return
-      }
-
-      if (next >= 1 - endSlack && !done) {
-        progressRef.current = 1
-        setDone(true)
-        onComplete?.()
-        setTimeout(() => setActive(false), 60)
-        unlockScrollY.current = window.scrollY || document.documentElement.scrollTop
-        unlockDir.current = "down"
-      }
+      // 끝에 도달해도 done을 설정하지 않아 양방향 재생 가능하게 유지
+      // progress는 범위 내로만 제한 (0~1 사이)
     }
 
     const wheel = (e: WheelEvent) => {
+      // 시퀀스 재생 조건 확인
       if (!canPlayNow()) return
+
+      const absDelta = Math.abs(e.deltaY)
+      const isLargeScroll = absDelta > 150 // 큰 스크롤 임계값
+
+      // 큰 스크롤 시도 시 시퀀스 재생 중단하고 일반 스크롤 허용
+      if (isLargeScroll) {
+        setActive(false)
+        setDone(true)
+        // preventDefault 호출하지 않음 - 일반 스크롤 허용
+        return
+      }
+
+      // 작은 스크롤: 시퀀스 재생
       const delta = e.deltaY * sensitivity
       updateProgress(delta)
-      preventScroll(e)
+      // 스크롤은 막지 않지만 시퀀스 재생에 집중
+      e.preventDefault()
     }
 
-    const touchStartY = { current: 0 }
-    const touchstart = (e: TouchEvent) => {
-      if (!canPlayNow()) return
-      touchStartY.current = e.touches[0]?.clientY ?? 0
-      preventScroll(e)
-    }
-    const touchmove = (e: TouchEvent) => {
-      if (!canPlayNow()) return
-      const y = e.touches[0]?.clientY ?? 0
-      const deltaY = (touchStartY.current ?? y) - y
-      touchStartY.current = y
-      updateProgress(deltaY * sensitivity * 1.2)
-      preventScroll(e)
-    }
-    const touchend = (e: TouchEvent) => {
-      if (!canPlayNow()) return
-      preventScroll(e)
-    }
-
-    const keydown = (e: KeyboardEvent) => {
-      if (!canPlayNow()) return
-      const keys = [" ", "ArrowDown", "PageDown", "ArrowUp", "PageUp"]
-      if (!keys.includes(e.key)) return
-      const delta = (e.key === "ArrowUp" || e.key === "PageUp") ? -0.03 : 0.03
-      updateProgress(delta)
-      preventScroll(e)
-    }
-
-    const originalOverflow = document.documentElement.style.overflow
-    const originalBodyOverflow = document.body.style.overflow
-    document.documentElement.style.overflow = "hidden"
-    document.body.style.overflow = "hidden"
-
+    // 휠 이벤트만 사용 (가벼운 접근)
     window.addEventListener("wheel", wheel, { passive: false })
-    window.addEventListener("touchstart", touchstart, { passive: false })
-    window.addEventListener("touchmove", touchmove, { passive: false })
-    window.addEventListener("touchend", touchend, { passive: false })
-    window.addEventListener("keydown", keydown, { passive: false })
 
     return () => {
-      document.documentElement.style.overflow = originalOverflow
-      document.body.style.overflow = originalBodyOverflow
       window.removeEventListener("wheel", wheel)
-      window.removeEventListener("touchstart", touchstart)
-      window.removeEventListener("touchmove", touchmove)
-      window.removeEventListener("touchend", touchend)
-      window.removeEventListener("keydown", keydown)
     }
-  }, [active, done, sensitivity, minVisibleRatioToStart, minViewportTopToStart, canStartByPreload, canPlayNow, draw, reduceMotion])
+  }, [active, done, sensitivity, minVisibleRatioToStart, minViewportTopToStart, canStartByPreload, canPlayNow, draw, reduceMotion, startSlack, endSlack])
 
   // Visibility observer
   useEffect(() => {
@@ -282,6 +247,11 @@ export function LockScrollSequence({
         const entry = entries[0]
         if (entry.intersectionRatio < 0.05) {
           setDone(false)
+          // relockReset에 따라 진행 상태 리셋
+          if (relockReset === "start" || relockReset === "auto") {
+            progressRef.current = 0
+            draw(0)
+          }
           unlockScrollY.current = null
           unlockDir.current = null
         }
@@ -291,7 +261,7 @@ export function LockScrollSequence({
     )
     io.observe(el)
     return () => io.disconnect()
-  }, [preloadDone, loadedCount, done, minVisibleRatioToStart, minViewportTopToStart, canPlayNow])
+  }, [preloadDone, loadedCount, done, minVisibleRatioToStart, minViewportTopToStart, canPlayNow, relockReset, draw])
 
   const percent = Math.round(loadedRatio * 100)
 

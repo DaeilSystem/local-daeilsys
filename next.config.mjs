@@ -8,6 +8,13 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'www.daeilsys.com',
+        pathname: '/**',
+      },
+    ],
   },
 }
 
