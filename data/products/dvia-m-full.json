@@ -1,11 +1,23 @@
 {
   "id": "dvia-m",
   "name": "DVIA-M",
-  "fullName": "Built-In Active Vibration Isolation System",
-  "series": "DVIA-M Series",
+  "fullName": {
+    "en": "Built-In Active Vibration Isolation System",
+    "ko": "액티브 아이솔레이터"
+  },
+  "series": {
+    "en": "DVIA-M Series",
+    "ko": "DVIA-M Series"
+  },
   "category": "Active Vibration Isolation Systems",
-  "tagline": "Nanoscale Imaging Without Noise",
-  "description": "The DVIA-M is the most advanced built-in active vibration isolation system in the world, incorporated in various platforms and used as a built-in active vibration isolation system inside electron microscopes.",
+  "tagline": {
+    "en": "Nanoscale Imaging Without Noise",
+    "ko": "나노스케일 이미징을 위한 액티브 제진시스템 (아이솔레이터)"
+  },
+  "description": {
+    "en": "The DVIA-M is the most advanced built-in active vibration isolation system in the world, incorporated in various platforms and used as a built-in active vibration isolation system inside electron microscopes.",
+    "ko": "DVIA-M 시리즈는 세계에서 가장 뛰어난 제진 성능을 가진 내장형 액티브 제진 시스템으로, 다양한 플랫폼에 통합되어 나노 스케일 이미징 장비 내부에 장착이 되어 저주파 진동을 효율적으로 제어합니다."
+  },
   "certifications": [
     {
       "name": "CE Mark",
@@ -21,31 +33,71 @@
   ],
   "tabs": {
     "overview": {
-      "description": "The DVIA-M is the most advanced built-in active vibration isolation system in the world, incorporated in various platforms and used as a built-in active vibration isolation system inside electron microscopes.",
+      "description": {
+        "en": "The DVIA-M is the most advanced built-in active vibration isolation system in the world, incorporated in various platforms and used as a built-in active vibration isolation system inside electron microscopes.",
+        "ko": "DVIA-M 시리즈는 세계에서 가장 뛰어난 제진 성능을 가진 내장형 액티브 제진 시스템으로, 다양한 플랫폼에 통합되어 나노 스케일 이미징 장비 내부에 장착이 되어 저주파 진동을 효율적으로 제어합니다."
+      },
       "videoUrl": "https://www.youtube.com/watch?v=mQnQTjzGbb4"
     },
     "features": [
       {
-        "title": "Sub-Hertz Vibration Isolation Performance",
-        "description": "The most sophisticated active vibration control algorithms are embedded in the DVIA-M series, delivering 50% - 80% vibration isolation at 1 Hz and 90% vibration isolation at 2 Hz in six degrees of freedom."
+        "title": {
+          "en": "Sub-Hertz Vibration Isolation Performance",
+          "ko": "월등한 제진 성능"
+        },
+        "description": {
+          "en": "The most sophisticated active vibration control algorithms are embedded in the DVIA-M series, delivering 50% - 80% vibration isolation at 1 Hz and 90% vibration isolation at 2 Hz in six degrees of freedom.",
+          "ko": "정교한 제어 알고리즘이 DVIA-M 시리즈에 적용되었으며, 1 Hz 에서 50% – 80% 제진 성능을 발휘합니다."
+        }
       },
       {
-        "title": "Built-In Active Vibration Isolation System",
-        "description": "The DVIA-M active vibration isolators are designed as a built-in active vibration isolation system for nanoscale imaging equipment such as electron microscopes."
+        "title": {
+          "en": "Built-In Active Vibration Isolation System",
+          "ko": "빌트인 액티브 제진 시스템"
+        },
+        "description": {
+          "en": "The DVIA-M active vibration isolators are designed as a built-in active vibration isolation system for nanoscale imaging equipment such as electron microscopes.",
+          "ko": "DVIA-M 시리즈는 전자 현미경과 같은 나노 스케일 이미징을 위한 빌트인(Built-In) 액티브 시스템으로 설계되었습니다."
+        }
       },
       {
-        "title": "Feedback & Feedforward Control Algorithm",
-        "description": "The DVIA series uses the Feedback control algorithm to continuously detect vibrations disturbing an isolated surface and instantaneously react to minimize the vibrations in real-time. The Feed-Forward control algorithm is employed in the DVIA Series to filter out floor vibrations in advance before the floor vibrations can be transmitted to equipment installed on the active vibration isolation systems.",
+        "title": {
+          "en": "Feedback & Feedforward Control Algorithm",
+          "ko": "피드백 및 피드 포워드 제어 알고리즘"
+        },
+        "description": {
+          "en": "The DVIA series uses the Feedback control algorithm to continuously detect vibrations disturbing an isolated surface and instantaneously react to minimize the vibrations in real-time. The Feed-Forward control algorithm is employed in the DVIA Series to filter out floor vibrations in advance before the floor vibrations can be transmitted to equipment installed on the active vibration isolation systems.",
+          "ko": "DVIA 시리즈는 피드백(Feedback) 제어 알고리즘을 사용하여 진동을 지속적으로 감지하고 즉각적으로 반응하여 진동을 실시간으로 최소합니다. 피드포워드(Feedforward) 제어 알고리즘은 지반 진동이 액티브 제진대위에 탑재되어 있는 장비에 진동이 전달되기전에 미리 지반진동을 감쇠시켜 효율적인 제진성능을 발휘시킵니다."
+        },
         "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-t-series-feedback-and-feed-forward-control-systems.jpg"
       },
       {
-        "title": "Active Vibration Isolation in All Six Degrees of Freedom",
-        "description": "The DVIA Series controls vibrations in three translational degrees of motions (X, Y and Z) and three rotational degrees of motions (pitch, roll and yaw).",
+        "title": {
+          "en": "Active Vibration Isolation in All Six Degrees of Freedom",
+          "ko": "6 자유도(6 DOF) 진동제어"
+        },
+        "description": {
+          "en": "The DVIA Series controls vibrations in three translational degrees of motions (X, Y and Z) and three rotational degrees of motions (pitch, roll and yaw).",
+          "ko": "액티브 제진대 내부에 장착된 센서와 액추에이터를 통해 6축(X, Y, Z, PITCH, ROLL, YAW)의 진동을 측정하여 실시간으로 제어합니다."
+        },
         "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/DVIA-MO-Absolute-Control-of-Vibrations-in-All-Six-Degrees-of-Freedom01.png"
+      },
+      {
+        "title": {
+          "en": "Field Tuning for Optimal Performance",
+          "ko": "최상의 성능을 위한 현장 맞춤 튜닝"
+        },
+        "description": {
+          "en": "Floor vibration levels vary depending on installation location, surrounding environment, irregular situations, and various vibration sources. DAEIL SYSTEMS provides field tuning of the active system by experienced engineers to ensure optimal performance and customer satisfaction. Engineers measure floor vibration levels used to adjust feedback and feedforward control algorithms through vibration field surveys to maximize vibration isolation performance and meet vibration requirements.",
+          "ko": "지반진동 수준은 설치 장소, 주변 환경, 불규칙한 상황 및 다양한 진동원에 따라 다릅니다. 대일시스템은 숙련 된 엔지니어가 직접 액티브 시스템의 현장 맞춤 튜닝을 제공하여 최상의 성능과 고객 만족을 보장합니다. 엔지니어는 진동 현장 조사를 통해 피드백 및 피드 포워드 제어 알고리즘을 조정하는데 사용되는 지반진동 레벨을 측정하여 제진 성능을 극대화하여 진동 요구스펙을 충족시킵니다."
+        }
       }
     ],
     "performance": {
-      "title": "50% - 80% vibration isolation at 1 Hz ≥90% vibration isolation at ≥2 Hz",
+      "title": {
+        "en": "50% - 80% vibration isolation at 1 Hz ≥90% vibration isolation at ≥2 Hz",
+        "ko": "1 Hz 에서 50% - 80% 제진 성능 2 Hz 이상부터 90% 이상의 제진 성능"
+      },
       "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/DVIA-MO-Performance.png"
     },
     "specifications": {
@@ -84,18 +136,36 @@
     },
     "applications": {
       "list": [
-        "Scanning Electron Microscopy",
-        "Transmission Electron Microscopy",
-        "Scanning Transmission Electron Microscopy",
-        "Scanning Tunneling Electron Microscopy"
+        {
+          "en": "Scanning Electron Microscopy",
+          "ko": "Scanning Electron Microscopy"
+        },
+        {
+          "en": "Transmission Electron Microscopy",
+          "ko": "Transmission Electron Microscopy"
+        },
+        {
+          "en": "Scanning Transmission Electron Microscopy",
+          "ko": "Scanning Transmission Electron Microscopy"
+        },
+        {
+          "en": "Scanning Tunneling Electron Microscopy",
+          "ko": "Scanning Tunneling Electron Microscopy"
+        }
       ]
     },
     "resources": {
       "catalog": {
-        "label": "Catalog",
+        "label": {
+          "en": "Catalog",
+          "ko": "Catalog"
+        },
         "url": "#"
       },
-      "cad": "2D CAD"
+      "cad": {
+        "en": "2D CAD",
+        "ko": "2D CAD"
+      }
     }
   }
 }
