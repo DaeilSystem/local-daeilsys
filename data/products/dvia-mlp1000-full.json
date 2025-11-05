@@ -8,9 +8,9 @@
   "taglineKo": "진동 절연 시스템의 새로운 표준을 제시하는 혁신적인 액티브 제진 시스템입니다.",
   "description": "완전히 새로운 액티브 제진 시스템이 드디어 출시되었습니다. 대일시스템은 전자현미경(SEM)에 특화된 세계 최고 수준의 액티브 제진 시스템, DVIA-MLP1000을 선보입니다. DVIA-MLP1000은 고성능 전자현미경이 외란 없이 완벽한 이미징을 가능하도록 최적화된 진동 제어 환경을 제공함으로써 액티브 제진 시스템의 새로운 기준을 제시합니다.",
   "heroMotion": {
-    "basePath": "/dvia-mlp1000/motion-sample",
+    "basePath": "https://www.daeilsys.com/ko-KR/products/active-vibration-isolation-systems/dvia-mlp1000-active-vibration-isolation-system/assets/images/motion-sample",
     "filename": "dvia-mlp1000-motion",
-    "startFrame": 1,
+    "startFrame": 0,
     "endFrame": 120,
     "extension": "jpg",
     "frameDigits": 4
@@ -40,7 +40,7 @@
     }
   ],
   "disassemblyMotion": {
-    "basePath": "/dvia-mlp1000/motion-disassembly",
+    "basePath": "https://www.daeilsys.com/ko-KR/products/active-vibration-isolation-systems/dvia-mlp1000-active-vibration-isolation-system/assets/images/motion-disassembly",
     "filename": "dvia-mlp1000-disassembly",
     "startFrame": 0,
     "endFrame": 60,
@@ -106,12 +106,12 @@
   "sixDOF": {
     "title": "모든 6자유도에서의 능동형 진동 제어",
     "description": "DVIA 시리즈는 X, Y, Z축의 3가지 병진 운동과 피치(pitch), 롤(roll), 요(yaw)의 3가지 회전 운동을 포함한 총 6자유도에서 진동을 제어합니다.",
-    "image": "/dvia-mlp1000/all-six-degrees-of-freedom-min.jpg"
+    "image": "https://www.daeilsys.com/ko-KR/products/active-vibration-isolation-systems/dvia-mlp1000-active-vibration-isolation-system/assets/images/all-six-degrees-of-freedom-min.jpg"
   },
   "performance": {
     "title": "Performance",
     "description": "DVIA-MLP1000은 0.5Hz부터 진동을 제어하기 시작하여, 1Hz에서 80 – 90%의 진동 제어 성능을 제공합니다.",
-    "image": "/dvia-mlp1000/performance-min.png"
+    "image": "https://www.daeilsys.com/ko-KR/products/active-vibration-isolation-systems/dvia-mlp1000-active-vibration-isolation-system/assets/images/performance-min.png"
   },
   "compatibleModels": {
     "title": "호환 가능한 Thermo Fisher SEM 모델",

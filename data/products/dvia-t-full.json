@@ -1,11 +1,23 @@
 {
   "id": "dvia-t",
   "name": "DVIA-T",
-  "fullName": "Tabletop Active Vibration Isolation System",
-  "series": "DVIA-T Series",
+  "fullName": {
+    "en": "Tabletop Active Vibration Isolation System",
+    "ko": "탁상형 액티브 제진대"
+  },
+  "series": {
+    "en": "DVIA-T Series",
+    "ko": "DVIA-T Series"
+  },
   "category": "Active Vibration Isolation Systems",
-  "tagline": "Make microscopy easier than ever before",
-  "description": "The DVIA-T is the most advanced tabletop active vibration isolation platform in the world, designed to isolate nanoscale imaging instruments from low-frequency vibrations and deliver 40 - 80% vibration isolation at 1 Hz.",
+  "tagline": {
+    "en": "Make microscopy easier than ever before",
+    "ko": "언제, 어디서나, 누구나 쉽게 사용할 수 있는 탁상형 액티브 제진대"
+  },
+  "description": {
+    "en": "The DVIA-T is the most advanced tabletop active vibration isolation platform in the world, designed to isolate nanoscale imaging instruments from low-frequency vibrations and deliver 40 - 80% vibration isolation at 1 Hz.",
+    "ko": "DVIA-T는 세계에서 가장 뛰어난 제진성능을 가진 탁상형 액티브 제진대입니다. 나노 스케일 imaging 기기를 1 Hz 에서 40 – 80%의 진동을 감쇠합니다."
+  },
   "certifications": [
     {
       "name": "CE Mark",
@@ -22,49 +34,103 @@
   ],
   "tabs": {
     "overview": {
-      "description": "The DVIA-T is the most advanced tabletop active vibration isolation platform in the world, designed to isolate nanoscale imaging instruments from low-frequency vibrations and deliver 40 - 80% vibration isolation at 1 Hz.",
+      "description": {
+        "en": "The DVIA-T is the most advanced tabletop active vibration isolation platform in the world, designed to isolate nanoscale imaging instruments from low-frequency vibrations and deliver 40 - 80% vibration isolation at 1 Hz.",
+        "ko": "DVIA-T는 세계에서 가장 뛰어난 제진성능을 가진 탁상형 액티브 제진대입니다. 나노 스케일 imaging 기기를 1 Hz 에서 40 – 80%의 진동을 감쇠합니다. 가장 작은 DVIA-T는 420 x 500 x 93 mm, 25 kg의 컴팩트한 사이즈와 가벼운 중량으로 어디로나 간편하게 운반하고 쉽게 제진대를 설치할 수 있습니다. DVIA-T 운영체제는 Plug & Play 운영체제로 전기만 있다면 언제, 어디서나 쉽게 구동이 가능합니다."
+      },
       "videoUrl": "https://www.youtube.com/watch?v=mQnQTjzGbb4"
     },
     "features": [
       {
-        "title": "Superior Vibration Isolation Performance",
-        "description": "The DVIA-T starts to isolate 0.5 Hz, delivering 40% – 80% vibration isolation at 1 Hz."
+        "title": {
+          "en": "Superior Vibration Isolation Performance",
+          "ko": "탁월한 제진 성능"
+        },
+        "description": {
+          "en": "The DVIA-T starts to isolate 0.5 Hz, delivering 40% – 80% vibration isolation at 1 Hz.",
+          "ko": "DVIA-T 시리즈의 제어 범위는 0.5 Hz 부터 시작하며, 1 Hz 에서 40% – 80%의 진동을 감쇠합니다."
+        }
       },
       {
-        "title": "It's Simple. Plug and Play!",
-        "description": "The DVIA-T only requires electricity to use its the active vibration isolation system.",
+        "title": {
+          "en": "It's Simple. Plug and Play!",
+          "ko": "간편하게! 플러그 앤 플레이!"
+        },
+        "description": {
+          "en": "The DVIA-T only requires electricity to use its the active vibration isolation system.",
+          "ko": "Plug and Play 시스템으로 디자인 된 DVIA-T 시리즈는 작동이 쉽고 간단하여 전문적인 설치나 유지 보수가 필요하지 않고, 모든 시스템 기능을 버튼 동작으로 구동시킬 수 있습니다."
+        },
         "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-t-series-plug-and-play-detail.jpg"
       },
       {
-        "title": "Compact, Lightweight, Portable Design",
-        "description": "The smallest DVIA-T is 420 × 500 × 93 mm, which weighs only 25 kg, allowing users to hand carry and install on any place at all."
+        "title": {
+          "en": "Compact, Lightweight, Portable Design",
+          "ko": "작게, 가볍게, 휴대의 용이함"
+        },
+        "description": {
+          "en": "The smallest DVIA-T is 420 × 500 × 93 mm, which weighs only 25 kg, allowing users to hand carry and install on any place at all.",
+          "ko": "가장 작은 DVIA-T는 420 × 500 × 93mm, 25kg의 컴팩트한 사이즈와 중량으로 어디로든 간편하게 운반하고 제진대를 설치할 수 있습니다."
+        }
       },
       {
-        "title": "Automatic Leveling to Payload Weight",
-        "description": "If there are changes in an environment and location or placing other instruments, users can adjust a level of DVIA-T by simply pressing an Auto Leveling button."
+        "title": {
+          "en": "Automatic Leveling to Payload Weight",
+          "ko": "적재 하중에 자동으로 조정해주는 오토 레벨링"
+        },
+        "description": {
+          "en": "If there are changes in an environment and location or placing other instruments, users can adjust a level of DVIA-T by simply pressing an Auto Leveling button.",
+          "ko": "환경과 장소에 변화가 있거나 다른기구를 놓는 경우, 자동 레벨링 버튼 하나로 DVIA-T 레벨링이 가능합니다."
+        }
       },
       {
-        "title": "No Air",
-        "description": "All the DVIA-T requires eletricity to operate."
+        "title": {
+          "en": "No Air",
+          "ko": "에어 공급장치 불필요"
+        },
+        "description": {
+          "en": "All the DVIA-T requires eletricity to operate.",
+          "ko": "DVIA-T는 전기만 공급 가능하면 언제든지 실행이 가능합니다."
+        }
       },
       {
-        "title": "UI Software for Users",
-        "description": "We take pride in our work to provide a vibration isolation system that actually reduce floor vibrations. The UI software is provided along with the DVIA-T for users to monitor the real-time active vibration isolation performance and floor vibration levels.",
+        "title": {
+          "en": "UI Software for Users",
+          "ko": "사용자를 위한 UI 소프트웨어"
+        },
+        "description": {
+          "en": "We take pride in our work to provide a vibration isolation system that actually reduce floor vibrations. The UI software is provided along with the DVIA-T for users to monitor the real-time active vibration isolation performance and floor vibration levels.",
+          "ko": "우리는 실제로 효율적인 제진 시스템을 제공하는 것에 자부심을 가지고 있습니다. UI 소프트웨어는 사용자가 실시간 진동 차단 성능 및 바닥 진동 수준을 모니터링 할 수 있도록 DVIA-T 와 함께 제공됩니다"
+        },
         "videoUrl": "https://www.youtube.com/watch?v=26o-mcm6Ysg"
       },
       {
-        "title": "Feedback & Feedforward Control Algorithm",
-        "description": "The DVIA series uses the Feedback control algorithm to continuously detect vibrations disturbing an isolated surface and instantaneously react to minimize the vibrations in real-time. The Feed-Forward control algorithm is employed in the DVIA Series to filter out floor vibrations in advance before the floor vibrations can be transmitted to equipment installed on the active vibration isolation systems.",
+        "title": {
+          "en": "Feedback & Feedforward Control Algorithm",
+          "ko": "피드백 및 피드 포워드 제어 알고리즘"
+        },
+        "description": {
+          "en": "The DVIA series uses the Feedback control algorithm to continuously detect vibrations disturbing an isolated surface and instantaneously react to minimize the vibrations in real-time. The Feed-Forward control algorithm is employed in the DVIA Series to filter out floor vibrations in advance before the floor vibrations can be transmitted to equipment installed on the active vibration isolation systems.",
+          "ko": "DVIA 시리즈는 피드백(Feedback) 제어 알고리즘을 사용하여 진동을 지속적으로 감지하고 즉각적으로 반응하여 진동을 실시간으로 최소합니다. 피드포워드(Feedforward) 제어 알고리즘은 지반진동이 액티브 제진대위에 탑재되어 있는 장비에 지반진동이 전달되기전에 미리 지반진동을 감쇠시켜 효율적인 제진성능을 발휘시킵니다."
+        },
         "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-t-series-feedback-and-feed-forward-control-systems.jpg"
       },
       {
-        "title": "Active Vibration Isolation in All Six Degrees of Freedom",
-        "description": "The DVIA Series controls vibrations in three translational degrees of motions ( X, Y and Z) and three rotational degrees of motions ( pitch, roll and yaw).",
+        "title": {
+          "en": "Active Vibration Isolation in All Six Degrees of Freedom",
+          "ko": "6 자유도(6 DOF) 진동제어"
+        },
+        "description": {
+          "en": "The DVIA Series controls vibrations in three translational degrees of motions ( X, Y and Z) and three rotational degrees of motions ( pitch, roll and yaw).",
+          "ko": "액티브 제진대 내부에 장착된 센서와 액추에이터를 통해 6축(X, Y, Z, PITCH, ROLL, YAW)의 진동을 측정하여 실시간으로 제어합니다."
+        },
         "image": "https://www.daeilsys.com/wp-content/uploads/2020/06/DVIA-MO-Absolute-Control-of-Vibrations-in-All-Six-Degrees-of-Freedom01.png"
       }
     ],
     "performance": {
-      "title": "40% - 80% vibration isolation at 1 Hz ≥90% vibration isolation at ≥2 Hz",
+      "title": {
+        "en": "40% - 80% vibration isolation at 1 Hz ≥90% vibration isolation at ≥2 Hz",
+        "ko": "1 Hz 에서 40% - 80% 제진 성능 2 Hz 이상부터 90% 이상의 제진 성능"
+      },
       "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/dvia-t-vibration-isolation-performance.jpg"
     },
     "specifications": {
@@ -102,15 +168,42 @@
     },
     "applications": {
       "list": [
-        "Atomic Force Microscopy",
-        "Fluorescence Microscopy",
-        "Scanning Probe Microscopy",
-        "3D Optical Microscopy",
-        "Optical Microscopy with Nanometer Resolution",
-        "Digital Holographic Microscopy",
-        "Stylus Profilometry",
-        "Interferometry",
-        "Surface Roughness Metrology"
+        {
+          "en": "Atomic Force Microscopy",
+          "ko": "Atomic Force Microscopy"
+        },
+        {
+          "en": "Fluorescence Microscopy",
+          "ko": "Fluorescence Microscopy"
+        },
+        {
+          "en": "Scanning Probe Microscopy",
+          "ko": "Scanning Probe Microscopy"
+        },
+        {
+          "en": "3D Optical Microscopy",
+          "ko": "3D Optical Microscopy"
+        },
+        {
+          "en": "Optical Microscopy with Nanometer Resolution",
+          "ko": "Optical Microscopy with Nanometer Resolution"
+        },
+        {
+          "en": "Digital Holographic Microscopy",
+          "ko": "Digital Holographic Microscopy"
+        },
+        {
+          "en": "Stylus Profilometry",
+          "ko": "Stylus Profilometry"
+        },
+        {
+          "en": "Interferometry",
+          "ko": "Interferometry"
+        },
+        {
+          "en": "Surface Roughness Metrology",
+          "ko": "Surface Roughness Metrology"
+        }
       ],
       "installationPhotos": [
         "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIA-T-applications-01-2.jpg",
@@ -130,13 +223,25 @@
     },
     "options": [
       {
-        "title": "Custom Top Plate",
-        "description": "A top plate of the DVIA-T can be customized to suit users' a specific purpose.",
+        "title": {
+          "en": "Custom Top Plate",
+          "ko": "커스텀 상판"
+        },
+        "description": {
+          "en": "A top plate of the DVIA-T can be customized to suit users' a specific purpose.",
+          "ko": "DVIA-T의 상판은 사용자의 특정 목적에 맞게 맞춤 제작이 가능합니다."
+        },
         "image": "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIA-T-custom-top-plate.png"
       },
       {
-        "title": "Custom Desk Platform",
-        "description": "We offer a custom desk with a built-in DVIA-T to suit users' a specific purpose.",
+        "title": {
+          "en": "Custom Desk Platform",
+          "ko": "커스텀 데스크형 플랫폼"
+        },
+        "description": {
+          "en": "We offer a custom desk with a built-in DVIA-T to suit users' a specific purpose.",
+          "ko": "구매 목적에 맞게 DVIA-T가 내장 된 커스텀 데스크형으로 제작이 가능합니다."
+        },
         "images": [
           "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIA-TD-desk-platform01.png",
           "https://www.daeilsys.com/wp-content/uploads/2020/04/DVIA-TD-desk-platform02.png"
@@ -145,11 +250,17 @@
     ],
     "resources": {
       "catalog": {
-        "label": "Catalog",
+        "label": {
+          "en": "Catalog",
+          "ko": "Catalog"
+        },
         "url": "#"
       },
       "userManual": {
-        "label": "DVIA-T User Manual",
+        "label": {
+          "en": "DVIA-T User Manual",
+          "ko": "DVIA-T User Manual"
+        },
         "url": "#"
       },
       "cad": [
@@ -172,11 +283,17 @@
       ],
       "links": [
         {
-          "label": "Case Studies",
+          "label": {
+            "en": "Case Studies",
+            "ko": "Case Studies"
+          },
           "url": "/products/active-vibration-isolation-systems/tabletop-active-vibration-isolation-platform/case-studies/"
         },
         {
-          "label": "Installation Reports",
+          "label": {
+            "en": "Installation Reports",
+            "ko": "Installation Reports"
+          },
           "url": "/products/active-vibration-isolation-systems/tabletop-active-vibration-isolation-platform/installation-reports/"
         }
       ]
