@@ -1,7 +1,7 @@
 "use client"
 
-import { useLanguage } from "@/hooks/use-language"
 import { useEffect, useState } from "react"
+import { useLanguage } from "@/hooks/use-language"
 
 export default function DviaMLP2000Client() {
   const { language } = useLanguage()
@@ -27,9 +27,9 @@ export default function DviaMLP2000Client() {
         <div className="pa-absolute-fill pa-gradient-back-v1" style={{ opacity: 0 }}></div>
         <div id="particles-js"></div>
 
-        <div className="max-w-7xl mx-auto px-4 pa-hero-content text-center" style={{ marginTop: "6vh" }}>
-          <div className="flex flex-wrap pa-hero-typed-text">
-            <div className="w-full">
+        <div className="container pa-hero-content text-center" style={{ marginTop: "6vh" }}>
+          <div className="row pa-hero-typed-text">
+            <div className="col-12">
               <div className="typed-text mega-typed">
                 <span className="animated-text-effect">
                   {isKorean ? "특별히 설계된" : "Specially Designed"}
@@ -38,8 +38,8 @@ export default function DviaMLP2000Client() {
               </div>
             </div>
           </div>
-          <div className="flex flex-wrap" style={{ marginTop: "20px" }}>
-            <div className="w-full" style={{ maxWidth: "976px", margin: "0 auto" }}>
+          <div className="row" style={{ marginTop: "20px" }}>
+            <div className="col-12" style={{ maxWidth: "976px", margin: "0 auto" }}>
               <h1 className="pa-h2-v2-hero-subhead pa-white">
                 {isKorean ? (
                   <>커스텀 액티브 제진대<br /> 써모피셔 <strong>SEM</strong></>
@@ -50,6 +50,33 @@ export default function DviaMLP2000Client() {
             </div>
           </div>
         </div>
+
+        <div className="breadcrumbs">
+          <ol itemScope itemType="https://schema.org/BreadcrumbList">
+            <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+              <a itemProp="item" target="_self" href={isKorean ? "/ko/" : "/"}>
+                <span itemProp="name">HOME</span>
+              </a>
+              <meta itemProp="position" content="1" />
+            </li>
+            <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+              <a itemProp="item" target="_self" href={isKorean ? "/ko/products/" : "/products/"}>
+                <span itemProp="name">{isKorean ? "제품소개" : "Products"}</span>
+              </a>
+              <meta itemProp="position" content="2" />
+            </li>
+            <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+              <a itemProp="item" target="_self" href={isKorean ? "/ko/products/active-vibration-isolation-systems/" : "/products/active-vibration-isolation-systems/"}>
+                <span itemProp="name">{isKorean ? "액티브 제진대" : "Active Vibration Isolation Systems"}</span>
+              </a>
+              <meta itemProp="position" content="3" />
+            </li>
+            <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+              <span itemProp="name">{isKorean ? "DVIA-MLP 커스텀 액티브 제진대" : "DVIA-MLP Custom Active Vibration Isolation System"}</span>
+              <meta itemProp="position" content="4" />
+            </li>
+          </ol>
+        </div>
       </section>
 
       {/* About Us Section */}
@@ -58,9 +85,9 @@ export default function DviaMLP2000Client() {
         className="pa-about-us pa-standard-section text-center pa-dark about-us-sec"
         style={{ backgroundImage: "url(/products/dvia-mlp2000/assets/images/about-dvia-mlp2000-min.jpg)" }}
       >
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex flex-wrap">
-            <div className="w-full xl:w-10/12 xl:mx-auto">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 col-xl-10 offset-xl-1">
               <h2 className="pa-h1-v2 pa-bright title-text fadeInDown wow" data-wow-duration="1s" data-wow-delay="0.2s">
                 <strong>About</strong> DVIA-MLP2000
               </h2>
@@ -83,7 +110,7 @@ export default function DviaMLP2000Client() {
               </p>
             </div>
           </div>
-          <div className="flex flex-wrap icon-list-wrap">
+          <div className="row icon-list-wrap">
             <ul className="pa-icon-list-horizontal-dark">
               <li className="fadeIn wow" data-wow-duration="1s" data-wow-delay="0.4s">
                 <span className="pa-icon-list-icon">
@@ -167,7 +194,7 @@ export default function DviaMLP2000Client() {
 
       {/* CTA Section - overview 오버뷰 */}
       <section className="pa-cta-v1 overview-sec">
-        <div className="max-w-7xl mx-auto px-4 text-center description">
+        <div className="container text-center description">
           <h2 className="pa-h1-v1 pa-bright title-text fadeIn wow" data-wow-duration="1s" data-wow-delay="0.2s">
             <strong>{isKorean ? "개요" : "Overview"}</strong>
           </h2>
@@ -246,9 +273,9 @@ export default function DviaMLP2000Client() {
 
       {/* Portfolio Section, 장점섹션 */}
       <section id="portfolio" className="pa-portfolio four-feat-sec">
-        <div className="w-full text-center p-0">
-          <div className="flex flex-wrap m-0">
-            <div className="w-full p-0">
+        <div className="container-fluid text-center p-0">
+          <div className="row m-0">
+            <div className="col-12 p-0">
               <div className="pa-stripe-heading">
                 <h2 className="pa-h1-v1 pa-bright title-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s">
                   <strong>{isKorean ? "하드웨어 구성" : "Hardware Configuration"}</strong>
@@ -258,9 +285,9 @@ export default function DviaMLP2000Client() {
           </div>
         </div>
 
-        <div className="w-full">
-          <div className="flex flex-wrap pa-row-max2560">
-            <div className="w-full xl:w-1/4 sm:w-1/2 lg:w-1/2 p-0">
+        <div className="container-fluid">
+          <div className="row pa-row-max2560">
+            <div className="col-12 col-xl-3 col-sm-6 col-lg-6 p-0">
               <div
                 className="pa-portfolio-thumb m-0 text-center fadeInDelay00Duration10 wow fadeIn"
                 style={{ backgroundImage: "url(/products/dvia-mlp2000/assets/images/dvia-mlp2000-features-01-min.png)" }}
@@ -268,11 +295,11 @@ export default function DviaMLP2000Client() {
                 data-wow-delay="0.0s"
               ></div>
             </div>
-            <div className="w-full xl:w-1/4 sm:w-1/2 lg:w-1/2 p-0 four-feat-sec-text">
+            <div className="col-12 col-xl-3 col-sm-6 col-lg-6 p-0 four-feat-sec-text">
               <div className="pa-portfolio-thumb-background-overlay"></div>
               <div className="pa-portfolio-thumb-deco-1"></div>
               <div className="pa-portfolio-thumb-deco-2"></div>
-              <div className="pa-portfolio-thumb-centered-content w-full">
+              <div className="pa-portfolio-thumb-centered-content w-100">
                 <span className="pa-portfolio-thumb-hover-icon">
                   <i className="material-icons">widgets</i>
                 </span>
@@ -295,7 +322,7 @@ export default function DviaMLP2000Client() {
               </div>
             </div>
 
-            <div className="w-full xl:w-1/4 sm:w-1/2 lg:w-1/2 p-0">
+            <div className="col-12 col-xl-3 col-sm-6 col-lg-6 p-0">
               <div
                 className="pa-portfolio-thumb m-0 text-center fadeInDelay00Duration10 wow fadeIn"
                 style={{ backgroundImage: "url(/products/dvia-mlp2000/assets/images/dvia-mlp2000-features-02-min.png)" }}
@@ -303,11 +330,11 @@ export default function DviaMLP2000Client() {
                 data-wow-delay="0.0s"
               ></div>
             </div>
-            <div className="w-full xl:w-1/4 sm:w-1/2 lg:w-1/2 p-0 four-feat-sec-text">
+            <div className="col-12 col-xl-3 col-sm-6 col-lg-6 p-0 four-feat-sec-text">
               <div className="pa-portfolio-thumb-background-overlay"></div>
               <div className="pa-portfolio-thumb-deco-1"></div>
               <div className="pa-portfolio-thumb-deco-2"></div>
-              <div className="pa-portfolio-thumb-centered-content w-full">
+              <div className="pa-portfolio-thumb-centered-content w-100">
                 <span className="pa-portfolio-thumb-hover-icon">
                   <i className="material-icons">beenhere</i>
                 </span>
@@ -333,7 +360,7 @@ export default function DviaMLP2000Client() {
               </div>
             </div>
 
-            <div className="w-full xl:w-1/4 sm:w-1/2 lg:w-1/2 p-0">
+            <div className="col-12 col-xl-3 col-sm-6 col-lg-6 p-0">
               <div
                 className="pa-portfolio-thumb m-0 text-center fadeInDelay00Duration10 wow fadeIn"
                 style={{ backgroundImage: "url(/products/dvia-mlp2000/assets/images/dvia-mlp2000-features-03-min.png)" }}
@@ -341,11 +368,11 @@ export default function DviaMLP2000Client() {
                 data-wow-delay="0.0s"
               ></div>
             </div>
-            <div className="w-full xl:w-1/4 sm:w-1/2 lg:w-1/2 p-0 four-feat-sec-text">
+            <div className="col-12 col-xl-3 col-sm-6 col-lg-6 p-0 four-feat-sec-text">
               <div className="pa-portfolio-thumb-background-overlay"></div>
               <div className="pa-portfolio-thumb-deco-1"></div>
               <div className="pa-portfolio-thumb-deco-2"></div>
-              <div className="pa-portfolio-thumb-centered-content w-full">
+              <div className="pa-portfolio-thumb-centered-content w-100">
                 <span className="pa-portfolio-thumb-hover-icon">
                   <i className="material-icons">edgesensor_high</i>
                 </span>
@@ -369,7 +396,7 @@ export default function DviaMLP2000Client() {
               </div>
             </div>
 
-            <div className="w-full xl:w-1/4 sm:w-1/2 lg:w-1/2 p-0">
+            <div className="col-12 col-xl-3 col-sm-6 col-lg-6 p-0">
               <div
                 className="pa-portfolio-thumb m-0 text-center fadeInDelay00Duration10 wow fadeIn"
                 style={{ backgroundImage: "url(/products/dvia-mlp2000/assets/images/dvia-mlp2000-features-04-min.png)" }}
@@ -377,11 +404,11 @@ export default function DviaMLP2000Client() {
                 data-wow-delay="0.0s"
               ></div>
             </div>
-            <div className="w-full xl:w-1/4 sm:w-1/2 lg:w-1/2 p-0 four-feat-sec-text">
+            <div className="col-12 col-xl-3 col-sm-6 col-lg-6 p-0 four-feat-sec-text">
               <div className="pa-portfolio-thumb-background-overlay"></div>
               <div className="pa-portfolio-thumb-deco-1"></div>
               <div className="pa-portfolio-thumb-deco-2"></div>
-              <div className="pa-portfolio-thumb-centered-content w-full">
+              <div className="pa-portfolio-thumb-centered-content w-100">
                 <span className="pa-portfolio-thumb-hover-icon">
                   <i className="material-icons">flash_on</i>
                 </span>
@@ -417,9 +444,9 @@ export default function DviaMLP2000Client() {
 
       {/* Portfolio Section, 소프트웨어 섹션 */}
       <section id="portfolio" className="pa-portfolio four-feat-sec software-sec">
-        <div className="w-full text-center p-0">
-          <div className="flex flex-wrap m-0">
-            <div className="w-full p-0">
+        <div className="container-fluid text-center p-0">
+          <div className="row m-0">
+            <div className="col-12 p-0">
               <div className="pa-stripe-heading">
                 <h2 className="pa-h1-v1 pa-bright title-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s">
                   <strong>{isKorean ? "소프트웨어 구성" : "Software Configuration"}</strong>
@@ -429,9 +456,9 @@ export default function DviaMLP2000Client() {
           </div>
         </div>
 
-        <div className="w-full">
-          <div className="flex flex-wrap pa-row-max2560">
-            <div className="w-full xl:w-1/4 sm:w-1/2 lg:w-1/2 p-0">
+        <div className="container-fluid">
+          <div className="row pa-row-max2560">
+            <div className="col-12 col-xl-3 col-sm-6 col-lg-6 p-0">
               <div
                 className="pa-portfolio-thumb m-0 text-center fadeInDelay00Duration10 wow fadeIn"
                 style={{ backgroundImage: "url(/products/dvia-mlp2000/assets/images/advanced-active-vibration-isolation-system-graph-min.jpg)" }}
@@ -439,11 +466,11 @@ export default function DviaMLP2000Client() {
                 data-wow-delay="0.0s"
               ></div>
             </div>
-            <div className="w-full xl:w-1/4 sm:w-1/2 lg:w-1/2 p-0 four-feat-sec-text">
+            <div className="col-12 col-xl-3 col-sm-6 col-lg-6 p-0 four-feat-sec-text">
               <div className="pa-portfolio-thumb-background-overlay"></div>
               <div className="pa-portfolio-thumb-deco-1"></div>
               <div className="pa-portfolio-thumb-deco-2"></div>
-              <div className="pa-portfolio-thumb-centered-content w-full">
+              <div className="pa-portfolio-thumb-centered-content w-100">
                 <h4 className="pa-portfolio-thumb-heading">
                   {isKorean ? "세계 최고 수준의 액티브 제진 시스템" : "World's Most Advanced Active Vibration Isolation System"}
                 </h4>
@@ -465,7 +492,7 @@ export default function DviaMLP2000Client() {
               </div>
             </div>
 
-            <div className="w-full xl:w-1/4 sm:w-1/2 lg:w-1/2 p-0">
+            <div className="col-12 col-xl-3 col-sm-6 col-lg-6 p-0">
               <div
                 className="pa-portfolio-thumb m-0 text-center fadeInDelay00Duration10 wow fadeIn"
                 style={{ backgroundImage: "url(/products/dvia-mlp2000/assets/images/new-tuning-software-min.jpg)" }}
@@ -473,11 +500,11 @@ export default function DviaMLP2000Client() {
                 data-wow-delay="0.0s"
               ></div>
             </div>
-            <div className="w-full xl:w-1/4 sm:w-1/2 lg:w-1/2 p-0 four-feat-sec-text">
+            <div className="col-12 col-xl-3 col-sm-6 col-lg-6 p-0 four-feat-sec-text">
               <div className="pa-portfolio-thumb-background-overlay"></div>
               <div className="pa-portfolio-thumb-deco-1"></div>
               <div className="pa-portfolio-thumb-deco-2"></div>
-              <div className="pa-portfolio-thumb-centered-content w-full">
+              <div className="pa-portfolio-thumb-centered-content w-100">
                 <h4 className="pa-portfolio-thumb-heading">
                   {isKorean ? (
                     <>새로운 튜닝 소프트웨어,<br />획기적인 성능 향상</>
@@ -503,7 +530,7 @@ export default function DviaMLP2000Client() {
               </div>
             </div>
 
-            <div className="w-full xl:w-1/4 sm:w-1/2 lg:w-1/2 p-0">
+            <div className="col-12 col-xl-3 col-sm-6 col-lg-6 p-0">
               <div
                 className="pa-portfolio-thumb m-0 text-center fadeInDelay00Duration10 wow fadeIn"
                 style={{ backgroundImage: "url(/products/dvia-mlp2000/assets/images/feedback-control-min.png)" }}
@@ -511,11 +538,11 @@ export default function DviaMLP2000Client() {
                 data-wow-delay="0.0s"
               ></div>
             </div>
-            <div className="w-full xl:w-1/4 sm:w-1/2 lg:w-1/2 p-0 four-feat-sec-text">
+            <div className="col-12 col-xl-3 col-sm-6 col-lg-6 p-0 four-feat-sec-text">
               <div className="pa-portfolio-thumb-background-overlay"></div>
               <div className="pa-portfolio-thumb-deco-1"></div>
               <div className="pa-portfolio-thumb-deco-2"></div>
-              <div className="pa-portfolio-thumb-centered-content w-full">
+              <div className="pa-portfolio-thumb-centered-content w-100">
                 <h4 className="pa-portfolio-thumb-heading">
                   {isKorean ? "피드백 제어(Feedback Control)" : "Feedback Control"}
                 </h4>
@@ -538,7 +565,7 @@ export default function DviaMLP2000Client() {
               </div>
             </div>
 
-            <div className="w-full xl:w-1/4 sm:w-1/2 lg:w-1/2 p-0">
+            <div className="col-12 col-xl-3 col-sm-6 col-lg-6 p-0">
               <div
                 className="pa-portfolio-thumb m-0 text-center fadeInDelay00Duration10 wow fadeIn"
                 style={{ backgroundImage: "url(/products/dvia-mlp2000/assets/images/feedforward-control-min.png)" }}
@@ -546,11 +573,11 @@ export default function DviaMLP2000Client() {
                 data-wow-delay="0.0s"
               ></div>
             </div>
-            <div className="w-full xl:w-1/4 sm:w-1/2 lg:w-1/2 p-0 four-feat-sec-text">
+            <div className="col-12 col-xl-3 col-sm-6 col-lg-6 p-0 four-feat-sec-text">
               <div className="pa-portfolio-thumb-background-overlay"></div>
               <div className="pa-portfolio-thumb-deco-1"></div>
               <div className="pa-portfolio-thumb-deco-2"></div>
-              <div className="pa-portfolio-thumb-centered-content w-full">
+              <div className="pa-portfolio-thumb-centered-content w-100">
                 <h4 className="pa-portfolio-thumb-heading">
                   {isKorean ? "피드포워드 제어(Feedforward Control)" : "Feedforward Control"}
                 </h4>
@@ -578,9 +605,9 @@ export default function DviaMLP2000Client() {
       {/* 브로슈어 설명 섹션 */}
       <section className="brochure-sec">
         <section className="black-bg six-degree-sec">
-          <div className="max-w-7xl mx-auto px-4 text-center">
-            <div className="flex flex-wrap">
-              <div className="brochure-text w-full">
+          <div className="container text-center">
+            <div className="row">
+              <div className="brochure-text col-12 col-xl-12">
                 <p className="bro-txt-title fadeInUp wow" data-wow-duration="1s" data-wow-delay="0.2s">
                   {isKorean ? "모든 6자유도에서의 능동형 진동 제어" : "Active Vibration Control in All Six Degrees of Freedom"}
                 </p>
@@ -598,7 +625,7 @@ export default function DviaMLP2000Client() {
                   )}
                 </p>
               </div>
-              <div className="all-six-degrees-img w-full text-center fadeIn wow" data-wow-duration="1s" data-wow-delay="0.4s">
+              <div className="all-six-degrees-img col-12 col-xl-12 text-center fadeIn wow" data-wow-duration="1s" data-wow-delay="0.4s">
                 <img
                   alt="Active Vibration Isolation in All Six Degrees of Freedom"
                   src="/products/dvia-mlp2000/assets/images/all-six-degrees-of-freedom-min.jpg"
@@ -622,7 +649,7 @@ export default function DviaMLP2000Client() {
                   )}
                 </p>
               </div>
-              <div className="all-six-degrees-img w-full text-center fadeIn wow" data-wow-duration="1s" data-wow-delay="0.4s">
+              <div className="all-six-degrees-img col-12 col-xl-12 text-center fadeIn wow" data-wow-duration="1s" data-wow-delay="0.4s">
                 <img
                   alt="Performance graph"
                   className="fadeInDelay03Duration10 wow fadeIn"
@@ -635,15 +662,15 @@ export default function DviaMLP2000Client() {
             </div>
           </div>
 
-          <div className="max-w-7xl mx-auto px-4 text-center viewer">
-            <div className="flex flex-wrap justify-center">
-              <div className="brochure-text w-full mb-3">
+          <div className="container text-center viewer">
+            <div className="row justify-content-center">
+              <div className="brochure-text col-12 mb-3">
                 <p className="bro-txt-title fadeInUp wow" data-wow-duration="1s" data-wow-delay="0.2s">
                   DVIA-MLP2000 (Standard) 3D Modeling
                 </p>
               </div>
 
-              <div className="w-full fadeIn wow" data-wow-duration="1s" data-wow-delay="0.4s">
+              <div className="col-12 fadeIn wow" data-wow-duration="1s" data-wow-delay="0.4s">
                 <div style={{ overflowX: "auto", textAlign: "center" }}>
                   <div style={{ display: "inline-block", width: "640px", height: "480px", position: "relative" }}>
                     <iframe
@@ -666,16 +693,16 @@ export default function DviaMLP2000Client() {
         className="pa-what-we-do pa-standard-section compati-sec text-center"
         style={{ backgroundImage: "url(/products/dvia-mlp2000/assets/images/metalhairline-min.jpg)" }}
       >
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex flex-wrap">
-            <div className="w-full xl:w-10/12 xl:mx-auto">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 col-xl-10 offset-xl-1">
               <h2 className="pa-h1-v2 pa-bright title-text fadeInDown wow" data-wow-duration="1s" data-wow-delay="0.1s">
                 {isKorean ? "호환 가능한 Thermo Fisher SEM 모델" : "Compatible Thermo Fisher SEM Models"}
               </h2>
             </div>
           </div>
 
-          <div className="flex flex-wrap pa-services text-center">
+          <div className="row pa-services text-center">
             <div className="pc-list">
               <ul className="pa-services-ul left-ul fadeInDelay00Duration10 wow fadeIn animated" data-wow-duration="1.0s" data-wow-delay="0.0s">
                 <li><h3 className="pa-h3-v1 pa-bright fadeIn wow animated" data-wow-duration="1s" data-wow-delay="0.4s">• &nbsp;&nbsp; Aquilos</h3></li>
@@ -696,7 +723,7 @@ export default function DviaMLP2000Client() {
             </div>
           </div>
 
-          <div className="w-full mo-list">
+          <div className="col-12 mo-list">
             <ul>
               <li><h3 className="pa-h3-v1 pa-bright fadeIn wow" data-wow-duration="1s" data-wow-delay="0.6s">• &nbsp;&nbsp; Aquilos</h3></li>
               <li><h3 className="pa-h3-v1 pa-bright fadeIn wow" data-wow-duration="1s" data-wow-delay="0.9s">• &nbsp;&nbsp; Apreo</h3></li>
@@ -719,7 +746,7 @@ export default function DviaMLP2000Client() {
 
       {/* 사양 */}
       <section className="spec-sec">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="container">
           <p className="spec-sec-title title-text text-center fadeInDown wow" data-wow-duration="1s" data-wow-delay="0.2s">
             Specifications
           </p>
@@ -751,9 +778,9 @@ export default function DviaMLP2000Client() {
         style={{ backgroundImage: "url(/products/dvia-mlp2000/assets/images/contact-background-image-min.jpg)" }}
       >
         <div className="cover-black"></div>
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex flex-wrap text-center">
-            <div className="w-full xl:w-10/12 xl:mx-auto">
+        <div className="container">
+          <div className="row text-center">
+            <div className="col-12 col-xl-10 offset-xl-1">
               <h2 className="pa-h1-v2 pa-bright fadeIn wow" data-wow-duration="1s" data-wow-delay="0.2s">
                 {isKorean ? (
                   <>궁금한 점이 <strong>있으신가요?</strong></>

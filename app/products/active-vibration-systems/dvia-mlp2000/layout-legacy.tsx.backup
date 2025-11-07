@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import MLP2000ScriptsRefactored from "./scripts-refactored"
+import MLP2000Scripts from "./scripts"
 
 export const metadata: Metadata = {
   title: "DVIA-MLP2000 | Custom Active Vibration Isolation System | DAEIL SYSTEMS",
@@ -7,9 +7,17 @@ export const metadata: Metadata = {
     "DVIA-MLP2000은 Thermo Fisher SEM에 특화된 세계 최고 수준의 액티브 제진 시스템입니다. 측면 삽입 설치를 지원하며, 0.5Hz부터 진동을 제어하고 1Hz에서 80~90%의 진동 차단율을 제공합니다.",
 }
 
-export default function DviaMLP2000LayoutRefactored({ children }: { children: React.ReactNode }) {
+export default function DviaMLP2000Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
+      {/* Bootstrap CSS */}
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossOrigin="anonymous"
+      />
+
       {/* Google Fonts */}
       <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Play:wght@400;700&family=Source+Sans+Pro:ital,wght@0,300;1,300&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,700;0,900;1,200;1,300;1,400&family=Blinker:wght@200;300;400;600;700;800&display=swap"
@@ -33,10 +41,8 @@ export default function DviaMLP2000LayoutRefactored({ children }: { children: Re
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
       />
 
-      {/* Custom CSS - All Original Styles */}
-      <style
-        dangerouslySetInnerHTML={{
-          __html: `
+      {/* Custom CSS for Particle Theme */}
+      <style dangerouslySetInnerHTML={{__html: `
         /* 기본 스타일 */
         .pa-homepage {
           background: #000;
@@ -505,6 +511,11 @@ export default function DviaMLP2000LayoutRefactored({ children }: { children: Re
           background: rgba(0, 0, 0, 0.7);
         }
 
+        .pa-h1-v2 {
+          font-size: 3rem;
+          margin-bottom: 2rem;
+        }
+
         .form-submit a {
           display: inline-block;
           padding: 1rem 3rem;
@@ -591,123 +602,11 @@ export default function DviaMLP2000LayoutRefactored({ children }: { children: Re
         .software-sec {
           background: #0a0a0a;
         }
-
-        /* Additional styles for proper layout */
-        .about-us-sec {
-          position: relative;
-        }
-
-        .about-us-sec::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background: rgba(0, 0, 0, 0.6);
-        }
-
-        .about-us-sec .container {
-          position: relative;
-          z-index: 2;
-        }
-
-        .title-text {
-          text-transform: uppercase;
-          letter-spacing: 2px;
-        }
-
-        .icon-list-wrap {
-          margin-top: 3rem;
-        }
-
-        .four-feat-sec {
-          background: #000;
-        }
-
-        .pinned, .pinned2 {
-          position: relative;
-          width: 100%;
-          min-height: 100vh;
-        }
-
-        /* Bootstrap container fix */
-        .container {
-          max-width: 1200px;
-          margin-left: auto;
-          margin-right: auto;
-          padding-left: 15px;
-          padding-right: 15px;
-        }
-
-        .text-center {
-          text-align: center !important;
-        }
-
-        /* Ensure proper text alignment */
-        .description,
-        .bro-txt-des,
-        .pa-p-v1 {
-          text-align: center;
-          margin-left: auto;
-          margin-right: auto;
-        }
-
-        /* Mobile responsive fixes */
-        @media (max-width: 1199px) {
-          .pa-portfolio .row {
-            flex-direction: column;
-          }
-
-          .pa-portfolio-thumb {
-            min-height: 300px !important;
-          }
-
-          .four-feat-sec-text {
-            min-height: auto !important;
-            padding: 2rem 1.5rem !important;
-          }
-
-          .pa-portfolio-thumb-heading {
-            font-size: 1.3rem !important;
-          }
-
-          .pa-portfolio-thumb-desc {
-            font-size: 0.95rem !important;
-          }
-        }
-
-        @media (max-width: 768px) {
-          .pa-portfolio-thumb {
-            min-height: 250px !important;
-          }
-
-          .four-feat-sec-text {
-            padding: 1.5rem 1rem !important;
-          }
-
-          .pa-portfolio-thumb-heading {
-            font-size: 1.1rem !important;
-            margin-bottom: 1rem !important;
-          }
-
-          .pa-portfolio-thumb-desc {
-            font-size: 0.9rem !important;
-            line-height: 1.5 !important;
-          }
-
-          .pa-portfolio-thumb-hover-icon i {
-            font-size: 2rem !important;
-            margin-bottom: 1rem !important;
-          }
-        }
-      `,
-        }}
-      />
+      `}} />
 
       {children}
 
-      <MLP2000ScriptsRefactored />
+      <MLP2000Scripts />
     </>
   )
 }
