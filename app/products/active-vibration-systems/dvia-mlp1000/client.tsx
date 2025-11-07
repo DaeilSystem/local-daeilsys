@@ -409,7 +409,7 @@ export default function Client() {
                       </span>
                     </div>
                     <p className="text-xs md:text-sm font-medium text-gray-300 uppercase tracking-wider">
-                      {item.label}
+                      {typeof item.label === "string" ? item.label : item.label[currentLanguage]}
                     </p>
                   </div>
                 </AppleScrollFadeAnimation>
@@ -693,7 +693,11 @@ export default function Client() {
             <AppleScrollFadeAnimation>
               <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur p-2 sm:p-4 md:p-6">
                 <div className="space-y-4">
-                  {Object.entries(productData.specifications).map(([key, value]) => (
+                  {Object.entries(productData.specifications).map(([key, value]) => {
+                    const displayValue = typeof value === "object" && value !== null && "en" in value && "ko" in value
+                      ? value[currentLanguage]
+                      : value
+                    return (
                     <div
                       key={key}
                       className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 rounded-lg hover:bg-slate-800/50 transition-colors"
@@ -704,9 +708,10 @@ export default function Client() {
                           .trim()
                           .replace(/^./, (str) => str.toUpperCase())}
                       </div>
-                      <div className="col-span-2 text-white">{value}</div>
+                      <div className="col-span-2 text-white">{displayValue}</div>
                     </div>
-                  ))}
+                    )
+                  })}
                 </div>
               </div>
             </AppleScrollFadeAnimation>

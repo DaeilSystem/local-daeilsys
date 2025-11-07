@@ -1,0 +1,303 @@
+{
+  "id": "dvia-mlp2000",
+  "name": "DVIA-MLP2000",
+  "fullName": {
+    "en": "Custom Active Vibration Isolation System",
+    "ko": "커스텀 액티브 제진대 써모피셔 SEM"
+  },
+  "series": {
+    "en": "DVIA-MLP Series",
+    "ko": "DVIA-MLP Series"
+  },
+  "category": "Active Vibration Isolation Systems",
+  "tagline": {
+    "en": "Introducing new active vibration isolation system that sets a new standard for vibration isolation systems.",
+    "ko": "진동 절연 시스템의 새로운 표준을 제시하는 혁신적인 액티브 제진 시스템입니다."
+  },
+  "description": {
+    "en": "A completely new active vibration isolation system has finally been launched. DAEIL SYSTEMS introduces the world's most advanced active vibration isolation system, DVIA-MLP2000, specifically designed for electron microscopes (SEM). DVIA-MLP2000 sets a new standard for active vibration isolation systems by providing an optimized vibration control environment that enables high-performance electron microscopes to achieve perfect imaging without interference.",
+    "ko": "완전히 새로운 액티브 제진 시스템이 드디어 출시되었습니다. 대일시스템은 전자현미경(SEM)에 특화된 세계 최고 수준의 액티브 제진 시스템, DVIA-MLP2000을 선보입니다. DVIA-MLP2000은 고성능 전자현미경이 외란 없이 완벽한 이미징을 가능하도록 최적화된 진동 제어 환경을 제공함으로써 액티브 제진 시스템의 새로운 기준을 제시합니다."
+  },
+  "heroMotion": {
+    "basePath": "https://www.daeilsys.com/ko-KR/products/active-vibration-isolation-systems/dvia-mlp2000-active-vibration-isolation-system/assets/images/motion-sample",
+    "filename": "dvia-mlp2000-motion",
+    "startFrame": 0,
+    "endFrame": 120,
+    "extension": "jpg",
+    "frameDigits": 4
+  },
+  "heroKeyFeatures": [
+    {
+      "en": "New Standard",
+      "ko": "새로운 표준 제시"
+    },
+    {
+      "en": "Innovative Technology",
+      "ko": "혁신적인 기술"
+    },
+    {
+      "en": "High-Precision Applications",
+      "ko": "고정밀 애플리케이션"
+    }
+  ],
+  "heroIcons": [
+    {
+      "icon": "task_alt",
+      "label": {
+        "en": "CONVENIENT",
+        "ko": "편리함"
+      }
+    },
+    {
+      "icon": "track_changes",
+      "label": {
+        "en": "ACCURATE",
+        "ko": "정확함"
+      }
+    },
+    {
+      "icon": "equalizer",
+      "label": {
+        "en": "HIGH-PERFORMANCE",
+        "ko": "고성능"
+      }
+    }
+  ],
+  "disassemblyMotion": {
+    "basePath": "https://www.daeilsys.com/ko-KR/products/active-vibration-isolation-systems/dvia-mlp2000-active-vibration-isolation-system/assets/images/motion-disassembly",
+    "filename": "dvia-mlp2000-disassembly",
+    "startFrame": 0,
+    "endFrame": 60,
+    "extension": "jpg",
+    "frameDigits": 4,
+    "title": {
+      "en": "Flawless Hardware and Software Configuration",
+      "ko": "흠잡을 데 없는 완벽한 하드웨어 및 소프트웨어 구성"
+    }
+  },
+  "aboutSection": {
+    "title": {
+      "en": "About DVIA-MLP2000",
+      "ko": "개요"
+    },
+    "paragraphs": [
+      {
+        "en": "The DVIA-MLP2000, an advanced active vibration isolation system designed for electron microscopes (SEM) from various manufacturers including Thermo Fisher Scientific, prioritizes user convenience and comfort. Unlike previous active vibration isolation models that required lifting the SEM for installation, the DVIA-MLP2000 can be installed by pushing the equipment in from the side, making it much more convenient and cost-effective.",
+        "ko": "Thermo Fisher Scientific를 비롯한 여러 제조사의 전자현미경(SEM)을 위해 설계된 최첨단 액티브 제진 시스템, DVIA-MLP2000은 사용자 편의성과 안락함을 최우선으로 고려했습니다. 기존 액티브 제진대 모델이 SEM을 들어 올려 설치해야 했던 것과 달리, DVIA-MLP2000은 측면에서 장비를 밀어 넣는 방식으로 설치할 수 있어 훨씬 간편하고 비용도 절감됩니다."
+      },
+      {
+        "en": "Additionally, the low-profile design maintains the SEM's unique ergonomic structure, providing users with a comfortable working environment. This active vibration isolation system applies feedback and feedforward vibration control algorithms to control vibrations from 0.5Hz, achieving 80-90% vibration isolation performance at 1Hz. The DVIA-MLP2000 enhances stability and precision in SEM's nanoscale imaging, further improving functionality and reliability.",
+        "ko": "또한 낮은 로우 프로파일 디자인으로 SEM 특유의 인체공학적 구조를 그대로 유지해 사용자에게 편안한 사용 환경을 제공합니다. 이 액티브 제진 시스템은 피드백 및 피드포워드 진동 제어 알고리즘을 적용해 0.5Hz부터 진동을 제어하며, 1Hz에서 80~90%의 제진 성능을 달성합니다. DVIA-MLP2000은 SEM의 나노스케일 이미징에서 안정성과 정밀도를 강화해 기능성과 신뢰도를 한층 높여줍니다."
+      }
+    ]
+  },
+  "hardwareSection": {
+    "title": {
+      "en": "Hardware Configuration",
+      "ko": "하드웨어 구성"
+    },
+    "features": [
+      {
+        "icon": "widgets",
+        "title": {
+          "en": "Perfect Compatibility and Stability",
+          "ko": "완벽한 호환성과 안정성"
+        },
+        "description": {
+          "en": "Four custom-designed active isolators are applied to be securely fastened to the SEM base frame. Each isolator's top plate has two through-holes designed to exactly match the caster holes in the SEM base frame.",
+          "ko": "SEM 본체의 베이스 프레임에 견고하게 체결할 수 있도록 맞춤 설계된 4개의 액티브 아이솔레이터가 적용됩니다. 각 아이솔레이터 상단 플레이트에는 두 개의 관통 구멍이 있어, SEM 베이스 프레임에 있는 캐스터 구멍과 정확히 일치하도록 디자인되었습니다."
+        }
+      },
+      {
+        "icon": "beenhere",
+        "title": {
+          "en": "SEM-Optimized Platform Size",
+          "ko": "SEM에 최적화된 플랫폼 크기"
+        },
+        "description": {
+          "en": "The DVIA-MLP2000 with dimensions of 900 × 900 × 158 mm is designed to fit perfectly with Thermo Fisher SEM. The low-profile design allows the microscope to be placed directly on the system, minimizing overall height. This enables easy installation in cramped spaces or inside enclosures without modification, while maintaining a convenient ergonomic working environment for users.",
+          "ko": "900 × 900 × 158 mm 규격의 DVIA-MLP2000은 Thermo Fisher SEM에 딱 맞도록 설계되었습니다. 낮은 프로파일 디자인으로 현미경을 시스템 위에 직접 올릴 수 있어 전체 높이를 최소화합니다. 이에 따라 공간이 협소한 환경이나 인클로저 내부에서도 별도의 개조 없이 쉽게 설치할 수 있으며, 사용자에게 편리한 인체공학적 사용 환경도 유지합니다."
+        }
+      },
+      {
+        "icon": "edgesensor_high",
+        "title": {
+          "en": "Enhanced Mobility with Casters",
+          "ko": "향상된 이동성을 위한 캐스터"
+        },
+        "description": {
+          "en": "The DVIA-MLP2000 platform can be fitted with casters on all four sides, greatly improving mobility and ease of operation. This design allows easy movement in various directions, making transport and installation position adjustments much easier. Additionally, all four sides can be equipped with casters, making it easy to roll smoothly on the surface.",
+          "ko": "DVIA-MLP2000 플랫폼은 네 면에 캐스터를 부착할 수 있어 이동성과 조작 편의성을 크게 높였습니다. 이 설계를 통해 다양한 방향으로 간편하게 움직일 수 있으므로 운반 및 설치 위치 조정이 더욱 수월해집니다. 또한 네 면 모두에 캐스터를 장착할 수 있어, 표면 위에서 부드럽게 굴리며 이동시키기 쉽습니다."
+        }
+      },
+      {
+        "icon": "flash_on",
+        "title": {
+          "en": "Low Resonant Frequency Air Spring",
+          "ko": "낮은 공진 주파수의 에어 스프링"
+        },
+        "subtitle": {
+          "en": "Outstanding Vibration Control Performance at Frequencies Below 5Hz",
+          "ko": "5Hz 이하 주파수에서 뛰어난 진동 제어 성능"
+        },
+        "description": {
+          "en": "The DVIA-MLP2000 uses air springs with low resonant frequencies below 5Hz to enhance vibration isolation performance in the low-frequency range. Most vibration isolation systems have difficulty controlling vibrations in the sub-5Hz range because they use only passive isolators with high resonant frequencies and feedback algorithms. However, the DVIA-MLP2000 combines low resonant frequency isolators with feedback and feedforward algorithms to achieve superior isolation performance. As a result, it provides an optimal solution for SEM and dual-beam equipment that require strict vibration requirements.",
+          "ko": "DVIA-MLP2000은 5Hz 이하의 낮은 공진 주파수를 갖는 에어 스프링을 사용해 저주파 대역에서의 제진 성능을 강화했습니다. 대부분의 제진 시스템은 공진 주파수가 높은 패시브 아이솔레이터와 피드백 알고리즘만을 사용하기에 5Hz 이하 영역의 진동을 제어하는데 어려움을 겪습니다. 하지만 DVIA-MLP2000은 저공진 주파수 아이솔레이터에 피드백 및 피드포워드 알고리즘을 접목하여 월등한 격리 성능을 구현합니다. 그 결과, 엄격한 진동 요건이 필요한 SEM 및 듀얼빔 장비에도 최적의 솔루션을 제공합니다."
+        }
+      }
+    ]
+  },
+  "softwareSection": {
+    "title": {
+      "en": "Software Configuration",
+      "ko": "소프트웨어 구성"
+    },
+    "features": [
+      {
+        "title": {
+          "en": "World's Most Advanced Active Vibration Isolation System",
+          "ko": "세계 최고 수준의 액티브 제진 시스템"
+        },
+        "description": {
+          "en": "The DVIA-MLP2000 system is equipped with 11 highly sensitive geophone sensors and 8 electromagnetic actuators with excellent low-frequency response characteristics from 0.3Hz. These are precisely designed to accurately measure and cancel vibrations, and when combined with state-of-the-art embedded feedback and feedforward control algorithms, they can meet strict VC-G vibration specifications below 2Hz.",
+          "ko": "DVIA-MLP2000 시스템은 0.3Hz부터 우수한 저주파 응답 특성을 지닌 11개의 고감도 지오폰(Geophone) 센서와 8개의 전자기 액추에이터를 탑재했습니다. 이들은 진동을 정밀하게 측정하고 상쇄하기 위해 정교하게 설계되었으며, 최첨단 임베디드 피드백 및 피드포워드 제어 알고리즘과 결합되어 2Hz 이하에서 엄격한 VC-G 진동 규격을 만족할 수 있게 합니다."
+        }
+      },
+      {
+        "title": {
+          "en": "New Tuning Software, Revolutionary Performance Enhancement",
+          "ko": "새로운 튜닝 소프트웨어, 획기적인 성능 향상"
+        },
+        "description": {
+          "en": "The DVIA-MLP2000's new tuning software provides more diverse filters and gains to improve low-frequency vibration control performance. The filter slots have increased from 3 to 5, allowing more precise feedback and feedforward tuning, and the newly introduced feedforward D gain and D frequency ensure excellent stability below 10Hz and can attenuate vibrations down to 0.5Hz. Additionally, this tuning software provides open-loop transfer functions from 0.1Hz, supporting accurate phase margin verification for low-frequency vibration control.",
+          "ko": "DVIA-MLP2000의 새로운 튜닝 소프트웨어는 필터와 게인을 더욱 다양하게 제공해 저주파 진동 제어 성능을 향상시킵니다. 필터 슬롯이 기존 3개에서 5개로 늘어나 피드백과 피드포워드 튜닝을 한층 정밀하게 수행할 수 있으며, 새롭게 도입된 피드포워드 D 게인과 D 주파수로 10Hz 이하 대역에서 탁월한 안정성을 보장하고 0.5Hz 이하 진동까지 감쇠할 수 있습니다. 또한 이 튜닝 소프트웨어는 0.1Hz부터 오픈 루프 전달함수를 제공해, 저주파대 진동 제어를 위해 정확한 위상 여유(Phase Margin) 확인을 지원합니다."
+        }
+      },
+      {
+        "title": {
+          "en": "Feedback Control",
+          "ko": "피드백 제어(Feedback Control)"
+        },
+        "description": {
+          "en": "The feedback control system continuously measures vibrations occurring on the isolation platform using high-performance sensors and effectively reduces vibrations by applying forces in the same but opposite direction using actuators. While excellent isolation effects are achieved with default settings alone, even better control performance can be obtained by optimizing the feedback open loop by adjusting gains to match customer equipment that requires control and controlling structural resonances or specific vibration sources with new advanced notch filters.",
+          "ko": "피드백 제어 시스템은 제진대 상판에서 발생하는 진동을 고성능 센서로 지속적으로 측정하고, 액추에이터를 이용해 동일하나 반대 방향의 힘을 가함으로써 진동을 효과적으로 줄입니다. 기본 설정만으로도 우수한 격리 효과를 발휘하지만, 제어가 필요한 고객 장비에 맞춰 게인을 조정하고 새로운 고급 노치 필터로 구조 공진이나 특정 진동원을 제어함으로써 피드백 오픈 루프를 최적화하면 더욱 향상된 제어 성능을 얻을 수 있습니다."
+        }
+      },
+      {
+        "title": {
+          "en": "Feedforward Control",
+          "ko": "피드포워드 제어(Feedforward Control)"
+        },
+        "description": {
+          "en": "Feedforward control measures floor vibration sensor values in real-time to detect vibrations and sends signals to actuators to cancel them before floor vibrations are transmitted to the equipment. The DVIA-MLP2000's feedforward control dramatically improves vibration isolation performance and easily adapts to changes in facility vibration levels through dynamic control. Additionally, it maintains superior control performance at all times without requiring continuous retuning.",
+          "ko": "피드포워드 제어는 실시간으로 바닥 진동 센서 값을 측정해 진동을 감지하고, 바닥 진동이 장비로 전달되기 전에 이를 상쇄할 수 있도록 액추에이터로 신호를 보냅니다. DVIA-MLP2000의 피드포워드 제어는 제진 성능을 획기적으로 개선하며, 동적 제어 방식을 통해 시설 내 진동 수준이 변화하더라도 쉽게 적응합니다. 또한 지속적인 재튜닝이 필요 없어 언제나 월등한 제어 성능을 유지할 수 있습니다."
+        }
+      }
+    ]
+  },
+  "sixDOF": {
+    "title": {
+      "en": "Active Vibration Control in All Six Degrees of Freedom",
+      "ko": "모든 6자유도에서의 능동형 진동 제어"
+    },
+    "description": {
+      "en": "The DVIA series controls vibrations in all six degrees of freedom, including three translational motions (X, Y, Z axes) and three rotational motions (pitch, roll, yaw).",
+      "ko": "DVIA 시리즈는 X, Y, Z축의 3가지 병진 운동과 피치(pitch), 롤(roll), 요(yaw)의 3가지 회전 운동을 포함한 총 6자유도에서 진동을 제어합니다."
+    },
+    "image": "https://www.daeilsys.com/ko-KR/products/active-vibration-isolation-systems/dvia-mlp2000-active-vibration-isolation-system/assets/images/all-six-degrees-of-freedom-min.jpg"
+  },
+  "performance": {
+    "title": {
+      "en": "Performance",
+      "ko": "성능"
+    },
+    "description": {
+      "en": "The DVIA-MLP2000 starts controlling vibrations from 0.5Hz, providing 80-90% vibration control performance at 1Hz.",
+      "ko": "DVIA-MLP2000은 0.5Hz부터 진동을 제어하기 시작하여, 1Hz에서 80 – 90%의 진동 제어 성능을 제공합니다."
+    },
+    "image": "https://www.daeilsys.com/ko-KR/products/active-vibration-isolation-systems/dvia-mlp2000-active-vibration-isolation-system/assets/images/performance-min.png"
+  },
+  "compatibleModels": {
+    "title": {
+      "en": "Compatible Thermo Fisher SEM Models",
+      "ko": "호환 가능한 Thermo Fisher SEM 모델"
+    },
+    "models": [
+      "Aquilos",
+      "Nova NanoSEM x50",
+      "Apreo",
+      "Hydra",
+      "Scios",
+      "Prisma",
+      "Helios 5",
+      "Teneo",
+      "Verios 5",
+      "Versa 3D",
+      "Quattro S",
+      "Centrios"
+    ]
+  },
+  "viewer3D": {
+    "url": "https://daeilsys.autodesk360.com/shares/public/SH286ddQT78850c0d8a4febb757089713b99?mode=embed&ui=embed",
+    "title": {
+      "en": "DVIA-MLP2000 (Standard) 3D Modeling",
+      "ko": "DVIA-MLP2000 (Standard) 3D Modeling"
+    }
+  },
+  "specifications": {
+    "model": "DVIA-MLP2000",
+    "dimensions": "900 x 900 x 158 mm (Customizable design)",
+    "maxLoadCapacity": "2000 kg",
+    "vibrationIsolationTechnology": "Feedback and Feedforward Control",
+    "degreesOfFreedom": "6 Degrees",
+    "activeIsolationBandwidth": "0.5 – 200 Hz",
+    "vibrationIsolation": "80 – 90% at 1 Hz",
+    "actuator": "Electromagnetic Actuator",
+    "maxActuatorForce": "Vertical 40 N, Horizontal 20 N",
+    "vibrationSensor": "Geophone, Sensitivity: 2.55 V/in/s (100.4 V/m/s) ± 10%",
+    "levelingRepeatability": "Repeatability: ± 0.1 mm",
+    "controller": "External",
+    "environmentalProtection": "CE and TUV",
+    "powerRequirements": "Line Voltage: 100 – 260V AC, Line Frequency: 50/60 Hz",
+    "airRequirements": "Air Pressure: 4 – 6 bar, Air Delivery: 30 L/min",
+    "environmentalRequirements": "Temperature: 5 – 50 °C, Humidity: 20 – 90 %"
+  },
+  "applications": [
+    {
+      "en": "Thermo Fisher SEM",
+      "ko": "Thermo Fisher SEM"
+    },
+    {
+      "en": "Dual-Beam Systems",
+      "ko": "듀얼빔 시스템"
+    },
+    {
+      "en": "High-Resolution Electron Microscopes",
+      "ko": "고해상도 전자현미경"
+    },
+    {
+      "en": "Nanoscale Imaging",
+      "ko": "나노스케일 이미징"
+    },
+    {
+      "en": "Precision Measurement Equipment Requiring Low Vibration Environment",
+      "ko": "저진동 환경이 필요한 정밀 측정 장비"
+    }
+  ],
+  "resources": {
+    "catalog": {
+      "label": {
+        "en": "Download Catalog",
+        "ko": "카탈로그 다운로드"
+      },
+      "url": "#"
+    },
+    "quote": {
+      "label": {
+        "en": "Request Quote",
+        "ko": "견적 요청"
+      },
+      "url": "/contact"
+    }
+  }
+}
