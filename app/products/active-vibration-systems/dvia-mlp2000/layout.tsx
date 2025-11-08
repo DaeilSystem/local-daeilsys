@@ -37,6 +37,26 @@ export default function DviaMLP2000LayoutRefactored({ children }: { children: Re
       <style
         dangerouslySetInnerHTML={{
           __html: `
+        /* Bootstrap 대체 유틸리티 */
+        .text-center {
+          text-align: center !important;
+        }
+        .m-0 {
+          margin: 0 !important;
+        }
+        .p-0 {
+          padding: 0 !important;
+        }
+        .mb-3 {
+          margin-bottom: 1rem !important;
+        }
+        .mt-4 {
+          margin-top: 1.5rem !important;
+        }
+        .w-full {
+          width: 100% !important;
+        }
+
         /* 기본 스타일 */
         .pa-homepage {
           background: #000;

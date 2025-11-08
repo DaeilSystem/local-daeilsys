@@ -23,7 +23,7 @@ export const Navigation: React.FC = () => {
   const { theme /*, toggleTheme*/ } = useTheme()
   const { language, toggleLanguage, isInitialized } = useLanguage()
 
-  const t = isInitialized ? translations[language] : translations.en
+  const trans = isInitialized ? translations[language] : translations.en
   const companyMenuItems = getCompanyMenuItems(isInitialized ? language : "en")
   const productsMenuItems = getProductsMenuItems(isInitialized ? language : "en")
   const supportMenuItems = getSupportMenuItems(isInitialized ? language : "en")
@@ -48,7 +48,7 @@ export const Navigation: React.FC = () => {
                 href="/"
                 className="text-white/80 hover:text-white text-sm font-normal transition-colors duration-200"
               >
-                {t.home}
+                {trans.home}
               </Link>
 
               <div
@@ -60,7 +60,7 @@ export const Navigation: React.FC = () => {
                   href="/company"
                   className="text-white/80 hover:text-white text-sm font-normal transition-colors duration-200"
                 >
-                  {t.company}
+                  {trans.company}
                 </Link>
               </div>
 
@@ -73,7 +73,7 @@ export const Navigation: React.FC = () => {
                   href="/products"
                   className="text-white/80 hover:text-white text-sm font-normal transition-colors duration-200"
                 >
-                  {t.products}
+                  {trans.products}
                 </Link>
               </div>
 
@@ -86,7 +86,7 @@ export const Navigation: React.FC = () => {
                   href="/support"
                   className="text-white/80 hover:text-white text-sm font-normal transition-colors duration-200"
                 >
-                  {t.support}
+                  {trans.support}
                 </Link>
               </div>
 
@@ -94,19 +94,19 @@ export const Navigation: React.FC = () => {
                 href="/support/case-studies"
                 className="text-white/80 hover:text-white text-sm font-normal transition-colors duration-200"
               >
-                {t.caseStudies}
+                {trans.caseStudies}
               </Link>
               <Link
                 href="/newsroom"
                 className="text-white/80 hover:text-white text-sm font-normal transition-colors duration-200"
               >
-                {t.newsroom}
+                {trans.newsroom}
               </Link>
               <Link
                 href="/contact"
                 className="text-white/80 hover:text-white text-sm font-normal transition-colors duration-200"
               >
-                {t.contact}
+                {trans.contact}
               </Link>
             </div>
 
@@ -153,7 +153,7 @@ export const Navigation: React.FC = () => {
                 companyItems={companyMenuItems}
                 productsItems={productsMenuItems}
                 supportItems={supportMenuItems}
-                translations={t}
+                translations={trans}
               />
             </div>
           </div>
