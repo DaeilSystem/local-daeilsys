@@ -14,6 +14,7 @@ if (typeof window !== 'undefined') {
 import SplashScreen from './components/SplashScreen';
 import WebGLBackground from './components/WebGLBackground';
 import CustomCursor from './components/CustomCursor';
+import SoundButton from './components/SoundButton';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Vision from './components/Vision';
@@ -28,6 +29,7 @@ export default function AmaterasuClient() {
   const [showSplash, setShowSplash] = useState(true);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [cursorVariant, setCursorVariant] = useState('default');
+  const [currentSection, setCurrentSection] = useState(0);
 
   // Initialize GSAP ScrollTrigger for section snapping
   useEffect(() => {
@@ -57,7 +59,7 @@ export default function AmaterasuClient() {
         },
       });
 
-      // Pin and fade animation for each section
+      // Pin and fade animation for each section + track current section
       sections.forEach((section, i) => {
         // Fade in animation
         gsap.from(section, {
@@ -71,6 +73,15 @@ export default function AmaterasuClient() {
             end: 'top 20%',
             toggleActions: 'play none none reverse',
           },
+        });
+
+        // Track section changes
+        ScrollTrigger.create({
+          trigger: section,
+          start: 'top center',
+          end: 'bottom center',
+          onEnter: () => setCurrentSection(i + 1),
+          onEnterBack: () => setCurrentSection(i + 1),
         });
       });
 
@@ -123,6 +134,7 @@ export default function AmaterasuClient() {
       <CustomCursor
         mousePosition={mousePosition}
         variant={cursorVariant}
+        currentSection={currentSection}
       />
 
       {/* WebGL Background */}
@@ -139,6 +151,7 @@ export default function AmaterasuClient() {
       {!showSplash && (
         <>
           <Header setCursorVariant={setCursorVariant} />
+          <SoundButton setCursorVariant={setCursorVariant} />
 
           <main className="relative z-10">
             <div className="hero-section">

@@ -9,28 +9,40 @@ interface StoriesProps {
 
 const stories = [
   {
-    name: 'Sarah M.',
-    role: 'Software Engineer',
-    story: 'Amaterasu helped me manage my anxiety during a difficult career transition. The 24/7 availability meant I could get support whenever I needed it.',
+    name: 'Sarah',
+    issue: 'Delay in Mental Health Support',
+    story: "I've been on a waitlist for months, and every day feels like a battle. The system is so slow to respond, and there's no help for people in immediate crisis.",
     image: '01',
   },
   {
-    name: 'Michael K.',
-    role: 'Student',
-    story: 'As a college student dealing with depression, having access to immediate support without scheduling appointments was life-changing.',
+    name: 'John',
+    issue: 'Inconsistent Diagnoses',
+    story: "Every therapist I see has a different idea of what's wrong with me, but none seem to get it right. It's exhausting to be reassessed constantly without real progress.",
     image: '02',
   },
   {
-    name: 'Jennifer L.',
-    role: 'Healthcare Worker',
-    story: 'Working in healthcare during the pandemic was overwhelming. Amaterasu gave me tools to process my emotions and maintain my mental wellbeing.',
+    name: 'Emily',
+    issue: 'Lack of Continuity in Care',
+    story: "I've had to switch therapists multiple times, and every time I do, it feels like starting from square one.",
     image: '03',
   },
   {
-    name: 'David R.',
-    role: 'Teacher',
-    story: 'The personalized approach really stood out. The AI learned my patterns and provided increasingly relevant coping strategies.',
+    name: 'Alex',
+    issue: 'Cultural Barriers',
+    story: "It's hard to find a therapist who understands my cultural background. I often feel like they don't get the unique pressures I face, which makes it harder to open up.",
     image: '04',
+  },
+  {
+    name: 'Kevin',
+    issue: 'Stigma Around Mental Health',
+    story: "There's so much stigma around mental health that even when I reach out for help, I feel ashamed. The system doesn't support openness, which makes it harder.",
+    image: '05',
+  },
+  {
+    name: 'Olivia',
+    issue: 'System Playing Catch-Up',
+    story: "The mental health system feels like it's constantly playing catch-up. By the time you get the help you need, it's already too late for so many people.",
+    image: '06',
   },
 ];
 
@@ -79,7 +91,7 @@ export default function Stories({ setCursorVariant }: StoriesProps) {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
           >
-            Real Impact, Real People
+            Real Stories, Real Struggles
           </motion.h2>
 
           <motion.p
@@ -89,7 +101,7 @@ export default function Stories({ setCursorVariant }: StoriesProps) {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-lg md:text-xl opacity-80 max-w-3xl mx-auto"
           >
-            Hear from individuals whose lives have been transformed by accessible mental health support
+            Hear from individuals facing the challenges of the current mental health system
           </motion.p>
         </div>
 
@@ -121,7 +133,7 @@ export default function Stories({ setCursorVariant }: StoriesProps) {
                   </div>
                   <div>
                     <div className="font-bold text-lg">{stories[activeIndex].name}</div>
-                    <div className="opacity-60">{stories[activeIndex].role}</div>
+                    <div className="opacity-60">{stories[activeIndex].issue}</div>
                   </div>
                 </div>
               </div>
