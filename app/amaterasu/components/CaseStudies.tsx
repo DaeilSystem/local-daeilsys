@@ -100,7 +100,7 @@ export default function CaseStudies({ setCursorVariant }: CaseStudiesProps) {
           className="text-center"
         >
           <motion.button
-            className="px-10 py-5 bg-gradient-to-r from-[#183969] to-[#75cdd6] rounded-full font-medium tracking-wide text-sm"
+            className="px-10 py-5 bg-gradient-to-r from-[#1a1a1a] to-[#75cdd6] rounded-full font-medium tracking-wide text-sm"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onMouseEnter={() => setCursorVariant('hover')}

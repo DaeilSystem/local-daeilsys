@@ -95,7 +95,7 @@ export default function Technologies({ setCursorVariant }: TechnologiesProps) {
             <svg viewBox="0 0 100 100" className="w-full h-full">
               <defs>
                 <linearGradient id="triangleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="#183969" />
+                  <stop offset="0%" stopColor="#1a1a1a" />
                   <stop offset="100%" stopColor="#75cdd6" />
                 </linearGradient>
               </defs>
@@ -136,7 +136,7 @@ export default function Technologies({ setCursorVariant }: TechnologiesProps) {
                   <svg viewBox="0 0 50 50" className="w-12 h-12 opacity-60">
                     <defs>
                       <linearGradient id={`gradient-${index}`} x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stopColor="#183969" />
+                        <stop offset="0%" stopColor="#1a1a1a" />
                         <stop offset="100%" stopColor="#75cdd6" />
                       </linearGradient>
                     </defs>
@@ -171,7 +171,7 @@ export default function Technologies({ setCursorVariant }: TechnologiesProps) {
 
                 {/* Hover Overlay */}
                 <motion.div
-                  className="absolute inset-0 bg-gradient-to-br from-[#183969]/10 to-[#75cdd6]/10"
+                  className="absolute inset-0 bg-gradient-to-br from-[#1a1a1a]/10 to-[#75cdd6]/10"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: hoveredIndex === index ? 1 : 0 }}
                   transition={{ duration: 0.3 }}

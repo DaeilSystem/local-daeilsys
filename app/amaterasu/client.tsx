@@ -20,6 +20,7 @@ import SoundButton from './components/SoundButton';
 import SplashScreen from './components/SplashScreen';
 import CaseStudies from './components/CaseStudies';
 import Technologies from './components/Technologies';
+import ProductsHorizontal from './components/ProductsHorizontal';
 import Vision from './components/Vision';
 import Mission from './components/Mission';
 import Newsroom from './components/Newsroom';
@@ -44,6 +45,7 @@ export default function AmaterasuClient() {
         '.mission-section',
         '.principles-section',
         '.technologies-section',
+        '.products-horizontal-section',
         '.case-studies-section',
         '.newsroom-section',
         '.aleph-section',
@@ -132,7 +134,7 @@ export default function AmaterasuClient() {
   };
 
   return (
-    <div className="relative w-full min-h-screen bg-[#183969] text-white overflow-hidden">
+    <div className="relative w-full min-h-screen bg-[#0a0a0a] text-white overflow-hidden">
       {/* Custom Cursor */}
       <CustomCursor
         mousePosition={mousePosition}
@@ -171,6 +173,9 @@ export default function AmaterasuClient() {
             </div>
             <div className="technologies-section">
               <Technologies setCursorVariant={setCursorVariant} />
+            </div>
+            <div className="products-horizontal-section">
+              <ProductsHorizontal setCursorVariant={setCursorVariant} />
             </div>
             <div className="case-studies-section">
               <CaseStudies setCursorVariant={setCursorVariant} />

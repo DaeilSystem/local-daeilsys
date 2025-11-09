@@ -53,7 +53,7 @@ export default function Header({ setCursorVariant }: HeaderProps) {
             </motion.a>
           ))}
           <motion.button
-            className="px-6 py-2 border border-white hover:bg-white hover:text-[#183969] transition-colors duration-300"
+            className="px-6 py-2 border border-white hover:bg-white hover:text-[#1a1a1a] transition-colors duration-300"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
@@ -107,7 +107,7 @@ export default function Header({ setCursorVariant }: HeaderProps) {
               {item.label}
             </a>
           ))}
-          <button className="px-6 py-2 border border-white hover:bg-white hover:text-[#183969] transition-colors duration-300 w-fit">
+          <button className="px-6 py-2 border border-white hover:bg-white hover:text-[#1a1a1a] transition-colors duration-300 w-fit">
             CONTACT
           </button>
         </div>

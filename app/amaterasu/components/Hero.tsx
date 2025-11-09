@@ -1,7 +1,7 @@
 'use client';
 
-import { motion, useScroll, useTransform } from 'framer-motion';
-import { useRef } from 'react';
+import { motion, useScroll, useTransform, useMotionValue, useSpring } from 'framer-motion';
+import { useRef, useEffect, useState, useMemo } from 'react';
 
 interface HeroProps {
   setCursorVariant: (variant: 'default' | 'hover' | 'click') => void;
@@ -16,6 +16,65 @@ export default function Hero({ setCursorVariant }: HeroProps) {
 
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
   const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.8]);
+
+  // Sequence animation - 36 frames (0000-0035)
+  const totalFrames = 36;
+  const [currentFrame, setCurrentFrame] = useState(0);
+
+  // Preload all sequence images
+  const images = useMemo(() => {
+    return Array.from({ length: totalFrames }, (_, i) => {
+      const frameNumber = i.toString().padStart(4, '0');
+      return `/dvia-ulf/NewLevelSequence1.${frameNumber}.png`;
+    });
+  }, [totalFrames]);
+
+  useEffect(() => {
+    // Preload images
+    images.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, [images]);
+
+  // Update frame based on scroll
+  useEffect(() => {
+    const unsubscribe = scrollYProgress.on('change', (latest) => {
+      const frameIndex = Math.min(
+        Math.floor(latest * totalFrames),
+        totalFrames - 1
+      );
+      setCurrentFrame(Math.max(0, frameIndex));
+    });
+
+    return () => unsubscribe();
+  }, [scrollYProgress, totalFrames]);
+
+  // Mouse tracking for 3D parallax effect
+  const mouseX = useMotionValue(0.5);
+  const mouseY = useMotionValue(0.5);
+
+  const smoothMouseX = useSpring(mouseX, { stiffness: 50, damping: 20 });
+  const smoothMouseY = useSpring(mouseY, { stiffness: 50, damping: 20 });
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!containerRef.current) return;
+      const rect = containerRef.current.getBoundingClientRect();
+      const x = (e.clientX - rect.left) / rect.width;
+      const y = (e.clientY - rect.top) / rect.height;
+      mouseX.set(x);
+      mouseY.set(y);
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, [mouseX, mouseY]);
+
+  // 3D transforms based on mouse position
+  const rotateX = useTransform(smoothMouseY, [0, 1], [5, -5]);
+  const rotateY = useTransform(smoothMouseX, [0, 1], [-5, 5]);
+  const translateZ = useTransform(smoothMouseX, [0, 1], [0, 20]);
 
   return (
     <motion.section
@@ -101,7 +160,7 @@ export default function Hero({ setCursorVariant }: HeroProps) {
                 </svg>
               </span>
               <div className="absolute inset-0 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300" />
-              <span className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 text-[#183969] font-semibold transition-opacity duration-300 gap-3">
+              <span className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 text-[#1a1a1a] font-semibold transition-opacity duration-300 gap-3">
                 Explore Solutions
                 <svg
                   width="20"
@@ -122,34 +181,39 @@ export default function Hero({ setCursorVariant }: HeroProps) {
         </div>
 
         {/* Right Column - Product Image */}
-        <div className="lg:col-span-5">
+        <div className="lg:col-span-5" style={{ perspective: '1000px' }}>
           <motion.div
             initial={{ opacity: 0, scale: 0.8, rotateY: -20 }}
             animate={{ opacity: 1, scale: 1, rotateY: 0 }}
             transition={{ duration: 1.2, delay: 0.4 }}
             className="relative"
-            style={{ transformStyle: 'preserve-3d' }}
+            style={{
+              transformStyle: 'preserve-3d',
+              rotateX: rotateX,
+              rotateY: rotateY,
+              translateZ: translateZ,
+            }}
           >
-            {/* Product Image */}
+            {/* Product Image - Scroll-based Sequence Animation */}
             <motion.img
-              src="/dvia-ulf/hero-product.png"
-              alt="DVIA Vibration Isolation System"
+              src={images[currentFrame]}
+              alt="DVIA-ULF Vibration Isolation System - 360° View"
               className="w-full h-auto filter drop-shadow-2xl"
-              animate={{
-                y: [0, -20, 0],
-              }}
-              transition={{
-                duration: 4,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
             />
 
-            {/* Floating Info Cards */}
+            {/* Floating Info Cards with parallax depth */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 1 }}
+              style={{
+                translateZ: 50,
+                x: useTransform(smoothMouseX, [0, 1], [-10, 10]),
+                y: useTransform(smoothMouseY, [0, 1], [-10, 10]),
+              }}
               className="absolute top-10 -left-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-4"
             >
               <div className="text-xs opacity-60 mb-1">Isolation Performance</div>
@@ -161,6 +225,11 @@ export default function Hero({ setCursorVariant }: HeroProps) {
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 1.2 }}
+              style={{
+                translateZ: 80,
+                x: useTransform(smoothMouseX, [0, 1], [-15, 15]),
+                y: useTransform(smoothMouseY, [0, 1], [-15, 15]),
+              }}
               className="absolute bottom-10 -right-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-4"
             >
               <div className="text-xs opacity-60 mb-1">Since</div>

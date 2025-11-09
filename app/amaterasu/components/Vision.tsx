@@ -35,14 +35,14 @@ export default function Vision({ setCursorVariant }: VisionProps) {
       id="vision"
       className="relative flex flex-col items-center justify-center px-8 md:px-12 py-24"
       style={{
-        height: '600vh',
+        height: '300vh',
       }}
       onMouseEnter={() => setCursorVariant('hover')}
       onMouseLeave={() => setCursorVariant('default')}
     >
       {/* Expanding Circle Background */}
       <motion.div
-        className="fixed inset-0 bg-gradient-to-br from-[#183969] to-[#0a1f3d] z-0"
+        className="fixed inset-0 bg-gradient-to-br from-[#0a0a0a] to-[#1a1a1a] z-0"
         style={{
           WebkitMaskImage: `radial-gradient(circle at 50% ${maskPosition}, transparent ${maskRadius}, #000 0)`,
           maskImage: `radial-gradient(circle at 50% ${maskPosition}, transparent ${maskRadius}, #000 0)`,
@@ -62,7 +62,7 @@ export default function Vision({ setCursorVariant }: VisionProps) {
         <svg viewBox="0 0 100 100" className="w-32 h-32 md:w-48 md:h-48">
           <defs>
             <linearGradient id="triangleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#183969" />
+              <stop offset="0%" stopColor="#1a1a1a" />
               <stop offset="100%" stopColor="#75cdd6" />
             </linearGradient>
           </defs>
@@ -134,7 +134,7 @@ export default function Vision({ setCursorVariant }: VisionProps) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
-              className="bg-gradient-to-br from-[#1e4a7a]/40 to-[#2d5c8f]/40 p-8 md:p-10 rounded-lg border border-white/10 hover:border-white/30 transition-all duration-300"
+              className="bg-gradient-to-br from-[#2a2a2a]/40 to-[#1a1a1a]/40 p-8 md:p-10 rounded-lg border border-white/10 hover:border-white/30 transition-all duration-300"
             >
               <h3 className="text-2xl font-bold mb-4">{value.title}</h3>
               <p className="text-base opacity-80 leading-relaxed">

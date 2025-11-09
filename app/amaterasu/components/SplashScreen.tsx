@@ -16,7 +16,7 @@ export default function SplashScreen({ onEnter, isLoaded }: SplashScreenProps) {
       initial={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 1 }}
-      className="fixed inset-0 z-50 flex items-center justify-center bg-[#183969]"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-[#1a1a1a]"
     >
       {/* Animated Background Circles */}
       <svg

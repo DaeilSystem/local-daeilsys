@@ -9,36 +9,36 @@ interface FooterProps {
 export default function Footer({ setCursorVariant }: FooterProps) {
   const footerLinks = {
     product: [
-      { label: 'Features', href: '#' },
-      { label: 'Pricing', href: '#' },
-      { label: 'Security', href: '#' },
-      { label: 'Roadmap', href: '#' },
+      { label: 'DVIA-ULF', href: '/products/active-vibration-systems/dvia-ulf' },
+      { label: 'DVIA-MLP2000', href: '/products/active-vibration-systems/dvia-mlp2000' },
+      { label: 'Optical Tables', href: '/products/optical-tables' },
+      { label: 'All Products', href: '/products' },
     ],
     company: [
-      { label: 'About', href: '#' },
-      { label: 'Careers', href: '#' },
-      { label: 'Press', href: '#' },
-      { label: 'Contact', href: '#' },
+      { label: 'About', href: '/company' },
+      { label: 'Vision & Mission', href: '/company/vision-mission' },
+      { label: 'History', href: '/company/company-history' },
+      { label: 'Contact', href: '/contact' },
     ],
     resources: [
-      { label: 'Blog', href: '#' },
-      { label: 'Documentation', href: '#' },
-      { label: 'Research', href: '#' },
-      { label: 'Support', href: '#' },
+      { label: 'Technical Notes', href: '/support/technical-notes' },
+      { label: 'Case Studies', href: '/support/case-studies' },
+      { label: 'Resources', href: '/support' },
+      { label: 'Newsroom', href: '/newsroom' },
     ],
     legal: [
-      { label: 'Privacy', href: '#' },
-      { label: 'Terms', href: '#' },
-      { label: 'HIPAA', href: '#' },
-      { label: 'Cookies', href: '#' },
+      { label: 'Privacy Policy', href: '/privacy-policy' },
+      { label: 'Terms of Use', href: '/terms-of-use' },
+      { label: 'Warranty Policy', href: '/support/warranty-policy' },
+      { label: 'Contact', href: '/contact' },
     ],
   };
 
   const socialLinks = [
-    { label: 'Twitter', href: '#' },
-    { label: 'LinkedIn', href: '#' },
-    { label: 'GitHub', href: '#' },
-    { label: 'Discord', href: '#' },
+    { label: 'Facebook', href: 'https://www.facebook.com/daeilsystems/' },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/company/14623938' },
+    { label: 'YouTube', href: 'https://www.youtube.com/channel/UCdt-FbeboSTxAlcYuW62j6w' },
+    { label: 'Instagram', href: 'https://www.instagram.com/daeilsystems/' },
   ];
 
   return (
@@ -54,10 +54,10 @@ export default function Footer({ setCursorVariant }: FooterProps) {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h3 className="text-3xl font-bold mb-4">AMATERASU</h3>
+              <h3 className="text-3xl font-bold mb-4">DAEIL SYSTEMS</h3>
               <p className="text-sm opacity-70 leading-relaxed mb-6">
-                Transforming mental healthcare through advanced AI technology.
-                Making support accessible to everyone, everywhere.
+                Pioneering vibration isolation technology since 1993.
+                Empowering precision and discovery through innovative engineering solutions.
               </p>
               <div className="flex gap-4">
                 {socialLinks.map((social, index) => (
@@ -188,7 +188,7 @@ export default function Footer({ setCursorVariant }: FooterProps) {
           <div className="max-w-2xl mx-auto text-center">
             <h4 className="text-2xl font-bold mb-4">Stay Updated</h4>
             <p className="text-sm opacity-70 mb-6">
-              Subscribe to our newsletter for the latest updates on mental health technology
+              Subscribe to our newsletter for the latest updates on vibration isolation technology
             </p>
             <div className="flex gap-4 max-w-md mx-auto">
               <input
@@ -199,7 +199,7 @@ export default function Footer({ setCursorVariant }: FooterProps) {
                 onMouseLeave={() => setCursorVariant('default')}
               />
               <motion.button
-                className="px-6 py-3 bg-white text-[#183969] font-medium hover:bg-opacity-90 transition-all"
+                className="px-6 py-3 bg-white text-[#1a1a1a] font-medium hover:bg-opacity-90 transition-all"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onMouseEnter={() => setCursorVariant('hover')}
@@ -219,9 +219,9 @@ export default function Footer({ setCursorVariant }: FooterProps) {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm opacity-60"
         >
-          <p>© 2025 Amaterasu. All rights reserved.</p>
+          <p>© 2025 DAEIL SYSTEMS CO., LTD. All rights reserved.</p>
           <p className="text-xs">
-            Mental health support • AI technology • Privacy-first approach
+            Vibration Isolation • Precision Engineering • Since 1993
           </p>
         </motion.div>
       </div>

@@ -89,7 +89,7 @@ export default function Newsroom({ setCursorVariant }: NewsroomProps) {
               onMouseLeave={() => setCursorVariant('default')}
             >
               <div className="flex items-center gap-3 mb-4">
-                <span className="px-3 py-1 bg-gradient-to-r from-[#183969]/20 to-[#75cdd6]/20 border border-white/20 rounded-full text-xs tracking-wider">
+                <span className="px-3 py-1 bg-gradient-to-r from-[#1a1a1a]/20 to-[#75cdd6]/20 border border-white/20 rounded-full text-xs tracking-wider">
                   {news.tag}
                 </span>
                 <span className="text-xs opacity-60">{news.date}</span>

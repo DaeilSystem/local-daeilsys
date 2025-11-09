@@ -10,18 +10,18 @@ interface GuidingPrinciplesProps {
 const principles = [
   {
     number: '01',
-    title: 'SYNERGY WITH NATURE',
-    description: 'We closely partner with nature and deeply advocate for a relationship that embodies not only coexistence synergies within our innovation, but also maximizes optimal care and sustainable use of resources to only as fundamentally required.',
+    title: 'PRECISION ENGINEERING',
+    description: 'We pursue absolute precision in every aspect of our vibration isolation systems. From design to manufacturing, our commitment to engineering excellence ensures that every DVIA product meets the highest standards of performance and reliability for nanoscale applications.',
   },
   {
     number: '02',
-    title: 'DYNAMIC DIVERSITY',
-    description: 'We move away from traditional categorical approaches to mental health, care and progress. We challenge the constraints presented by categorical label, and we embrace the complexity associated with this.',
+    title: 'CUSTOMER-CENTRIC INNOVATION',
+    description: 'We listen to our customers and understand their unique challenges. Our innovation is driven by real-world applications and feedback, ensuring that every product we develop solves actual problems faced by researchers and engineers in precision industries.',
   },
   {
     number: '03',
-    title: 'PIONEERING EVOLUTION',
-    description: 'We are dedicated to advancing the state of the art before it arrives, ensuring our innovations stay ahead of life\'s challenges. By anticipating needs and championing continuous growth, we empower individuals with tools that unlock their future potential.',
+    title: 'CONTINUOUS ADVANCEMENT',
+    description: 'We never stop improving. Since 1993, we have continuously refined our passive vibration isolation technology, pushing the boundaries of what\'s possible at ultra-low frequencies. Our dedication to R&D keeps us at the forefront of vibration control technology.',
   },
 ];
 
@@ -72,8 +72,9 @@ export default function GuidingPrinciples({ setCursorVariant }: GuidingPrinciple
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-base md:text-lg opacity-80 max-w-3xl"
           >
-            Through the seamless integration of our 5 guiding principles, we set in
-            motion our relentless culture, focus, and ethics.
+            Through the seamless integration of our core principles, we deliver
+            world-class vibration isolation solutions that empower breakthrough
+            discoveries in science and precision manufacturing.
           </motion.p>
         </motion.div>
 

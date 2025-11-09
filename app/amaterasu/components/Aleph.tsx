@@ -26,7 +26,7 @@ export default function Aleph({ setCursorVariant }: AlephProps) {
       {/* Gradient Background */}
       <motion.div
         style={{ y: backgroundY }}
-        className="absolute inset-0 bg-gradient-to-b from-[#183969] via-[#2a5084] to-[#183969] opacity-50"
+        className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-[#2a2a2a] to-[#0a0a0a] opacity-50"
       />
 
       {/* Animated Grid */}
@@ -102,7 +102,7 @@ export default function Aleph({ setCursorVariant }: AlephProps) {
           transition={{ duration: 0.8 }}
           className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight"
         >
-          Project Aleph
+          Next-Generation DVIA
         </motion.h2>
 
         {/* Description */}
@@ -113,9 +113,9 @@ export default function Aleph({ setCursorVariant }: AlephProps) {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-xl md:text-2xl opacity-80 leading-relaxed mb-12 max-w-4xl mx-auto"
         >
-          Our next-generation AI system represents a quantum leap in mental health technology.
-          Aleph combines advanced neural networks with deep emotional intelligence to provide
-          unprecedented levels of personalized support and understanding.
+          Our next-generation vibration isolation systems represent a quantum leap in precision control technology.
+          Combining advanced materials science with intelligent damping algorithms to deliver
+          unprecedented levels of isolation performance across all frequency ranges.
         </motion.p>
 
         {/* Features Grid */}
@@ -128,16 +128,16 @@ export default function Aleph({ setCursorVariant }: AlephProps) {
         >
           {[
             {
-              title: 'Advanced NLP',
-              description: 'Understanding nuance and context like never before',
+              title: 'Active-Passive Hybrid',
+              description: 'Combining passive and active isolation for optimal performance',
             },
             {
-              title: 'Emotional AI',
-              description: 'Detecting and responding to emotional states in real-time',
+              title: 'Smart Damping',
+              description: 'Real-time adaptive control responding to vibration conditions',
             },
             {
-              title: 'Predictive Care',
-              description: 'Anticipating needs before they become critical',
+              title: 'Sub-Hertz Isolation',
+              description: 'Pushing boundaries with isolation below 0.5Hz frequency',
             },
           ].map((feature, index) => (
             <motion.div
@@ -165,22 +165,22 @@ export default function Aleph({ setCursorVariant }: AlephProps) {
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
           <motion.button
-            className="px-10 py-5 bg-white text-[#183969] font-bold tracking-wide hover:bg-opacity-90 transition-all duration-300"
+            className="px-10 py-5 bg-white text-[#1a1a1a] font-bold tracking-wide hover:bg-opacity-90 transition-all duration-300"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onMouseEnter={() => setCursorVariant('hover')}
             onMouseLeave={() => setCursorVariant('default')}
           >
-            JOIN THE WAITLIST
+            REQUEST INFORMATION
           </motion.button>
           <motion.button
-            className="px-10 py-5 border-2 border-white font-bold tracking-wide hover:bg-white hover:text-[#183969] transition-all duration-300"
+            className="px-10 py-5 border-2 border-white font-bold tracking-wide hover:bg-white hover:text-[#1a1a1a] transition-all duration-300"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onMouseEnter={() => setCursorVariant('hover')}
             onMouseLeave={() => setCursorVariant('default')}
           >
-            LEARN MORE
+            TECHNICAL SPECS
           </motion.button>
         </motion.div>
 
@@ -192,7 +192,7 @@ export default function Aleph({ setCursorVariant }: AlephProps) {
           transition={{ duration: 1, delay: 1 }}
           className="mt-12 text-sm tracking-wider opacity-60"
         >
-          Coming 2025 • Limited Beta Access
+          Coming 2026 • R&D in Progress
         </motion.p>
       </motion.div>
 
