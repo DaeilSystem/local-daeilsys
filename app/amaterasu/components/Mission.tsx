@@ -25,33 +25,39 @@ export default function Mission({ setCursorVariant }: MissionProps) {
       onMouseEnter={() => setCursorVariant('hover')}
       onMouseLeave={() => setCursorVariant('default')}
     >
-      {/* Mission Header */}
-      <div className="max-w-7xl w-full mx-auto text-center">
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="text-6xl md:text-7xl lg:text-8xl font-bold mb-20"
-        >
-          MISSION
-        </motion.h2>
-      </div>
+      <div className="max-w-7xl w-full mx-auto">
+        {/* Mission Header */}
+        <div className="text-center mb-20">
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="text-6xl md:text-7xl lg:text-8xl font-bold mb-12"
+          >
+            MISSION
+          </motion.h2>
 
-      {/* Content Section - Quote */}
-      <div className="max-w-4xl w-full mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="bg-gradient-to-br from-[#1e4a7a] to-[#2d5c8f] p-8 md:p-12 rounded-lg"
-        >
-          <p className="text-lg md:text-xl lg:text-2xl leading-relaxed font-light text-white/90">
-            Our minds are a deep reflection of nature, yet our internal world has
-            driven too far from natural order.
-          </p>
-        </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="max-w-4xl mx-auto bg-gradient-to-br from-[#1e4a7a] to-[#2d5c8f] p-10 md:p-14 rounded-lg"
+          >
+            <p className="text-xl md:text-2xl lg:text-3xl leading-relaxed font-light text-white/95 mb-6">
+              To deliver world-class vibration isolation systems that enable
+              nanoscale precision and empower researchers and engineers to push
+              the boundaries of science and technology.
+            </p>
+            <p className="text-base md:text-lg leading-relaxed text-white/80">
+              We achieve this by combining cutting-edge technology with exceptional
+              customer service, providing solutions that meet the most demanding
+              vibration control requirements across electron microscopy, semiconductor
+              metrology, and precision measurement applications.
+            </p>
+          </motion.div>
+        </div>
       </div>
     </motion.section>
   );

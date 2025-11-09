@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import AmaterasuClient from "./amaterasu/client"
+import Client from "./client"
 
 export const metadata: Metadata = {
   title: {
@@ -7,25 +7,23 @@ export const metadata: Metadata = {
     default: "DAEIL SYSTEMS - Advanced Vibration Isolation Solutions",
   },
   description:
-    "Since 1993, DAEIL SYSTEMS specializes in vibration isolation systems for nanoscale precision equipment. We control vibration to empower discovery and precision.",
+    "DAEIL SYSTEMS is a world-class leader in developing and manufacturing state-of-the-art vibration isolation systems for nanoscale measurement equipment. Since 1984, we provide the most excellent performance vibration control systems.",
   keywords: [
     "vibration isolation",
+    "optical tables",
     "active vibration control",
+    "research equipment",
     "DAEIL SYSTEMS",
-    "DVIA-MLP2000",
-    "DVIA-T",
-    "DVIA-P",
+    "DVIA series",
     "electron microscopy",
     "semiconductor metrology",
     "nanotechnology",
-    "precision measurement",
-    "optical tables",
-    "research equipment"
+    "precision measurement"
   ],
   openGraph: {
-    title: "DAEIL SYSTEMS - We Control Vibration to Empower Discovery and Precision",
+    title: "DAEIL SYSTEMS - Advanced Vibration Isolation Solutions",
     description:
-      "Since 1993, DAEIL SYSTEMS specializes in vibration isolation systems for nanoscale precision equipment. Leading provider of active vibration control solutions.",
+      "DAEIL SYSTEMS is a world-class leader in developing and manufacturing state-of-the-art vibration isolation systems for nanoscale measurement equipment. Since 1984, we provide the most excellent performance vibration control systems.",
     type: "website",
     locale: "en_US",
     alternateLocale: "ko_KR",
@@ -35,7 +33,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "DAEIL SYSTEMS - Advanced Vibration Isolation Solutions",
-    description: "We control vibration to empower discovery and precision. Leading provider since 1993.",
+    description: "Leading provider of vibration isolation systems for research, manufacturing, and scientific applications",
   },
   robots: {
     index: true,
@@ -60,7 +58,7 @@ export const metadata: Metadata = {
 export const revalidate = 3600 // ISR: revalidate every hour
 
 const HomePage = () => {
-  return <AmaterasuClient />
+  return <Client />
 }
 
 export default HomePage

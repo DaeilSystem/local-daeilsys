@@ -23,9 +23,9 @@ export default function Hero({ setCursorVariant }: HeroProps) {
       style={{ opacity, scale }}
       className="relative min-h-screen flex items-center justify-center px-8 md:px-12"
     >
-      <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
         {/* Left Column - Heading + Button */}
-        <div className="space-y-8">
+        <div className="lg:col-span-7 space-y-8">
           {/* Main Heading */}
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
@@ -121,18 +121,70 @@ export default function Hero({ setCursorVariant }: HeroProps) {
           </motion.div>
         </div>
 
-        {/* Right Column - Description */}
-        <div>
-          <motion.p
+        {/* Right Column - Product Image */}
+        <div className="lg:col-span-5">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8, rotateY: -20 }}
+            animate={{ opacity: 1, scale: 1, rotateY: 0 }}
+            transition={{ duration: 1.2, delay: 0.4 }}
+            className="relative"
+            style={{ transformStyle: 'preserve-3d' }}
+          >
+            {/* Product Image */}
+            <motion.img
+              src="/dvia-ulf/hero-product.png"
+              alt="DVIA Vibration Isolation System"
+              className="w-full h-auto filter drop-shadow-2xl"
+              animate={{
+                y: [0, -20, 0],
+              }}
+              transition={{
+                duration: 4,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+            />
+
+            {/* Floating Info Cards */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 1 }}
+              className="absolute top-10 -left-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-4"
+            >
+              <div className="text-xs opacity-60 mb-1">Isolation Performance</div>
+              <div className="text-2xl font-bold text-green-400">80-90%</div>
+              <div className="text-xs opacity-60">at 1Hz</div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 1.2 }}
+              className="absolute bottom-10 -right-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-4"
+            >
+              <div className="text-xs opacity-60 mb-1">Since</div>
+              <div className="text-2xl font-bold">1993</div>
+              <div className="text-xs opacity-60">30+ Years</div>
+            </motion.div>
+          </motion.div>
+
+          {/* Description Below Image */}
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.6 }}
-            className="text-base md:text-lg lg:text-xl leading-relaxed opacity-90"
+            transition={{ duration: 1, delay: 0.8 }}
+            className="mt-8 space-y-4"
           >
-            <span className="block text-sm tracking-widest mb-2 opacity-70">
+            <span className="block text-sm tracking-widest opacity-70 uppercase">
               DAEIL SYSTEMS INTRODUCTION
             </span>
-          </motion.p>
+            <p className="text-base leading-relaxed opacity-90">
+              Since 1993, DAEIL SYSTEMS has specialized in vibration isolation systems
+              for nanoscale precision equipment. We are people who think differently,
+              dedicated to creating products that make a difference.
+            </p>
+          </motion.div>
         </div>
       </div>
 
