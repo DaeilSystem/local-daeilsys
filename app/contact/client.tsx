@@ -1,5 +1,6 @@
 "use client"
 
+import { translations } from "@/constants/translations"
 import { useLanguage } from "@/hooks/use-language"
 import { useTheme } from "@/hooks/use-theme"
 import { motion } from "framer-motion"
@@ -12,6 +13,7 @@ export default function Client() {
   const { theme } = useTheme()
 
   const currentLanguage = isInitialized ? language : "en"
+  const t = translations[currentLanguage]
 
   if (!isInitialized) {
     return (

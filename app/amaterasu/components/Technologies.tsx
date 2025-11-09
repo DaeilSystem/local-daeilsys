@@ -7,36 +7,32 @@ interface TechnologiesProps {
   setCursorVariant: (variant: 'default' | 'hover' | 'click') => void;
 }
 
-const technologies = [
+const products = [
   {
-    title: 'Natural Language Processing',
-    description: 'Advanced NLP models that understand context, emotion, and intent in conversations',
-    icon: '01',
+    title: 'ULF',
+    description: 'Ultra-Low Frequency Vibration Isolation System',
+    category: 'Vibration Isolation',
   },
   {
-    title: 'Machine Learning',
-    description: 'Adaptive algorithms that personalize care based on individual patterns and needs',
-    icon: '02',
+    title: 'ML',
+    description: 'Machine Learning Vibration Control Platform',
+    category: 'Smart Technology',
+    highlighted: true,
   },
   {
-    title: 'Cognitive Behavioral Therapy',
-    description: 'Evidence-based therapeutic techniques integrated into AI interactions',
-    icon: '03',
+    title: 'DVIA-T',
+    description: 'Precision Table-Top Vibration Isolator',
+    category: 'Vibration Isolation',
   },
   {
-    title: 'Sentiment Analysis',
-    description: 'Real-time emotion detection to provide appropriate support and interventions',
-    icon: '04',
+    title: 'DVIA-P',
+    description: 'Advanced Passive Vibration Isolation',
+    category: 'Vibration Isolation',
   },
   {
-    title: 'Secure Infrastructure',
-    description: 'Enterprise-grade encryption and privacy protection for all user data',
-    icon: '05',
-  },
-  {
-    title: 'Clinical Integration',
-    description: 'Seamless connection with healthcare providers and existing care systems',
-    icon: '06',
+    title: 'DVIO',
+    description: 'Dynamic Vibration Isolation Optimizer',
+    category: 'Control Systems',
   },
 ];
 
@@ -59,44 +55,23 @@ export default function Technologies({ setCursorVariant }: TechnologiesProps) {
     >
       <motion.div style={{ y }} className="max-w-7xl mx-auto w-full">
         {/* Header */}
-        <div className="text-center mb-20">
-          <motion.span
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="text-sm tracking-[0.3em] opacity-60 mb-4 block"
-          >
-            TECHNOLOGIES
-          </motion.span>
-
+        <div className="mb-20">
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.1 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
+            transition={{ duration: 0.8 }}
+            className="text-6xl md:text-7xl lg:text-8xl font-bold mb-20 text-center"
           >
-            Powered by Innovation
+            ULF
           </motion.h2>
-
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-lg md:text-xl opacity-80 max-w-3xl mx-auto"
-          >
-            Our platform combines multiple cutting-edge technologies to deliver
-            effective, accessible mental health support
-          </motion.p>
         </div>
 
-        {/* Technology Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {technologies.map((tech, index) => (
+        {/* Product Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-6">
+          {products.map((product, index) => (
             <motion.div
-              key={tech.title}
+              key={product.title}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -112,22 +87,18 @@ export default function Technologies({ setCursorVariant }: TechnologiesProps) {
               className="relative group"
             >
               <motion.div
-                className="relative p-8 border border-white/20 hover:border-white/40 transition-all duration-300 h-full"
+                className={`relative p-8 md:p-12 border ${
+                  product.highlighted
+                    ? 'border-blue-400/60 bg-blue-900/20'
+                    : 'border-white/20'
+                } hover:border-white/40 transition-all duration-300 h-full flex items-center justify-center`}
                 whileHover={{ scale: 1.02 }}
               >
-                {/* Number Badge */}
-                <div className="absolute top-6 right-6 text-6xl font-bold opacity-10">
-                  {tech.icon}
-                </div>
-
                 {/* Content */}
-                <div className="relative z-10">
-                  <h3 className="text-2xl font-bold mb-4 leading-tight">
-                    {tech.title}
+                <div className="relative z-10 text-center">
+                  <h3 className="text-4xl md:text-6xl font-bold mb-2 leading-tight">
+                    {product.title}
                   </h3>
-                  <p className="text-sm opacity-70 leading-relaxed">
-                    {tech.description}
-                  </p>
                 </div>
 
                 {/* Hover Effect */}

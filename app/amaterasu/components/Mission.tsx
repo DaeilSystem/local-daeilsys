@@ -1,53 +1,41 @@
 'use client';
 
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 
-interface VisionProps {
+interface MissionProps {
   setCursorVariant: (variant: 'default' | 'hover' | 'click') => void;
 }
 
-export default function Vision({ setCursorVariant }: VisionProps) {
+export default function Mission({ setCursorVariant }: MissionProps) {
   const containerRef = useRef<HTMLElement>(null);
-  const [activeScene, setActiveScene] = useState(0);
-
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ['start end', 'end start'],
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [100, -100]);
   const opacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0]);
 
   return (
     <motion.section
       ref={containerRef}
-      id="vision"
+      id="mission"
+      style={{ opacity }}
       className="relative min-h-screen flex flex-col items-center justify-center px-8 md:px-12 py-24"
       onMouseEnter={() => setCursorVariant('hover')}
       onMouseLeave={() => setCursorVariant('default')}
     >
-      {/* Vision Header */}
+      {/* Mission Header */}
       <div className="max-w-7xl w-full mx-auto text-center">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-6xl md:text-7xl lg:text-8xl font-bold mb-12"
+          className="text-6xl md:text-7xl lg:text-8xl font-bold mb-20"
         >
-          VISION
+          MISSION
         </motion.h2>
-
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-lg md:text-xl lg:text-2xl leading-relaxed max-w-3xl mx-auto mb-20"
-        >
-          VISION TEXT
-        </motion.p>
       </div>
 
       {/* Content Section - Quote */}

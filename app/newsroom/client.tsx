@@ -4,6 +4,7 @@ import { NewsFilters } from "@/components/newsroom/news-filters"
 import { NewsGrid } from "@/components/newsroom/news-grid"
 import { getFeaturedNews, getNewsByCategory, newsArticles } from "@/data/newsroom"
 import { NewsCategory } from "@/data/newsroom-categories"
+import { translations } from "@/constants/translations"
 import { useLanguage } from "@/hooks/use-language"
 import { useTheme } from "@/hooks/use-theme"
 import { filterByTags, searchArticles, sortArticles } from "@/lib/newsroom-utils"
@@ -15,6 +16,7 @@ export default function Client() {
   const { theme } = useTheme()
 
   const currentLanguage = isInitialized ? language : "en"
+  const t = translations[currentLanguage]
 
   // 상태 관리
   const [selectedCategory, setSelectedCategory] = useState<NewsCategory | 'all'>('all')

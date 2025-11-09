@@ -3,61 +3,19 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef, useState } from 'react';
 
-interface StoriesProps {
+interface CaseStudiesProps {
   setCursorVariant: (variant: 'default' | 'hover' | 'click') => void;
 }
 
-const stories = [
-  {
-    name: 'Sarah',
-    issue: 'Delay in Mental Health Support',
-    story: "I've been on a waitlist for months, and every day feels like a battle. The system is so slow to respond, and there's no help for people in immediate crisis.",
-    image: '01',
-  },
-  {
-    name: 'John',
-    issue: 'Inconsistent Diagnoses',
-    story: "Every therapist I see has a different idea of what's wrong with me, but none seem to get it right. It's exhausting to be reassessed constantly without real progress.",
-    image: '02',
-  },
-  {
-    name: 'Emily',
-    issue: 'Lack of Continuity in Care',
-    story: "I've had to switch therapists multiple times, and every time I do, it feels like starting from square one.",
-    image: '03',
-  },
-  {
-    name: 'Alex',
-    issue: 'Cultural Barriers',
-    story: "It's hard to find a therapist who understands my cultural background. I often feel like they don't get the unique pressures I face, which makes it harder to open up.",
-    image: '04',
-  },
-  {
-    name: 'Kevin',
-    issue: 'Stigma Around Mental Health',
-    story: "There's so much stigma around mental health that even when I reach out for help, I feel ashamed. The system doesn't support openness, which makes it harder.",
-    image: '05',
-  },
-  {
-    name: 'Olivia',
-    issue: 'System Playing Catch-Up',
-    story: "The mental health system feels like it's constantly playing catch-up. By the time you get the help you need, it's already too late for so many people.",
-    image: '06',
-  },
-];
-
-export default function Stories({ setCursorVariant }: StoriesProps) {
+export default function CaseStudies({ setCursorVariant }: CaseStudiesProps) {
   const containerRef = useRef<HTMLElement>(null);
-  const [activeIndex, setActiveIndex] = useState(0);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ['start end', 'end start'],
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [50, -50]);
-
-  const nextStory = () => {
+  const opacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0]);
     setActiveIndex((prev) => (prev + 1) % stories.length);
   };
 

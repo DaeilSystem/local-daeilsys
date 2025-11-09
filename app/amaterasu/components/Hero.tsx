@@ -31,7 +31,7 @@ export default function Hero({ setCursorVariant }: HeroProps) {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="text-[13.33vw] md:text-[5.56vw] font-bold leading-[1] tracking-tight"
+            className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.1] tracking-tight"
             style={{ letterSpacing: '-0.025em' }}
           >
             <motion.div
@@ -39,21 +39,35 @@ export default function Hero({ setCursorVariant }: HeroProps) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              Empower
+              WE CONTROL
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
             >
-              your mental
+              VIBRATION TO
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.7 }}
             >
-              health journey
+              EMPOWER
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.9 }}
+            >
+              DISCOVERY AND
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 1.1 }}
+            >
+              PRECISION
             </motion.div>
           </motion.h1>
 
@@ -71,7 +85,7 @@ export default function Hero({ setCursorVariant }: HeroProps) {
               onMouseLeave={() => setCursorVariant('default')}
             >
               <span className="relative z-10 flex items-center gap-3">
-                Start your journey
+                Explore Solutions
                 <svg
                   width="20"
                   height="12"
@@ -88,7 +102,7 @@ export default function Hero({ setCursorVariant }: HeroProps) {
               </span>
               <div className="absolute inset-0 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300" />
               <span className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 text-[#183969] font-semibold transition-opacity duration-300 gap-3">
-                Start your journey
+                Explore Solutions
                 <svg
                   width="20"
                   height="12"
@@ -115,8 +129,9 @@ export default function Hero({ setCursorVariant }: HeroProps) {
             transition={{ duration: 1, delay: 0.6 }}
             className="text-base md:text-lg lg:text-xl leading-relaxed opacity-90"
           >
-            Amaterasu is a physics cognition lab working at the intersection of
-            technology and nature to transform mental health.
+            <span className="block text-sm tracking-widest mb-2 opacity-70">
+              DAEIL SYSTEMS INTRODUCTION
+            </span>
           </motion.p>
         </div>
       </div>

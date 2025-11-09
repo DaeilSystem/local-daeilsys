@@ -18,9 +18,11 @@ import GuidingPrinciples from './components/GuidingPrinciples';
 import Hero from './components/Hero';
 import SoundButton from './components/SoundButton';
 import SplashScreen from './components/SplashScreen';
-import Stories from './components/Stories';
+import CaseStudies from './components/CaseStudies';
 import Technologies from './components/Technologies';
 import Vision from './components/Vision';
+import Mission from './components/Mission';
+import Newsroom from './components/Newsroom';
 import WebGLBackground from './components/WebGLBackground';
 
 export default function AmaterasuClient() {
@@ -39,9 +41,11 @@ export default function AmaterasuClient() {
       const sections = gsap.utils.toArray<HTMLElement>([
         '.hero-section',
         '.vision-section',
-        '.technologies-section',
+        '.mission-section',
         '.principles-section',
-        '.stories-section',
+        '.technologies-section',
+        '.case-studies-section',
+        '.newsroom-section',
         '.aleph-section',
       ]);
 
@@ -159,14 +163,20 @@ export default function AmaterasuClient() {
             <div className="vision-section">
               <Vision setCursorVariant={setCursorVariant} />
             </div>
-            <div className="technologies-section">
-              <Technologies setCursorVariant={setCursorVariant} />
+            <div className="mission-section">
+              <Mission setCursorVariant={setCursorVariant} />
             </div>
             <div className="principles-section">
               <GuidingPrinciples setCursorVariant={setCursorVariant} />
             </div>
-            <div className="stories-section">
-              <Stories setCursorVariant={setCursorVariant} />
+            <div className="technologies-section">
+              <Technologies setCursorVariant={setCursorVariant} />
+            </div>
+            <div className="case-studies-section">
+              <CaseStudies setCursorVariant={setCursorVariant} />
+            </div>
+            <div className="newsroom-section">
+              <Newsroom setCursorVariant={setCursorVariant} />
             </div>
             <div className="aleph-section">
               <Aleph setCursorVariant={setCursorVariant} />

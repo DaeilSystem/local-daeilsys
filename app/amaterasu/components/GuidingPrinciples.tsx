@@ -10,28 +10,18 @@ interface GuidingPrinciplesProps {
 const principles = [
   {
     number: '01',
-    title: 'Human-Centered Design',
-    description: 'Every feature is built with empathy, focusing on user needs and experiences above all else.',
+    title: 'SYNERGY WITH NATURE',
+    description: 'We closely partner with nature and deeply advocate for a relationship that embodies not only coexistence synergies within our innovation, but also maximizes optimal care and sustainable use of resources to only as fundamentally required.',
   },
   {
     number: '02',
-    title: 'Evidence-Based Approach',
-    description: 'Our methods are grounded in clinical research and proven therapeutic practices.',
+    title: 'DYNAMIC DIVERSITY',
+    description: 'We move away from traditional categorical approaches to mental health, care and progress. We challenge the constraints presented by categorical label, and we embrace the complexity associated with this.',
   },
   {
     number: '03',
-    title: 'Privacy & Security',
-    description: 'User trust is paramount. We maintain the highest standards of data protection.',
-  },
-  {
-    number: '04',
-    title: 'Continuous Innovation',
-    description: 'We constantly evolve our technology to provide better, more effective care.',
-  },
-  {
-    number: '05',
-    title: 'Accessibility First',
-    description: 'Mental health support should be available to everyone, regardless of barriers.',
+    title: 'PIONEERING EVOLUTION',
+    description: 'We are dedicated to advancing the state of the art before it arrives, ensuring our innovations stay ahead of life\'s challenges. By anticipating needs and championing continuous growth, we empower individuals with tools that unlock their future potential.',
   },
 ];
 
@@ -56,24 +46,23 @@ export default function GuidingPrinciples({ setCursorVariant }: GuidingPrinciple
           style={{ y }}
           className="mb-20"
         >
-          <motion.span
+          <motion.h2
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="text-sm tracking-[0.3em] opacity-60 mb-4 block"
+            className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6"
           >
-            GUIDING PRINCIPLES
-          </motion.span>
-
+            Guiding
+          </motion.h2>
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 max-w-4xl"
+            className="text-5xl md:text-6xl lg:text-7xl font-bold mb-12"
           >
-            The Foundation of Our Work
+            Principles
           </motion.h2>
 
           <motion.p
@@ -81,9 +70,10 @@ export default function GuidingPrinciples({ setCursorVariant }: GuidingPrinciple
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-lg md:text-xl opacity-80 max-w-3xl"
+            className="text-base md:text-lg opacity-80 max-w-3xl"
           >
-            These core principles guide every decision we make and every line of code we write
+            Through the seamless integration of our 5 guiding principles, we set in
+            motion our relentless culture, focus, and ethics.
           </motion.p>
         </motion.div>
 
