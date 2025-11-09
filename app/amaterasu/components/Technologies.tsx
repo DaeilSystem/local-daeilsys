@@ -7,35 +7,21 @@ interface TechnologiesProps {
   setCursorVariant: (variant: 'default' | 'hover' | 'click') => void;
 }
 
-const products = [
+const technologies = [
   {
     title: 'DVIA-MLP2000',
-    subtitle: 'Custom Active System for SEM',
-    description: 'World\'s most advanced active vibration isolation system for electron microscopes',
-    tagline: '80-90% isolation at 1Hz',
-    highlighted: true,
-    image: '/dvia-ulf/hero-product.png',
+    description: 'Ultra-low frequency passive vibration isolation table achieving 80-90% isolation at 1Hz for nanoscale precision.',
+    icon: '▲',
   },
   {
-    title: 'DVIA-T',
-    subtitle: 'Tabletop Active Platform',
-    description: 'Compact, plug-and-play active isolation for microscopy',
-    tagline: '40-80% isolation at 1Hz',
-    image: '/dvia-ulf/dvia-ulf-front-view.png',
+    title: 'DVIA-T Series',
+    description: 'Compact vibration isolation tables designed for optical and precision measurement equipment.',
+    icon: '▲',
   },
   {
-    title: 'DVIA-P',
-    subtitle: 'Pneumatic Active System',
-    description: 'Designed for semiconductor metrology equipment',
-    tagline: '40-70% isolation at 2Hz',
-    image: '/dvia-ulf/dvia-ulf-system.png',
-  },
-  {
-    title: 'DVIO',
-    subtitle: 'Optical Tables',
-    description: 'Research and scientific-grade optical table systems',
-    tagline: 'Precision surfaces',
-    image: '/dvia-ulf/dvia-ulf-main.png',
+    title: 'DVIA-P Series',
+    description: 'High-performance passive isolators for electron microscopes and sensitive analytical instruments.',
+    icon: '▲',
   },
 ];
 
@@ -54,50 +40,83 @@ export default function Technologies({ setCursorVariant }: TechnologiesProps) {
     <motion.section
       ref={containerRef}
       id="technologies"
-      className="relative h-screen flex items-center justify-center px-6 md:px-12"
+      className="relative min-h-screen flex items-center justify-center px-6 md:px-12 py-24 bg-gradient-to-b from-white/5 via-white/10 to-transparent"
     >
-      <motion.div style={{ y }} className="max-w-7xl mx-auto w-full">
+      <div className="max-w-7xl mx-auto w-full">
         {/* Header */}
         <div className="mb-20 text-center">
-          <motion.span
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="text-sm tracking-[0.3em] opacity-60 mb-4 block uppercase"
-          >
-            Product Portfolio
-          </motion.span>
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.1 }}
-            className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6"
+            transition={{ duration: 0.8 }}
+            className="text-4xl md:text-5xl lg:text-6xl font-light mb-8"
+            style={{ fontWeight: 300 }}
           >
-            Advanced Vibration Isolation Systems
+            Our Product Lineup
           </motion.h2>
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-lg md:text-xl opacity-80 max-w-3xl mx-auto"
           >
-            Industry-leading solutions for electron microscopy, semiconductor metrology,
-            and precision measurement applications
-          </motion.p>
+            <span className="text-xs tracking-[0.3em] uppercase opacity-60">
+              DVIA Series
+            </span>
+          </motion.div>
         </div>
 
-        {/* Product Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {products.map((product, index) => (
+        {/* Description */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="max-w-3xl mx-auto mb-20"
+        >
+          <p className="text-base md:text-lg leading-relaxed opacity-80 text-center">
+            DAEIL SYSTEMS pioneered ultra-low frequency passive vibration isolation technology
+            since 1993. Our DVIA series delivers exceptional isolation performance from 1Hz,
+            protecting nanoscale precision equipment from environmental vibrations without
+            requiring external power or compressed air.
+          </p>
+        </motion.div>
+
+        {/* Triangle Icon */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="flex justify-center mb-16"
+        >
+          <div className="relative w-48 h-48">
+            <svg viewBox="0 0 100 100" className="w-full h-full">
+              <defs>
+                <linearGradient id="triangleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#183969" />
+                  <stop offset="100%" stopColor="#75cdd6" />
+                </linearGradient>
+              </defs>
+              <polygon
+                points="50,10 90,80 10,80"
+                fill="url(#triangleGradient)"
+                opacity="0.6"
+              />
+            </svg>
+          </div>
+        </motion.div>
+
+        {/* Technologies Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          {technologies.map((tech, index) => (
             <motion.div
-              key={product.title}
+              key={tech.title}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
+              transition={{ duration: 0.6, delay: 0.6 + index * 0.1 }}
               onMouseEnter={() => {
                 setHoveredIndex(index);
                 setCursorVariant('hover');
@@ -109,129 +128,59 @@ export default function Technologies({ setCursorVariant }: TechnologiesProps) {
               className="relative group"
             >
               <motion.div
-                className={`relative overflow-hidden border ${
-                  product.highlighted
-                    ? 'border-blue-400/60 bg-gradient-to-br from-blue-900/30 to-blue-800/20'
-                    : 'border-white/20 bg-gradient-to-br from-white/5 to-transparent'
-                } hover:border-white/50 transition-all duration-300 h-full flex flex-col`}
-                whileHover={{ scale: 1.02 }}
+                className="relative border border-white/20 hover:border-white/40 transition-all duration-500 p-8 md:p-10 cursor-pointer bg-gradient-to-br from-white/5 to-transparent"
+                whileHover={{ scale: 1.02, y: -5 }}
               >
-                {/* Product Image */}
-                <div className="relative h-64 flex items-center justify-center p-8 bg-gradient-to-b from-white/5 to-transparent">
-                  <motion.img
-                    src={product.image}
-                    alt={product.title}
-                    className="max-h-full w-auto object-contain filter drop-shadow-2xl"
-                    initial={{ y: 20, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8, delay: index * 0.1 }}
-                    whileHover={{
-                      y: -10,
-                      rotateY: 5,
-                      transition: { duration: 0.3 }
-                    }}
-                    style={{
-                      transformStyle: 'preserve-3d',
-                    }}
-                  />
-                  {product.highlighted && (
-                    <div className="absolute top-4 right-4">
-                      <span className="inline-block px-3 py-1 bg-blue-500/20 border border-blue-400/30 rounded-full text-xs tracking-wider backdrop-blur-sm">
-                        FEATURED
-                      </span>
-                    </div>
-                  )}
+                {/* Triangle Icon */}
+                <div className="mb-6">
+                  <svg viewBox="0 0 50 50" className="w-12 h-12 opacity-60">
+                    <defs>
+                      <linearGradient id={`gradient-${index}`} x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stopColor="#183969" />
+                        <stop offset="100%" stopColor="#75cdd6" />
+                      </linearGradient>
+                    </defs>
+                    <polygon
+                      points="25,5 45,40 5,40"
+                      fill={`url(#gradient-${index})`}
+                      opacity="0.8"
+                    />
+                  </svg>
                 </div>
 
-                {/* Content */}
-                <div className="relative z-10 p-8 md:p-10 flex-1 flex flex-col justify-between">
-                  <div>
-                    <div className="mb-6">
-                      <h3 className="text-3xl md:text-4xl font-bold mb-2 leading-tight">
-                        {product.title}
-                      </h3>
-                      <p className="text-sm md:text-base opacity-60 mb-4">{product.subtitle}</p>
-                    </div>
-                    <p className="text-base md:text-lg leading-relaxed opacity-80 mb-4">
-                      {product.description}
-                    </p>
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                      <span className="text-sm font-medium text-green-400">{product.tagline}</span>
-                    </div>
-                  </div>
+                <h3 className="text-xl md:text-2xl font-medium mb-4 group-hover:text-[#75cdd6] transition-colors flex items-start gap-1">
+                  <span className="flex flex-col">
+                    {tech.title}
+                  </span>
+                  <sup className="text-xs opacity-60 mt-1">{index + 1}</sup>
+                </h3>
+                <p className="text-sm md:text-base leading-relaxed opacity-70">
+                  {tech.description}
+                </p>
 
-                  {/* Learn More Link */}
-                  <div className="mt-6 pt-6 border-t border-white/10">
-                    <div className="flex items-center gap-2 text-sm opacity-60 hover:opacity-100 transition-opacity cursor-pointer group/link">
-                      <span>Learn more</span>
-                      <svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        className="transition-transform group-hover/link:translate-x-1"
-                      >
-                        <path
-                          d="M5 12H19M19 12L12 5M19 12L12 19"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </div>
-                  </div>
+                {/* Plus Icon */}
+                <div className="absolute top-8 right-8">
+                  <motion.div
+                    animate={{ rotate: hoveredIndex === index ? 45 : 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="text-2xl opacity-40"
+                  >
+                    +
+                  </motion.div>
                 </div>
 
-                {/* Hover Effect */}
+                {/* Hover Overlay */}
                 <motion.div
-                  className="absolute inset-0 bg-white/5"
+                  className="absolute inset-0 bg-gradient-to-br from-[#183969]/10 to-[#75cdd6]/10"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: hoveredIndex === index ? 1 : 0 }}
                   transition={{ duration: 0.3 }}
                 />
-
-                {/* Corner Decoration */}
-                <svg
-                  className="absolute bottom-0 right-0 w-16 h-16 opacity-20"
-                  viewBox="0 0 64 64"
-                  fill="none"
-                >
-                  <motion.path
-                    d="M 64 0 L 64 64 L 0 64"
-                    stroke="white"
-                    strokeWidth="1"
-                    initial={{ pathLength: 0 }}
-                    animate={{ pathLength: hoveredIndex === index ? 1 : 0 }}
-                    transition={{ duration: 0.5 }}
-                  />
-                </svg>
               </motion.div>
             </motion.div>
           ))}
         </div>
-
-        {/* Bottom CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          className="text-center mt-16"
-        >
-          <motion.button
-            className="px-8 py-4 border border-white hover:bg-white hover:text-[#183969] transition-all duration-300"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            onMouseEnter={() => setCursorVariant('hover')}
-            onMouseLeave={() => setCursorVariant('default')}
-          >
-            EXPLORE OUR TECHNOLOGY
-          </motion.button>
-        </motion.div>
-      </motion.div>
+      </div>
     </motion.section>
   );
 }

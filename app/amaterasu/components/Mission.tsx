@@ -21,43 +21,98 @@ export default function Mission({ setCursorVariant }: MissionProps) {
       ref={containerRef}
       id="mission"
       style={{ opacity }}
-      className="relative min-h-screen flex flex-col items-center justify-center px-8 md:px-12 py-24"
-      onMouseEnter={() => setCursorVariant('hover')}
-      onMouseLeave={() => setCursorVariant('default')}
+      className="relative min-h-screen flex flex-col items-center justify-center px-8 md:px-12 py-24 bg-gradient-to-b from-transparent via-white/5 to-transparent"
     >
-      <div className="max-w-7xl w-full mx-auto">
-        {/* Mission Header */}
-        <div className="text-center mb-20">
-          <motion.h2
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="text-6xl md:text-7xl lg:text-8xl font-bold mb-12"
-          >
-            MISSION
-          </motion.h2>
+      {/* Decorative Circles */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 0.1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 2 }}
+          className="absolute top-20 left-10 w-[400px] h-[400px] border border-white/20 rounded-full"
+        />
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 0.1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 2, delay: 0.2 }}
+          className="absolute bottom-20 right-10 w-[500px] h-[500px] border border-white/20 rounded-full"
+        />
+      </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="max-w-4xl mx-auto bg-gradient-to-br from-[#1e4a7a] to-[#2d5c8f] p-10 md:p-14 rounded-lg"
-          >
-            <p className="text-xl md:text-2xl lg:text-3xl leading-relaxed font-light text-white/95 mb-6">
-              To deliver world-class vibration isolation systems that enable
-              nanoscale precision and empower researchers and engineers to push
-              the boundaries of science and technology.
-            </p>
-            <p className="text-base md:text-lg leading-relaxed text-white/80">
-              We achieve this by combining cutting-edge technology with exceptional
-              customer service, providing solutions that meet the most demanding
-              vibration control requirements across electron microscopy, semiconductor
-              metrology, and precision measurement applications.
-            </p>
-          </motion.div>
-        </div>
+      <div className="max-w-6xl w-full mx-auto relative z-10">
+        {/* Mission Label */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-12"
+        >
+          <span className="text-xs tracking-[0.3em] uppercase opacity-60">
+            Our Mission
+          </span>
+        </motion.div>
+
+        {/* Mission Heading */}
+        <motion.h2
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.1 }}
+          className="text-5xl md:text-6xl lg:text-7xl font-bold text-center mb-12"
+        >
+          MISSION
+        </motion.h2>
+
+        {/* Mission Content */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="text-center"
+        >
+          <p className="text-xl md:text-2xl lg:text-3xl leading-relaxed font-light opacity-90 max-w-5xl mx-auto">
+            To deliver world-class vibration isolation solutions that enable
+            breakthrough scientific discoveries and precision manufacturing,
+            backed by exceptional engineering and unwavering customer support.
+          </p>
+        </motion.div>
+
+        {/* Key Focus Areas */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8"
+        >
+          {[
+            { label: 'Innovation', subtitle: 'Advanced Technology' },
+            { label: 'Quality', subtitle: 'Zero Defects' },
+            { label: 'Support', subtitle: 'Long-term Partnership' },
+          ].map((area, index) => (
+            <motion.div
+              key={area.label}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.5 + index * 0.1 }}
+              className="relative group"
+            >
+              <div className="border-2 border-white/30 p-8 hover:border-white/60 transition-all duration-300 text-center">
+                <div className="text-2xl font-bold mb-2">
+                  {area.label}
+                </div>
+                <div className="text-sm uppercase tracking-wider opacity-60">
+                  {area.subtitle}
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
     </motion.section>
   );

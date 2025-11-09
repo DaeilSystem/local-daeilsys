@@ -188,7 +188,7 @@ export default function Hero({ setCursorVariant }: HeroProps) {
         </div>
       </div>
 
-      {/* Divider SVG */}
+      {/* Divider SVG with drawing animation */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -201,10 +201,16 @@ export default function Hero({ setCursorVariant }: HeroProps) {
           xmlns="http://www.w3.org/2000/svg"
           className="w-full h-auto"
         >
-          <path
+          <motion.path
             d="M1.00003 1332L1.00006 726.469C1.00007 691.615 18.8257 659.182 48.25 640.5V640.5C77.6744 621.818 95.5 589.385 95.5 554.531L95.5 0"
             stroke="currentColor"
             strokeWidth="1"
+            initial={{ pathLength: 0, opacity: 0 }}
+            animate={{ pathLength: 1, opacity: 1 }}
+            transition={{
+              pathLength: { duration: 2, delay: 1.5, ease: "easeInOut" },
+              opacity: { duration: 0.3, delay: 1.5 }
+            }}
           />
         </svg>
       </motion.div>
@@ -221,8 +227,23 @@ export default function Hero({ setCursorVariant }: HeroProps) {
           transition={{ duration: 1.5, repeat: Infinity }}
           className="flex items-center gap-3"
         >
-          <span className="text-xs tracking-[0.16em] uppercase opacity-60">
-            Scroll to explore
+          <span className="text-xs tracking-[0.16em] uppercase flex gap-1">
+            {'Scroll to explore'.split('').map((char, index) => (
+              <motion.span
+                key={index}
+                initial={{ opacity: 0.3 }}
+                animate={{ opacity: 0.6 }}
+                transition={{
+                  duration: 0.5,
+                  delay: 1.5 + index * 0.03,
+                  repeat: Infinity,
+                  repeatType: "reverse",
+                  repeatDelay: 3
+                }}
+              >
+                {char === ' ' ? '\u00A0' : char}
+              </motion.span>
+            ))}
           </span>
           <svg
             width="20"
