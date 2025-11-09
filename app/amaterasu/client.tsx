@@ -12,18 +12,17 @@ if (typeof window !== 'undefined') {
 
 // Components
 import Aleph from './components/Aleph';
+import CaseStudies from './components/CaseStudies';
 import CustomCursor from './components/CustomCursor';
-import Footer from './components/Footer';
 import GuidingPrinciples from './components/GuidingPrinciples';
 import Hero from './components/Hero';
-import SoundButton from './components/SoundButton';
-import SplashScreen from './components/SplashScreen';
-import CaseStudies from './components/CaseStudies';
-import Technologies from './components/Technologies';
-import ProductsHorizontal from './components/ProductsHorizontal';
-import Vision from './components/Vision';
 import Mission from './components/Mission';
 import Newsroom from './components/Newsroom';
+import ProductsHorizontal from './components/ProductsHorizontal';
+import SoundButton from './components/SoundButton';
+import SplashScreen from './components/SplashScreen';
+import Technologies from './components/Technologies';
+import Vision from './components/Vision';
 import WebGLBackground from './components/WebGLBackground';
 
 export default function AmaterasuClient() {
@@ -186,7 +185,7 @@ export default function AmaterasuClient() {
             <div className="aleph-section">
               <Aleph setCursorVariant={setCursorVariant} />
             </div>
-            <Footer setCursorVariant={setCursorVariant} />
+            {/* <Footer setCursorVariant={setCursorVariant} /> */}
           </main>
         </>
       )}
