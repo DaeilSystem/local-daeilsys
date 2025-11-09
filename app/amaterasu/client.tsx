@@ -1,9 +1,9 @@
 'use client';
 
-import { useEffect, useState, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useEffect, useState } from 'react';
 
 // Register GSAP plugins
 if (typeof window !== 'undefined') {
@@ -11,18 +11,17 @@ if (typeof window !== 'undefined') {
 }
 
 // Components
-import SplashScreen from './components/SplashScreen';
-import WebGLBackground from './components/WebGLBackground';
-import CustomCursor from './components/CustomCursor';
-import SoundButton from './components/SoundButton';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Vision from './components/Vision';
-import Technologies from './components/Technologies';
-import GuidingPrinciples from './components/GuidingPrinciples';
-import Stories from './components/Stories';
 import Aleph from './components/Aleph';
+import CustomCursor from './components/CustomCursor';
 import Footer from './components/Footer';
+import GuidingPrinciples from './components/GuidingPrinciples';
+import Hero from './components/Hero';
+import SoundButton from './components/SoundButton';
+import SplashScreen from './components/SplashScreen';
+import Stories from './components/Stories';
+import Technologies from './components/Technologies';
+import Vision from './components/Vision';
+import WebGLBackground from './components/WebGLBackground';
 
 export default function AmaterasuClient() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -150,7 +149,7 @@ export default function AmaterasuClient() {
       {/* Main Content */}
       {!showSplash && (
         <>
-          <Header setCursorVariant={setCursorVariant} />
+          {/* <Header setCursorVariant={setCursorVariant} /> */}
           <SoundButton setCursorVariant={setCursorVariant} />
 
           <main className="relative z-10">
