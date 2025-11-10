@@ -26,7 +26,6 @@ export const getProductsMenuItems = (language: "en" | "ko"): ProductsMenuItems =
         { key: "dvia-mb", label: t.dviaMB, href: "/products/active-vibration-systems/dvia-mb" },
         { key: "dvia-ml", label: t.dviaML, href: "/products/active-vibration-systems/dvia-ml" },
         { key: "dvia-mlp1000", label: "DVIA-MLP1000", href: "/products/active-vibration-systems/dvia-mlp1000" },
-        { key: "dvia-mlp2000", label: "DVIA-MLP2000", href: "/products/active-vibration-systems/dvia-mlp2000" },
         { key: "dvia-mo", label: t.dviaMO, href: "/products/active-vibration-systems/dvia-mo" },
         { key: "dvia-u", label: t.dviaU, href: "/products/active-vibration-systems/dvia-u" },
         { key: "dvia-ud", label: t.dviaUD, href: "/products/active-vibration-systems/dvia-ud" },

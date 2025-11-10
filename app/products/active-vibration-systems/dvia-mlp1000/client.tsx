@@ -9,8 +9,65 @@ export default function DviaMLP2000Client() {
 
   useEffect(() => {
     setMounted(true)
-    // ScrollMagic 등의 애니메이션 초기화는 여기서
-    // 실제 사이트의 JS 로직을 추가할 수 있습니다
+
+    // ScrollMagic 초기화
+    const initScrollAnimations = () => {
+      if (typeof window !== "undefined" && (window as any).ScrollMagic) {
+        const controller = new (window as any).ScrollMagic.Controller()
+
+        // Motion Sample Animation (120 frames)
+        const motionImg = document.querySelector(".img-motion") as HTMLImageElement
+        if (motionImg) {
+          const frameCount = 120
+
+          new (window as any).ScrollMagic.Scene({
+            triggerElement: "#trigger",
+            triggerHook: 0,
+            duration: "200%",
+          })
+            .setPin(".pinned")
+            .addTo(controller)
+            .on("progress", function (e: any) {
+              const frame = Math.ceil(e.progress * frameCount)
+              if (frame >= 1 && frame <= frameCount) {
+                const paddedFrame = String(frame).padStart(4, "0")
+                motionImg.src = `/products/dvia-mlp2000/assets/images/motion-sample/dvia-mlp2000-motion-${paddedFrame}.jpg`
+              }
+            })
+        }
+
+        // Disassembly Animation (61 frames: 0000-0060)
+        const disassemblyImg = document.querySelector(".img-motion2") as HTMLImageElement
+        if (disassemblyImg) {
+          const frameCount = 60
+
+          new (window as any).ScrollMagic.Scene({
+            triggerElement: "#trigger2",
+            triggerHook: 0,
+            duration: "200%",
+          })
+            .setPin(".pinned2")
+            .addTo(controller)
+            .on("progress", function (e: any) {
+              const frame = Math.floor(e.progress * frameCount)
+              if (frame >= 0 && frame <= frameCount) {
+                const paddedFrame = String(frame).padStart(4, "0")
+                disassemblyImg.src = `/products/dvia-mlp2000/assets/images/motion-disassembly/dvia-mlp2000-disassembly-${paddedFrame}.jpg`
+              }
+            })
+        }
+      }
+    }
+
+    // ScrollMagic 로딩 대기
+    const checkScrollMagic = setInterval(() => {
+      if ((window as any).ScrollMagic) {
+        clearInterval(checkScrollMagic)
+        initScrollAnimations()
+      }
+    }, 100)
+
+    return () => clearInterval(checkScrollMagic)
   }, [])
 
   // 서버 렌더링 시에는 기본값(영어) 사용
