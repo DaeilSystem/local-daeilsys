@@ -9,7 +9,7 @@ interface TechnologiesProps {
 
 const technologies = [
   {
-    title: 'DVIA-MLP2000',
+    title: 'DVIA-MLP1000',
     description: 'Ultra-low frequency passive vibration isolation table achieving 80-90% isolation at 1Hz for nanoscale precision.',
     icon: '▲',
   },

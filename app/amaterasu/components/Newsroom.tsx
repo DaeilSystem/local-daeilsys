@@ -65,7 +65,7 @@ export default function Newsroom({ setCursorVariant }: NewsroomProps) {
           {[
             {
               date: '2024',
-              title: 'DVIA-MLP2000 Sets New Standard',
+              title: 'DVIA-MLP1000 Sets New Standard',
               description:
                 'Our flagship ultra-low frequency passive isolation system achieves unprecedented 80-90% isolation at 1Hz.',
               tag: 'Product',

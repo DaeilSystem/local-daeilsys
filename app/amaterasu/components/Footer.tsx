@@ -10,7 +10,7 @@ export default function Footer({ setCursorVariant }: FooterProps) {
   const footerLinks = {
     product: [
       { label: 'DVIA-ULF', href: '/products/active-vibration-systems/dvia-ulf' },
-      { label: 'DVIA-MLP2000', href: '/products/active-vibration-systems/dvia-mlp2000' },
+      { label: 'DVIA-MLP1000', href: '/products/active-vibration-systems/dvia-mlp1000' },
       { label: 'Optical Tables', href: '/products/optical-tables' },
       { label: 'All Products', href: '/products' },
     ],

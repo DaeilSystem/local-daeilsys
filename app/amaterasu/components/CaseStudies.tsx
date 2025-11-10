@@ -82,7 +82,7 @@ export default function CaseStudies({ setCursorVariant }: CaseStudiesProps) {
           <div className="relative border border-white/20 p-10 md:p-16">
             <div className="absolute top-6 left-6 text-6xl opacity-20 font-serif">"</div>
             <blockquote className="text-xl md:text-2xl font-light leading-relaxed text-center opacity-90">
-              The DVIA-MLP2000 has been instrumental in achieving the nanoscale precision
+              The DVIA-MLP1000 has been instrumental in achieving the nanoscale precision
               required for our advanced research. The 1Hz isolation performance is unmatched.
             </blockquote>
             <div className="mt-8 text-center">
