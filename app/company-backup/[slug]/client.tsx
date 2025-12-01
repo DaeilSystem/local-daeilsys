@@ -183,8 +183,8 @@ export default function Client({ slug }: ClientProps) {
               </li>
               <li className="text-gray-400">/</li>
               <li>
-                <Link href="/company" className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors">
-                  Company
+                <Link href="/company-backup" className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors">
+                  Company Backup
                 </Link>
               </li>
               <li className="text-gray-400">/</li>
@@ -279,7 +279,7 @@ export default function Client({ slug }: ClientProps) {
               if (!otherSection || otherSection.slug === slug) return null
 
               return (
-                <Link key={sectionSlug} href={`/company/${sectionSlug}`}>
+                <Link key={sectionSlug} href={`/company-backup/${sectionSlug}`}>
                   <motion.div
                     whileHover={{ scale: 1.02 }}
                     className="group bg-gray-50 dark:bg-gray-800 rounded-2xl p-6 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300"

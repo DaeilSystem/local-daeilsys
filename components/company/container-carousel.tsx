@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { ChevronLeft, ChevronRight, Plus, Play } from "lucide-react"
+import { ChevronLeft, ChevronRight, Plus } from "lucide-react"
 
 interface Story {
   id: string
@@ -11,14 +11,19 @@ interface Story {
   alt: string
 }
 
-interface FullWidthCarouselProps {
+interface ContainerCarouselProps {
   stories: Story[]
   className?: string
+  defaultCardsPerView?: number
 }
 
-export function FullWidthCarousel({ stories, className }: FullWidthCarouselProps) {
+export function ContainerCarousel({
+  stories,
+  className,
+  defaultCardsPerView = 3
+}: ContainerCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
-  const [cardsPerView, setCardsPerView] = useState(4)
+  const [cardsPerView, setCardsPerView] = useState(defaultCardsPerView)
 
   // 반응형 카드 수 설정
   useEffect(() => {
@@ -29,16 +34,16 @@ export function FullWidthCarousel({ stories, className }: FullWidthCarouselProps
       } else if (width < 768) { // md
         setCardsPerView(2)
       } else if (width < 1024) { // lg
-        setCardsPerView(3)
+        setCardsPerView(Math.min(2, defaultCardsPerView))
       } else {
-        setCardsPerView(4)
+        setCardsPerView(defaultCardsPerView)
       }
     }
 
     updateCardsPerView()
     window.addEventListener('resize', updateCardsPerView)
     return () => window.removeEventListener('resize', updateCardsPerView)
-  }, [])
+  }, [defaultCardsPerView])
 
   const maxIndex = Math.max(0, stories.length - cardsPerView)
 
@@ -57,20 +62,20 @@ export function FullWidthCarousel({ stories, className }: FullWidthCarouselProps
   // 인덱스가 maxIndex를 초과하지 않도록 조정
   useEffect(() => {
     if (currentIndex > maxIndex) {
-      setCurrentIndex(maxIndex)
+      setCurrentIndex(Math.max(0, maxIndex))
     }
   }, [cardsPerView, maxIndex, currentIndex])
 
   if (!stories.length) return null
 
   return (
-    <div className={`w-full ${className}`}>
+    <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ${className}`}>
       {/* Main Carousel */}
-      <div className="relative overflow-hidden px-4 sm:px-6 md:px-8 lg:px-12">
+      <div className="relative overflow-hidden">
         <div
-          className="flex transition-transform duration-500 ease-in-out gap-3 sm:gap-4 md:gap-6"
+          className="flex transition-transform duration-500 ease-in-out gap-4 sm:gap-6"
           style={{
-            transform: `translateX(-${currentIndex * (100 / cardsPerView + (cardsPerView > 1 ? 6 / cardsPerView : 0))}%)`,
+            transform: `translateX(-${currentIndex * (100 / cardsPerView + 6 / cardsPerView)}%)`,
           }}
         >
           {stories.map((story, index) => (
@@ -83,7 +88,7 @@ export function FullWidthCarousel({ stories, className }: FullWidthCarouselProps
                   : `calc(${100 / cardsPerView}% - ${(cardsPerView - 1) * 24 / cardsPerView}px)`
               }}
             >
-              <div className="relative aspect-[4/3] overflow-hidden rounded-xl sm:rounded-2xl">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-xl sm:rounded-2xl shadow-lg">
                 <div
                   className="w-full h-full bg-cover bg-center bg-gray-300 transition-transform duration-300 group-hover:scale-105"
                   style={{
@@ -118,56 +123,42 @@ export function FullWidthCarousel({ stories, className }: FullWidthCarouselProps
       </div>
 
       {/* Navigation */}
-      <div className="flex justify-center items-center mt-6 sm:mt-8 gap-3 sm:gap-4">
-        {/* Play Button */}
+      <div className="flex justify-between items-center mt-6 sm:mt-8">
         <Button
           variant="outline"
           size="sm"
-          className="rounded-full w-8 h-8 sm:w-10 sm:h-10 p-0 bg-white border-gray-300 hover:bg-gray-50 dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-700"
+          onClick={prevStory}
+          disabled={currentIndex === 0}
+          className="rounded-full w-8 h-8 sm:w-10 sm:h-10 p-0 disabled:opacity-30 border-gray-300 dark:border-gray-600"
         >
-          <Play className="h-3 w-3 sm:h-4 sm:w-4 text-gray-600 dark:text-gray-300 ml-0.5" fill="currentColor" />
+          <ChevronLeft className="h-3 w-3 sm:h-4 sm:w-4 text-gray-600 dark:text-gray-300" />
         </Button>
 
-        {/* Arrow Navigation */}
-        <div className="flex items-center gap-1 sm:gap-2">
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={prevStory}
-            disabled={currentIndex === 0}
-            className="rounded-full w-7 h-7 sm:w-8 sm:h-8 p-0 disabled:opacity-30 border-gray-300 dark:border-gray-600"
-          >
-            <ChevronLeft className="h-3 w-3 sm:h-4 sm:w-4" />
-          </Button>
-
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={nextStory}
-            disabled={currentIndex >= maxIndex}
-            className="rounded-full w-7 h-7 sm:w-8 sm:h-8 p-0 disabled:opacity-30 border-gray-300 dark:border-gray-600"
-          >
-            <ChevronRight className="h-3 w-3 sm:h-4 sm:w-4" />
-          </Button>
-        </div>
-      </div>
-
-      {/* Pagination Dots for Mobile */}
-      {cardsPerView <= 2 && (
-        <div className="flex justify-center items-center mt-4 gap-2">
+        {/* Pagination Dots */}
+        <div className="flex space-x-2">
           {Array.from({ length: maxIndex + 1 }).map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
               className={`w-2 h-2 rounded-full transition-all duration-300 ${
                 index === currentIndex
-                  ? "bg-gray-900 dark:bg-white"
-                  : "bg-gray-300 hover:bg-gray-400 dark:bg-gray-600 dark:hover:bg-gray-500"
+                  ? "bg-white"
+                  : "bg-white/40 hover:bg-white/60"
               }`}
             />
           ))}
         </div>
-      )}
+
+        <Button
+          variant="outline"
+          size="sm"
+          onClick={nextStory}
+          disabled={currentIndex >= maxIndex}
+          className="rounded-full w-8 h-8 sm:w-10 sm:h-10 p-0 disabled:opacity-30 border-gray-300 dark:border-gray-600"
+        >
+          <ChevronRight className="h-3 w-3 sm:h-4 sm:w-4 text-gray-600 dark:text-gray-300" />
+        </Button>
+      </div>
     </div>
   )
 }

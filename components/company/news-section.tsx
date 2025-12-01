@@ -125,7 +125,7 @@ export function NewsSection({ className }: NewsSectionProps) {
             <Button
               onClick={handleShowMore}
               variant="outline"
-              className="rounded-full px-8 py-2"
+              className="rounded-full px-8 py-2 text-gray-700 dark:text-gray-200"
             >
               Show more
             </Button>

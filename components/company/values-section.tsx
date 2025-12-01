@@ -101,7 +101,7 @@ export function ValuesSection({ className }: ValuesSectionProps) {
   return (
     <section className={`py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 ${className}`}>
       <div className="max-w-7xl mx-auto space-y-8 sm:space-y-12">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light text-center text-gray-900 dark:text-white">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light text-center text-white">
           Our values lead the way.
         </h2>
 
@@ -158,7 +158,7 @@ export function ValuesSection({ className }: ValuesSectionProps) {
               disabled={currentIndex === 0}
               className="rounded-full w-8 h-8 sm:w-10 sm:h-10 p-0 disabled:opacity-30 border-gray-300 dark:border-gray-600"
             >
-              <ChevronLeft className="h-3 w-3 sm:h-4 sm:w-4" />
+              <ChevronLeft className="h-3 w-3 sm:h-4 sm:w-4 text-gray-600 dark:text-gray-300" />
               <span className="sr-only">Previous</span>
             </Button>
 
@@ -170,8 +170,8 @@ export function ValuesSection({ className }: ValuesSectionProps) {
                   onClick={() => setCurrentIndex(index)}
                   className={`w-2 h-2 rounded-full transition-all duration-300 ${
                     index === currentIndex
-                      ? "bg-gray-900 dark:bg-white"
-                      : "bg-gray-300 hover:bg-gray-400 dark:bg-gray-600 dark:hover:bg-gray-500"
+                      ? "bg-white"
+                      : "bg-white/40 hover:bg-white/60"
                   }`}
                 />
               ))}
@@ -184,7 +184,7 @@ export function ValuesSection({ className }: ValuesSectionProps) {
               disabled={currentIndex === maxIndex}
               className="rounded-full w-8 h-8 sm:w-10 sm:h-10 p-0 disabled:opacity-30 border-gray-300 dark:border-gray-600"
             >
-              <ChevronRight className="h-3 w-3 sm:h-4 sm:w-4" />
+              <ChevronRight className="h-3 w-3 sm:h-4 sm:w-4 text-gray-600 dark:text-gray-300" />
               <span className="sr-only">Next</span>
             </Button>
           </div>

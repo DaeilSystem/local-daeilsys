@@ -173,20 +173,13 @@ export function EducationHero({ className }: EducationHeroProps) {
           <button
             key={index}
             onClick={() => setCurrentImageIndex(index)}
-            className={`w-2 h-2 rounded-full transition-all duration-300 relative ${
+            className={`w-2 h-2 rounded-full transition-all duration-300 ${
               index === currentImageIndex
                 ? "bg-white"
                 : "bg-white/40 hover:bg-white/60"
             }`}
             title={media.type === "video" ? "Video" : "Image"}
-          >
-            {/* 비디오 인디케이터 */}
-            {media.type === "video" && (
-              <div className="absolute -top-1 -right-1 w-2 h-2">
-                <Play className="h-2 w-2 text-white fill-white" />
-              </div>
-            )}
-          </button>
+          />
         ))}
       </div>
 

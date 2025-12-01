@@ -44,7 +44,7 @@ export function CompanySolutions({ className }: CompanySolutionsProps) {
 
       {/* View All Solutions Button */}
       <div className="text-center mt-12">
-        <Link href="/company">
+        <Link href="/company-backup">
           <Button
             variant="outline"
             className="rounded-full px-8 py-3 border-2 border-gray-400 dark:border-gray-500 bg-white dark:bg-gray-800 shadow-lg hover:bg-gray-50 dark:hover:bg-gray-700 hover:scale-105 transition-all duration-200 font-medium text-gray-700 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200"

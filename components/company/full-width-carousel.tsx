@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { ChevronLeft, ChevronRight, Plus } from "lucide-react"
+import { ChevronLeft, ChevronRight, ArrowUpRight, Play, Pause } from "lucide-react"
 
 interface Story {
   id: string
@@ -11,19 +11,15 @@ interface Story {
   alt: string
 }
 
-interface ContainerCarouselProps {
+interface FullWidthCarouselProps {
   stories: Story[]
   className?: string
-  defaultCardsPerView?: number
 }
 
-export function ContainerCarousel({
-  stories,
-  className,
-  defaultCardsPerView = 3
-}: ContainerCarouselProps) {
+export function FullWidthCarousel({ stories, className }: FullWidthCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
-  const [cardsPerView, setCardsPerView] = useState(defaultCardsPerView)
+  const [cardsPerView, setCardsPerView] = useState(4)
+  const [isPlaying, setIsPlaying] = useState(false)
 
   // 반응형 카드 수 설정
   useEffect(() => {
@@ -34,16 +30,16 @@ export function ContainerCarousel({
       } else if (width < 768) { // md
         setCardsPerView(2)
       } else if (width < 1024) { // lg
-        setCardsPerView(Math.min(2, defaultCardsPerView))
+        setCardsPerView(3)
       } else {
-        setCardsPerView(defaultCardsPerView)
+        setCardsPerView(4)
       }
     }
 
     updateCardsPerView()
     window.addEventListener('resize', updateCardsPerView)
     return () => window.removeEventListener('resize', updateCardsPerView)
-  }, [defaultCardsPerView])
+  }, [])
 
   const maxIndex = Math.max(0, stories.length - cardsPerView)
 
@@ -62,20 +58,40 @@ export function ContainerCarousel({
   // 인덱스가 maxIndex를 초과하지 않도록 조정
   useEffect(() => {
     if (currentIndex > maxIndex) {
-      setCurrentIndex(Math.max(0, maxIndex))
+      setCurrentIndex(maxIndex)
     }
   }, [cardsPerView, maxIndex, currentIndex])
+
+  // 자동 재생
+  useEffect(() => {
+    if (!isPlaying) return
+
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => {
+        if (prev >= maxIndex) {
+          return 0 // 처음으로 돌아가기
+        }
+        return prev + 1
+      })
+    }, 3000)
+
+    return () => clearInterval(interval)
+  }, [isPlaying, maxIndex])
+
+  const togglePlay = () => {
+    setIsPlaying(!isPlaying)
+  }
 
   if (!stories.length) return null
 
   return (
-    <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ${className}`}>
+    <div className={`w-full ${className}`}>
       {/* Main Carousel */}
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden px-4 sm:px-6 md:px-8 lg:px-12">
         <div
-          className="flex transition-transform duration-500 ease-in-out gap-4 sm:gap-6"
+          className="flex transition-transform duration-500 ease-in-out gap-3 sm:gap-4 md:gap-6"
           style={{
-            transform: `translateX(-${currentIndex * (100 / cardsPerView + 6 / cardsPerView)}%)`,
+            transform: `translateX(-${currentIndex * (100 / cardsPerView + (cardsPerView > 1 ? 6 / cardsPerView : 0))}%)`,
           }}
         >
           {stories.map((story, index) => (
@@ -88,7 +104,7 @@ export function ContainerCarousel({
                   : `calc(${100 / cardsPerView}% - ${(cardsPerView - 1) * 24 / cardsPerView}px)`
               }}
             >
-              <div className="relative aspect-[4/3] overflow-hidden rounded-xl sm:rounded-2xl shadow-lg">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-xl sm:rounded-2xl">
                 <div
                   className="w-full h-full bg-cover bg-center bg-gray-300 transition-transform duration-300 group-hover:scale-105"
                   style={{
@@ -98,7 +114,7 @@ export function ContainerCarousel({
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent rounded-xl sm:rounded-2xl" />
 
-                {/* Plus Button */}
+                {/* Arrow Button */}
                 <Button
                   size="sm"
                   className="absolute top-3 right-3 sm:top-4 sm:right-4 rounded-full w-7 h-7 sm:w-8 sm:h-8 p-0 bg-white/20 hover:bg-white/30 border border-white/30 backdrop-blur-sm"
@@ -107,7 +123,7 @@ export function ContainerCarousel({
                     console.log(`Clicked story: ${story.title}`)
                   }}
                 >
-                  <Plus className="h-3 w-3 sm:h-4 sm:w-4 text-white" />
+                  <ArrowUpRight className="h-3 w-3 sm:h-4 sm:w-4 text-white" />
                 </Button>
 
                 {/* Title */}
@@ -123,42 +139,61 @@ export function ContainerCarousel({
       </div>
 
       {/* Navigation */}
-      <div className="flex justify-between items-center mt-6 sm:mt-8">
+      <div className="flex justify-center items-center mt-6 sm:mt-8 gap-3 sm:gap-4">
+        {/* Play/Pause Button */}
         <Button
           variant="outline"
           size="sm"
-          onClick={prevStory}
-          disabled={currentIndex === 0}
-          className="rounded-full w-8 h-8 sm:w-10 sm:h-10 p-0 disabled:opacity-30 border-gray-300 dark:border-gray-600"
+          onClick={togglePlay}
+          className="rounded-full w-8 h-8 sm:w-10 sm:h-10 p-0 bg-white border-gray-300 hover:bg-gray-50 dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-700"
         >
-          <ChevronLeft className="h-3 w-3 sm:h-4 sm:w-4" />
+          {isPlaying ? (
+            <Pause className="h-3 w-3 sm:h-4 sm:w-4 text-gray-600 dark:text-gray-300" fill="currentColor" />
+          ) : (
+            <Play className="h-3 w-3 sm:h-4 sm:w-4 text-gray-600 dark:text-gray-300 ml-0.5" fill="currentColor" />
+          )}
         </Button>
 
-        {/* Pagination Dots */}
-        <div className="flex space-x-2">
+        {/* Arrow Navigation */}
+        <div className="flex items-center gap-1 sm:gap-2">
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={prevStory}
+            disabled={currentIndex === 0}
+            className="rounded-full w-7 h-7 sm:w-8 sm:h-8 p-0 disabled:opacity-30 border-gray-300 dark:border-gray-600"
+          >
+            <ChevronLeft className="h-3 w-3 sm:h-4 sm:w-4 text-gray-600 dark:text-gray-300" />
+          </Button>
+
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={nextStory}
+            disabled={currentIndex >= maxIndex}
+            className="rounded-full w-7 h-7 sm:w-8 sm:h-8 p-0 disabled:opacity-30 border-gray-300 dark:border-gray-600"
+          >
+            <ChevronRight className="h-3 w-3 sm:h-4 sm:w-4 text-gray-600 dark:text-gray-300" />
+          </Button>
+        </div>
+      </div>
+
+      {/* Pagination Dots for Mobile */}
+      {cardsPerView <= 2 && (
+        <div className="flex justify-center items-center mt-4 gap-2">
           {Array.from({ length: maxIndex + 1 }).map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
               className={`w-2 h-2 rounded-full transition-all duration-300 ${
                 index === currentIndex
-                  ? "bg-gray-900 dark:bg-white"
-                  : "bg-gray-300 hover:bg-gray-400 dark:bg-gray-600 dark:hover:bg-gray-500"
+                  ? "bg-white"
+                  : "bg-white/40 hover:bg-white/60"
               }`}
             />
           ))}
         </div>
-
-        <Button
-          variant="outline"
-          size="sm"
-          onClick={nextStory}
-          disabled={currentIndex >= maxIndex}
-          className="rounded-full w-8 h-8 sm:w-10 sm:h-10 p-0 disabled:opacity-30 border-gray-300 dark:border-gray-600"
-        >
-          <ChevronRight className="h-3 w-3 sm:h-4 sm:w-4" />
-        </Button>
-      </div>
+      )}
     </div>
   )
 }
