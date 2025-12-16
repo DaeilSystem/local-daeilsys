@@ -2,31 +2,35 @@
 
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
+import { useLanguage } from '@/hooks/use-language';
+import { translations } from '@/constants/translations';
 
 interface GuidingPrinciplesProps {
   setCursorVariant: (variant: 'default' | 'hover' | 'click') => void;
 }
 
-const principles = [
-  {
-    number: '01',
-    title: 'PRECISION ENGINEERING',
-    description: 'We pursue absolute precision in every aspect of our vibration isolation systems. From design to manufacturing, our commitment to engineering excellence ensures that every DVIA product meets the highest standards of performance and reliability for nanoscale applications.',
-  },
-  {
-    number: '02',
-    title: 'CUSTOMER-CENTRIC INNOVATION',
-    description: 'We listen to our customers and understand their unique challenges. Our innovation is driven by real-world applications and feedback, ensuring that every product we develop solves actual problems faced by researchers and engineers in precision industries.',
-  },
-  {
-    number: '03',
-    title: 'CONTINUOUS ADVANCEMENT',
-    description: 'We never stop improving. Since 1993, we have continuously refined our passive vibration isolation technology, pushing the boundaries of what\'s possible at ultra-low frequencies. Our dedication to R&D keeps us at the forefront of vibration control technology.',
-  },
-];
-
 export default function GuidingPrinciples({ setCursorVariant }: GuidingPrinciplesProps) {
   const containerRef = useRef<HTMLElement>(null);
+  const { language } = useLanguage();
+  const t = translations[language];
+
+  const principles = [
+    {
+      number: '01',
+      title: t.precisionEngineering,
+      description: t.precisionEngineeringDesc,
+    },
+    {
+      number: '02',
+      title: t.customerCentricInnovation,
+      description: t.customerCentricInnovationDesc,
+    },
+    {
+      number: '03',
+      title: t.continuousAdvancement,
+      description: t.continuousAdvancementDesc,
+    },
+  ];
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ['start end', 'end start'],
@@ -38,7 +42,7 @@ export default function GuidingPrinciples({ setCursorVariant }: GuidingPrinciple
     <motion.section
       ref={containerRef}
       id="principles"
-      className="relative h-screen flex items-center justify-center px-6 md:px-12 overflow-y-auto"
+      className="relative min-h-screen flex items-center justify-center px-6 md:px-12 py-24"
     >
       <div className="max-w-7xl mx-auto w-full">
         {/* Header */}
@@ -53,7 +57,7 @@ export default function GuidingPrinciples({ setCursorVariant }: GuidingPrinciple
             transition={{ duration: 0.8 }}
             className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6"
           >
-            Guiding
+            {t.guiding}
           </motion.h2>
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
@@ -62,7 +66,7 @@ export default function GuidingPrinciples({ setCursorVariant }: GuidingPrinciple
             transition={{ duration: 0.8, delay: 0.1 }}
             className="text-5xl md:text-6xl lg:text-7xl font-bold mb-12"
           >
-            Principles
+            {t.principles}
           </motion.h2>
 
           <motion.p
@@ -72,9 +76,7 @@ export default function GuidingPrinciples({ setCursorVariant }: GuidingPrinciple
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-base md:text-lg opacity-80 max-w-3xl"
           >
-            Through the seamless integration of our core principles, we deliver
-            world-class vibration isolation solutions that empower breakthrough
-            discoveries in science and precision manufacturing.
+            {t.principlesIntro}
           </motion.p>
         </motion.div>
 

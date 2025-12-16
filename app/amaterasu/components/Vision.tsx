@@ -1,86 +1,24 @@
 'use client';
 
-import { motion, useScroll, useTransform } from 'framer-motion';
-import { useRef, useState } from 'react';
+import { motion } from 'framer-motion';
+import { useLanguage } from '@/hooks/use-language';
+import { translations } from '@/constants/translations';
 
 interface VisionProps {
   setCursorVariant: (variant: 'default' | 'hover' | 'click') => void;
 }
 
 export default function Vision({ setCursorVariant }: VisionProps) {
-  const containerRef = useRef<HTMLElement>(null);
-  const [activeScene, setActiveScene] = useState(0);
-
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ['start start', 'end end'],
-  });
-
-  // Circle expansion animation - radius grows from 0% to 100% as user scrolls
-  const maskRadius = useTransform(scrollYProgress, [0, 0.5], ['0%', '100%']);
-  const maskPosition = useTransform(scrollYProgress, [0, 0.5], ['50%', '50%']);
-
-  // Triangle animation - starts small in upper-left, rotates and scales to center
-  const triangleX = useTransform(scrollYProgress, [0, 0.5], ['-40%', '0%']);
-  const triangleY = useTransform(scrollYProgress, [0, 0.5], ['-40%', '0%']);
-  const triangleScale = useTransform(scrollYProgress, [0, 0.5], [0.3, 1]);
-  const triangleRotate = useTransform(scrollYProgress, [0, 0.5], [0, 360]);
-
-  const y = useTransform(scrollYProgress, [0, 1], [100, -100]);
-  const opacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0]);
-
-  // Fixed 요소들이 섹션 끝에서 사라지도록
-  const fixedOpacity = useTransform(scrollYProgress, [0, 0.1, 0.85, 1], [0, 1, 1, 0]);
+  const { language } = useLanguage();
+  const t = translations[language];
 
   return (
     <motion.section
-      ref={containerRef}
       id="vision"
-      className="relative flex flex-col items-center justify-center px-8 md:px-12 py-24"
-      style={{
-        height: '300vh',
-      }}
+      className="relative min-h-screen flex flex-col items-center justify-center px-8 md:px-12 py-24"
       onMouseEnter={() => setCursorVariant('hover')}
       onMouseLeave={() => setCursorVariant('default')}
     >
-      {/* Expanding Circle Background */}
-      <motion.div
-        className="fixed inset-0 bg-gradient-to-br from-[#0a0a0a] to-[#1a1a1a] z-0 pointer-events-none"
-        style={{
-          opacity: fixedOpacity,
-          WebkitMaskImage: `radial-gradient(circle at 50% ${maskPosition}, transparent ${maskRadius}, #000 0)`,
-          maskImage: `radial-gradient(circle at 50% ${maskPosition}, transparent ${maskRadius}, #000 0)`,
-        }}
-      />
-
-      {/* Animated Triangle - starts upper-left, rotates and scales to center */}
-      <motion.div
-        className="fixed top-20 left-20 z-10 pointer-events-none"
-        style={{
-          opacity: fixedOpacity,
-          x: triangleX,
-          y: triangleY,
-          scale: triangleScale,
-          rotate: triangleRotate,
-        }}
-      >
-        <svg viewBox="0 0 100 100" className="w-32 h-32 md:w-48 md:h-48">
-          <defs>
-            <linearGradient id="triangleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#1a1a1a" />
-              <stop offset="100%" stopColor="#75cdd6" />
-            </linearGradient>
-          </defs>
-          <polygon
-            points="50,10 90,80 10,80"
-            fill="url(#triangleGradient)"
-            opacity="0.8"
-          />
-        </svg>
-      </motion.div>
-
-      {/* Sticky Content Container */}
-      <div className="sticky top-0 min-h-screen w-full flex items-center justify-center">
       <div className="max-w-7xl w-full mx-auto relative z-20">
         {/* Vision Section */}
         <div className="text-center mb-24">
@@ -91,11 +29,11 @@ export default function Vision({ setCursorVariant }: VisionProps) {
             transition={{ duration: 0.8 }}
             className="text-6xl md:text-7xl lg:text-8xl font-bold mb-12"
           >
-            VISION
+            {t.vision}
           </motion.h2>
 
           <p className="text-lg md:text-xl lg:text-2xl leading-relaxed max-w-4xl mx-auto flex flex-wrap justify-center gap-x-2">
-            {`To be the global leader in vibration isolation technology, empowering scientific discovery and precision engineering through innovative solutions.`
+            {t.visionStatement
               .split(' ')
               .map((word, index) => (
                 <motion.span
@@ -120,17 +58,16 @@ export default function Vision({ setCursorVariant }: VisionProps) {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
           {[
             {
-              title: 'Customer Orientation',
-              description:
-                'Long-term support aligned with customer satisfaction and retention',
+              title: t.customerOrientation,
+              description: t.customerOrientationDesc,
             },
             {
-              title: 'Partnership',
-              description: 'Collaborative relationships to achieve shared objectives',
+              title: t.partnership,
+              description: t.partnershipDesc,
             },
             {
-              title: 'Passion for Perfection',
-              description: 'Commitment to defect-free products',
+              title: t.passionForPerfection,
+              description: t.passionForPerfectionDesc,
             },
           ].map((value, index) => (
             <motion.div
@@ -148,7 +85,6 @@ export default function Vision({ setCursorVariant }: VisionProps) {
             </motion.div>
           ))}
         </div>
-      </div>
       </div>
     </motion.section>
   );

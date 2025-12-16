@@ -2,6 +2,8 @@
 
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
+import { useLanguage } from '@/hooks/use-language';
+import { translations } from '@/constants/translations';
 
 interface MissionProps {
   setCursorVariant: (variant: 'default' | 'hover' | 'click') => void;
@@ -9,6 +11,8 @@ interface MissionProps {
 
 export default function Mission({ setCursorVariant }: MissionProps) {
   const containerRef = useRef<HTMLElement>(null);
+  const { language } = useLanguage();
+  const t = translations[language];
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ['start end', 'end start'],
@@ -51,7 +55,7 @@ export default function Mission({ setCursorVariant }: MissionProps) {
           className="text-center mb-12"
         >
           <span className="text-xs tracking-[0.3em] uppercase opacity-60">
-            Our Mission
+            {t.ourMission}
           </span>
         </motion.div>
 
@@ -63,7 +67,7 @@ export default function Mission({ setCursorVariant }: MissionProps) {
           transition={{ duration: 0.8, delay: 0.1 }}
           className="text-5xl md:text-6xl lg:text-7xl font-bold text-center mb-12"
         >
-          MISSION
+          {t.mission}
         </motion.h2>
 
         {/* Mission Content */}
@@ -75,9 +79,7 @@ export default function Mission({ setCursorVariant }: MissionProps) {
           className="text-center"
         >
           <p className="text-xl md:text-2xl lg:text-3xl leading-relaxed font-light opacity-90 max-w-5xl mx-auto">
-            To deliver world-class vibration isolation solutions that enable
-            breakthrough scientific discoveries and precision manufacturing,
-            backed by exceptional engineering and unwavering customer support.
+            {t.missionStatement}
           </p>
         </motion.div>
 
@@ -90,9 +92,9 @@ export default function Mission({ setCursorVariant }: MissionProps) {
           className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8"
         >
           {[
-            { label: 'Innovation', subtitle: 'Advanced Technology' },
-            { label: 'Quality', subtitle: 'Zero Defects' },
-            { label: 'Support', subtitle: 'Long-term Partnership' },
+            { label: t.innovation, subtitle: t.advancedTechnology },
+            { label: t.quality, subtitle: t.zeroDefects },
+            { label: t.support, subtitle: t.longTermPartnership },
           ].map((area, index) => (
             <motion.div
               key={area.label}

@@ -1,7 +1,10 @@
 'use client';
 
-import { motion, useScroll, useTransform, useMotionValue, useSpring } from 'framer-motion';
-import { useRef, useEffect, useState, useMemo } from 'react';
+import { translations } from '@/constants/translations';
+import { useLanguage } from '@/hooks/use-language';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import Image from 'next/image';
+import { useRef, useState } from 'react';
 
 interface HeroProps {
   setCursorVariant: (variant: 'default' | 'hover' | 'click') => void;
@@ -9,326 +12,269 @@ interface HeroProps {
 
 export default function Hero({ setCursorVariant }: HeroProps) {
   const containerRef = useRef<HTMLElement>(null);
+  const [imageLoaded, setImageLoaded] = useState(false);
+  const { language } = useLanguage();
+  const t = translations[language];
+
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ['start start', 'end start'],
   });
 
-  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
-  const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.8]);
+  // Individual parallax effects for different elements - each with unique speed
+  const imageY = useTransform(scrollYProgress, [0, 1], [0, 250]);
+  const imageScale = useTransform(scrollYProgress, [0, 0.5], [1, 1.15]);
+  const overlayOpacity = useTransform(scrollYProgress, [0, 0.5], [0.6, 0.9]);
 
-  // Sequence animation - 36 frames (0000-0035)
-  const totalFrames = 36;
-  const [currentFrame, setCurrentFrame] = useState(0);
+  // Badge - fastest upward movement
+  const badgeY = useTransform(scrollYProgress, [0, 1], [0, -180]);
+  const badgeOpacity = useTransform(scrollYProgress, [0, 0.4], [1, 0]);
 
-  // Preload all sequence images
-  const images = useMemo(() => {
-    return Array.from({ length: totalFrames }, (_, i) => {
-      const frameNumber = i.toString().padStart(4, '0');
-      return `/dvia-ulf/NewLevelSequence1.${frameNumber}.png`;
-    });
-  }, [totalFrames]);
+  // Each heading line moves at different speeds for staggered effect
+  const heading1Y = useTransform(scrollYProgress, [0, 1], [0, -150]);
+  const heading2Y = useTransform(scrollYProgress, [0, 1], [0, -120]);
+  const heading3Y = useTransform(scrollYProgress, [0, 1], [0, -90]);
 
-  useEffect(() => {
-    // Preload images
-    images.forEach((src) => {
-      const img = new Image();
-      img.src = src;
-    });
-  }, [images]);
+  // Subtitle and CTAs - medium speed
+  const subtitleY = useTransform(scrollYProgress, [0, 1], [0, -70]);
+  const ctaY = useTransform(scrollYProgress, [0, 1], [0, -50]);
 
-  // Update frame based on scroll
-  useEffect(() => {
-    const unsubscribe = scrollYProgress.on('change', (latest) => {
-      const frameIndex = Math.min(
-        Math.floor(latest * totalFrames),
-        totalFrames - 1
-      );
-      setCurrentFrame(Math.max(0, frameIndex));
-    });
+  // Stats - each item with staggered speed for wave effect
+  const stat1Y = useTransform(scrollYProgress, [0, 1], [0, -40]);
+  const stat2Y = useTransform(scrollYProgress, [0, 1], [0, -30]);
+  const stat3Y = useTransform(scrollYProgress, [0, 1], [0, -20]);
+  const stat4Y = useTransform(scrollYProgress, [0, 1], [0, -10]);
+  const statsYValues = [stat1Y, stat2Y, stat3Y, stat4Y];
 
-    return () => unsubscribe();
-  }, [scrollYProgress, totalFrames]);
+  // Opacity fades for layered depth
+  const heading1Opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0.3]);
+  const heading2Opacity = useTransform(scrollYProgress, [0, 0.55], [1, 0.4]);
+  const heading3Opacity = useTransform(scrollYProgress, [0, 0.6], [1, 0.5]);
 
-  // Mouse tracking for 3D parallax effect
-  const mouseX = useMotionValue(0.5);
-  const mouseY = useMotionValue(0.5);
-
-  const smoothMouseX = useSpring(mouseX, { stiffness: 50, damping: 20 });
-  const smoothMouseY = useSpring(mouseY, { stiffness: 50, damping: 20 });
-
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      if (!containerRef.current) return;
-      const rect = containerRef.current.getBoundingClientRect();
-      const x = (e.clientX - rect.left) / rect.width;
-      const y = (e.clientY - rect.top) / rect.height;
-      mouseX.set(x);
-      mouseY.set(y);
-    };
-
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, [mouseX, mouseY]);
-
-  // 3D transforms based on mouse position
-  const rotateX = useTransform(smoothMouseY, [0, 1], [5, -5]);
-  const rotateY = useTransform(smoothMouseX, [0, 1], [-5, 5]);
-  const translateZ = useTransform(smoothMouseX, [0, 1], [0, 20]);
+  // Scroll indicator
+  const scrollIndicatorY = useTransform(scrollYProgress, [0, 1], [0, -60]);
+  const scrollIndicatorOpacity = useTransform(scrollYProgress, [0, 0.3], [1, 0]);
 
   return (
-    <motion.section
+    <section
       ref={containerRef}
-      style={{ opacity, scale }}
-      className="relative min-h-screen flex items-center justify-center px-8 md:px-12"
+      className="relative h-screen w-full overflow-hidden bg-transparent"
     >
-      <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
-        {/* Left Column - Heading + Button */}
-        <div className="lg:col-span-7 space-y-8">
-          {/* Main Heading */}
-          <motion.h1
-            initial={{ opacity: 0, y: 50 }}
+      {/* Background Image with Parallax */}
+      <motion.div
+        style={{ y: imageY, scale: imageScale }}
+        className="absolute inset-0 w-full h-[120%] -top-[10%]"
+      >
+        <Image
+          src="https://www.daeilsys.com/ko-KR/products/active-vibration-isolation-systems/dvia-ml-active-vibration-isolation-system/images/dvia-ml3000-for-glacios-2-product-image-01-min.png"
+          alt="DVIA-ML Vibration Isolation System"
+          fill
+          className={`object-contain object-right transition-opacity duration-1000 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
+          onLoad={() => setImageLoaded(true)}
+          priority
+          sizes="100vw"
+        />
+        {/* Gradient Overlays */}
+        <motion.div
+          style={{ opacity: overlayOpacity }}
+          className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a] via-[#0a0a0a]/80 to-transparent"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-[#0a0a0a]/50" />
+      </motion.div>
+
+      {/* Floating Particles */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {[...Array(30)].map((_, i) => (
+          <motion.div
+            key={i}
+            className="absolute w-1 h-1 bg-[#75cdd6]/30 rounded-full"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+            }}
+            animate={{
+              y: [0, -50, 0],
+              opacity: [0, 0.6, 0],
+              scale: [0.5, 1, 0.5],
+            }}
+            transition={{
+              duration: 4 + Math.random() * 4,
+              repeat: Infinity,
+              delay: Math.random() * 4,
+              ease: 'easeInOut',
+            }}
+          />
+        ))}
+      </div>
+
+      {/* Main Content */}
+      <div className="relative z-10 h-full flex flex-col justify-center px-6 md:px-12 lg:px-20 xl:px-32">
+        <div className="max-w-4xl">
+          {/* Badge - Fastest parallax */}
+          <motion.div
+            style={{ y: badgeY, opacity: badgeOpacity }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.2 }}
-            className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.1] tracking-tight"
-            style={{ letterSpacing: '-0.025em' }}
+            transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
+            <span className="inline-flex items-center gap-2 px-4 py-2 text-xs font-medium tracking-wider uppercase bg-white/5 backdrop-blur-sm border border-white/10 rounded-full text-white/80 mb-6">
+              <span className="w-2 h-2 bg-[#75cdd6] rounded-full animate-pulse" />
+              {t.worldLeader}
+            </span>
+          </motion.div>
+
+          {/* Main Heading - Each line with individual parallax */}
+          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[0.95] tracking-tight mb-6">
+            <motion.span
+              style={{ y: heading1Y, opacity: heading1Opacity }}
+              className="block text-white"
+              initial={{ opacity: 0, y: 50, rotateX: -20 }}
+              animate={{ opacity: 1, y: 0, rotateX: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              WE CONTROL
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
+              {t.weControl}
+            </motion.span>
+            <motion.span
+              style={{ y: heading2Y, opacity: heading2Opacity }}
+              className="block text-white"
+              initial={{ opacity: 0, y: 50, rotateX: -20 }}
+              animate={{ opacity: 1, y: 0, rotateX: 0 }}
+              transition={{ duration: 0.8, delay: 0.45 }}
             >
-              VIBRATION TO
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.7 }}
+              {t.vibration}
+            </motion.span>
+            <motion.span
+              style={{ y: heading3Y, opacity: heading3Opacity }}
+              className="block bg-gradient-to-r from-[#75cdd6] to-[#4fa8b3] bg-clip-text text-transparent"
+              initial={{ opacity: 0, y: 50, rotateX: -20 }}
+              animate={{ opacity: 1, y: 0, rotateX: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
             >
-              EMPOWER
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.9 }}
-            >
-              DISCOVERY AND
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1.1 }}
-            >
-              PRECISION
-            </motion.div>
-          </motion.h1>
+              {t.since1993}
+            </motion.span>
+          </h1>
 
-          {/* CTA Button */}
-          <motion.div
+          {/* Subtitle - Individual parallax */}
+          <motion.p
+            style={{ y: subtitleY }}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.9 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
+            className="text-lg md:text-xl text-white/60 leading-relaxed max-w-xl mb-10"
           >
-            <motion.button
-              className="group relative px-10 py-5 bg-transparent border-2 border-white rounded-full font-medium tracking-widest text-sm overflow-hidden"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onMouseEnter={() => setCursorVariant('hover')}
-              onMouseLeave={() => setCursorVariant('default')}
-            >
-              <span className="relative z-10 flex items-center gap-3">
-                Explore Solutions
+            {t.heroDescription}
+          </motion.p>
+
+          {/* CTA Buttons - Individual parallax */}
+          <motion.div
+            style={{ y: ctaY }}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1 }}
+            className="flex flex-wrap gap-4 mb-10"
+          >
+              <motion.a
+                href="https://www.daeilsys.com/products"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative inline-flex items-center gap-3 px-8 py-4 bg-white text-[#0a0a0a] font-semibold rounded-full overflow-hidden"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                onMouseEnter={() => setCursorVariant('hover')}
+                onMouseLeave={() => setCursorVariant('default')}
+              >
+                <span className="relative z-10">{t.exploreProducts}</span>
                 <svg
-                  width="20"
-                  height="12"
-                  viewBox="0 0 75 41"
+                  className="relative z-10 w-5 h-5 transition-transform group-hover:translate-x-1"
                   fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="transition-transform group-hover:translate-x-2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
                 >
-                  <path
-                    d="M61.0109 16.8393C61.4921 16.8393 61.7327 16.2571 61.3918 15.9174L46.3397 0.921817C45.9988 0.582201 46.2393 0 46.7205 0H55.7413C55.8841 0 56.021 0.0565705 56.1222 0.157321L73.9075 17.876C75.3642 19.3272 75.3642 21.68 73.9075 23.1312L56.1222 40.8499C56.021 40.9506 55.8841 41.0072 55.7413 41.0072H46.7205C46.2393 41.0072 45.9988 40.425 46.3397 40.0854L61.2882 25.193C61.629 24.8533 61.3885 24.2711 60.9073 24.2711L0.539568 24.2712C0.241573 24.2712 0 24.0296 0 23.7316V17.3788C0 17.0808 0.241575 16.8393 0.53957 16.8393L61.0109 16.8393Z"
-                    fill="currentColor"
-                  />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
-              </span>
-              <div className="absolute inset-0 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300" />
-              <span className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 text-[#1a1a1a] font-semibold transition-opacity duration-300 gap-3">
-                Explore Solutions
-                <svg
-                  width="20"
-                  height="12"
-                  viewBox="0 0 75 41"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="transition-transform translate-x-2"
-                >
-                  <path
-                    d="M61.0109 16.8393C61.4921 16.8393 61.7327 16.2571 61.3918 15.9174L46.3397 0.921817C45.9988 0.582201 46.2393 0 46.7205 0H55.7413C55.8841 0 56.021 0.0565705 56.1222 0.157321L73.9075 17.876C75.3642 19.3272 75.3642 21.68 73.9075 23.1312L56.1222 40.8499C56.021 40.9506 55.8841 41.0072 55.7413 41.0072H46.7205C46.2393 41.0072 45.9988 40.425 46.3397 40.0854L61.2882 25.193C61.629 24.8533 61.3885 24.2711 60.9073 24.2711L0.539568 24.2712C0.241573 24.2712 0 24.0296 0 23.7316V17.3788C0 17.0808 0.241575 16.8393 0.53957 16.8393L61.0109 16.8393Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </span>
-            </motion.button>
-          </motion.div>
+                <motion.div
+                  className="absolute inset-0 bg-[#75cdd6]"
+                  initial={{ x: '-100%' }}
+                  whileHover={{ x: 0 }}
+                  transition={{ duration: 0.3 }}
+                />
+              </motion.a>
+
+              <motion.a
+                href="https://www.daeilsys.com/contact"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 px-8 py-4 border border-white/20 text-white font-medium rounded-full hover:bg-white/5 transition-colors duration-300"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                onMouseEnter={() => setCursorVariant('hover')}
+                onMouseLeave={() => setCursorVariant('default')}
+              >
+                {t.contactUs}
+              </motion.a>
+            </motion.div>
         </div>
 
-        {/* Right Column - Product Image */}
-        <div className="lg:col-span-5" style={{ perspective: '1000px' }}>
+        {/* Stats - Bottom with individual item parallax */}
+        <div className="absolute bottom-12 left-6 right-6 md:left-12 md:right-12 lg:left-20 lg:right-20 xl:left-32 xl:right-32">
           <motion.div
-            initial={{ opacity: 0, scale: 0.8, rotateY: -20 }}
-            animate={{ opacity: 1, scale: 1, rotateY: 0 }}
-            transition={{ duration: 1.2, delay: 0.4 }}
-            className="relative"
-            style={{
-              transformStyle: 'preserve-3d',
-              rotateX: rotateX,
-              rotateY: rotateY,
-              translateZ: translateZ,
-            }}
-          >
-            {/* Product Image - Scroll-based Sequence Animation */}
-            <motion.img
-              src={images[currentFrame]}
-              alt="DVIA-ULF Vibration Isolation System - 360° View"
-              className="w-full h-auto filter drop-shadow-2xl"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5 }}
-            />
-
-            {/* Floating Info Cards with parallax depth */}
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 1 }}
-              style={{
-                translateZ: 50,
-                x: useTransform(smoothMouseX, [0, 1], [-10, 10]),
-                y: useTransform(smoothMouseY, [0, 1], [-10, 10]),
-              }}
-              className="absolute top-10 -left-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-4"
-            >
-              <div className="text-xs opacity-60 mb-1">Isolation Performance</div>
-              <div className="text-2xl font-bold text-green-400">80-90%</div>
-              <div className="text-xs opacity-60">at 1Hz</div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 1.2 }}
-              style={{
-                translateZ: 80,
-                x: useTransform(smoothMouseX, [0, 1], [-15, 15]),
-                y: useTransform(smoothMouseY, [0, 1], [-15, 15]),
-              }}
-              className="absolute bottom-10 -right-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-4"
-            >
-              <div className="text-xs opacity-60 mb-1">Since</div>
-              <div className="text-2xl font-bold">1993</div>
-              <div className="text-xs opacity-60">30+ Years</div>
-            </motion.div>
-          </motion.div>
-
-          {/* Description Below Image */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.8 }}
-            className="mt-8 space-y-4"
+            transition={{ duration: 0.8, delay: 1.2 }}
+            className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 py-6 border-t border-white/10"
           >
-            <span className="block text-sm tracking-widest opacity-70 uppercase">
-              DAEIL SYSTEMS INTRODUCTION
-            </span>
-            <p className="text-base leading-relaxed opacity-90">
-              Since 1993, DAEIL SYSTEMS has specialized in vibration isolation systems
-              for nanoscale precision equipment. We are people who think differently,
-              dedicated to creating products that make a difference.
-            </p>
+            {[
+              { value: '30+', label: t.years, sublabel: t.experience },
+              { value: '80-90%', label: t.isolation, sublabel: t.at1Hz },
+              { value: '6 DOF', label: t.degreesOf, sublabel: t.freedom },
+              { value: '0.5Hz', label: t.control, sublabel: t.start },
+            ].map((stat, index) => (
+              <motion.div
+                key={stat.label}
+                style={{ y: statsYValues[index] }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 1.4 + index * 0.1 }}
+                className="group"
+                onMouseEnter={() => setCursorVariant('hover')}
+                onMouseLeave={() => setCursorVariant('default')}
+              >
+                <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#75cdd6] group-hover:text-white transition-colors duration-300">
+                  {stat.value}
+                </div>
+                <div className="text-xs md:text-sm text-white/40 mt-1">
+                  <span className="block">{stat.label}</span>
+                  <span className="block text-white/30">{stat.sublabel}</span>
+                </div>
+              </motion.div>
+            ))}
           </motion.div>
         </div>
       </div>
 
-      {/* Divider SVG with drawing animation */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1.5, delay: 1.2 }}
-        className="absolute bottom-0 left-0 w-24 h-auto opacity-20"
-      >
-        <svg
-          viewBox="0 0 96 1332"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-full h-auto"
-        >
-          <motion.path
-            d="M1.00003 1332L1.00006 726.469C1.00007 691.615 18.8257 659.182 48.25 640.5V640.5C77.6744 621.818 95.5 589.385 95.5 554.531L95.5 0"
-            stroke="currentColor"
-            strokeWidth="1"
-            initial={{ pathLength: 0, opacity: 0 }}
-            animate={{ pathLength: 1, opacity: 1 }}
-            transition={{
-              pathLength: { duration: 2, delay: 1.5, ease: "easeInOut" },
-              opacity: { duration: 0.3, delay: 1.5 }
-            }}
-          />
-        </svg>
-      </motion.div>
-
       {/* Scroll Indicator */}
       <motion.div
+        style={{ y: scrollIndicatorY, opacity: scrollIndicatorOpacity }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1.5 }}
-        className="absolute bottom-12 right-12 hidden md:flex"
+        transition={{ delay: 2 }}
+        className="absolute bottom-12 right-6 md:right-12 lg:right-20 xl:right-32 z-20 hidden lg:flex flex-col items-center gap-3"
       >
         <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity }}
-          className="flex items-center gap-3"
+          animate={{ y: [0, 8, 0] }}
+          transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+          className="flex flex-col items-center"
         >
-          <span className="text-xs tracking-[0.16em] uppercase flex gap-1">
-            {'Scroll to explore'.split('').map((char, index) => (
-              <motion.span
-                key={index}
-                initial={{ opacity: 0.3 }}
-                animate={{ opacity: 0.6 }}
-                transition={{
-                  duration: 0.5,
-                  delay: 1.5 + index * 0.03,
-                  repeat: Infinity,
-                  repeatType: "reverse",
-                  repeatDelay: 3
-                }}
-              >
-                {char === ' ' ? '\u00A0' : char}
-              </motion.span>
-            ))}
+          <span className="text-[10px] text-white/30 uppercase tracking-[0.2em] mb-3 [writing-mode:vertical-rl]">
+            {t.scrollToExplore}
           </span>
-          <svg
-            width="20"
-            height="12"
-            viewBox="0 0 75 41"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="opacity-60"
-          >
-            <path
-              d="M61.0109 16.8393C61.4921 16.8393 61.7327 16.2571 61.3918 15.9174L46.3397 0.921817C45.9988 0.582201 46.2393 0 46.7205 0H55.7413C55.8841 0 56.021 0.0565705 56.1222 0.157321L73.9075 17.876C75.3642 19.3272 75.3642 21.68 73.9075 23.1312L56.1222 40.8499C56.021 40.9506 55.8841 41.0072 55.7413 41.0072H46.7205C46.2393 41.0072 45.9988 40.425 46.3397 40.0854L61.2882 25.193C61.629 24.8533 61.3885 24.2711 60.9073 24.2711L0.539568 24.2712C0.241573 24.2712 0 24.0296 0 23.7316V17.3788C0 17.0808 0.241575 16.8393 0.53957 16.8393L61.0109 16.8393Z"
-              fill="currentColor"
-            />
-          </svg>
+          <div className="w-[1px] h-16 bg-gradient-to-b from-white/30 to-transparent" />
         </motion.div>
       </motion.div>
-    </motion.section>
+
+      {/* Decorative Elements */}
+      <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-[#75cdd6]/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-1/3 left-1/3 w-96 h-96 bg-[#75cdd6]/3 rounded-full blur-3xl pointer-events-none" />
+    </section>
   );
 }

@@ -83,10 +83,10 @@ export default function Technologies({ setCursorVariant }: TechnologiesProps) {
           </p>
         </motion.div>
 
-        {/* Triangle Icon */}
+        {/* Triangle Icon - 플로팅 삼각형이 여기에 정착함 */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          whileInView={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 0.6 }}
           viewport={{ once: true }}
           transition={{ duration: 1, delay: 0.5 }}
           className="flex justify-center mb-16"
@@ -94,15 +94,15 @@ export default function Technologies({ setCursorVariant }: TechnologiesProps) {
           <div className="relative w-48 h-48">
             <svg viewBox="0 0 100 100" className="w-full h-full">
               <defs>
-                <linearGradient id="triangleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <linearGradient id="techTriangleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
                   <stop offset="0%" stopColor="#1a1a1a" />
                   <stop offset="100%" stopColor="#75cdd6" />
                 </linearGradient>
               </defs>
               <polygon
                 points="50,10 90,80 10,80"
-                fill="url(#triangleGradient)"
-                opacity="0.6"
+                fill="url(#techTriangleGradient)"
+                opacity="0.8"
               />
             </svg>
           </div>

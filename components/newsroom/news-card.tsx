@@ -39,7 +39,7 @@ export function NewsCard({ article, variant = 'default' }: NewsCardProps) {
                     {formatDate(article.date)}
                   </span>
                 </div>
-                <h3 className="font-medium text-sm line-clamp-2">
+                <h3 className="font-medium text-sm line-clamp-2 text-gray-900 dark:text-gray-100">
                   {article.title}
                 </h3>
               </div>
@@ -81,12 +81,12 @@ export function NewsCard({ article, variant = 'default' }: NewsCardProps) {
               {formatDate(article.date)}
             </span>
           </div>
-          <h3 className="font-semibold text-lg line-clamp-2">
+          <h3 className="font-semibold text-lg line-clamp-2 text-gray-900 dark:text-gray-100">
             {article.title}
           </h3>
         </CardHeader>
         <CardContent className="pt-0">
-          <p className="text-gray-600 text-sm line-clamp-3">
+          <p className="text-gray-600 dark:text-gray-300 text-sm line-clamp-3">
             {generateExcerpt(article.content)}
           </p>
           {article.tags && article.tags.length > 0 && (

@@ -2,9 +2,9 @@
 
 import { NewsFilters } from "@/components/newsroom/news-filters"
 import { NewsGrid } from "@/components/newsroom/news-grid"
+import { translations } from "@/constants/translations"
 import { getFeaturedNews, getNewsByCategory, newsArticles } from "@/data/newsroom"
 import { NewsCategory } from "@/data/newsroom-categories"
-import { translations } from "@/constants/translations"
 import { useLanguage } from "@/hooks/use-language"
 import { useTheme } from "@/hooks/use-theme"
 import { filterByTags, searchArticles, sortArticles } from "@/lib/newsroom-utils"
@@ -100,7 +100,7 @@ export default function Client() {
       </section>
 
       {/* News Section */}
-      <section className="py-20 bg-white dark:bg-gray-900">
+      <section className="py-20 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-4 gap-8">
             {/* Filters Sidebar */}

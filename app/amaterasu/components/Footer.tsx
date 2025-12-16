@@ -1,36 +1,41 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useLanguage } from '@/hooks/use-language';
+import { translations } from '@/constants/translations';
 
 interface FooterProps {
   setCursorVariant: (variant: 'default' | 'hover' | 'click') => void;
 }
 
 export default function Footer({ setCursorVariant }: FooterProps) {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   const footerLinks = {
     product: [
       { label: 'DVIA-ULF', href: '/products/active-vibration-systems/dvia-ulf' },
       { label: 'DVIA-MLP1000', href: '/products/active-vibration-systems/dvia-mlp1000' },
-      { label: 'Optical Tables', href: '/products/optical-tables' },
-      { label: 'All Products', href: '/products' },
+      { label: t.opticalTables, href: '/products/optical-tables' },
+      { label: t.allProducts, href: '/products' },
     ],
     company: [
-      { label: 'About', href: '/company' },
-      { label: 'Vision & Mission', href: '/company/vision-mission' },
-      { label: 'History', href: '/company/company-history' },
-      { label: 'Contact', href: '/contact' },
+      { label: t.about, href: '/company' },
+      { label: t.visionMission, href: '/company/vision-mission' },
+      { label: t.history, href: '/company/company-history' },
+      { label: t.contact, href: '/contact' },
     ],
     resources: [
-      { label: 'Technical Notes', href: '/support/technical-notes' },
-      { label: 'Case Studies', href: '/support/case-studies' },
-      { label: 'Resources', href: '/support' },
-      { label: 'Newsroom', href: '/newsroom' },
+      { label: t.technicalNotes, href: '/support/technical-notes' },
+      { label: t.caseStudies, href: '/support/case-studies' },
+      { label: t.resources, href: '/support' },
+      { label: t.newsroom, href: '/newsroom' },
     ],
     legal: [
-      { label: 'Privacy Policy', href: '/privacy-policy' },
-      { label: 'Terms of Use', href: '/terms-of-use' },
-      { label: 'Warranty Policy', href: '/support/warranty-policy' },
-      { label: 'Contact', href: '/contact' },
+      { label: t.privacyPolicy, href: '/privacy-policy' },
+      { label: t.termsOfUse, href: '/terms-of-use' },
+      { label: t.warrantyPolicy, href: '/support/warranty-policy' },
+      { label: t.contact, href: '/contact' },
     ],
   };
 
@@ -56,8 +61,7 @@ export default function Footer({ setCursorVariant }: FooterProps) {
             >
               <h3 className="text-3xl font-bold mb-4">DAEIL SYSTEMS</h3>
               <p className="text-sm opacity-70 leading-relaxed mb-6">
-                Pioneering vibration isolation technology since 1993.
-                Empowering precision and discovery through innovative engineering solutions.
+                {t.footerDescription}
               </p>
               <div className="flex gap-4">
                 {socialLinks.map((social, index) => (
@@ -87,7 +91,7 @@ export default function Footer({ setCursorVariant }: FooterProps) {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <h4 className="text-sm font-bold tracking-wider mb-4 opacity-60">PRODUCT</h4>
+            <h4 className="text-sm font-bold tracking-wider mb-4 opacity-60">{t.products.toUpperCase()}</h4>
             <ul className="space-y-3">
               {footerLinks.product.map((link) => (
                 <li key={link.label}>
@@ -111,7 +115,7 @@ export default function Footer({ setCursorVariant }: FooterProps) {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h4 className="text-sm font-bold tracking-wider mb-4 opacity-60">COMPANY</h4>
+            <h4 className="text-sm font-bold tracking-wider mb-4 opacity-60">{t.company.toUpperCase()}</h4>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.label}>
@@ -135,7 +139,7 @@ export default function Footer({ setCursorVariant }: FooterProps) {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <h4 className="text-sm font-bold tracking-wider mb-4 opacity-60">RESOURCES</h4>
+            <h4 className="text-sm font-bold tracking-wider mb-4 opacity-60">{t.resources.toUpperCase()}</h4>
             <ul className="space-y-3">
               {footerLinks.resources.map((link) => (
                 <li key={link.label}>
@@ -159,7 +163,7 @@ export default function Footer({ setCursorVariant }: FooterProps) {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <h4 className="text-sm font-bold tracking-wider mb-4 opacity-60">LEGAL</h4>
+            <h4 className="text-sm font-bold tracking-wider mb-4 opacity-60">{t.legal}</h4>
             <ul className="space-y-3">
               {footerLinks.legal.map((link) => (
                 <li key={link.label}>
@@ -186,14 +190,14 @@ export default function Footer({ setCursorVariant }: FooterProps) {
           className="border-t border-white/10 pt-12 mb-12"
         >
           <div className="max-w-2xl mx-auto text-center">
-            <h4 className="text-2xl font-bold mb-4">Stay Updated</h4>
+            <h4 className="text-2xl font-bold mb-4">{t.stayUpdated}</h4>
             <p className="text-sm opacity-70 mb-6">
-              Subscribe to our newsletter for the latest updates on vibration isolation technology
+              {t.newsletterDescription}
             </p>
             <div className="flex gap-4 max-w-md mx-auto">
               <input
                 type="email"
-                placeholder="Enter your email"
+                placeholder={t.enterEmail}
                 className="flex-1 px-4 py-3 bg-white/10 border border-white/20 focus:border-white/40 outline-none transition-colors"
                 onMouseEnter={() => setCursorVariant('hover')}
                 onMouseLeave={() => setCursorVariant('default')}
@@ -205,7 +209,7 @@ export default function Footer({ setCursorVariant }: FooterProps) {
                 onMouseEnter={() => setCursorVariant('hover')}
                 onMouseLeave={() => setCursorVariant('default')}
               >
-                SUBSCRIBE
+                {t.subscribe}
               </motion.button>
             </div>
           </div>
@@ -219,9 +223,9 @@ export default function Footer({ setCursorVariant }: FooterProps) {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm opacity-60"
         >
-          <p>© 2025 DAEIL SYSTEMS CO., LTD. All rights reserved.</p>
+          <p>{t.copyright}</p>
           <p className="text-xs">
-            Vibration Isolation • Precision Engineering • Since 1993
+            {t.footerTagline}
           </p>
         </motion.div>
       </div>

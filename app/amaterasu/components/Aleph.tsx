@@ -2,6 +2,8 @@
 
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
+import { useLanguage } from '@/hooks/use-language';
+import { translations } from '@/constants/translations';
 
 interface AlephProps {
   setCursorVariant: (variant: 'default' | 'hover' | 'click') => void;
@@ -9,6 +11,8 @@ interface AlephProps {
 
 export default function Aleph({ setCursorVariant }: AlephProps) {
   const containerRef = useRef<HTMLElement>(null);
+  const { language } = useLanguage();
+  const t = translations[language];
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ['start end', 'end start'],
@@ -21,16 +25,12 @@ export default function Aleph({ setCursorVariant }: AlephProps) {
     <motion.section
       ref={containerRef}
       id="aleph"
-      className="relative h-screen flex items-center justify-center px-6 md:px-12 overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center px-6 md:px-12 py-24 overflow-hidden"
     >
-      {/* Gradient Background */}
-      <motion.div
-        style={{ y: backgroundY }}
-        className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-[#2a2a2a] to-[#0a0a0a] opacity-50"
-      />
+      {/* Gradient Background - removed gray overlay */}
 
       {/* Animated Grid */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-5">
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
@@ -100,9 +100,9 @@ export default function Aleph({ setCursorVariant }: AlephProps) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight"
+          className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-8 leading-tight"
         >
-          Next-Generation DVIA
+          {t.nextGenDVIA}
         </motion.h2>
 
         {/* Description */}
@@ -111,33 +111,31 @@ export default function Aleph({ setCursorVariant }: AlephProps) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-xl md:text-2xl opacity-80 leading-relaxed mb-12 max-w-4xl mx-auto"
+          className="text-lg md:text-xl lg:text-2xl opacity-70 leading-relaxed mb-16 max-w-4xl mx-auto"
         >
-          Our next-generation vibration isolation systems represent a quantum leap in precision control technology.
-          Combining advanced materials science with intelligent damping algorithms to deliver
-          unprecedented levels of isolation performance across all frequency ranges.
+          {t.alephDescription}
         </motion.p>
 
-        {/* Features Grid */}
+        {/* Features - Clean inline design */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="grid md:grid-cols-3 gap-8 mb-12"
+          className="flex flex-wrap justify-center gap-8 md:gap-12 lg:gap-16 mb-16"
         >
           {[
             {
-              title: 'Active-Passive Hybrid',
-              description: 'Combining passive and active isolation for optimal performance',
+              title: t.activePassiveHybrid,
+              description: t.activePassiveHybridDesc,
             },
             {
-              title: 'Smart Damping',
-              description: 'Real-time adaptive control responding to vibration conditions',
+              title: t.smartDamping,
+              description: t.smartDampingDesc,
             },
             {
-              title: 'Sub-Hertz Isolation',
-              description: 'Pushing boundaries with isolation below 0.5Hz frequency',
+              title: t.subHertzIsolation,
+              description: t.subHertzIsolationDesc,
             },
           ].map((feature, index) => (
             <motion.div
@@ -146,12 +144,16 @@ export default function Aleph({ setCursorVariant }: AlephProps) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.5 + index * 0.1 }}
-              className="p-6 border border-white/20 hover:border-white/40 transition-all duration-300"
+              className="flex flex-col items-center max-w-[280px] group"
               onMouseEnter={() => setCursorVariant('hover')}
               onMouseLeave={() => setCursorVariant('default')}
             >
-              <h3 className="text-2xl font-bold mb-3">{feature.title}</h3>
-              <p className="opacity-70">{feature.description}</p>
+              <h3 className="text-xl md:text-2xl font-semibold mb-2 text-[#75cdd6] group-hover:text-white transition-colors duration-300">
+                {feature.title}
+              </h3>
+              <p className="text-sm md:text-base opacity-60 text-center">
+                {feature.description}
+              </p>
             </motion.div>
           ))}
         </motion.div>
@@ -164,24 +166,30 @@ export default function Aleph({ setCursorVariant }: AlephProps) {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
-          <motion.button
-            className="px-10 py-5 bg-white text-[#1a1a1a] font-bold tracking-wide hover:bg-opacity-90 transition-all duration-300"
+          <motion.a
+            href="https://www.daeilsys.com/contact"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-4 bg-white text-[#1a1a1a] font-medium tracking-wide hover:bg-opacity-90 transition-all duration-300 rounded-full"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onMouseEnter={() => setCursorVariant('hover')}
             onMouseLeave={() => setCursorVariant('default')}
           >
-            REQUEST INFORMATION
-          </motion.button>
-          <motion.button
-            className="px-10 py-5 border-2 border-white font-bold tracking-wide hover:bg-white hover:text-[#1a1a1a] transition-all duration-300"
+            {t.requestInformation}
+          </motion.a>
+          <motion.a
+            href="https://www.daeilsys.com/products"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-4 border border-white/40 font-medium tracking-wide hover:bg-white hover:text-[#1a1a1a] transition-all duration-300 rounded-full"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onMouseEnter={() => setCursorVariant('hover')}
             onMouseLeave={() => setCursorVariant('default')}
           >
-            TECHNICAL SPECS
-          </motion.button>
+            {t.technicalSpecs}
+          </motion.a>
         </motion.div>
 
         {/* Bottom Text */}
@@ -190,25 +198,25 @@ export default function Aleph({ setCursorVariant }: AlephProps) {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1, delay: 1 }}
-          className="mt-12 text-sm tracking-wider opacity-60"
+          className="mt-12 text-sm tracking-wider opacity-40"
         >
-          Coming 2026 • R&D in Progress
+          {t.coming2026}
         </motion.p>
       </motion.div>
 
       {/* Animated Particles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(20)].map((_, i) => (
+        {[...Array(15)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute w-1 h-1 bg-white rounded-full"
+            className="absolute w-1 h-1 bg-white/50 rounded-full"
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
             }}
             animate={{
               y: [0, -30, 0],
-              opacity: [0, 1, 0],
+              opacity: [0, 0.5, 0],
             }}
             transition={{
               duration: 3 + Math.random() * 2,

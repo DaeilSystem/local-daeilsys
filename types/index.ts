@@ -102,6 +102,75 @@ export interface TranslationKeys {
   genericCriteria: string
   activeSystem: string
   passiveSystem: string
+  // Amaterasu Hero
+  worldLeader: string
+  weControl: string
+  vibration: string
+  since1993: string
+  heroDescription: string
+  contactUs: string
+  years: string
+  experience: string
+  isolation: string
+  at1Hz: string
+  degreesOf: string
+  freedom: string
+  control: string
+  start: string
+  scrollToExplore: string
+  // Amaterasu Vision
+  vision: string
+  visionStatement: string
+  customerOrientation: string
+  customerOrientationDesc: string
+  partnership: string
+  partnershipDesc: string
+  passionForPerfection: string
+  passionForPerfectionDesc: string
+  // Amaterasu Products
+  productLineup: string
+  scrollToExploreSolutions: string
+  swipeToExplore: string
+  // Product items
+  customActiveVibration: string
+  customActiveVibrationDesc: string
+  electronMicroscopeSeries: string
+  electronMicroscopeSeriesDesc: string
+  tabletopSeries: string
+  tabletopSeriesDesc: string
+  pneumaticServoSeries: string
+  pneumaticServoSeriesDesc: string
+  floorStandingSeries: string
+  floorStandingSeriesDesc: string
+  // Amaterasu Case Studies
+  successStories: string
+  installationReports: string
+  caseStudiesDescription: string
+  viewAllCaseStudies: string
+  // Amaterasu Newsroom
+  latestUpdates: string
+  newsAndInsights: string
+  newsroomDescription: string
+  exploreAllArticles: string
+  news: string
+  pressRelease: string
+  product: string
+  // Amaterasu Footer
+  footerDescription: string
+  stayUpdated: string
+  newsletterDescription: string
+  enterEmail: string
+  subscribe: string
+  about: string
+  history: string
+  resources: string
+  privacyPolicy: string
+  termsOfUse: string
+  warrantyPolicy: string
+  legal: string
+  allProducts: string
+  copyright: string
+  footerTagline: string
 }
 
 export interface ProductItem {

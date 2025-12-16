@@ -1,14 +1,32 @@
 'use client';
 
 import { motion, useScroll, useTransform } from 'framer-motion';
+import Image from 'next/image';
 import { useRef } from 'react';
+import { newsArticles } from '@/data/newsroom';
+import { useLanguage } from '@/hooks/use-language';
+import { translations } from '@/constants/translations';
 
 interface NewsroomProps {
   setCursorVariant: (variant: 'default' | 'hover' | 'click') => void;
 }
 
+// Get featured news articles (최대 4개)
+const featuredNews = newsArticles.filter(article => article.featured).slice(0, 4);
+
+// Category label mapping
+const getCategoryLabels = (t: typeof translations['en']) => ({
+  'news': t.news,
+  'press-release': t.pressRelease,
+  'product': t.product,
+  'company': t.company
+});
+
 export default function Newsroom({ setCursorVariant }: NewsroomProps) {
   const containerRef = useRef<HTMLElement>(null);
+  const { language } = useLanguage();
+  const t = translations[language];
+  const categoryLabels = getCategoryLabels(t);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -35,7 +53,7 @@ export default function Newsroom({ setCursorVariant }: NewsroomProps) {
             className="mb-8"
           >
             <span className="text-xs tracking-[0.3em] uppercase opacity-60">
-              Latest Updates
+              {t.latestUpdates}
             </span>
           </motion.div>
           <motion.h2
@@ -46,7 +64,7 @@ export default function Newsroom({ setCursorVariant }: NewsroomProps) {
             className="text-4xl md:text-5xl lg:text-6xl font-light mb-6"
             style={{ fontWeight: 300 }}
           >
-            News & Insights
+            {t.newsAndInsights}
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 30 }}
@@ -55,50 +73,61 @@ export default function Newsroom({ setCursorVariant }: NewsroomProps) {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-base md:text-lg opacity-70 max-w-3xl mx-auto"
           >
-            Stay informed about the latest developments in vibration isolation
-            technology and DVIA product innovations from DAEIL SYSTEMS.
+            {t.newsroomDescription}
           </motion.p>
         </div>
 
         {/* News Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          {[
-            {
-              date: '2024',
-              title: 'DVIA-MLP1000 Sets New Standard',
-              description:
-                'Our flagship ultra-low frequency passive isolation system achieves unprecedented 80-90% isolation at 1Hz.',
-              tag: 'Product',
-            },
-            {
-              date: '2024',
-              title: 'Expanding Global Partnerships',
-              description:
-                'DAEIL SYSTEMS strengthens collaborations with leading research institutions worldwide.',
-              tag: 'Partnership',
-            },
-          ].map((news, index) => (
-            <motion.div
-              key={news.title}
+          {featuredNews.map((article, index) => (
+            <motion.a
+              key={article.id}
+              href={`https://www.daeilsys.com/newsroom/${article.id}`}
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="border border-white/20 p-8 hover:border-white/40 transition-all duration-300 cursor-pointer group"
+              className="border border-white/20 overflow-hidden hover:border-white/40 transition-all duration-300 cursor-pointer group"
               onMouseEnter={() => setCursorVariant('hover')}
               onMouseLeave={() => setCursorVariant('default')}
             >
-              <div className="flex items-center gap-3 mb-4">
-                <span className="px-3 py-1 bg-gradient-to-r from-[#1a1a1a]/20 to-[#75cdd6]/20 border border-white/20 rounded-full text-xs tracking-wider">
-                  {news.tag}
-                </span>
-                <span className="text-xs opacity-60">{news.date}</span>
+              {/* Image */}
+              {article.main_image && (
+                <div className="relative w-full h-48 md:h-56 overflow-hidden">
+                  <Image
+                    src={article.main_image}
+                    alt={article.title}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                </div>
+              )}
+
+              {/* Content */}
+              <div className="p-6 md:p-8">
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="px-3 py-1 bg-gradient-to-r from-[#1a1a1a]/20 to-[#75cdd6]/20 border border-white/20 rounded-full text-xs tracking-wider">
+                    {categoryLabels[article.category] || article.category}
+                  </span>
+                  <span className="text-xs opacity-60 flex items-center gap-1">
+                    <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    {article.date}
+                  </span>
+                </div>
+                <h3 className="text-xl md:text-2xl font-light mb-3 group-hover:text-[#75cdd6] transition-colors line-clamp-2">
+                  {article.title}
+                </h3>
+                <p className="text-sm opacity-70 leading-relaxed line-clamp-2">
+                  {article.content.substring(0, 150)}...
+                </p>
               </div>
-              <h3 className="text-2xl font-light mb-3 group-hover:text-[#75cdd6] transition-colors">
-                {news.title}
-              </h3>
-              <p className="text-base opacity-70 leading-relaxed">{news.description}</p>
-            </motion.div>
+            </motion.a>
           ))}
         </div>
 
@@ -110,15 +139,18 @@ export default function Newsroom({ setCursorVariant }: NewsroomProps) {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-center"
         >
-          <motion.button
-            className="px-10 py-5 border-2 border-white/30 hover:border-white/60 rounded-full transition-all duration-300 group"
+          <motion.a
+            href="https://www.daeilsys.com/newsroom"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-10 py-5 border-2 border-white/30 hover:border-white/60 rounded-full transition-all duration-300 group"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onMouseEnter={() => setCursorVariant('hover')}
             onMouseLeave={() => setCursorVariant('default')}
           >
             <span className="flex items-center gap-3 text-sm font-medium tracking-wide">
-              Explore All Articles
+              {t.exploreAllArticles}
               <svg
                 width="20"
                 height="12"
@@ -132,7 +164,7 @@ export default function Newsroom({ setCursorVariant }: NewsroomProps) {
                 />
               </svg>
             </span>
-          </motion.button>
+          </motion.a>
         </motion.div>
       </div>
     </motion.section>
