@@ -29,6 +29,9 @@ export default function Vision({ setCursorVariant }: VisionProps) {
   const y = useTransform(scrollYProgress, [0, 1], [100, -100]);
   const opacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0]);
 
+  // Fixed 요소들이 섹션 끝에서 사라지도록
+  const fixedOpacity = useTransform(scrollYProgress, [0, 0.1, 0.85, 1], [0, 1, 1, 0]);
+
   return (
     <motion.section
       ref={containerRef}
@@ -42,8 +45,9 @@ export default function Vision({ setCursorVariant }: VisionProps) {
     >
       {/* Expanding Circle Background */}
       <motion.div
-        className="fixed inset-0 bg-gradient-to-br from-[#0a0a0a] to-[#1a1a1a] z-0"
+        className="fixed inset-0 bg-gradient-to-br from-[#0a0a0a] to-[#1a1a1a] z-0 pointer-events-none"
         style={{
+          opacity: fixedOpacity,
           WebkitMaskImage: `radial-gradient(circle at 50% ${maskPosition}, transparent ${maskRadius}, #000 0)`,
           maskImage: `radial-gradient(circle at 50% ${maskPosition}, transparent ${maskRadius}, #000 0)`,
         }}
@@ -51,8 +55,9 @@ export default function Vision({ setCursorVariant }: VisionProps) {
 
       {/* Animated Triangle - starts upper-left, rotates and scales to center */}
       <motion.div
-        className="fixed top-20 left-20 z-10"
+        className="fixed top-20 left-20 z-10 pointer-events-none"
         style={{
+          opacity: fixedOpacity,
           x: triangleX,
           y: triangleY,
           scale: triangleScale,

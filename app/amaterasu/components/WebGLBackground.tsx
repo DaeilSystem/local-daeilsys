@@ -36,7 +36,45 @@ export default function WebGLBackground() {
     });
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setClearColor(0x000000, 0);
+    renderer.autoClear = false;
     rendererRef.current = renderer;
+
+    // Gradient background (matches Figma reference)
+    const gradientScene = new THREE.Scene();
+    const gradientCamera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
+    const gradientGeometry = new THREE.PlaneGeometry(2, 2);
+    const gradientMaterial = new THREE.ShaderMaterial({
+      uniforms: {
+        rightColor: { value: new THREE.Color('#BBEEF0') },
+        leftColor: { value: new THREE.Color('#0A2B3F') },
+        midColor: { value: new THREE.Color('#31A0BC') },
+      },
+      vertexShader: `
+        varying vec2 vUv;
+        void main() {
+          vUv = uv;
+          gl_Position = vec4(position, 1.0);
+        }
+      `,
+      fragmentShader: `
+        varying vec2 vUv;
+        uniform vec3 leftColor;
+        uniform vec3 midColor;
+        uniform vec3 rightColor;
+        void main() {
+          float t = vUv.x;
+          vec3 color = t < 0.5
+            ? mix(leftColor, midColor, t * 2.0)
+            : mix(midColor, rightColor, (t - 0.5) * 2.0);
+          gl_FragColor = vec4(color, 1.0);
+        }
+      `,
+      depthTest: false,
+      depthWrite: false,
+    });
+    const gradientMesh = new THREE.Mesh(gradientGeometry, gradientMaterial);
+    gradientScene.add(gradientMesh);
 
     // Particles (reduced count for better performance)
     const particleCount = 2000;
@@ -113,6 +151,8 @@ export default function WebGLBackground() {
         meshRef.current.rotation.z = elapsedTime * 0.1;
       }
 
+      renderer.clear();
+      renderer.render(gradientScene, gradientCamera);
       renderer.render(scene, camera);
     };
 
@@ -138,6 +178,8 @@ export default function WebGLBackground() {
       particleMaterial.dispose();
       planeGeometry.dispose();
       planeMaterial.dispose();
+      gradientGeometry.dispose();
+      gradientMaterial.dispose();
     };
   }, []);
 

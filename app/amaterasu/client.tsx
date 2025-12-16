@@ -19,7 +19,6 @@ import Hero from './components/Hero';
 import Mission from './components/Mission';
 import Newsroom from './components/Newsroom';
 import ProductsHorizontal from './components/ProductsHorizontal';
-import SoundButton from './components/SoundButton';
 import SplashScreen from './components/SplashScreen';
 import Technologies from './components/Technologies';
 import Vision from './components/Vision';
@@ -27,9 +26,9 @@ import WebGLBackground from './components/WebGLBackground';
 
 export default function AmaterasuClient() {
   const [isLoaded, setIsLoaded] = useState(false);
-  const [showSplash, setShowSplash] = useState(true);
+  const [showSplash, setShowSplash] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [cursorVariant, setCursorVariant] = useState('default');
+  const [cursorVariant, setCursorVariant] = useState<'default' | 'hover' | 'click'>('default');
   const [currentSection, setCurrentSection] = useState(0);
 
   // Initialize GSAP ScrollTrigger for section snapping
@@ -50,36 +49,8 @@ export default function AmaterasuClient() {
         '.aleph-section',
       ]);
 
-      // Create snap scroll for the entire container
-      ScrollTrigger.create({
-        trigger: 'body',
-        start: 'top top',
-        end: 'bottom bottom',
-        snap: {
-          snapTo: 1 / (sections.length - 1),
-          duration: { min: 0.6, max: 0.9 },
-          delay: 0.1,
-          ease: 'power2.inOut',
-        },
-      });
-
-      // Pin and fade animation for each section + track current section
+      // Track section changes (fade animation disabled to fix visibility issues)
       sections.forEach((section, i) => {
-        // Fade in animation
-        gsap.from(section, {
-          opacity: 0,
-          y: 100,
-          duration: 1.2,
-          ease: 'power2.out',
-          scrollTrigger: {
-            trigger: section,
-            start: 'top 80%',
-            end: 'top 20%',
-            toggleActions: 'play none none reverse',
-          },
-        });
-
-        // Track section changes
         ScrollTrigger.create({
           trigger: section,
           start: 'top center',
@@ -155,7 +126,6 @@ export default function AmaterasuClient() {
       {!showSplash && (
         <>
           {/* <Header setCursorVariant={setCursorVariant} /> */}
-          <SoundButton setCursorVariant={setCursorVariant} />
 
           <main className="relative z-10">
             <div className="hero-section">
