@@ -8,22 +8,12 @@ import { MissionStatement } from "@/components/company/mission-statement"
 import { NewsSection } from "@/components/company/news-section"
 import { ValuesSection } from "@/components/company/values-section"
 import { WorkContinuesSection } from "@/components/company/work-continues-section"
-import { Navigation } from "@/components/navigation/navigation"
-import { Footer } from "@/components/sections/footer"
-import { translations } from "@/constants/translations"
-import { getCompanyMenuItems, getProductsMenuItems, getSupportMenuItems } from "@/data/menu-items"
 import { useLanguage } from "@/hooks/use-language"
 import { useTheme } from "@/hooks/use-theme"
 
 export default function Client() {
-  const { language, isInitialized } = useLanguage()
+  const { isInitialized } = useLanguage()
   const { theme } = useTheme()
-
-  const currentLanguage = isInitialized ? language : "en"
-  const t = translations[currentLanguage]
-  const companyMenuItems = getCompanyMenuItems(currentLanguage)
-  const productsMenuItems = getProductsMenuItems(currentLanguage)
-  const supportMenuItems = getSupportMenuItems(currentLanguage)
 
   if (!isInitialized) {
     return (
@@ -34,8 +24,7 @@ export default function Client() {
   }
 
   return (
-    <div className={`min-h-screen ${theme === "dark" ? "dark" : ""}`}>
-      <Navigation />
+    <div className={`min-h-screen ${theme === "dark" ? "dark" : "light"}`}>
       <EducationHero />
       <MissionStatement />
       <EducatorsSection />
@@ -44,12 +33,6 @@ export default function Client() {
       <WorkContinuesSection />
       <NewsSection />
       <ValuesSection />
-      <Footer
-        translations={t}
-        companyItems={companyMenuItems}
-        productsItems={productsMenuItems}
-        supportItems={supportMenuItems}
-      />
     </div>
   )
 }

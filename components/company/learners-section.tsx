@@ -39,15 +39,15 @@ const learnerStories = [
 
 export function LearnersSection({ className }: LearnersSectionProps) {
   return (
-    <section className={`py-12 sm:py-16 lg:py-20 ${className}`}>
+    <section className={`py-12 sm:py-16 lg:py-20 ${className} bg-[#F5F5F7]`}>
       {/* Content */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 sm:mb-12">
         <div className="text-center space-y-4 sm:space-y-6">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-normal leading-tight text-white">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-normal leading-tight text-gray-900">
             Equipping today's learners<br className="hidden sm:block" />
             <span className="sm:hidden"> </span>for tomorrow's opportunities.
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed max-w-4xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
             We're helping to prepare people of all ages with creative learning, skill development, and real-world experiences that support future careers.
           </p>
         </div>

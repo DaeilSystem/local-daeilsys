@@ -1,7 +1,11 @@
+'use client';
+
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
+import { translations } from '@/constants/translations';
 import { NewsArticle } from '@/data/newsroom';
 import { NEWS_CATEGORIES } from '@/data/newsroom-categories';
+import { useLanguage } from '@/hooks/use-language';
 import { formatDate, generateExcerpt } from '@/lib/newsroom-utils';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -12,6 +16,8 @@ interface NewsCardProps {
 }
 
 export function NewsCard({ article, variant = 'default' }: NewsCardProps) {
+  const { language } = useLanguage();
+  const t = translations[language];
   const category = NEWS_CATEGORIES[article.category];
 
   if (variant === 'compact') {
@@ -66,7 +72,7 @@ export function NewsCard({ article, variant = 'default' }: NewsCardProps) {
             {variant === 'featured' && (
               <div className="absolute top-2 left-2">
                 <Badge className="bg-blue-500 text-white">
-                  추천
+                  {t.featured}
                 </Badge>
               </div>
             )}

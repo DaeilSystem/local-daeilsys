@@ -14,6 +14,7 @@ if (typeof window !== 'undefined') {
 import Aleph from './components/Aleph';
 import CaseStudies from './components/CaseStudies';
 import CustomCursor from './components/CustomCursor';
+import Footer from './components/Footer';
 import GuidingPrinciples from './components/GuidingPrinciples';
 import Hero from './components/Hero';
 import Mission from './components/Mission';
@@ -199,7 +200,7 @@ export default function AmaterasuClient() {
             <div className="aleph-section">
               <Aleph setCursorVariant={setCursorVariant} />
             </div>
-            {/* <Footer setCursorVariant={setCursorVariant} /> */}
+            <Footer setCursorVariant={setCursorVariant} />
           </main>
         </>
       )}

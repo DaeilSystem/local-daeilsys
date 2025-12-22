@@ -1,9 +1,9 @@
 "use client"
 
-import { useState, useEffect } from "react"
-import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { ChevronLeft, ChevronRight, ArrowUpRight } from "lucide-react"
+import { Card, CardContent } from "@/components/ui/card"
+import { ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react"
+import { useEffect, useState } from "react"
 
 interface Value {
   id: string
@@ -99,9 +99,9 @@ export function ValuesSection({ className }: ValuesSectionProps) {
   }, [cardsPerView, maxIndex, currentIndex])
 
   return (
-    <section className={`py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 ${className}`}>
+    <section className={`py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-[#F5F5F7] ${className}`}>
       <div className="max-w-7xl mx-auto space-y-8 sm:space-y-12">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light text-center text-white">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light text-center text-gray-900">
           Our values lead the way.
         </h2>
 
@@ -170,8 +170,8 @@ export function ValuesSection({ className }: ValuesSectionProps) {
                   onClick={() => setCurrentIndex(index)}
                   className={`w-2 h-2 rounded-full transition-all duration-300 ${
                     index === currentIndex
-                      ? "bg-white"
-                      : "bg-white/40 hover:bg-white/60"
+                      ? "bg-black"
+                      : "bg-black/40"
                   }`}
                 />
               ))}

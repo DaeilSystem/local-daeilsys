@@ -93,7 +93,7 @@ export default function Client() {
           >
             <h1 className="text-5xl md:text-6xl font-thin mb-6">{t.newsroom}</h1>
             <p className="text-xl text-white/80 max-w-3xl mx-auto">
-              Stay updated with DAEIL SYSTEMS' latest news and industry trends
+              {t.newsroomHeroDescription}
             </p>
           </motion.div>
         </div>
@@ -135,7 +135,7 @@ export default function Client() {
                 {selectedCategory === 'all' && searchQuery === '' && selectedTags.length === 0 && (
                   <div className="mb-12">
                     <h2 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">
-                      Featured News
+                      {t.featuredNews}
                     </h2>
                     <NewsGrid
                       articles={getFeaturedNews()}
@@ -149,10 +149,10 @@ export default function Client() {
                 <div>
                   <div className="flex items-center justify-between mb-6">
                     <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">
-                      {selectedCategory === 'all' ? 'All News' : 'Filtered News'}
+                      {selectedCategory === 'all' && searchQuery === '' && selectedTags.length === 0 ? t.allNews : t.filteredNews}
                     </h2>
                     <span className="text-sm text-gray-500 dark:text-gray-400">
-                      {filteredNews.length} articles
+                      {filteredNews.length} {t.articles}
                     </span>
                   </div>
 
@@ -164,7 +164,7 @@ export default function Client() {
                   ) : (
                     <div className="text-center py-12">
                       <p className="text-gray-500 dark:text-gray-400">
-                        No news articles match your search criteria.
+                        {t.noArticlesFound}
                       </p>
                     </div>
                   )}

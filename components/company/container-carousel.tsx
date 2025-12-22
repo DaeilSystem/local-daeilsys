@@ -1,8 +1,8 @@
 "use client"
 
-import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { ChevronLeft, ChevronRight, Plus } from "lucide-react"
+import { useEffect, useState } from "react"
 
 interface Story {
   id: string
@@ -138,13 +138,13 @@ export function ContainerCarousel({
         <div className="flex space-x-2">
           {Array.from({ length: maxIndex + 1 }).map((_, index) => (
             <button
-              key={index}
-              onClick={() => setCurrentIndex(index)}
-              className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                index === currentIndex
-                  ? "bg-white"
-                  : "bg-white/40 hover:bg-white/60"
-              }`}
+                key={index}
+                onClick={() => setCurrentIndex(index)}
+                className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                  index === currentIndex
+                    ? "bg-black"
+                    : "bg-black/40"
+                }`}
             />
           ))}
         </div>

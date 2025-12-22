@@ -1,8 +1,8 @@
 "use client"
 
-import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { ChevronLeft, ChevronRight, ArrowUpRight, Play, Pause } from "lucide-react"
+import { ArrowUpRight, ChevronLeft, ChevronRight, Pause, Play } from "lucide-react"
+import { useEffect, useState } from "react"
 
 interface Story {
   id: string

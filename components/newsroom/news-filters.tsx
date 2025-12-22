@@ -1,7 +1,11 @@
+'use client';
+
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import { translations } from '@/constants/translations';
 import { NEWS_CATEGORIES, NewsCategory } from '@/data/newsroom-categories';
+import { useLanguage } from '@/hooks/use-language';
 import { Filter, Search, X } from 'lucide-react';
 
 interface NewsFiltersProps {
@@ -25,6 +29,8 @@ export function NewsFilters({
   availableTags,
   onClearFilters
 }: NewsFiltersProps) {
+  const { language } = useLanguage();
+  const t = translations[language];
   const hasActiveFilters = selectedCategory !== 'all' || searchQuery || selectedTags.length > 0;
 
   return (
@@ -33,7 +39,7 @@ export function NewsFilters({
       <div className="relative">
         <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 dark:text-gray-400 w-4 h-4" />
         <Input
-          placeholder="뉴스 검색..."
+          placeholder={t.searchNews}
           value={searchQuery}
           onChange={(e) => onSearchChange(e.target.value)}
           className="pl-10"
@@ -42,14 +48,14 @@ export function NewsFilters({
 
       {/* Categories */}
       <div>
-        <h3 className="text-sm font-medium text-gray-900 dark:text-gray-200 mb-3">카테고리</h3>
+        <h3 className="text-sm font-medium text-gray-900 dark:text-gray-200 mb-3">{t.category}</h3>
         <div className="flex flex-wrap gap-2">
           <Button
             variant={selectedCategory === 'all' ? 'default' : 'outline'}
             size="sm"
             onClick={() => onCategoryChange('all')}
           >
-            전체
+            {t.all}
           </Button>
           {Object.entries(NEWS_CATEGORIES).map(([key, category]) => (
             <Button
@@ -67,7 +73,7 @@ export function NewsFilters({
       {/* Tags */}
       {availableTags.length > 0 && (
         <div>
-          <h3 className="text-sm font-medium text-gray-900 dark:text-gray-200 mb-3">태그</h3>
+          <h3 className="text-sm font-medium text-gray-900 dark:text-gray-200 mb-3">{t.tags}</h3>
           <div className="flex flex-wrap gap-2">
             {availableTags.map((tag) => (
               <Badge
@@ -87,7 +93,7 @@ export function NewsFilters({
       {hasActiveFilters && (
         <div className="flex items-center gap-2">
           <Filter className="w-4 h-4 text-gray-500" />
-          <span className="text-sm text-gray-600 dark:text-gray-400">활성 필터:</span>
+          <span className="text-sm text-gray-600 dark:text-gray-400">{t.activeFilters}</span>
           {selectedCategory !== 'all' && (
             <Badge variant="secondary" className="text-xs">
               {NEWS_CATEGORIES[selectedCategory].label}
