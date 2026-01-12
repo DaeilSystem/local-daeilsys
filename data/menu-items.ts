@@ -4,13 +4,13 @@ import type { MenuItem, ProductsMenuItems, SupportMenuItems } from "@/types"
 export const getCompanyMenuItems = (language: "en" | "ko"): MenuItem[] => {
   const t = translations[language]
   return [
-    { key: "overview", label: t.overview, href: "/company-backup/overview" },
-    { key: "vision-mission", label: t.visionMission, href: "/company-backup/vision-mission" },
-    { key: "company-history", label: t.companyHistory, href: "/company-backup/company-history" },
-    { key: "values", label: t.values, href: "/company-backup/values" },
-    { key: "sustainability", label: t.sustainability, href: "/company-backup/sustainability-management" },
-    { key: "intro-video", label: t.introVideo, href: "/company-backup/company-intro-video" },
-    { key: "trade-shows", label: t.tradeShows, href: "/company-backup/trade-shows" },
+    { key: "overview", label: t.overview, href: "/company/overview" },
+    { key: "vision-mission", label: t.visionMission, href: "/company/vision-mission" },
+    { key: "company-history", label: t.companyHistory, href: "/company/company-history" },
+    { key: "values", label: t.values, href: "/company/values" },
+    { key: "sustainability", label: t.sustainability, href: "/company/sustainability-management" },
+    { key: "intro-video", label: t.introVideo, href: "/company/company-intro-video" },
+    { key: "trade-shows", label: t.tradeShows, href: "/company/trade-shows" },
   ]
 }
 

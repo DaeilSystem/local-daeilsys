@@ -4,58 +4,15 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react"
 import { useEffect, useState } from "react"
-
-interface Value {
-  id: string
-  title: string
-  description: string
-  href: string
-}
+import { companyValues, getText, type Value } from "@/data/company"
+import { useLanguage } from "@/hooks/use-language"
 
 interface ValuesSectionProps {
   className?: string
 }
 
-const values: Value[] = [
-  {
-    id: "racial-equity",
-    title: "Racial Equity and Justice Initiative",
-    description: "We're addressing systemic racism by expanding opportunities for communities of color globally.",
-    href: "#racial-equity-justice"
-  },
-  {
-    id: "inclusion-diversity",
-    title: "Inclusion and Diversity",
-    description: "We're holding ourselves accountable for creating a culture where everyone belongs.",
-    href: "#inclusion-diversity"
-  },
-  {
-    id: "supply-chain",
-    title: "Supply Chain Innovation",
-    description: "We prioritize providing safe, respectful, and supportive workplaces for everyone.",
-    href: "#supply-chain"
-  },
-  {
-    id: "accessibility",
-    title: "Accessibility",
-    description: "Our built-in accessibility features are designed to work the way you do.",
-    href: "#accessibility"
-  },
-  {
-    id: "privacy",
-    title: "Privacy",
-    description: "We design every product and service to keep your data safe and secure.",
-    href: "#privacy"
-  },
-  {
-    id: "environment",
-    title: "Environment",
-    description: "We're committed to bringing our net emissions to zero across our entire carbon footprint by 2030.",
-    href: "#environment"
-  }
-]
-
 export function ValuesSection({ className }: ValuesSectionProps) {
+  const { language } = useLanguage()
   const [currentIndex, setCurrentIndex] = useState(0)
   const [cardsPerView, setCardsPerView] = useState(3)
 
@@ -77,7 +34,7 @@ export function ValuesSection({ className }: ValuesSectionProps) {
     return () => window.removeEventListener('resize', updateCardsPerView)
   }, [])
 
-  const maxIndex = Math.max(0, values.length - cardsPerView)
+  const maxIndex = Math.max(0, companyValues.length - cardsPerView)
 
   const nextValues = () => {
     if (currentIndex < maxIndex) {
@@ -102,7 +59,7 @@ export function ValuesSection({ className }: ValuesSectionProps) {
     <section className={`py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-[#F5F5F7] ${className}`}>
       <div className="max-w-7xl mx-auto space-y-8 sm:space-y-12">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light text-center text-gray-900">
-          Our values lead the way.
+          {language === 'ko' ? '우리의 가치가 길을 이끕니다.' : 'Our values lead the way.'}
         </h2>
 
         <div className="relative">
@@ -114,7 +71,7 @@ export function ValuesSection({ className }: ValuesSectionProps) {
                 transform: `translateX(-${currentIndex * (100 / cardsPerView + (cardsPerView > 1 ? 6 / cardsPerView : 0))}%)`,
               }}
             >
-              {values.map((value) => (
+              {companyValues.map((value) => (
                 <div
                   key={value.id}
                   className="flex-shrink-0"
@@ -127,21 +84,11 @@ export function ValuesSection({ className }: ValuesSectionProps) {
                   <Card className="h-full border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md transition-shadow duration-300 rounded-2xl">
                     <CardContent className="p-4 sm:p-6 space-y-3 sm:space-y-4 h-full flex flex-col">
                       <h3 className="text-lg sm:text-xl md:text-2xl font-medium leading-tight text-gray-900 dark:text-white">
-                        {value.title}
+                        {getText(value.title, language)}
                       </h3>
                       <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed flex-grow">
-                        {value.description}
+                        {getText(value.description, language)}
                       </p>
-                      <Button
-                        variant="link"
-                        className="p-0 h-auto font-normal text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 justify-start text-sm sm:text-base"
-                        asChild
-                      >
-                        <a href={value.href} className="inline-flex items-center gap-1">
-                          Learn more
-                          <ArrowUpRight className="h-3 w-3" />
-                        </a>
-                      </Button>
                     </CardContent>
                   </Card>
                 </div>

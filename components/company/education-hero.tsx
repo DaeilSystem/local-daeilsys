@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Play, ChevronDown } from "lucide-react"
+import { useLanguage } from "@/hooks/use-language"
 
 interface EducationHeroProps {
   className?: string
@@ -10,41 +11,57 @@ interface EducationHeroProps {
 
 const heroMedia = [
   {
-    type: "video",
-    src: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-    poster: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1920&h=1080&fit=crop&crop=center",
-    alt: "교육자들이 코딩을 가르치고 있는 모습",
-    location: "Santa Fe Creative Coding Initiative, Santa Fe"
-  },
-  {
-    type: "video",
-    src: "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4",
-    poster: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1920&h=1080&fit=crop&crop=center",
-    alt: "포용적 교육을 위한 장벽 제거",
-    location: "National Coalition of 100 Black Women, Inc., Atlanta"
-  },
-  {
-    type: "video",
-    src: "https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/360/Big_Buck_Bunny_360_10s_1MB.mp4",
-    poster: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1920&h=1080&fit=crop&crop=center",
-    alt: "코딩으로 영어를 배우는 학생들",
-    location: "Rutgers University-Newark (G)eneration Code, Newark"
+    type: "image",
+    src: "https://www.daeilsys.com/wp-content/uploads/2020/05/2000-Built-new-HQ-and-1st-factory.jpg",
+    alt: {
+      ko: "대일시스템 본사 및 공장",
+      en: "DAEIL SYSTEMS HQ and Factory"
+    },
+    location: {
+      ko: "대일시스템 본사, 용인",
+      en: "DAEIL SYSTEMS HQ, Yongin"
+    }
   },
   {
     type: "image",
-    src: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1920&h=1080&fit=crop&crop=center",
-    alt: "성장하는 커뮤니티",
-    location: "Tennessee State University HBCU C2, Accra"
+    src: "https://www.daeilsys.com/wp-content/uploads/2020/05/2007-Introduced-Active-Vibration-Isolation-System.png",
+    alt: {
+      ko: "액티브 제진대 시스템",
+      en: "Active Vibration Isolation System"
+    },
+    location: {
+      ko: "제진 기술 혁신",
+      en: "Vibration Isolation Innovation"
+    }
   },
   {
     type: "image",
-    src: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1920&h=1080&fit=crop&crop=center",
-    alt: "창의성과 혁신의 문화",
-    location: "Enactus, Monterrey"
+    src: "https://www.daeilsys.com/wp-content/uploads/2020/05/2016-Built-2nd-factory-DAEIL-SYSTEMS.png",
+    alt: {
+      ko: "제2공장",
+      en: "2nd Factory"
+    },
+    location: {
+      ko: "제2공장 증축, 용인",
+      en: "2nd Factory Expansion, Yongin"
+    }
+  },
+  {
+    type: "image",
+    src: "https://www.daeilsys.com/wp-content/uploads/2024/03/daeil-systems-celebrates-40-years-flag-min.png",
+    alt: {
+      ko: "창립 40주년",
+      en: "40th Anniversary"
+    },
+    location: {
+      ko: "대일시스템 창립 40주년",
+      en: "DAEIL SYSTEMS 40th Anniversary"
+    }
   }
 ]
 
 export function EducationHero({ className }: EducationHeroProps) {
+  const { language } = useLanguage()
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const [isPlaying, setIsPlaying] = useState(true)
 
@@ -134,23 +151,36 @@ export function EducationHero({ className }: EducationHeroProps) {
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto space-y-6 sm:space-y-8 px-4 sm:px-6">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light text-white leading-tight text-center">
-          <span className="block mb-2 sm:mb-4">Education moves</span>
-          <span className="block mb-2 sm:mb-4">
-            <span className="text-blue-400">learners,</span>{" "}
-            <span className="text-green-400">leaders,</span>{" "}
-            <span className="text-purple-400">innovators,</span>
-          </span>
-          <span className="block mb-2 sm:mb-4">
-            <span className="text-orange-400">communities,</span>{" "}
-            <span className="text-pink-400">and everyone</span>
-          </span>
-          <span className="block">forward.</span>
-        </h1>
+        {language === 'ko' ? (
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light text-white leading-tight text-center">
+            <span className="block mb-2 sm:mb-4">
+              <span className="text-blue-400">나노스케일 이미징</span>으로
+            </span>
+            <span className="block mb-2 sm:mb-4">
+              더 나은 <span className="text-green-400">세상</span>을 향하여
+            </span>
+            <span className="block">
+              <span className="text-purple-400">대일시스템</span>입니다.
+            </span>
+          </h1>
+        ) : (
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light text-white leading-tight text-center">
+            <span className="block mb-2 sm:mb-4">We enable</span>
+            <span className="block mb-2 sm:mb-4">
+              <span className="text-blue-400">nanoscale imaging</span>
+            </span>
+            <span className="block mb-2 sm:mb-4">
+              to make the <span className="text-green-400">world</span>
+            </span>
+            <span className="block">
+              a <span className="text-purple-400">better place.</span>
+            </span>
+          </h1>
+        )}
 
         {/* Location */}
         <p className="text-xs sm:text-sm md:text-base text-white/80 font-medium text-center">
-          {heroMedia[currentImageIndex].location}
+          {heroMedia[currentImageIndex].location[language]}
         </p>
 
         {/* Replay Button */}
@@ -185,7 +215,9 @@ export function EducationHero({ className }: EducationHeroProps) {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-6 sm:bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center space-y-2">
-        <p className="text-white/80 text-xs sm:text-sm font-medium">Scroll to explore</p>
+        <p className="text-white/80 text-xs sm:text-sm font-medium">
+          {language === 'ko' ? '스크롤하여 탐색하기' : 'Scroll to explore'}
+        </p>
         <div className="animate-bounce">
           <ChevronDown className="h-4 w-4 sm:h-5 sm:w-5 text-white/80" />
         </div>

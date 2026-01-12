@@ -4,6 +4,8 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ChevronLeft, ChevronRight } from "lucide-react"
+import { useLanguage } from "@/hooks/use-language"
+import { companyTimeline, getText } from "@/data/company"
 
 interface Story {
   id: string
@@ -13,26 +15,40 @@ interface Story {
 }
 
 interface StoryCarouselProps {
-  stories: Story[]
+  stories?: Story[]
   className?: string
+  useTimeline?: boolean
 }
 
-export function StoryCarousel({ stories, className }: StoryCarouselProps) {
+export function StoryCarousel({ stories, className, useTimeline = false }: StoryCarouselProps) {
+  const { language } = useLanguage()
   const [currentIndex, setCurrentIndex] = useState(0)
 
+  // Use timeline data if useTimeline is true and no stories provided
+  const timelineStories = companyTimeline
+    .filter(item => item.image)
+    .map(item => ({
+      id: item.year,
+      title: `${item.year} - ${getText(item.event, language)}`,
+      image: item.image!,
+      alt: getText(item.event, language)
+    }))
+
+  const displayStories = stories || (useTimeline ? timelineStories : [])
+
   const nextStory = () => {
-    setCurrentIndex((prev) => (prev + 1) % stories.length)
+    setCurrentIndex((prev) => (prev + 1) % displayStories.length)
   }
 
   const prevStory = () => {
-    setCurrentIndex((prev) => (prev - 1 + stories.length) % stories.length)
+    setCurrentIndex((prev) => (prev - 1 + displayStories.length) % displayStories.length)
   }
 
   const goToStory = (index: number) => {
     setCurrentIndex(index)
   }
 
-  if (!stories.length) return null
+  if (!displayStories.length) return null
 
   return (
     <div className={`relative ${className}`}>
@@ -44,13 +60,13 @@ export function StoryCarousel({ stories, className }: StoryCarouselProps) {
               <div
                 className="w-full h-full bg-cover bg-center bg-gray-200"
                 style={{
-                  backgroundImage: `url(${stories[currentIndex].image})`,
+                  backgroundImage: `url(${displayStories[currentIndex].image})`,
                 }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute bottom-4 left-4 right-4">
                 <h3 className="text-white text-lg md:text-xl font-medium leading-tight">
-                  {stories[currentIndex].title}
+                  {displayStories[currentIndex].title}
                 </h3>
               </div>
             </div>
@@ -60,7 +76,7 @@ export function StoryCarousel({ stories, className }: StoryCarouselProps) {
 
       {/* Story Thumbnails */}
       <div className="flex gap-3 mt-4 overflow-x-auto pb-2">
-        {stories.map((story, index) => (
+        {displayStories.map((story, index) => (
           <button
             key={story.id}
             onClick={() => goToStory(index)}
@@ -94,7 +110,7 @@ export function StoryCarousel({ stories, className }: StoryCarouselProps) {
           variant="outline"
           size="sm"
           onClick={prevStory}
-          disabled={currentIndex === 0}
+          disabled={currentIndex === 0 || displayStories.length <= 1}
           className="rounded-full p-2"
         >
           <ChevronLeft className="h-4 w-4" />
@@ -103,7 +119,7 @@ export function StoryCarousel({ stories, className }: StoryCarouselProps) {
 
         {/* Pagination Dots */}
         <div className="flex space-x-2">
-          {stories.map((_, index) => (
+          {displayStories.map((_, index) => (
             <button
               key={index}
               onClick={() => goToStory(index)}
@@ -120,7 +136,7 @@ export function StoryCarousel({ stories, className }: StoryCarouselProps) {
           variant="outline"
           size="sm"
           onClick={nextStory}
-          disabled={currentIndex === stories.length - 1}
+          disabled={currentIndex === displayStories.length - 1}
           className="rounded-full p-2"
         >
           <ChevronRight className="h-4 w-4" />
